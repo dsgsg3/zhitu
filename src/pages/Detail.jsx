@@ -1,4 +1,4 @@
-import { useMemo, useEffect } from 'react'
+import { useMemo, useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import NotFound from './NotFound.jsx'
 import { setPageMeta } from '../meta.js'
@@ -45,6 +45,19 @@ export default function Detail() {
   }, [entity])
   const fav = entity ? isFav(entity.id, snap) : false
 
+  // 阅读进度：顶部细线
+  const [progress, setProgress] = useState(0)
+  useEffect(() => {
+    const onScroll = () => {
+      const h = document.documentElement
+      const max = h.scrollHeight - h.clientHeight
+      setProgress(max > 0 ? Math.min(1, h.scrollTop / max) : 0)
+    }
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [entity])
+
   if (!entity) return <NotFound />
 
   const cat = CATEGORIES.find((c) => c.key === entity.category)
@@ -60,6 +73,7 @@ export default function Detail() {
 
   return (
     <main className="detail-page" style={{ '--cat': cat.accent }}>
+      <div className="read-progress" aria-hidden="true" style={{ transform: `scaleX(${progress})` }} />
       <section className="detail-hero">
         <div className="detail-hero-inner">
           <div className="detail-crumb">

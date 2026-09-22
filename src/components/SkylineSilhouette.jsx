@@ -4,16 +4,16 @@ export function SkylineSilhouette() {
     <svg viewBox="0 0 720 300" className="skyline-svg" aria-hidden="true">
       <defs>
         <linearGradient id="skyfade" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="rgba(27,26,23,.07)" />
-          <stop offset="1" stopColor="rgba(27,26,23,0)" />
+          <stop offset="0" stopColor="currentColor" stopOpacity=".07" />
+          <stop offset="1" stopColor="currentColor" stopOpacity="0" />
         </linearGradient>
       </defs>
       <rect x="0" y="0" width="720" height="300" fill="url(#skyfade)" />
       {/* 星点 */}
       {[[64,52],[130,34],[212,64],[300,26],[388,48],[470,30],[556,58],[640,40],[98,88],[520,90]].map(([x,y],i)=>(
-        <circle key={i} cx={x} cy={y} r={i%3===0?1.4:1} fill="rgba(27,26,23,.26)" />
+        <circle key={i} cx={x} cy={y} r={i%3===0?1.4:1} fill="currentColor" opacity=".26" />
       ))}
-      <g fill="none" stroke="rgba(27,26,23,.4)" strokeWidth="1.1" strokeLinejoin="round">
+      <g fill="none" stroke="currentColor" opacity=".4" strokeWidth="1.1" strokeLinejoin="round">
         {/* 金字塔 */}
         <path d="M40 250 L120 150 L200 250" />
         <path d="M120 150 L120 250" strokeDasharray="2 5" opacity=".45" />
@@ -35,7 +35,7 @@ export function SkylineSilhouette() {
         <line x1="0" y1="250" x2="720" y2="250" opacity=".7" />
       </g>
       {/* 基座：纸色，压住地平线以下 */}
-      <rect x="0" y="250" width="720" height="50" fill="rgba(247,244,236,.92)" />
+      <rect x="0" y="250" width="720" height="50" className="skyline-base" />
     </svg>
   )
 }

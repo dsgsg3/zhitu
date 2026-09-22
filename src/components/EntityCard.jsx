@@ -12,7 +12,7 @@ export function EntityCard({ entity, featured = false }) {
   const snap = useFootprint()
   const read = isRead(entity.id, snap)
   return (
-    <Link to={`/entity/${entity.id}`} className={`entity-card ${featured ? 'featured' : ''}`} style={{ '--cat': c.accent }}>
+    <Link to={`/entity/${entity.id}`} className={`entity-card ${featured ? 'featured' : ''}`} data-cat={entity.category} style={{ '--cat': c.accent }}>
       <div className="entity-card-top">
         <CategoryTag category={entity.category} />
         <span className="entity-year">{entity.range ? `${formatYear(entity.range[0])} — ${formatYear(entity.range[1] ?? entity.range[0])}` : formatYear(entity.year)}{read ? ' · 已读' : ''}</span>

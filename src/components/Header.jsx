@@ -1,5 +1,6 @@
 import { NavLink, Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect, useRef, useCallback } from 'react'
+import { getTheme, applyTheme } from '../theme.js'
 import { CATEGORIES, formatYear } from '../data/taxonomy.js'
 
 const NAV = [
@@ -16,7 +17,14 @@ export default function Header() {
   const [hits, setHits] = useState([])
   const [total, setTotal] = useState(null)
   const [active, setActive] = useState(0)
+  const [theme, setTheme] = useState(getTheme)
   const inputRef = useRef(null)
+
+  const toggleTheme = () => {
+    const next = theme === 'dark' ? 'light' : 'dark'
+    setTheme(next)
+    applyTheme(next)
+  }
 
   const openSearch = useCallback(() => {
     setSearchOpen(true)
@@ -69,6 +77,16 @@ export default function Header() {
     navigate(`/entity/${id}`)
   }
 
+  // 命中词高亮（子串命中才标红，拼音命中不标）
+  const Hi = ({ text }) => {
+    const t = String(text)
+    const needle = query.trim()
+    if (!needle) return t
+    const i = t.toLowerCase().indexOf(needle.toLowerCase())
+    if (i === -1) return t
+    return <>{t.slice(0, i)}<mark>{t.slice(i, i + needle.length)}</mark>{t.slice(i + needle.length)}</>
+  }
+
   const onInputKeyDown = (e) => {
     if (e.key === 'ArrowDown') {
       e.preventDefault()
@@ -99,11 +117,21 @@ export default function Header() {
             </NavLink>
           ))}
         </nav>
-        <button className="search-trigger" onClick={openSearch}>
-          <span>⌕</span>
-          <span>搜索五千年</span>
-          <kbd>⌘K</kbd>
-        </button>
+        <div className="header-actions">
+          <button className="search-trigger" onClick={openSearch}>
+            <span>⌕</span>
+            <span>搜索五千年</span>
+            <kbd>⌘K</kbd>
+          </button>
+          <button
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label={theme === 'dark' ? '切换到日间' : '切换到夜间'}
+            title={theme === 'dark' ? '切换到日间' : '切换到夜间'}
+          >
+            {theme === 'dark' ? '☀' : '☾'}
+          </button>
+        </div>
       </header>
 
       {searchOpen && (
@@ -140,7 +168,7 @@ export default function Header() {
                     onClick={closeSearch}
                     onMouseEnter={() => setActive(i)}
                   >
-                    <span>{h.name}</span>
+                    <span><Hi text={h.name} /></span>
                     <small>{CATEGORIES.find((c) => c.key === h.category)?.short} · {formatYear(h.year)} →</small>
                   </Link>
                 ))

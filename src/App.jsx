@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
+import BackToTop from './components/BackToTop.jsx'
 import ErrorBoundary from './components/ErrorBoundary.jsx'
 
 const Home = lazy(() => import('./pages/Home.jsx'))
@@ -32,6 +33,7 @@ export default function App() {
         </Suspense>
       </ErrorBoundary>
       <Footer />
+      <BackToTop />
     </div>
   )
 }

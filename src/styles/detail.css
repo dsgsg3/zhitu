@@ -1,5 +1,11 @@
 /* ===== 详情页 ===== */
 .detail-page { padding: 0 0 88px; }
+/* 阅读进度：顶部细线，随滚动填充 */
+.read-progress {
+  position: fixed; top: 0; left: 0; z-index: 60;
+  width: 100%; height: 3px; background: var(--accent);
+  transform-origin: 0 50%; transform: scaleX(0);
+}
 .detail-hero { position: relative; padding: 64px 5vw 40px; background: var(--paper-2); border-bottom: 1px solid var(--line); }
 .detail-hero-inner { position: relative; max-width: 1100px; margin: 0 auto; }
 .detail-crumb { color: var(--ink-3); font-size: var(--fs-meta); margin-bottom: 22px; }

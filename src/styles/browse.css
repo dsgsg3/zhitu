@@ -4,7 +4,13 @@
 .browse-head h1 { font-family: var(--serif); font-size: clamp(28px, 3.8vw, 42px); letter-spacing: -.01em; margin: 10px 0 10px; font-weight: 600; }
 .browse-head p { color: var(--ink-2); font-size: var(--fs-body); max-width: 620px; line-height: 1.9; margin: 0; }
 
-.browse-controls { display: flex; flex-direction: column; gap: 12px; margin-bottom: 26px; }
+/* 筛选栏吸顶：长列表下滑时条件不丢（顶栏高 70px，移动端 60px） */
+.browse-controls {
+  display: flex; flex-direction: column; gap: 12px; margin-bottom: 26px;
+  position: sticky; top: 70px; z-index: 10;
+  background: var(--paper); padding: 12px 0;
+}
+@media (max-width: 900px) { .browse-controls { top: 60px; } }
 .browse-search-row .browse-search {
   flex: 1;
   min-width: 200px;
