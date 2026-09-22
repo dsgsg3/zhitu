@@ -1,0 +1,46 @@
+/* ===== 浏览页 ===== */
+.browse-page { padding: 56px 5vw 96px; }
+.browse-head { padding-bottom: 18px; border-bottom: 1px solid var(--line); margin-bottom: 28px; }
+.browse-head h1 { font-family: var(--serif); font-size: clamp(28px, 3.8vw, 42px); letter-spacing: -.01em; margin: 10px 0 10px; font-weight: 600; }
+.browse-head p { color: var(--ink-2); font-size: var(--fs-body); max-width: 620px; line-height: 1.9; margin: 0; }
+
+.browse-controls { display: flex; flex-direction: column; gap: 12px; margin-bottom: 26px; }
+.browse-search-row .browse-search {
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--white);
+  color: var(--ink);
+  padding: 7px 14px;
+  font-size: var(--fs-meta);
+  outline: 0;
+}
+.browse-search-row .browse-search:focus { border-color: var(--accent); }
+.browse-search-row .browse-search::placeholder { color: var(--ink-4); }
+.browse-count { color: var(--ink-3); font-size: var(--fs-meta); margin: 0 0 16px; display: flex; align-items: center; gap: 12px; }
+.browse-clear { border: 0; background: transparent; color: var(--accent); font-size: var(--fs-meta); cursor: pointer; padding: 2px 4px; }
+.browse-clear:hover { text-decoration: underline; }
+.filter-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.filter-row-label { color: var(--ink-3); font-size: var(--fs-label); letter-spacing: .16em; margin-right: 6px; white-space: nowrap; }
+.filter-chip {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink-2);
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: var(--fs-meta);
+  cursor: pointer;
+  transition: all .18s;
+}
+.filter-chip:hover { border-color: var(--line-2); color: var(--ink); }
+.filter-chip.active { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.filter-chip.cat.active { background: var(--white); border-color: var(--cat, var(--ink)); color: var(--cat, var(--ink)); font-weight: 600; }
+.browse-count { color: var(--ink-3); font-size: var(--fs-meta); margin: 0 0 16px; }
+
+.browse-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.browse-empty { text-align: center; padding: 72px 0; color: var(--ink-2); font-size: var(--fs-body); }
+.browse-empty b { display: block; font-family: var(--serif); font-size: var(--fs-title); color: var(--ink); margin-bottom: 8px; font-weight: 600; }
+
+@media (max-width: 1000px) { .browse-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .browse-grid { grid-template-columns: 1fr; } }

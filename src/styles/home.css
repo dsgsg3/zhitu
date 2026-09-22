@@ -1,0 +1,63 @@
+/* ===== 首页 ===== */
+.hero { position: relative; min-height: 74vh; display: grid; grid-template-columns: 48% 52%; align-items: center; gap: 40px; padding: 56px 5vw 72px; }
+.hero-copy { position: relative; z-index: 2; }
+.hero-copy .eyebrow { margin-bottom: 4px; }
+.hero h1 { font-family: var(--serif); font-size: var(--fs-display); line-height: 1.18; letter-spacing: -.02em; margin: 18px 0 18px; font-weight: 600; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero-sub { color: var(--ink-2); font-size: var(--fs-body); line-height: 1.95; max-width: 440px; margin: 0 0 28px; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.hero-stats { display: flex; gap: 32px; margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--line); }
+.hero-stat { display: flex; flex-direction: column; gap: 4px; }
+.hero-stat b { font-family: var(--serif); font-size: 30px; color: var(--ink); line-height: 1; font-weight: 600; }
+.hero-stat span { color: var(--ink-3); font-size: var(--fs-label); letter-spacing: .08em; }
+
+/* 年轮：刻度从 60 收到 12，只保留 6 个刻点标签 */
+.hero-visual { position: relative; z-index: 1; }
+.hero-ring-wrap { max-width: 520px; margin: 0 auto; }
+.skyline-svg { width: 100%; height: auto; display: block; opacity: .5; }
+.hero-ring { position: relative; aspect-ratio: 1; max-width: 380px; margin: -40px auto 0; }
+.hero-ring svg { width: 100%; height: 100%; overflow: visible; }
+.ring-track { fill: none; stroke: var(--line-2); stroke-width: 1; }
+.ring-tick { stroke: var(--ink-4); stroke-width: 1; }
+.ring-label { fill: var(--ink-3); font-size: 10px; font-family: var(--mono); letter-spacing: .18em; }
+.ring-dot { fill: var(--white); stroke: var(--cat, var(--accent)); stroke-width: 1.5; cursor: pointer; transition: r .18s, fill .18s; }
+.ring-dot:hover { fill: var(--accent); }
+.ring-dot-label { fill: var(--ink); font-size: 12px; font-family: var(--serif); font-weight: 600; }
+.ring-core { fill: none; stroke: var(--line-2); stroke-width: 1; stroke-dasharray: 2 5; }
+.ring-lead { stroke: var(--ink-4); stroke-width: 1; stroke-dasharray: 2 3; }
+
+/* 分类入口 */
+.picks { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding: 0 5vw 64px; }
+.pick-card {
+  position: relative;
+  display: flex; flex-direction: column; gap: 6px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--paper-2);
+  cursor: pointer;
+  text-align: left;
+  color: var(--ink);
+  transition: border-color .2s, background .2s;
+}
+.pick-card:hover { background: var(--white); border-color: var(--c); }
+.pick-card .pick-icon { font-size: 16px; color: var(--c); line-height: 1; }
+.pick-card strong { font-family: var(--serif); font-size: 18px; font-weight: 600; }
+.pick-card small { color: var(--ink-3); font-size: var(--fs-label); }
+.pick-card b { position: absolute; top: 20px; right: 20px; color: var(--c); font-weight: 400; font-size: 14px; }
+
+/* 今日寄语 */
+.daily { padding: 56px 5vw 80px; }
+.daily-inner { max-width: 1000px; margin: 0 auto; }
+.daily-quote { text-align: center; }
+.daily-quote .quote-mark { font-family: var(--serif); font-size: 56px; line-height: .4; color: var(--ink-4); }
+.daily-quote p { font-family: var(--serif); font-size: clamp(19px, 2.4vw, 27px); letter-spacing: -.01em; line-height: 1.8; margin: 20px auto 14px; max-width: 700px; font-weight: 500; }
+.daily-quote .src { color: var(--ink-3); font-size: var(--fs-label); letter-spacing: .14em; }
+
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; min-height: 0; padding-top: 36px; gap: 8px; }
+  .hero-visual { order: -1; max-width: 300px; margin: 0 auto; }
+  .hero-stats { gap: 22px; }
+  .picks { grid-template-columns: 1fr 1fr; }
+  .daily { padding: 40px 5vw 60px; }
+}

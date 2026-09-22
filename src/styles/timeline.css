@@ -1,0 +1,33 @@
+/* ===== 时间轴页 ===== */
+.timeline-page { padding: 52px 0 96px; }
+.timeline-hero { text-align: center; padding: 20px 5vw 0; }
+.timeline-hero .eyebrow { justify-content: center; }
+.timeline-hero h1 { font-family: var(--serif); font-size: clamp(28px, 3.8vw, 44px); letter-spacing: -.01em; margin: 10px 0 10px; font-weight: 600; }
+.timeline-hero p { color: var(--ink-2); font-size: var(--fs-body); margin: 0 auto; max-width: 560px; line-height: 1.9; }
+
+/* 轴区：一张纸上的图 */
+.tl-wrap { position: relative; margin-top: 28px; padding: 22px 5vw 16px; background: var(--paper-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.tl-canvas { width: 100%; height: 460px; display: block; cursor: grab; touch-action: pan-y; }
+.tl-canvas:active { cursor: grabbing; }
+.tl-hint { text-align: center; color: var(--ink-3); font-size: var(--fs-label); letter-spacing: .14em; margin-top: 4px; }
+
+.tl-legend { display: flex; justify-content: center; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
+.tl-legend span { display: inline-flex; align-items: center; gap: 7px; font-size: var(--fs-meta); color: var(--ink-2); }
+.tl-legend i { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+
+.tl-era-row { display: flex; justify-content: center; gap: 8px; margin: 20px 0 0; flex-wrap: wrap; }
+.era-chip { border: 1px solid var(--line); background: transparent; color: var(--ink-2); padding: 6px 14px; border-radius: 4px; font-size: var(--fs-meta); cursor: pointer; transition: all .18s; min-height: 36px; }
+.era-chip:hover { border-color: var(--line-2); color: var(--ink); }
+.era-chip.active { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.tl-tools { display: flex; justify-content: center; align-items: center; gap: 8px; margin: 12px 0 0; flex-wrap: wrap; }
+.tl-keys { color: var(--ink-4); font-size: var(--fs-label); letter-spacing: .06em; margin-left: 6px; }
+
+.tl-results { padding: 44px 5vw 0; }
+.tl-results-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.tl-results-head h3 { font-family: var(--serif); font-size: 24px; font-weight: 600; margin: 0; }
+.tl-results-head span { color: var(--ink-3); font-size: var(--fs-meta); }
+
+@media (max-width: 900px) {
+  .tl-canvas { height: 400px; }
+  .tl-keys { display: none; }
+}
