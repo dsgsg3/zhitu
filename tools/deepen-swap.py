@@ -20,8 +20,21 @@ for cf in sorted(swap_dir.glob('*.txt')):
         for i in range(2, len(parts), 2):
             if re.search(r"id: '" + re.escape(eid) + r"'", parts[i]):
                 if parts[i] != chunk:
-                    parts[i] = chunk
+                    old = parts[i]
+                    # 末尾条目的 chunk 可能包含文件尾部（如 '\n];'）——必须保留
+                    if i == len(parts) - 1:
+                        anchor = '\n  },'
+                        idx = old.rfind(anchor)
+                        if idx != -1 and '];' in old[idx:]:
+                            trailing = old[idx + len(anchor):]
+                            parts[i] = chunk + trailing
+                        else:
+                            parts[i] = chunk
+                    else:
+                        parts[i] = chunk
                     files[fname] = ''.join(parts)
+                    if not files[fname].rstrip().endswith('];'):
+                        raise SystemExit(f'ABORT: {fname} lost its array terminator after swap of {eid}')
                     swapped.append(f'{fname}:{eid}')
                 else:
                     skipped.append(eid)
