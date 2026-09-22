@@ -13,7 +13,6 @@ const JOBS = [
   { id: 'covid-pandemic', wiki: 'COVID-19 pandemic' },
   { id: 'ai-era', wiki: 'AlphaGo versus Lee Sedol' },
   { id: 'western-zhou-founding', wiki: 'He Zun' },
-  { id: 'phoenician-alphabet', wiki: 'Phoenician alphabet' },
 ]
 
 async function getJson(url) {
