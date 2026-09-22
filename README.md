@@ -10,7 +10,7 @@
 
 ## 技术栈
 
-Vite 6 + React 18 + react-router-dom 7，纯静态，无后端。全部内容来自 `src/data/*.js` 的静态导出，共 **192 条**档案（`npm run validate:data` 可随时核对）。
+Vite 6 + React 18 + react-router-dom 7，纯静态，无后端。全部内容来自 `src/data/*.js` 的静态导出，共 **226 条**档案（`npm run validate:data` 可随时核对）。
 
 ## 运行
 

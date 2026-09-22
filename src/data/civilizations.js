@@ -1130,7 +1130,7 @@ export const civilizations = [
       { label: '学术', value: '桑科尔大学与廷巴克图手稿' },
       { label: '终结', value: '1591 年摩洛哥火药远征' },
     ],
-    related: ['mali-empire', 'mansa-musa', 'berlin-conference', 'great-zimbabwe'],
+    related: ['mali-empire', 'mansa-musa', 'berlin-conference', 'great-zimbabwe', 'ibn-battuta'],
     sources: [{ label: '维基百科检索', url: 'https://zh.wikipedia.org/w/index.php?search=%E6%A1%91%E6%B5%B7%E5%B8%9D%E5%9B%BD' }],
   },
   {
@@ -1153,7 +1153,7 @@ export const civilizations = [
       { label: '转折', value: '1861 年废除农奴制' },
       { label: '终结', value: '1917 年二月革命' },
     ],
-    related: ['byzantine', 'french-revolution', 'russian-revolution', 'first-world-war', 'fall-of-ussr'],
+    related: ['byzantine', 'french-revolution', 'russian-revolution', 'first-world-war', 'fall-of-ussr', 'marx'],
     sources: [{ label: '维基百科', url: 'https://zh.wikipedia.org/wiki/%E4%BF%84%E7%BD%97%E6%96%AF%E5%B8%9D%E5%9B%BD' }],
   },
   {
@@ -1175,7 +1175,7 @@ export const civilizations = [
       { label: '宪法', value: '1787 年，世界最早成文宪法之一' },
       { label: '内战', value: '1861—1865 年南北战争' },
     ],
-    related: ['american-independence', 'lincoln', 'columbus-voyage', 'wwii-end', 'moon-landing'],
+    related: ['american-independence', 'lincoln', 'columbus-voyage', 'wwii-end', 'moon-landing', 'magna-carta'],
     sources: [{ label: '维基百科', url: 'https://zh.wikipedia.org/wiki/%E7%BE%8E%E5%9B%BD' }],
     quote: '我们坚守这些真理，认为它们不言而喻。',
     quoteBy: '《独立宣言》',
@@ -1200,7 +1200,7 @@ export const civilizations = [
       { label: '社会', value: 'iwi 部族制，口传谱系' },
       { label: '条约', value: '1840 年怀唐伊条约' },
     ],
-    related: ['polynesia', 'moai', 'kamehameha'],
+    related: ['polynesia', 'moai', 'kamehameha', 'sydney-opera-house'],
     sources: [{ label: '维基百科检索', url: 'https://zh.wikipedia.org/w/index.php?search=%E6%AF%9B%E5%88%A9%E4%BA%BA' }],
   },
 ];
