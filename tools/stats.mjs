@@ -1,6 +1,6 @@
 import { ALL } from '../src/data/index.js'
 
-const eraOf = (y) => (y < -800 ? '上古' : y < 500 ? '古典' : y < 1400 ? '中古' : y < 1800 ? '近代' : '现代')
+const eraOf = (y) => (y < -800 ? '上古' : y < 500 ? '古典' : y < 1400 ? '中古' : y < 1800 ? '近代' : y < 2000 ? '现代' : '当代')
 const era = {}
 for (const e of ALL) era[eraOf(e.year)] = (era[eraOf(e.year)] || 0) + 1
 console.log('年代分布:', JSON.stringify(era))

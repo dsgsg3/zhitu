@@ -9,6 +9,7 @@ const Home = lazy(() => import('./pages/Home.jsx'))
 const Timeline = lazy(() => import('./pages/Timeline.jsx'))
 const Browse = lazy(() => import('./pages/Browse.jsx'))
 const Detail = lazy(() => import('./pages/Detail.jsx'))
+const NotFound = lazy(() => import('./pages/NotFound.jsx'))
 
 export default function App() {
   return (
@@ -22,7 +23,7 @@ export default function App() {
             <Route path="/timeline" element={<Timeline />} />
             <Route path="/browse" element={<Browse />} />
             <Route path="/entity/:id" element={<Detail />} />
-            <Route path="*" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </ErrorBoundary>

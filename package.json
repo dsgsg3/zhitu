@@ -7,9 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "validate:data": "node tools/validate-data.mjs",
+    "sitemap": "node tools/sitemap.mjs"
   },
   "dependencies": {
+    "pinyin-match": "^1.2.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.1.5"

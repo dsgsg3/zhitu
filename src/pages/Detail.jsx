@@ -1,5 +1,7 @@
-import { useMemo } from 'react'
-import { Link, useParams, Navigate } from 'react-router-dom'
+import { useMemo, useEffect } from 'react'
+import { Link, useParams } from 'react-router-dom'
+import NotFound from './NotFound.jsx'
+import { setPageMeta } from '../meta.js'
 import { byId, ALL } from '../data/index.js'
 import { CATEGORIES, REGIONS, ERAS, eraOf, eraLabel, formatYear } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
@@ -31,13 +33,22 @@ export default function Detail() {
     return { prev: sorted[i - 1] || null, next: sorted[i + 1] || null }
   }, [entity])
 
-  if (!entity) return <Navigate to="/" replace />
+  useEffect(() => {
+    if (entity) setPageMeta(entity.name, entity.summary)
+  }, [entity])
+
+  if (!entity) return <NotFound />
 
   const cat = CATEGORIES.find((c) => c.key === entity.category)
   const region = REGIONS.find((r) => r.key === entity.region)
   const eraKey = eraOf(entity.year)
 
   const related = (entity.related || []).map((rid) => byId[rid]).filter(Boolean)
+
+  // 出处：有则展示，无则给一条维基检索兜底（检索页恒成立，不会 404）
+  const sources = entity.sources && entity.sources.length > 0
+    ? entity.sources
+    : [{ label: '维基百科检索', url: `https://zh.wikipedia.org/w/index.php?search=${encodeURIComponent(entity.name)}` }]
 
   return (
     <main className="detail-page" style={{ '--cat': cat.accent }}>
@@ -116,6 +127,15 @@ export default function Detail() {
               })}
             </div>
           )}
+          <div className="related-card">
+            <h4>参考与延伸</h4>
+            {sources.map((s, i) => (
+              <a key={i} href={s.url} target="_blank" rel="noreferrer" className="related-item">
+                <span className="r-name">{s.label}</span>
+                <span className="r-meta">↗</span>
+              </a>
+            ))}
+          </div>
         </aside>
       </div>
 

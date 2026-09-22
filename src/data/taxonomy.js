@@ -6,6 +6,7 @@ export const ERAS = [
   { key: 'medieval', label: '中古 · 信仰与征服', short: '中古', range: [500, 1400] },
   { key: 'earlymodern', label: '近代 · 大航海与启蒙', short: '近代', range: [1400, 1800] },
   { key: 'modern', label: '现代 · 工业与革命', short: '现代', range: [1800, 2000] },
+  { key: 'contemporary', label: '当代 · 全球化与网络', short: '当代', range: [2000, 2100] },
 ]
 
 // accent 为纸感底色上的低饱和四色：赭 / 朱 / 青铜绿 / 靛
@@ -24,6 +25,7 @@ export const REGIONS = [
   { key: 'europe', label: '欧洲' },
   { key: 'africa', label: '非洲' },
   { key: 'americas', label: '美洲' },
+  { key: 'oceania', label: '大洋洲' },
 ]
 
 export function formatYear(y) {
@@ -41,8 +43,8 @@ export function eraOf(year) {
     const [a, b] = era.range
     if (year >= a && year < b) return era.key
   }
-  // 超出表外：更早归入上古，更晚归入现代
-  return year < ERAS[0].range[0] ? 'ancient' : 'modern'
+  // 超出表外：更早归入上古，更晚归入当代
+  return year < ERAS[0].range[0] ? 'ancient' : 'contemporary'
 }
 
 export function eraLabel(key) {

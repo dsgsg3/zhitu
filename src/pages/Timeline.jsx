@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { setPageMeta } from '../meta.js'
 import { ALL } from '../data/index.js'
 import { CATEGORIES, ERAS, eraOf, formatYear } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
@@ -9,6 +10,15 @@ const MAX_YEAR = 2050
 const SPAN = MAX_YEAR - MIN_YEAR
 
 // 时间轴布局：按时间排序后错开行位，避免重叠
+// 车道溢出时按 id 哈希固定分配，保证同一视口每次渲染结果一致
+function laneHash(id) {
+  let h = 2166136261
+  for (let i = 0; i < id.length; i++) {
+    h ^= id.charCodeAt(i)
+    h = Math.imul(h, 16777619)
+  }
+  return (h >>> 0) % 6
+}
 function layout(ents, width) {
   const sorted = [...ents].sort((a, b) => a.year - b.year)
   const lanes = []
@@ -18,7 +28,7 @@ function layout(ents, width) {
     const x = ((e.year - MIN_YEAR) / SPAN) * width
     let lane = 0
     while (lane < 6 && placed.some((p) => p.lane === lane && Math.abs(p.x - x) < MIN_GAP)) lane++
-    if (lane >= 6) lane = Math.floor(Math.random() * 6)
+    if (lane >= 6) lane = laneHash(e.id)
     placed.push({ id: e.id, x, lane })
     if (!lanes[lane]) lanes[lane] = []
     lanes[lane].push({ entity: e, x })
@@ -37,6 +47,7 @@ export default function Timeline() {
   const [selectedEra, setSelectedEra] = useState(null)
   const [scale, setScale] = useState(2.2) // 每年多少像素的倍率基准，可缩放
   const dragRef = useRef(null)
+  useEffect(() => { setPageMeta('时间轴', '左右拖动，漫游五千五百年。') }, [])
   // 拖动结束时记录是否真的移动过，用于抑制拖拽尾巴上的误点击
   const movedRef = useRef(false)
 
@@ -210,8 +221,22 @@ export default function Timeline() {
                 if (movedRef.current) { movedRef.current = false; return }
                 navigate(`/entity/${entity.id}`)
               }
+              const label = `${entity.name}，${formatYear(entity.range ? entity.range[0] : entity.year)}`
               return (
-                <g key={entity.id} style={{ cursor: 'pointer' }} onClick={open}>
+                <g
+                  key={entity.id}
+                  style={{ cursor: 'pointer' }}
+                  onClick={open}
+                  role="button"
+                  tabIndex={0}
+                  aria-label={label}
+                  onKeyDown={(ev) => {
+                    if (ev.key === 'Enter' || ev.key === ' ') {
+                      ev.preventDefault()
+                      navigate(`/entity/${entity.id}`)
+                    }
+                  }}
+                >
                   <line x1={cx} y1={430} x2={cx} y2={cy + 10} stroke={color} strokeWidth="1" opacity=".35" />
                   <circle cx={cx} cy={cy} r="6" fill="var(--bg)" stroke={color} strokeWidth="2" />
                   <circle cx={cx} cy={cy} r="2.4" fill={color} />

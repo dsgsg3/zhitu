@@ -3,7 +3,8 @@ import { ALL } from '../data/index.js'
 import { CATEGORIES, REGIONS } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
 import { SkylineSilhouette } from '../components/SkylineSilhouette.jsx'
-import { useMemo } from 'react'
+import { setPageMeta } from '../meta.js'
+import { useMemo, useEffect } from 'react'
 
 // 精选：首张 2×2 大卡 + 8 张常规卡，4 列 / 2 列网格均无空洞
 const FEATURED = ['tang', 'confucius', 'terracotta-army', 'silk-road', 'rosetta-stone', 'cleopatra', 'mongol-empire', 'marie-curie', 'roman-empire']
@@ -67,6 +68,7 @@ export default function Home() {
   const navigate = useNavigate()
   const picks = useMemo(() => CATEGORIES.map((c) => ({ ...c, count: ALL.filter((e) => e.category === c.key).length })), [])
   const daily = useMemo(() => quoteOfToday(), [])
+  useEffect(() => { setPageMeta() }, [])
   const roam = () => {
     const e = ALL[Math.floor(Math.random() * ALL.length)]
     if (e) navigate(`/entity/${e.id}`)

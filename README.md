@@ -9,15 +9,17 @@
 
 ## 技术栈
 
-Vite 6 + React 18 + react-router-dom 7，纯静态，无后端。全部内容来自 `src/data/*.js` 的静态导出，共 **145 条**档案。
+Vite 6 + React 18 + react-router-dom 7，纯静态，无后端。全部内容来自 `src/data/*.js` 的静态导出，共 **192 条**档案（`npm run validate:data` 可随时核对）。
 
 ## 运行
 
 ```bash
 npm install
-npm run dev      # 开发服务器
-npm run build    # 产出 dist/
-npm run preview  # 本地预览构建产物（带 SPA fallback）
+npm run dev            # 开发服务器
+npm run build          # 产出 dist/
+npm run preview        # 本地预览构建产物（带 SPA fallback）
+npm run validate:data  # 校验档案数据（加数据前后必跑）
+npm run sitemap -- https://your-domain  # 公网部署后生成 dist/sitemap.xml
 ```
 
 ## 部署注意
@@ -59,8 +61,8 @@ src/data/
   figures.js               人物
   artifacts.js             文物 · 建筑
   events.js                事件
-  index.js                 汇总导出 ALL / byId / search / sameEra
-src/pages/                 Home / Timeline / Browse / Detail
+  index.js                 汇总导出 ALL / byId / search(+拼音) / sameEra
+src/pages/                 Home / Timeline / Browse / Detail / NotFound(404)
 src/components/            Header(含搜索) / Footer / EntityCard / ScrollToTop / SkylineSilhouette
 src/styles/                global / home / timeline / browse / detail
 ```
@@ -83,6 +85,7 @@ src/styles/                global / home / timeline / browse / detail
   paragraphs: ['……'],         // 正文，一段一条
   facts: [{ label, value }],  // 关键事实卡
   related: ['changan-city'],  // 关联实体 id，必须真实存在
+  sources: [{ label: '维基百科', url: 'https://zh.wikipedia.org/wiki/唐朝' }], // 出处，建议至少一条
   image: {                   // 配图，可选（Wikimedia Commons 热链，须署名）
     src: 'https://…/960px-….jpg',
     page: 'https://commons.wikimedia.org/wiki/File:…',
@@ -92,10 +95,15 @@ src/styles/                global / home / timeline / browse / detail
 }
 ```
 
-三条约定：
+四条约定：
 
-1. `related` 里的 id **必须已存在**，否则详情页会静默丢弃这条关联。
+1. `related` 里的 id **必须已存在**，否则校验报错（`npm run validate:data`）。
 2. `id` 用小写短横线命名，不要带 `-placeholder`、`-figure` 之类后缀。
 3. 配图只用 Wikimedia Commons 的自由版权图片（Public domain / CC0 / CC BY / CC BY-SA），`author` + `license` 照文件页原样填；批量找图可用 `node tools/fetch-images.mjs` 取候选（须人工审核许可证）。
+4. `sources` 尽量给精确词条直链，拿不准的用 `https://zh.wikipedia.org/w/index.php?search=关键词` 检索链接；缺省时详情页会自动兜底一条检索链接。
 
-年代分期为世界通史口径（上古 / 古典 / 中古 / 近代 / 现代），不按中国王朝切分——否则罗马帝国会被算进「先秦」。分期定义见 `taxonomy.js` 的 `ERAS`。
+新增 / 改动档案后必须跑通 `npm run validate:data`（id 唯一、`related` 有出处、`sources` 格式合法）。
+
+年代分期为世界通史口径（上古 / 古典 / 中古 / 近代 / 现代 / 当代），不按中国王朝切分——否则罗马帝国会被算进「先秦」。分期定义见 `taxonomy.js` 的 `ERAS`。地域含大洋洲（东南亚暂归 `east-asia`）。
+
+搜索走 `src/data/index.js` 的统一匹配（名字 > 外文名 > 标签 > 摘要 > 正文，支持拼音/首字母），档案库筛选与顶栏搜索共用同一逻辑。

@@ -20,6 +20,9 @@
 .era-chip:hover { border-color: var(--line-2); color: var(--ink); }
 .era-chip.active { background: var(--ink); border-color: var(--ink); color: var(--paper); }
 .tl-tools { display: flex; justify-content: center; align-items: center; gap: 8px; margin: 12px 0 0; flex-wrap: wrap; }
+/* 时间轴节点键盘焦点可见（g[role=button] 可 Tab 到达，回车/空格进入详情） */
+.tl-canvas g[role="button"] { outline: none; }
+.tl-canvas g[role="button"]:focus-visible circle { stroke-width: 4; }
 .tl-keys { color: var(--ink-4); font-size: var(--fs-label); letter-spacing: .06em; margin-left: 6px; }
 
 .tl-results { padding: 44px 5vw 0; }

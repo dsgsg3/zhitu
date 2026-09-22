@@ -1,6 +1,7 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { ALL } from '../data/index.js'
+import { setPageMeta } from '../meta.js'
+import { ALL, matchesKeyword, matchScore } from '../data/index.js'
 import { CATEGORIES, REGIONS, ERAS, eraOf } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
 
@@ -10,6 +11,7 @@ export default function Browse() {
   const region = params.get('region') || 'all'
   const era = params.get('era') || 'all'
   const [q, setQ] = useState('')
+  useEffect(() => { setPageMeta('档案库', '分类 / 年代 / 地域三维组合筛选。') }, [])
 
   const set = (key, value) => {
     const next = new URLSearchParams(params)
@@ -23,19 +25,27 @@ export default function Browse() {
     setQ('')
   }
 
-  const list = useMemo(() => {
+  const sorted = useMemo(() => {
     const kw = q.trim().toLowerCase()
-    return ALL.filter((e) => {
+    const out = ALL.filter((e) => {
       if (cat !== 'all' && e.category !== cat) return false
       if (region !== 'all' && e.region !== region) return false
       // era 来自 URL，非法值直接忽略，避免 ERAS.find 返回 undefined 时崩溃
       if (era !== 'all' && ERAS.some((x) => x.key === era) && eraOf(e.year) !== era) return false
-      if (kw && ![e.name, e.foreign || '', e.summary, e.kicker].join(' ').toLowerCase().includes(kw)) return false
+      // 关键词走统一匹配（含拼音），与顶栏搜索一致
+      if (kw && !matchesKeyword(e, kw)) return false
       return true
     })
+    // 有关键词时按相关度排，无关键词时按时间排
+    out.sort((a, b) => {
+      if (kw) {
+        const d = matchScore(a, kw) - matchScore(b, kw)
+        if (d !== 0) return d
+      }
+      return a.year - b.year
+    })
+    return out
   }, [cat, region, era, q])
-
-  const sorted = useMemo(() => [...list].sort((a, b) => a.year - b.year), [list])
 
   return (
     <main className="browse-page">
