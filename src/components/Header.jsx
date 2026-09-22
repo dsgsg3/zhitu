@@ -6,6 +6,7 @@ const NAV = [
   { to: '/', label: '首页' },
   { to: '/timeline', label: '时间轴' },
   { to: '/browse', label: '浏览' },
+  { to: '/collections', label: '专题' },
 ]
 
 export default function Header() {

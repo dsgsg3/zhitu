@@ -2,10 +2,11 @@
 
 一个手机端优先的历史探索站点。文明、人物、文物、事件四类档案铺成一张可以漫游的时间地图。
 
-- **首页**：年轮式入口，九个时间点直接跳进对应历史
-- **时间轴**：可左右拖动的 SVG 长河，覆盖公元前 3500 年至公元 2050 年
-- **档案库**：分类 / 年代 / 地域三维组合筛选
-- **详情**：正文 + 关键事实 + 关联历史 + 同期世界（锚点年份前后 120 年）
+- **首页**：年轮式入口，九个时间点直接跳进对应历史；足迹区显示探索进度与收藏（localStorage，不登录）
+- **时间轴**：可左右拖动的 SVG 长河，覆盖公元前 3500 年至公元 2050 年（节点键盘可达）
+- **档案库**：分类 / 年代 / 地域三维组合筛选，关键词走统一搜索（含拼音）
+- **详情**：正文 + 关键事实 + 关联历史 + 同期世界（锚点年份前后 120 年）+ 参考出处 + 收藏
+- **专题**：编辑精选的阅读路线（`/collections`），顺序即推荐阅读顺序
 
 ## 技术栈
 
@@ -62,7 +63,9 @@ src/data/
   artifacts.js             文物 · 建筑
   events.js                事件
   index.js                 汇总导出 ALL / byId / search(+拼音) / sameEra
-src/pages/                 Home / Timeline / Browse / Detail / NotFound(404)
+  collections.js           专题策展（路线顺序 + 每段导读）
+src/store.js               足迹与收藏（localStorage + useSyncExternalStore）
+src/pages/                 Home / Timeline / Browse / Detail / NotFound(404) / Collections / Collection
 src/components/            Header(含搜索) / Footer / EntityCard / ScrollToTop / SkylineSilhouette
 src/styles/                global / home / timeline / browse / detail
 ```

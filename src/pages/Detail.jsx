@@ -2,6 +2,7 @@ import { useMemo, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import NotFound from './NotFound.jsx'
 import { setPageMeta } from '../meta.js'
+import { useFootprint, markRead, toggleFav, isFav } from '../store.js'
 import { byId, ALL } from '../data/index.js'
 import { CATEGORIES, REGIONS, ERAS, eraOf, eraLabel, formatYear } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
@@ -37,6 +38,13 @@ export default function Detail() {
     if (entity) setPageMeta(entity.name, entity.summary)
   }, [entity])
 
+  // 打开即记为已读（写 localStorage，手下留情：只记一次）
+  const snap = useFootprint()
+  useEffect(() => {
+    if (entity) markRead(entity.id)
+  }, [entity])
+  const fav = entity ? isFav(entity.id, snap) : false
+
   if (!entity) return <NotFound />
 
   const cat = CATEGORIES.find((c) => c.key === entity.category)
@@ -71,6 +79,11 @@ export default function Detail() {
               ? `${formatYear(entity.range[0])} — ${formatYear(entity.range[1] ?? entity.range[0])}`
               : formatYear(entity.year)}
             <span style={{ color: 'var(--ink-faint)' }}>· {entity.kicker}</span>
+          </div>
+          <div className="detail-actions">
+            <button className={`button${fav ? ' button-solid' : ''}`} onClick={() => toggleFav(entity.id)}>
+              {fav ? '★ 已收藏' : '☆ 收藏这一段'}
+            </button>
           </div>
           {entity.image && (
             <figure className="detail-figure">

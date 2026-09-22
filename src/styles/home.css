@@ -25,6 +25,9 @@
 .ring-dot-label { fill: var(--ink); font-size: 12px; font-family: var(--serif); font-weight: 600; }
 .ring-core { fill: none; stroke: var(--line-2); stroke-width: 1; stroke-dasharray: 2 5; }
 .ring-lead { stroke: var(--ink-4); stroke-width: 1; stroke-dasharray: 2 3; }
+/* 年轮刻点键盘焦点可见 */
+.hero-ring g[role="button"] { outline: none; }
+.hero-ring g[role="button"]:focus-visible .ring-dot { fill: var(--accent); }
 
 /* 分类入口 */
 .picks { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding: 0 5vw 64px; }

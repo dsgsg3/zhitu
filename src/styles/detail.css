@@ -11,9 +11,9 @@
 .detail-range { margin-top: 22px; display: flex; align-items: center; gap: 14px; color: var(--accent); font-size: var(--fs-meta); letter-spacing: .06em; font-family: var(--mono); }
 .detail-range .bar { flex: 0 0 52px; height: 2px; background: var(--accent); }
 .detail-range span:last-child { color: var(--ink-3); font-family: var(--sans); letter-spacing: 0; }
-/* 详情头图：21:9 横幅 + 署名行 */
+/* 详情头图：按原图比例自适应（竖构图不再被拦腰截断），超高时收敛 */
 .detail-figure { margin: 30px 0 0; }
-.detail-figure img { display: block; width: 100%; aspect-ratio: 21 / 9; object-fit: cover; border-radius: 5px; border: 1px solid var(--line); background: var(--paper-3); }
+.detail-figure img { display: block; width: 100%; height: auto; max-height: 72vh; object-fit: contain; margin: 0 auto; border-radius: 5px; border: 1px solid var(--line); background: var(--paper-3); }
 .detail-figure figcaption { margin-top: 8px; color: var(--ink-3); font-size: var(--fs-label); letter-spacing: .04em; }
 .detail-figure figcaption a { color: var(--ink-2); text-decoration: underline; text-underline-offset: 2px; }
 .detail-figure figcaption a:hover { color: var(--accent); }
@@ -71,7 +71,9 @@
 @media (max-width: 900px) {
   .detail-body { grid-template-columns: 1fr; gap: 36px; }
   .detail-side { position: static; }
-  .sameera-grid { grid-template-columns: 1fr; }
+  /* 同期世界：窄屏改横滑卡带，不再 6 张全堆叠 */
+  .sameera-grid { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 10px; }
+  .sameera-grid > * { flex: 0 0 82%; scroll-snap-align: start; }
   .detail-hero { padding-top: 44px; }
   .detail-article p.para { text-align: left; }
   .detail-nav { flex-direction: column; }

@@ -237,6 +237,8 @@ export default function Timeline() {
                     }
                   }}
                 >
+                  {/* 隐形点击区：视觉圆点仅 6px，触摸目标扩到 32px */}
+                  <circle cx={cx} cy={cy} r="16" fill="transparent" />
                   <line x1={cx} y1={430} x2={cx} y2={cy + 10} stroke={color} strokeWidth="1" opacity=".35" />
                   <circle cx={cx} cy={cy} r="6" fill="var(--bg)" stroke={color} strokeWidth="2" />
                   <circle cx={cx} cy={cy} r="2.4" fill={color} />
@@ -275,7 +277,7 @@ export default function Timeline() {
           <h3>{selectedEra ? `${ERAS.find((e) => e.key === selectedEra)?.label} 的历史` : '当前视野中的历史'}</h3>
           <span>{resultEntities.length} 条</span>
         </div>
-        <div className="entity-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
+        <div className="tl-results-grid">
           {resultEntities.slice(0, 12).map((e) => <EntityCard key={e.id} entity={e} />)}
         </div>
       </div>

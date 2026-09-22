@@ -1,6 +1,8 @@
 import { Link, useNavigate } from 'react-router-dom'
-import { ALL } from '../data/index.js'
-import { CATEGORIES, REGIONS } from '../data/taxonomy.js'
+import { ALL, byId } from '../data/index.js'
+import { collections } from '../data/collections.js'
+import { useFootprint, readCount, favIds, isRead } from '../store.js'
+import { CATEGORIES, REGIONS, formatYear } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
 import { SkylineSilhouette } from '../components/SkylineSilhouette.jsx'
 import { setPageMeta } from '../meta.js'
@@ -51,7 +53,22 @@ function HeroRingInner({ onPick }) {
         const lx = 240 + 118 * Math.cos(a)
         const ly = 240 + 118 * Math.sin(a)
         return (
-          <g key={e.id} onClick={() => onPick(e.id)} style={{ cursor: 'pointer' }}>
+          <g
+            key={e.id}
+            onClick={() => onPick(e.id)}
+            style={{ cursor: 'pointer' }}
+            role="button"
+            tabIndex={0}
+            aria-label={`${e.label}，${formatYear(e.year)}`}
+            onKeyDown={(ev) => {
+              if (ev.key === 'Enter' || ev.key === ' ') {
+                ev.preventDefault()
+                onPick(e.id)
+              }
+            }}
+          >
+            {/* 隐形点击区：视觉圆点仅 6px，触摸目标扩到 32px */}
+            <circle cx={x} cy={y} r="16" fill="transparent" />
             <line className="ring-lead" x1={x} y1={y} x2={240 + 134 * Math.cos(a)} y2={240 + 134 * Math.sin(a)} />
             <circle className="ring-dot" cx={x} cy={y} r="6" />
             <text className="ring-dot-label" x={lx} y={ly} textAnchor="middle" dominantBaseline="central">{e.label}</text>
@@ -61,6 +78,43 @@ function HeroRingInner({ onPick }) {
       <text x="240" y="234" textAnchor="middle" className="ring-label">5000</text>
       <text x="240" y="254" textAnchor="middle" style={{ fontSize: 14, fill: 'var(--ink)', fontFamily: 'var(--serif)', letterSpacing: '.12em' }}>五千年</text>
     </svg>
+  )
+}
+
+function Footprint() {
+  const navigate = useNavigate()
+  const snap = useFootprint()
+  const done = readCount(snap)
+  const total = ALL.length
+  const pct = Math.round((done / total) * 100)
+  const favs = favIds(snap).map((id) => byId[id]).filter(Boolean).slice(0, 4)
+  const next = [...ALL].sort((a, b) => a.year - b.year).find((e) => !isRead(e.id, snap))
+  return (
+    <section className="section-pad" style={{ paddingTop: 12 }}>
+      <div className="section-head">
+        <div>
+          <p className="eyebrow">你的足迹</p>
+          <h2>{done === 0 ? '五千年，从第一段开始' : `已探索 ${done} / ${total}`}</h2>
+        </div>
+        <div className="side">进度只存在这台设备<br />不登录，不上传</div>
+      </div>
+      <div className="progress-track" role="progressbar" aria-valuenow={done} aria-valuemin={0} aria-valuemax={total} aria-label="探索进度">
+        <div className="progress-fill" style={{ width: `${pct}%` }} />
+      </div>
+      <div className="footprint-meta">
+        <b>{pct}%</b>
+        <span className="footprint-side">★ 收藏 {Object.keys(snap.fav).length} 段</span>
+      </div>
+      <div className="hero-actions" style={{ marginTop: 12 }}>
+        {next && <button className="button button-solid" onClick={() => navigate(`/entity/${next.id}`)}>继续探索：{next.name} →</button>}
+        <Link to="/browse" className="button">去档案库逛逛</Link>
+      </div>
+      {favs.length > 0 && (
+        <div className="entity-grid" style={{ marginTop: 16 }}>
+          {favs.map((e) => <EntityCard key={e.id} entity={e} />)}
+        </div>
+      )}
+    </section>
   )
 }
 
@@ -111,6 +165,8 @@ export default function Home() {
         ))}
       </section>
 
+      <Footprint />
+
       <section className="section-pad" style={{ paddingTop: 12 }}>
         <div className="section-head">
           <div>
@@ -121,6 +177,26 @@ export default function Home() {
         </div>
         <div className="entity-grid">
           {featured.map((e, i) => <EntityCard key={e.id} entity={e} featured={i === 0} />)}
+        </div>
+      </section>
+
+      <section className="section-pad" style={{ paddingTop: 12 }}>
+        <div className="section-head">
+          <div>
+            <p className="eyebrow">专题策展</p>
+            <h2>照着路线读历史</h2>
+          </div>
+          <div className="side"><Link to="/collections">全部专题 →</Link></div>
+        </div>
+        <div className="picks">
+          {collections.slice(0, 4).map((c) => (
+            <Link key={c.id} to={`/collection/${c.id}`} className="pick-card" style={{ '--c': 'var(--gold)' }}>
+              <span className="pick-icon">✦</span>
+              <strong>{c.name}</strong>
+              <small>{c.kicker} · {c.entries.length} 段</small>
+              <b>→</b>
+            </Link>
+          ))}
         </div>
       </section>
 

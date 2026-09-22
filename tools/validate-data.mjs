@@ -2,6 +2,7 @@
 // 全量校验档案数据：id 唯一且规范、分类/地域合法、年份与正文字段齐全、
 // related 必须指向已存在的 id、sources 格式合法。新增档案前必须跑通。
 import { ALL } from '../src/data/index.js'
+import { collections } from '../src/data/collections.js'
 import { REGIONS, CATEGORIES } from '../src/data/taxonomy.js'
 
 const regions = new Set(REGIONS.map((r) => r.key))
@@ -23,6 +24,16 @@ for (const e of ALL) {
   }
   for (const s of e.sources || []) {
     if (!s.label || !/^https?:\/\//.test(s.url || '')) { console.log(`出处格式非法: ${e.id}`); bad++ }
+  }
+}
+const cids = collections.map((c) => c.id)
+const cdup = cids.filter((id, i) => cids.indexOf(id) !== i)
+if (cdup.length) { console.log(`专题id重复: ${cdup.join(',')}`); bad++ }
+for (const c of collections) {
+  if (!c.id || !c.name || !c.entries?.length) { console.log(`专题字段缺失: ${c.id}`); bad++ }
+  for (const en of c.entries || []) {
+    if (!byId[en.id]) { console.log(`专题关联缺失: ${c.id} -> ${en.id}`); bad++ }
+    if (!en.note) { console.log(`专题导读缺失: ${c.id} -> ${en.id}`); bad++ }
   }
 }
 if (bad > 0) {

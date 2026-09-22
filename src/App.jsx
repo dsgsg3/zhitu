@@ -10,6 +10,8 @@ const Timeline = lazy(() => import('./pages/Timeline.jsx'))
 const Browse = lazy(() => import('./pages/Browse.jsx'))
 const Detail = lazy(() => import('./pages/Detail.jsx'))
 const NotFound = lazy(() => import('./pages/NotFound.jsx'))
+const Collections = lazy(() => import('./pages/Collections.jsx'))
+const Collection = lazy(() => import('./pages/Collection.jsx'))
 
 export default function App() {
   return (
@@ -23,6 +25,8 @@ export default function App() {
             <Route path="/timeline" element={<Timeline />} />
             <Route path="/browse" element={<Browse />} />
             <Route path="/entity/:id" element={<Detail />} />
+            <Route path="/collections" element={<Collections />} />
+            <Route path="/collection/:id" element={<Collection />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

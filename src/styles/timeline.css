@@ -29,6 +29,10 @@
 .tl-results-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
 .tl-results-head h3 { font-family: var(--serif); font-size: 24px; font-weight: 600; margin: 0; }
 .tl-results-head span { color: var(--ink-3); font-size: var(--fs-meta); }
+/* 结果区：桌面 4 列，窄屏逐级收窄 */
+.tl-results-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+@media (max-width: 1000px) { .tl-results-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .tl-results-grid { grid-template-columns: 1fr; } }
 
 @media (max-width: 900px) {
   .tl-canvas { height: 400px; }
