@@ -1874,26 +1874,4 @@ export const events = [
     related: ['shang', 'zhou', 'oracle-bones', 'houmuwu-ding', 'confucius'],
     sources: [{ label: '维基百科', url: 'https://zh.wikipedia.org/wiki/%E7%89%A7%E9%87%8E%E4%B9%8B%E6%88%98' }],
   },
-  {
-    id: 'phoenician-alphabet',
-    category: 'event',
-    name: '腓尼基字母',
-    foreign: 'Phoenician alphabet',
-    region: 'middle-east',
-    year: -1050,
-    kicker: '二十二个符号的远程武器',
-    summary: '把几千个字符砍成 22 个字母，希腊、拉丁、阿拉伯文字都是它的后代。',
-    paragraphs: [
-      '约公元前 1050 年，地中海东岸的腓尼基城邦——推罗、西顿、比布鲁斯——做成了那个时代最值钱的生意：从埃及运纸莎草，从黎巴嫩伐雪松，把货物卖遍整个内海。商人没空学埃及圣书字那上千个符号，也没空啃楔形文字的音节表，于是把书斋文字砍到只剩 22 个辅音符号，水手和账房几个星期就能上手。',
-      '这 22 个符号的厉害之处在于「够用」：每个符号记一个辅音，元音靠读者自己补——对闪含语系足够，学起来又只需几周。亚兰商人把它带向两河，希腊人捡到后补上元音字母，再造出拉丁字母；希伯来文与阿拉伯文是它在内地的后代。今天你读到的每一句话，无论中英文，都在这条传播链的另一端——中文是这条链之外的另一个伟大例外。',
-      '文字越便宜，思想跑得越快。希腊人用字母写下荷马与法律，腓尼基人自己却几乎没留下文学作品——历史有时就是这样：发明工具的人，未必是把它用得最响的人。但每一次你写下 A 与 B（它们的名字 Aleph、Beth，本是「牛」与「房子」），都在替这批海上商人署名。',
-    ],
-    facts: [
-      { label: '符号', value: '22 个辅音字母（约前 1050 年定型）' },
-      { label: '后代', value: '希腊 · 拉丁 · 阿拉伯 · 希伯来等' },
-      { label: '词源', value: 'Alphabet ← Aleph（牛）+ Beth（房屋）' },
-    ],
-    related: ['code-of-hammurabi', 'minoan', 'epic-of-gilgamesh', 'arab-empire'],
-    sources: [{ label: '维基百科', url: 'https://zh.wikipedia.org/wiki/%E8%85%93%E5%B0%BC%E5%9F%BA%E5%AD%97%E6%AF%8D' }],
-  },
 ];
