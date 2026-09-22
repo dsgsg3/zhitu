@@ -9,6 +9,8 @@ filemap = {'civilization': 'civilizations', 'figure': 'figures', 'artifact': 'ar
 added, skipped, bad = [], [], []
 for cf in sorted(src.glob('*.txt')):
     chunk = cf.read_text(encoding='utf-8').strip()
+    if not chunk.startswith('    '):
+        chunk = '    ' + chunk  # strip() 会吃掉行首缩进，补回
     m = re.search(r"id: '([^']+)'", chunk)
     c = re.search(r"category: '([^']+)'", chunk)
     if not (chunk.startswith("    id: '") and chunk.endswith('  },') and m and c):
