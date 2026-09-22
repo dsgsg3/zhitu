@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "validate:data": "node tools/gen-slim-index.mjs && node tools/validate-data.mjs",
-    "sitemap": "node tools/sitemap.mjs"
+    "sitemap": "node tools/sitemap.mjs",
+    "review:img": "node tools/gen-image-review.mjs"
   },
   "dependencies": {
     "pinyin-match": "^1.2.10",
