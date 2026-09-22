@@ -24,7 +24,7 @@
 | 候选 id | 名称 | 年 | 一句话理由 | 维基目标 |
 |---|---|---|---|---|
 | ~~western-zhou-founding~~ | ✅ 已加 | -1046 | — | — |
-| ~~phoenician-alphabet~~ | ✅ 已加 | -1050 | — | — |
+| phoenician-alphabet | ⚠️ 已存在 | -1050 | 原档案已有，勿重复添加 | — |
 | assyrian-empire | 亚述帝国 | -911 | 第一个真正的军事帝国 | Neo-Assyrian Empire |
 | ramesses-ii | 拉美西斯二世 | -1303 | 与摩西传说绑定的法老（人物） | Ramesses II |
 | iron-age-revolution | 铁器革命 | -1200 | 平民武装改变战争与政治 | Iron Age |
