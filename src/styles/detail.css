@@ -85,3 +85,12 @@
   .detail-nav { flex-direction: column; }
   .detail-nav-item.next { text-align: left; }
 }
+
+/* 深度条目分节标题 */
+.detail-section { margin-top: 4px; }
+.detail-sec-h {
+  font-family: var(--serif); font-size: 21px; font-weight: 600;
+  margin: 36px 0 16px; padding-left: 12px;
+  border-left: 3px solid var(--cat); letter-spacing: .05em; line-height: 1.5;
+}
+.detail-sec-h + .para { margin-top: 0; }

@@ -12,7 +12,8 @@
     "lint": "eslint .",
     "validate:data": "node tools/gen-slim-index.mjs && node tools/validate-data.mjs",
     "sitemap": "node tools/sitemap.mjs",
-    "review:img": "node tools/gen-image-review.mjs"
+    "review:img": "node tools/gen-image-review.mjs",
+    "audit:depth": "node tools/depth-audit.mjs"
   },
   "dependencies": {
     "pinyin-match": "^1.2.10",

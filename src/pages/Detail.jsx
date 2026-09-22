@@ -119,7 +119,13 @@ export default function Detail() {
 
       <div className="detail-body">
         <article className="detail-article">
-          {entity.paragraphs.map((p, i) => <p key={i} className="para">{p}</p>)}
+          {entity.paragraphs?.map((p, i) => <p key={i} className="para">{p}</p>)}
+          {entity.sections?.map((sec, si) => (
+            <section key={si} className="detail-section">
+              <h2 className="detail-sec-h">{sec.heading}</h2>
+              {sec.paragraphs.map((pj, j) => <p key={j} className="para">{pj}</p>)}
+            </section>
+          ))}
           {entity.quote && (
             <blockquote className="detail-quote">
               <p>“{entity.quote}”</p>
