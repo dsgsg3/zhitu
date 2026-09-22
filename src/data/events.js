@@ -1881,6 +1881,12 @@ export const events = [
     category: 'event',
     name: '武王伐纣',
     foreign: 'Zhou Conquest of Shang',
+    image: {
+      src: 'https://upload.wikimedia.org/wikipedia/commons/d/d0/He_Zun.jpg',
+      page: 'https://commons.wikimedia.org/wiki/File:He%20Zun.jpg',
+      author: '幽灵巴尼',
+      license: 'CC BY-SA 3.0',
+    },
     region: 'china',
     year: -1046,
     kicker: '「中国」一词出现之前的天下',
