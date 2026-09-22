@@ -36,10 +36,11 @@ export const events = [
     foreign: 'An Lushan Rebellion',
     image: {
       src: 'https://upload.wikimedia.org/wikipedia/commons/c/c5/%E5%B8%9D%E9%89%B4%E5%9B%BE%E8%AF%B4.Recueil_Historique_des_Principaux_Traits_de_la_Vie_des_Empereurs_Chinois.95%E5%B8%A7%E5%9B%BE.%E5%BD%A9%E7%BB%98%E5%86%8C%E9%A1%B5.%E7%BA%A618%E4%B8%96%E7%BA%AA_%28page_19_%E5%AE%A0%E5%B9%B8%E7%95%AA%E5%B0%86%29_%28%E5%AE%89%E7%A6%84%E5%B1%B1%29_%28cropped%29.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:%E5%B8%9D%E9%89%B4%E5%9B%BE%E8%AF%B4.Recueil_Historique_des_Principaux_Traits_de_la_Vie_des_Empereurs_Chinois.95%E5%B8%A7%E5%9B%BE.%E5%BD%A9%E7%BB%98%E5%86%8C%E9%A1%B5.%E7%BA%A618%E4%B8%96%E7%BA%AA_(page_19_%E5%AE%A0%E5%B9%B8%E7%95%AA%E5%B0%86)_(%E5%AE%89%E7%A6%84%E5%B1%B1)_(cropped).jpg',
-      author: '书格',
+      page: 'https://commons.wikimedia.org/wiki/File:帝鉴图说.Recueil_Historique_des_Principaux_Traits_de_la_Vie_des_Empereurs_Chinois.95帧图.彩绘册页.约18世纪_(page_19_宠幸番将)_(安禄山)_(cropped).jpg',
+      author: '书格（《帝鉴图说》）',
       license: 'CC0',
     },
+    
     region: 'china',
     year: 755,
     range: [755, 763],
@@ -63,6 +64,12 @@ export const events = [
     category: 'event',
     name: '靖康之变',
     foreign: 'Jingkang Incident',
+    image: {
+      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Huizong.jpg/960px-Huizong.jpg',
+      page: 'https://commons.wikimedia.org/wiki/File:Huizong.jpg',
+      author: '佚名（宋徽宗像）',
+      license: 'Public domain',
+    },
     region: 'china',
     year: 1127,
     range: [1126, 1127],
@@ -92,6 +99,7 @@ export const events = [
       author: 'EditQ',
       license: 'CC BY-SA 4.0',
     },
+    
     region: 'china',
     year: 605,
     kicker: '帝国的动脉',
@@ -115,11 +123,12 @@ export const events = [
     name: '郑和下西洋',
     foreign: 'Zheng He\'s Voyages',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Treasure_Boat_Shipyard_-_Zheng_He_statue_-_P1080029.JPG/960px-Treasure_Boat_Shipyard_-_Zheng_He_statue_-_P1080029.JPG',
-      page: 'https://commons.wikimedia.org/wiki/File:Treasure%20Boat%20Shipyard%20-%20Zheng%20He%20statue%20-%20P1080029.JPG',
-      author: 'User:Vmenkov',
-      license: 'CC BY-SA 3.0',
+      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Voyages_of_Zheng_He.png/960px-Voyages_of_Zheng_He.png',
+      page: 'https://commons.wikimedia.org/wiki/File:Voyages_of_Zheng_He.png',
+      author: 'SY',
+      license: 'CC BY-SA 4.0',
     },
+    
     region: 'china',
     year: 1405,
     range: [1405, 1433],
@@ -145,10 +154,11 @@ export const events = [
     foreign: 'The Opium Wars',
     image: {
       src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Destroying_Chinese_war_junks%2C_by_E._Duncan_%281843%29.jpg/960px-Destroying_Chinese_war_junks%2C_by_E._Duncan_%281843%29.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Destroying_Chinese_war_junks%2C_by_E._Duncan_(1843).jpg',
+      page: 'https://commons.wikimedia.org/wiki/File:Destroying_Chinese_war_junks,_by_E._Duncan_(1843).jpg',
       author: 'Edward Duncan',
       license: 'Public domain',
     },
+    
     region: 'china',
     year: 1840,
     range: [1840, 1842],
@@ -178,6 +188,7 @@ export const events = [
       author: 'Lam Qua',
       license: 'Public domain',
     },
+    
     region: 'china',
     year: 1839,
     kicker: '「苟利国家生死以」',
@@ -200,6 +211,12 @@ export const events = [
     category: 'event',
     name: '辛亥革命',
     foreign: 'The 1911 Revolution',
+    image: {
+      src: 'https://upload.wikimedia.org/wikipedia/commons/7/73/Xinhai_Revolution_in_Shanghai.jpg',
+      page: 'https://commons.wikimedia.org/wiki/File:Xinhai_Revolution_in_Shanghai.jpg',
+      author: '佚名（1911年上海）',
+      license: 'Public domain',
+    },
     region: 'china',
     year: 1911,
     range: [1911, 1912],
@@ -225,10 +242,11 @@ export const events = [
     foreign: 'Chang\'an',
     image: {
       src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Prince_Yide%27s_tomb%2C_towers.jpg/960px-Prince_Yide%27s_tomb%2C_towers.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Prince_Yide\'s_tomb%2C_towers.jpg',
-      author: 'Unknown Tang-era tomb artist',
+      page: "https://commons.wikimedia.org/wiki/File:Prince_Yide's_tomb,_towers.jpg",
+      author: '佚名（唐懿德太子墓壁画）',
       license: 'Public domain',
     },
+    
     region: 'china',
     year: 582,
     kicker: '一座城的兴衰史',
@@ -253,10 +271,11 @@ export const events = [
     foreign: 'Fall of Constantinople',
     image: {
       src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Siege_of_Constantinople_fresco%2C_Moldovi%C8%9Ba_monastery%2C_Vatra_Moldovi%C8%9Bei%2C_2017.jpg/960px-Siege_of_Constantinople_fresco%2C_Moldovi%C8%9Ba_monastery%2C_Vatra_Moldovi%C8%9Bei%2C_2017.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Siege_of_Constantinople_fresco%2C_Moldovi%C8%9Ba_monastery%2C_Vatra_Moldovi%C8%9Bei%2C_2017.jpg',
+      page: 'https://commons.wikimedia.org/wiki/File:Siege_of_Constantinople_fresco,_Moldovița_monastery,_Vatra_Moldoviței,_2017.jpg',
       author: 'DimiTalen',
       license: 'CC0',
     },
+    
     region: 'europe',
     year: 1453,
     range: [1453, 1453],
@@ -286,6 +305,7 @@ export const events = [
       author: 'Flappiefh',
       license: 'CC BY-SA 4.0',
     },
+    
     region: 'europe',
     year: 1347,
     range: [1347, 1351],
@@ -312,9 +332,10 @@ export const events = [
     image: {
       src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Charlemagne_denier_Mayence_812_814.jpg/960px-Charlemagne_denier_Mayence_812_814.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Charlemagne_denier_Mayence_812_814.jpg',
-      author: 'Charlemagne. Autorité émettrice de monnaie indéterminé. Atelier monétaire. Émetteur',
+      author: '佚名（查理曼时期银币）',
       license: 'Public domain',
     },
+    
     region: 'europe',
     year: 800,
     kicker: '欧洲梦的原点',
@@ -340,9 +361,10 @@ export const events = [
     image: {
       src: 'https://upload.wikimedia.org/wikipedia/commons/3/34/VegCorn_%28cropped%29.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:VegCorn_(cropped).jpg',
-      author: '',
+      author: '佚名（玉米，大交换的象征作物）',
       license: 'Public domain',
     },
+    
     region: 'americas',
     year: 1492,
     kicker: '两个世界的碰撞',
@@ -365,6 +387,12 @@ export const events = [
     category: 'event',
     name: '宗教改革',
     foreign: 'The Reformation',
+    image: {
+      src: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Lucas_Cranach_%28I%29_workshop_-_Martin_Luther_%28Uffizi%29.jpg',
+      page: 'https://commons.wikimedia.org/wiki/File:Lucas_Cranach_(I)_workshop_-_Martin_Luther_(Uffizi).jpg',
+      author: 'Workshop of Lucas Cranach the Elder',
+      license: 'Public domain',
+    },
     region: 'europe',
     year: 1517,
     kicker: '一张大字报分裂欧洲',
@@ -388,11 +416,12 @@ export const events = [
     name: '科学革命',
     foreign: 'The Scientific Revolution',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Portrait_of_Sir_Isaac_Newton%2C_1689_%28head_shot_crop%29.jpg/960px-Portrait_of_Sir_Isaac_Newton%2C_1689_%28head_shot_crop%29.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Portrait_of_Sir_Isaac_Newton%2C_1689_(head_shot_crop).jpg',
-      author: 'Godfrey Kneller',
+      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Magdeburg.jpg/960px-Magdeburg.jpg',
+      page: 'https://commons.wikimedia.org/wiki/File:Magdeburg.jpg',
+      author: 'Gaspar Schott（马德堡半球实验版画）',
       license: 'Public domain',
     },
+    
     region: 'europe',
     year: 1543,
     range: [1543, 1700],
@@ -418,10 +447,11 @@ export const events = [
     foreign: 'The Enlightenment',
     image: {
       src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Les_salons_au_XVIIIe_si%C3%A8cle_-_Histoire_Image.jpg/960px-Les_salons_au_XVIIIe_si%C3%A8cle_-_Histoire_Image.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Les_salons_au_XVIIIe_si%C3%A8cle_-_Histoire_Image.jpg',
+      page: 'https://commons.wikimedia.org/wiki/File:Les_salons_au_XVIIIe_siècle_-_Histoire_Image.jpg',
       author: 'Anicet Charles Gabriel Lemonnier',
       license: 'Public domain',
     },
+    
     region: 'europe',
     year: 1751,
     range: [1685, 1800],
@@ -449,10 +479,11 @@ export const events = [
     foreign: 'World War II',
     image: {
       src: 'https://upload.wikimedia.org/wikipedia/commons/1/10/Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg',
-      author: 'Richard Opitz',
+      page: 'https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-646-5188-17,_Flugzeuge_Junkers_Ju_87.jpg',
+      author: 'Richard Opitz（德联邦档案馆）',
       license: 'CC BY-SA 3.0 de',
     },
+    
     region: 'europe',
     year: 1939,
     range: [1939, 1945],
@@ -478,10 +509,11 @@ export const events = [
     foreign: 'The Postwar Order',
     image: {
       src: 'https://upload.wikimedia.org/wikipedia/commons/f/f2/Canadian_Delegation_at_United_Nations_Conference_on_International_Organization_1945.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Canadian%20Delegation%20at%20United%20Nations%20Conference%20on%20International%20Organization%201945.jpg',
-      author: 'Credit: Nicholas Morant / National Film Board of Canada. Phototheque / Library and Archives Canada / C-047570Photographe',
+      page: 'https://commons.wikimedia.org/wiki/File:Canadian_Delegation_at_United_Nations_Conference_on_International_Organization_1945.jpg',
+      author: 'Nicholas Morant（加拿大代表团，旧金山制宪会议）',
       license: 'Public domain',
     },
+    
     region: 'americas',
     year: 1945,
     kicker: '废墟上的新设计',
@@ -506,10 +538,11 @@ export const events = [
     foreign: 'Indian Independence',
     image: {
       src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/India%2C_by_British_Information_Services%2C_1944_restored_version.jpg/960px-India%2C_by_British_Information_Services%2C_1944_restored_version.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:India%2C_by_British_Information_Services%2C_1944_restored_version.jpg',
-      author: 'British Information Services, an agency of the British Government, restoration by Wilfredor',
+      page: 'https://commons.wikimedia.org/wiki/File:India,_by_British_Information_Services,_1944_restored_version.jpg',
+      author: 'British Information Services',
       license: 'Public domain',
     },
+    
     region: 'south-asia',
     year: 1947,
     kicker: '黎明与流血同至',
@@ -538,6 +571,7 @@ export const events = [
       author: 'Douwe C. van der Zee',
       license: 'CC BY-SA 4.0',
     },
+    
     region: 'africa',
     year: -2560,
     kicker: '四千年第一高楼',
@@ -566,6 +600,7 @@ export const events = [
       author: 'Bgabel',
       license: 'CC BY-SA 3.0',
     },
+    
     region: 'europe',
     year: -776,
     range: [-776, 393],
@@ -591,10 +626,11 @@ export const events = [
     foreign: 'Maurya Empire',
     image: {
       src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Maurya_Empire%2C_c.250_BCE_network_model_v01.png/960px-Maurya_Empire%2C_c.250_BCE_network_model_v01.png',
-      page: 'https://commons.wikimedia.org/wiki/File:Maurya_Empire%2C_c.250_BCE_network_model_v01.png',
+      page: 'https://commons.wikimedia.org/wiki/File:Maurya_Empire,_c.250_BCE_network_model_v01.png',
       author: 'Joshua Jonathan',
       license: 'CC0',
     },
+    
     region: 'south-asia',
     year: -321,
     range: [-321, -185],
@@ -624,6 +660,7 @@ export const events = [
       author: 'O. Von Corven',
       license: 'Public domain',
     },
+    
     region: 'africa',
     year: -283,
     range: [-295, -30],
@@ -649,10 +686,11 @@ export const events = [
     foreign: 'Buddhism Reaches China',
     image: {
       src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Ancient_Buddhist_Grottoes_at_Longmen-_Fengxian_Temple%2C_Vairocana_Buddha.jpg/960px-Ancient_Buddhist_Grottoes_at_Longmen-_Fengxian_Temple%2C_Vairocana_Buddha.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Ancient%20Buddhist%20Grottoes%20at%20Longmen-%20Fengxian%20Temple%2C%20Vairocana%20Buddha.jpg',
+      page: 'https://commons.wikimedia.org/wiki/File:Ancient_Buddhist_Grottoes_at_Longmen-_Fengxian_Temple,_Vairocana_Buddha.jpg',
       author: 'Gary Todd',
       license: 'CC0',
     },
+    
     region: 'china',
     year: 67,
     kicker: '一场持续千年的精神移民',
@@ -678,9 +716,10 @@ export const events = [
     image: {
       src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Maqamat_hariri.jpg/960px-Maqamat_hariri.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Maqamat_hariri.jpg',
-      author: 'Zereshk',
+      author: '佚名（《玛卡梅集》抄本插图）',
       license: 'Public domain',
     },
+    
     region: 'middle-east',
     year: 830,
     kicker: '文明的转接头',
@@ -705,10 +744,11 @@ export const events = [
     foreign: 'Paper Travels West',
     image: {
       src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Five_Steps_of_Papermaking_-_Step_1_-_Cutting_and_Moisturizing_of_the_Bamboo_Shoots_-_As_described_by_Cai_Lun_in_105_CE.jpg/960px-Five_Steps_of_Papermaking_-_Step_1_-_Cutting_and_Moisturizing_of_the_Bamboo_Shoots_-_As_described_by_Cai_Lun_in_105_CE.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Five%20Steps%20of%20Papermaking%20-%20Step%201%20-%20Cutting%20and%20Moisturizing%20of%20the%20Bamboo%20Shoots%20-%20As%20described%20by%20Cai%20Lun%20in%20105%20CE.jpg',
-      author: 'Unknown author from the time of Ming dynasty',
+      page: 'https://commons.wikimedia.org/wiki/File:Five_Steps_of_Papermaking_-_Step_1_-_Cutting_and_Moisturizing_of_the_Bamboo_Shoots_-_As_described_by_Cai_Lun_in_105_CE.jpg',
+      author: '佚名（明代造纸步骤图）',
       license: 'Public domain',
     },
+    
     region: 'china',
     year: 751,
     kicker: '一张纸的地缘政治',
@@ -737,6 +777,7 @@ export const events = [
       author: 'SY',
       license: 'CC BY-SA 4.0',
     },
+    
     region: 'middle-east',
     year: 751,
     kicker: '两大帝国的唯一一次交手',
@@ -761,10 +802,11 @@ export const events = [
     foreign: 'The Parthenon',
     image: {
       src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/At_the_British_Museum_2024_078.jpg/960px-At_the_British_Museum_2024_078.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:At%20the%20British%20Museum%202024%20078.jpg',
-      author: 'Photograph by Mike Peel (www.mikepeel.net).',
+      page: 'https://commons.wikimedia.org/wiki/File:At_the_British_Museum_2024_078.jpg',
+      author: 'Mike Peel（摄大英馆藏帕特农浮雕）',
       license: 'CC BY-SA 4.0',
     },
+    
     region: 'europe',
     year: -438,
     range: [-447, -432],
@@ -788,6 +830,12 @@ export const events = [
     category: 'event',
     name: '百家争鸣',
     foreign: 'Hundred Schools of Thought',
+    image: {
+      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Qinghuajian%2C_Suan_Biao.jpg/960px-Qinghuajian%2C_Suan_Biao.jpg',
+      page: 'https://commons.wikimedia.org/wiki/File:Qinghuajian,_Suan_Biao.jpg',
+      author: '佚名（战国清华简《算表》）',
+      license: 'Public domain',
+    },
     region: 'china',
     year: -475,
     range: [-770, -221],
@@ -812,11 +860,12 @@ export const events = [
     name: 'X 射线的发现',
     foreign: 'Discovery of X-rays',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Color_X-ray_photogram.jpg/960px-Color_X-ray_photogram.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Color_X-ray_photogram.jpg',
-      author: 'NickSpiker',
-      license: 'CC BY-SA 4.0',
+      src: 'https://upload.wikimedia.org/wikipedia/commons/8/84/X-ray_by_Wilhelm_R%C3%B6ntgen_of_Albert_von_K%C3%B6lliker%27s_hand_-_18960123-01.jpg',
+      page: "https://commons.wikimedia.org/wiki/File:X-ray_by_Wilhelm_Röntgen_of_Albert_von_Kölliker's_hand_-_18960123-01.jpg",
+      author: 'Wilhelm Röntgen',
+      license: 'Public domain',
     },
+    
     region: 'europe',
     year: 1895,
     kicker: '看见身体内部',
@@ -1394,6 +1443,7 @@ export const events = [
       author: 'Leonardo da Vinci',
       license: 'Public domain',
     },
+    
     region: 'europe',
     year: 1400,
     range: [1300, 1600],
@@ -1422,9 +1472,10 @@ export const events = [
     image: {
       src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Powerloom_weaving_in_1835.jpg/960px-Powerloom_weaving_in_1835.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg',
-      author: 'Illustrator T. Allom, Engraver J. Tingle',
+      author: 'T. Allom',
       license: 'Public domain',
     },
+    
     region: 'europe',
     year: 1760,
     range: [1760, 1840],
@@ -1450,10 +1501,11 @@ export const events = [
     foreign: 'The Crusades',
     image: {
       src: 'https://upload.wikimedia.org/wikipedia/commons/f/f5/Combat_deuxi%C3%A8me_croisade.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Combat_deuxi%C3%A8me_croisade.jpg',
-      author: 'anonymus',
+      page: 'https://commons.wikimedia.org/wiki/File:Combat_deuxième_croisade.jpg',
+      author: '佚名（中世纪细密画）',
       license: 'Public domain',
     },
+    
     region: 'middle-east',
     year: 1096,
     range: [1096, 1291],
@@ -1480,9 +1532,10 @@ export const events = [
     image: {
       src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Magna_Carta_%28British_Library_Cotton_MS_Augustus_II.106%29.jpg/960px-Magna_Carta_%28British_Library_Cotton_MS_Augustus_II.106%29.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Magna_Carta_(British_Library_Cotton_MS_Augustus_II.106).jpg',
-      author: 'Original authors were the barons and King John of England. Uploaded by Earthsound.',
+      author: '佚名（1215年原件）',
       license: 'Public domain',
     },
+    
     region: 'europe',
     year: 1215,
     range: [1215, 1216],
@@ -1508,10 +1561,11 @@ export const events = [
     foreign: 'Russian Revolution',
     image: {
       src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/%D0%9C%D0%B8%D1%82%D0%B8%D0%BD%D0%B3_%D0%BD%D0%B0_%D0%9D%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%B5_%281917%29.jpg/960px-%D0%9C%D0%B8%D1%82%D0%B8%D0%BD%D0%B3_%D0%BD%D0%B0_%D0%9D%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%B5_%281917%29.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B8%D1%82%D0%B8%D0%BD%D0%B3_%D0%BD%D0%B0_%D0%9D%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%B5_(1917).jpg',
-      author: 'unknown; photo retake by George Shuklin',
+      page: 'https://commons.wikimedia.org/wiki/File:Митинг_на_Невском_проспекте_(1917).jpg',
+      author: '佚名（1917年涅瓦大街集会）',
       license: 'Public domain',
     },
+    
     region: 'europe',
     year: 1917,
     range: [1917, 1922],
@@ -1537,10 +1591,11 @@ export const events = [
     foreign: 'May Fourth Movement',
     image: {
       src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Chinese_protestors_march_against_the_Treaty_of_Versailles_%28May_4%2C_1919%29.jpg/960px-Chinese_protestors_march_against_the_Treaty_of_Versailles_%28May_4%2C_1919%29.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Chinese_protestors_march_against_the_Treaty_of_Versailles_(May_4%2C_1919).jpg',
-      author: 'Unknown author',
+      page: 'https://commons.wikimedia.org/wiki/File:Chinese_protestors_march_against_the_Treaty_of_Versailles_(May_4,_1919).jpg',
+      author: '佚名（1919年游行）',
       license: 'Public domain',
     },
+    
     region: 'china',
     year: 1919,
     range: [1919, 1921],
@@ -1566,10 +1621,11 @@ export const events = [
     foreign: 'First Sino-Japanese War',
     image: {
       src: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/%E6%97%85%E9%A1%BA%E6%B5%B7%E5%86%9B%E5%85%AC%E6%89%80.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:%E6%97%85%E9%A1%BA%E6%B5%B7%E5%86%9B%E5%85%AC%E6%89%80.jpg',
-      author: 'Unknown author',
+      page: 'https://commons.wikimedia.org/wiki/File:旅顺海军公所.jpg',
+      author: '佚名',
       license: 'Public domain',
     },
+    
     region: 'east-asia',
     year: 1894,
     range: [1894, 1895],
@@ -1595,10 +1651,11 @@ export const events = [
     foreign: 'Haitian Revolution',
     image: {
       src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Incendie_de_la_Plaine_du_Cap._Massacre_des_Blancs_par_les_esclaves_noirs_r%C3%A9volt%C3%A9s._France_militaire._Martinet_et_Masson.jpg/960px-Incendie_de_la_Plaine_du_Cap._Massacre_des_Blancs_par_les_esclaves_noirs_r%C3%A9volt%C3%A9s._France_militaire._Martinet_et_Masson.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Incendie_de_la_Plaine_du_Cap._Massacre_des_Blancs_par_les_esclaves_noirs_r%C3%A9volt%C3%A9s._France_militaire._Martinet_et_Masson.jpg',
-      author: 'Aaron Martinet / Alphonse-Charles Masson',
+      page: 'https://commons.wikimedia.org/wiki/File:Incendie_de_la_Plaine_du_Cap._Massacre_des_Blancs_par_les_esclaves_noirs_révoltés._France_militaire._Martinet_et_Masson.jpg',
+      author: 'Martinet / Masson',
       license: 'Public domain',
     },
+    
     region: 'americas',
     year: 1791,
     range: [1791, 1804],
@@ -1625,9 +1682,10 @@ export const events = [
     image: {
       src: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
-      author: 'Unknown photographer, Reproduction by Lear 21 at English Wikipedia.',
+      author: '佚名（Lear 21 翻拍）',
       license: 'CC BY-SA 3.0',
     },
+    
     region: 'europe',
     year: 1989,
     range: [1989, 1990],
@@ -1654,9 +1712,10 @@ export const events = [
     image: {
       src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Map_of_USSR_with_SSR_names.svg/960px-Map_of_USSR_with_SSR_names.svg.png',
       page: 'https://commons.wikimedia.org/wiki/File:Map_of_USSR_with_SSR_names.svg',
-      author: 'Special:Contributions/Saul ip. Derivative work by Σ (talk)',
+      author: 'Saul ip',
       license: 'CC BY-SA 3.0',
     },
+    
     region: 'europe',
     year: 1991,
     range: [1989, 1991],
@@ -1686,6 +1745,7 @@ export const events = [
       author: 'John T. Daniels',
       license: 'Public domain',
     },
+    
     region: 'americas',
     year: 1903,
     range: [1903, 1903],

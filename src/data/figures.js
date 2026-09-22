@@ -394,12 +394,7 @@ export const figures = [
       author: '佚名',
       license: 'Public domain',
     },
-    image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/b/be/Cai-lun.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Cai-lun.jpg',
-      author: 'Unknown author',
-      license: 'Public domain',
-    },
+    
     region: 'china',
     year: -63,
     range: [-63, 121],
@@ -549,12 +544,7 @@ export const figures = [
       author: '佚名（大都会藏罗马复制品）',
       license: 'CC0',
     },
-    image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Marble_bust_of_Herodotos_MET_DT11742_%28cropped%29.jpg/960px-Marble_bust_of_Herodotos_MET_DT11742_%28cropped%29.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Marble_bust_of_Herodotos_MET_DT11742_(cropped).jpg',
-      author: '',
-      license: 'CC0',
-    },
+    
     region: 'europe',
     year: -484,
     range: [-484, -425],
@@ -849,12 +839,7 @@ export const figures = [
       author: 'Léon Benett',
       license: 'Public domain',
     },
-    image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Handmade_oil_painting_reproduction_of_Ibn_Battuta_in_Egypt%2C_a_painting_by_Hippolyte_Leon_Benett..jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Handmade_oil_painting_reproduction_of_Ibn_Battuta_in_Egypt%2C_a_painting_by_Hippolyte_Leon_Benett..jpg',
-      author: 'Léon Benett',
-      license: 'Public domain',
-    },
+    
     region: 'africa',
     year: 1304,
     range: [1304, 1369],
@@ -965,6 +950,12 @@ export const figures = [
     category: 'figure',
     name: '塞万提斯与莎士比亚',
     foreign: 'Cervantes & Shakespeare',
+    image: {
+      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Cervantes_J%C3%A1uregui.jpg/960px-Cervantes_J%C3%A1uregui.jpg',
+      page: 'https://commons.wikimedia.org/wiki/File:Cervantes_Jáuregui.jpg',
+      author: 'Juan de Jáuregui（传，塞万提斯像）',
+      license: 'Public domain',
+    },
     region: 'europe',
     year: 1547,
     range: [1547, 1616],
@@ -1052,12 +1043,7 @@ export const figures = [
       author: 'Napoleon Sarony（特斯拉像）',
       license: 'Public domain',
     },
-    image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/7/79/Tesla_circa_1890.jpeg',
-      page: 'https://commons.wikimedia.org/wiki/File:Tesla_circa_1890.jpeg',
-      author: 'Napoleon Sarony',
-      license: 'Public domain',
-    },
+    
     region: 'americas',
     year: 1856,
     range: [1847, 1943],
@@ -1118,12 +1104,7 @@ export const figures = [
       author: 'Yousuf Karsh',
       license: 'Public domain',
     },
-    image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg/960px-Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Sir_Winston_Churchill_-_19086236948_(restored).jpg',
-      author: 'Yousuf Karsh',
-      license: 'Public domain',
-    },
+    
     region: 'europe',
     year: 1874,
     range: [1874, 1965],
@@ -1184,12 +1165,7 @@ export const figures = [
       author: 'Bengt Nyman',
       license: 'CC BY 2.0',
     },
-    image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/D810_4987_Tu_Youyou%2C_medicine_%2822945001843%29_%28cropped%29.jpg/960px-D810_4987_Tu_Youyou%2C_medicine_%2822945001843%29_%28cropped%29.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:D810_4987_Tu_Youyou%2C_medicine_(22945001843)_(cropped).jpg',
-      author: 'Bengt Nyman from Vaxholm, Sweden',
-      license: 'CC BY 2.0',
-    },
+    
     region: 'china',
     year: 1930,
     range: [1930, null],
@@ -1221,12 +1197,7 @@ export const figures = [
       author: '美国政府作品',
       license: 'Public domain',
     },
-    image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/d/dd/Deng_Xiaoping_at_the_arrival_ceremony_for_the_Vice_Premier_of_China_%28cropped%29.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Deng_Xiaoping_at_the_arrival_ceremony_for_the_Vice_Premier_of_China_(cropped).jpg',
-      author: 'Unknown author',
-      license: 'Public domain',
-    },
+    
     region: 'china',
     year: 1904,
     range: [1904, 1997],
@@ -1256,12 +1227,7 @@ export const figures = [
       author: '沈俊绘',
       license: 'Public domain',
     },
-    image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/%E7%8E%8B%E5%AE%88%E4%BB%81.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E5%AE%88%E4%BB%81.jpg',
-      author: 'Shen Junhui (沈俊繪)',
-      license: 'Public domain',
-    },
+    
     region: 'china',
     year: 1472,
     range: [1472, 1529],
@@ -1293,12 +1259,7 @@ export const figures = [
       author: '佚名（元代帝后像）',
       license: 'Public domain',
     },
-    image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/YuanEmperorAlbumGenghisPortrait.jpg/960px-YuanEmperorAlbumGenghisPortrait.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg',
-      author: 'Unknown author',
-      license: 'Public domain',
-    },
+    
     region: 'east-asia',
     year: 1162,
     range: [1162, 1227],
@@ -1328,12 +1289,7 @@ export const figures = [
       author: '土佐光起',
       license: 'Public domain',
     },
-    image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Murasaki-Shikibu-composing-Genji-Monogatari.png/960px-Murasaki-Shikibu-composing-Genji-Monogatari.png',
-      page: 'https://commons.wikimedia.org/wiki/File:Murasaki-Shikibu-composing-Genji-Monogatari.png',
-      author: 'Tosa Mitsuoki (1617 - 1691)',
-      license: 'Public domain',
-    },
+    
     region: 'east-asia',
     year: 973,
     range: [973, 1014],
@@ -1897,12 +1853,7 @@ export const figures = [
       author: 'Jacques-Louis David',
       license: 'Public domain',
     },
-    image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg/960px-Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg',
-      author: 'Jacques-Louis David',
-      license: 'Public domain',
-    },
+    
     region: 'europe',
     year: 1769,
     range: [1769, 1821],
@@ -1934,12 +1885,7 @@ export const figures = [
       author: 'John Jabez Edwin Mayall',
       license: 'Public domain',
     },
-    image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored.png/960px-Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored.png',
-      page: 'https://commons.wikimedia.org/wiki/File:Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored.png',
-      author: 'John Jabez Edwin Mayall',
-      license: 'Public domain',
-    },
+    
     region: 'europe',
     year: 1818,
     range: [1818, 1883],
@@ -1971,12 +1917,7 @@ export const figures = [
       author: 'Alexander Gardner',
       license: 'Public domain',
     },
-    image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/960px-Abraham_Lincoln_O-77_matte_collodion_print.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Abraham_Lincoln_O-77_matte_collodion_print.jpg',
-      author: 'Alexander Gardner',
-      license: 'Public domain',
-    },
+    
     region: 'americas',
     year: 1809,
     range: [1809, 1865],
@@ -2008,12 +1949,7 @@ export const figures = [
       author: '佚名（明）',
       license: 'Public domain',
     },
-    image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/%E6%98%8E%E4%BA%BA%E3%80%8A%E5%B2%B3%E9%A3%9E%E5%83%8F%E3%80%8B%E8%BD%B4.jpg/960px-%E6%98%8E%E4%BA%BA%E3%80%8A%E5%B2%B3%E9%A3%9E%E5%83%8F%E3%80%8B%E8%BD%B4.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:%E6%98%8E%E4%BA%BA%E3%80%8A%E5%B2%B3%E9%A3%9E%E5%83%8F%E3%80%8B%E8%BD%B4.jpg',
-      author: 'Unknown author',
-      license: 'Public domain',
-    },
+    
     region: 'china',
     year: 1103,
     range: [1103, 1142],
@@ -2045,12 +1981,7 @@ export const figures = [
       author: 'Vitsuha（摄现代塑像）',
       license: 'CC0',
     },
-    image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/%E6%9D%8E%E6%B8%85%E7%85%A7%E5%A1%91%E5%83%8F.jpg/960px-%E6%9D%8E%E6%B8%85%E7%85%A7%E5%A1%91%E5%83%8F.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E6%B8%85%E7%85%A7%E5%A1%91%E5%83%8F.jpg',
-      author: 'Vitsuha',
-      license: 'CC0',
-    },
+    
     region: 'china',
     year: 1084,
     range: [1084, 1155],
@@ -2082,12 +2013,7 @@ export const figures = [
       author: '佚名',
       license: 'Public domain',
     },
-    image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/LuXun1930.jpg/960px-LuXun1930.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:LuXun1930.jpg',
-      author: 'Unknown author',
-      license: 'Public domain',
-    },
+    
     region: 'china',
     year: 1881,
     range: [1881, 1936],
@@ -2119,12 +2045,7 @@ export const figures = [
       author: 'Joseph Karl Stieler',
       license: 'Public domain',
     },
-    image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Joseph_Karl_Stieler%27s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg/960px-Joseph_Karl_Stieler%27s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Joseph_Karl_Stieler\'s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg',
-      author: 'Joseph Karl Stieler',
-      license: 'Public domain',
-    },
+    
     region: 'europe',
     year: 1770,
     range: [1770, 1827],
@@ -2156,12 +2077,7 @@ export const figures = [
       author: 'Johann Nepomuk della Croce',
       license: 'Public domain',
     },
-    image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg/960px-The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg',
-      author: 'Johann Nepomuk della Croce',
-      license: 'Public domain',
-    },
+    
     region: 'europe',
     year: 1756,
     range: [1756, 1791],
@@ -2191,12 +2107,7 @@ export const figures = [
       author: 'Nicolas de Largillière',
       license: 'CC0',
     },
-    image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Nicolas_de_Largilli%C3%A8re_-_Portrait_de_Voltaire_%281694-1778%29_en_1718_-_P208_-_mus%C3%A9e_Carnavalet_-_5_%28cropped%29.jpg/960px-Nicolas_de_Largilli%C3%A8re_-_Portrait_de_Voltaire_%281694-1778%29_en_1718_-_P208_-_mus%C3%A9e_Carnavalet_-_5_%28cropped%29.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Nicolas_de_Largilli%C3%A8re_-_Portrait_de_Voltaire_(1694-1778)_en_1718_-_P208_-_mus%C3%A9e_Carnavalet_-_5_(cropped).jpg',
-      author: 'Nicolas de Largillière',
-      license: 'CC0',
-    },
+    
     region: 'europe',
     year: 1694,
     range: [1694, 1778],
@@ -2228,12 +2139,7 @@ export const figures = [
       author: 'Kingkongphoto',
       license: 'CC BY-SA 2.0',
     },
-    image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/960px-Nelson_Mandela_1994.jpg',
-      page: 'https://commons.wikimedia.org/wiki/File:Nelson_Mandela_1994.jpg',
-      author: 'Kingkongphoto &amp; www.celebrity-photos.com from Laurel',
-      license: 'CC BY-SA 2.0',
-    },
+    
     region: 'africa',
     year: 1918,
     range: [1918, 2013],
