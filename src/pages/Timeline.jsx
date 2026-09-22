@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { setPageMeta } from '../meta.js'
-import { ALL } from '../data/index.js'
+import { SLIM } from '../data/slim-index.js'
+import { useData } from '../data/useData.js'
 import { CATEGORIES, ERAS, eraOf, formatYear } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
 
@@ -34,6 +35,20 @@ function layout(ents, width) {
     lanes[lane].push({ entity: e, x })
   }
   return lanes
+}
+
+// 底部卡片网格：需要完整档案（摘要/配图），按需加载，画布与光点始终瞬时可用
+function TimelineResults({ slim }) {
+  const mod = useData()
+  if (!mod) return <div className="route-loading">档案载入中…</div>
+  return (
+    <div className="tl-results-grid">
+      {slim.slice(0, 12).map((s) => {
+        const e = mod.byId[s.id]
+        return e ? <EntityCard key={e.id} entity={e} /> : null
+      })}
+    </div>
+  )
 }
 
 export default function Timeline() {
@@ -144,11 +159,11 @@ export default function Timeline() {
   const yearToX = (y) => ((y - MIN_YEAR) * pxPerYear) - offset * totalPx
   const xToYear = (x) => (x + offset * totalPx) / pxPerYear + MIN_YEAR
 
-  // 显示的实体（当前视口 + 年代过滤）
+  // 显示的实体（当前视口 + 年代过滤）—— 精简索引即可，画布无需正文
   const visible = useMemo(() => {
     const lo = xToYear(-80), hi = xToYear(width + 80)
-    return ALL.filter((e) => {
-      if (selectedEra) return eraOf(e.year) === selectedEra
+    return SLIM.filter((e) => {
+      if (selectedEra) return e.era === selectedEra
       const ey = e.range ? e.range[0] : e.year
       return ey >= lo && ey <= hi
     })
@@ -156,7 +171,7 @@ export default function Timeline() {
 
   const lanes = useMemo(() => (visible.length ? layout(visible, totalPx) : []), [visible, totalPx])
   const resultEntities = selectedEra
-    ? ALL.filter((e) => eraOf(e.year) === selectedEra)
+    ? SLIM.filter((e) => e.era === selectedEra)
     : visible.slice(0, 24)
 
   // 刻度
@@ -277,9 +292,7 @@ export default function Timeline() {
           <h3>{selectedEra ? `${ERAS.find((e) => e.key === selectedEra)?.label} 的历史` : '当前视野中的历史'}</h3>
           <span>{resultEntities.length} 条</span>
         </div>
-        <div className="tl-results-grid">
-          {resultEntities.slice(0, 12).map((e) => <EntityCard key={e.id} entity={e} />)}
-        </div>
+        <TimelineResults slim={resultEntities} />
       </div>
     </main>
   )

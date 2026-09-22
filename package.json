@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "npm run gen:slim",
+    "gen:slim": "node tools/gen-slim-index.mjs",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "validate:data": "node tools/validate-data.mjs",
+    "validate:data": "node tools/gen-slim-index.mjs "validate:data": "node tools/validate-data.mjs""validate:data": "node tools/validate-data.mjs" node tools/validate-data.mjs",
     "sitemap": "node tools/sitemap.mjs"
   },
   "dependencies": {

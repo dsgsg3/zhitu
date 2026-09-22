@@ -1,5 +1,4 @@
 import { Link, useNavigate } from 'react-router-dom'
-import { ALL, byId } from '../data/index.js'
 import { collections } from '../data/collections.js'
 import { useFootprint, readCount, favIds, isRead } from '../store.js'
 import { CATEGORIES, REGIONS, formatYear } from '../data/taxonomy.js'
@@ -7,10 +6,11 @@ import { EntityCard } from '../components/EntityCard.jsx'
 import { SkylineSilhouette } from '../components/SkylineSilhouette.jsx'
 import { setPageMeta } from '../meta.js'
 import { useMemo, useEffect } from 'react'
+import { SLIM, TOTAL } from '../data/slim-index.js'
+import { useData } from '../data/useData.js'
 
 // 精选：首张 2×2 大卡 + 8 张常规卡，4 列 / 2 列网格均无空洞
 const FEATURED = ['tang', 'confucius', 'terracotta-army', 'silk-road', 'rosetta-stone', 'cleopatra', 'mongol-empire', 'marie-curie', 'roman-empire']
-const featured = FEATURED.map((id) => ALL.find((e) => e.id === id)).filter(Boolean)
 
 // 年轮上的刻点：只留 6 个，沿圆周均匀散开，避免标签互相挤压
 const RING_ENTITIES = [
@@ -85,10 +85,10 @@ function Footprint() {
   const navigate = useNavigate()
   const snap = useFootprint()
   const done = readCount(snap)
-  const total = ALL.length
+  const total = TOTAL
   const pct = Math.round((done / total) * 100)
-  const favs = favIds(snap).map((id) => byId[id]).filter(Boolean).slice(0, 4)
-  const next = [...ALL].sort((a, b) => a.year - b.year).find((e) => !isRead(e.id, snap))
+  const next = [...SLIM].sort((a, b) => a.year - b.year).find((e) => !isRead(e.id, snap))
+  const favList = favIds(snap).slice(0, 4)
   return (
     <section className="section-pad" style={{ paddingTop: 12 }}>
       <div className="section-head">
@@ -109,23 +109,34 @@ function Footprint() {
         {next && <button className="button button-solid" onClick={() => navigate(`/entity/${next.id}`)}>继续探索：{next.name} →</button>}
         <Link to="/browse" className="button">去档案库逛逛</Link>
       </div>
-      {favs.length > 0 && (
-        <div className="entity-grid" style={{ marginTop: 16 }}>
-          {favs.map((e) => <EntityCard key={e.id} entity={e} />)}
-        </div>
-      )}
+      <FavCards ids={favList} />
     </section>
+  )
+}
+
+// 收藏卡：需要完整档案，数据到达后渲染
+function FavCards({ ids }) {
+  const mod = useData()
+  if (!mod) return null
+  const favs = ids.map((id) => mod.byId[id]).filter(Boolean)
+  if (!favs.length) return null
+  return (
+    <div className="entity-grid" style={{ marginTop: 16 }}>
+      {favs.map((e) => <EntityCard key={e.id} entity={e} />)}
+    </div>
   )
 }
 
 export default function Home() {
   const navigate = useNavigate()
-  const picks = useMemo(() => CATEGORIES.map((c) => ({ ...c, count: ALL.filter((e) => e.category === c.key).length })), [])
+  const picks = useMemo(() => CATEGORIES.map((c) => ({ ...c, count: SLIM.filter((e) => e.category === c.key).length })), [])
   const daily = useMemo(() => quoteOfToday(), [])
   useEffect(() => { setPageMeta() }, [])
   const roam = () => {
-    const e = ALL[Math.floor(Math.random() * ALL.length)]
-    if (e) navigate(`/entity/${e.id}`)
+    loadData().then(({ ALL }) => {
+      const e = ALL[Math.floor(Math.random() * ALL.length)]
+      if (e) navigate(`/entity/${e.id}`)
+    })
   }
 
   return (
@@ -141,7 +152,7 @@ export default function Home() {
             <button className="button" onClick={roam}>随机漫游 ✦</button>
           </div>
           <div className="hero-stats">
-            <div className="hero-stat"><b>{ALL.length}</b><span>条历史档案</span></div>
+            <div className="hero-stat"><b>{TOTAL}</b><span>条历史档案</span></div>
             <div className="hero-stat"><b>{CATEGORIES.length}</b><span>个探索维度</span></div>
             <div className="hero-stat"><b>{REGIONS.length}</b><span>大文明区域</span></div>
           </div>
@@ -175,9 +186,7 @@ export default function Home() {
           </div>
           <div className="side">每一条都可以点进去<br />看完整的故事与同期世界</div>
         </div>
-        <div className="entity-grid">
-          {featured.map((e, i) => <EntityCard key={e.id} entity={e} featured={i === 0} />)}
-        </div>
+        <FeaturedGrid />
       </section>
 
       <section className="section-pad" style={{ paddingTop: 12 }}>
@@ -210,5 +219,17 @@ export default function Home() {
         </div>
       </section>
     </main>
+  )
+}
+
+// 精选卡：需要完整档案，数据到达后渲染
+function FeaturedGrid() {
+  const mod = useData()
+  if (!mod) return <div className="route-loading">精选载入中…</div>
+  const featured = FEATURED.map((id) => mod.ALL.find((e) => e.id === id)).filter(Boolean)
+  return (
+    <div className="entity-grid">
+      {featured.map((e, i) => <EntityCard key={e.id} entity={e} featured={i === 0} />)}
+    </div>
   )
 }
