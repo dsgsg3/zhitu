@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import { setPageMeta } from '../meta.js'
 import { useFootprint, isRead } from '../store.js'
 import { collectionById } from '../data/collections.js'
-import { byId } from '../data/index.js'
+import { useData } from '../data/useData.js'
 import { EntityCard } from '../components/EntityCard.jsx'
 import NotFound from './NotFound.jsx'
 

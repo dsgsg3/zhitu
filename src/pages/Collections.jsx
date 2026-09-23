@@ -2,7 +2,9 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { setPageMeta } from '../meta.js'
 import { collections } from '../data/collections.js'
-import { byId } from '../data/index.js'
+import { SLIM } from '../data/slim-index.js'
+
+const slimById = Object.fromEntries(SLIM.map((e) => [e.id, e]))
 
 export default function Collections() {
   useEffect(() => { setPageMeta('专题', '编辑精选的阅读路线。') }, [])
@@ -15,7 +17,7 @@ export default function Collections() {
       </div>
       <div className="picks">
         {collections.map((c) => {
-          const names = c.entries.map((en) => byId[en.id]?.name).filter(Boolean).slice(0, 4).join(' · ')
+          const names = c.entries.map((en) => slimById[en.id]?.name).filter(Boolean).slice(0, 4).join(' · ')
           return (
             <Link key={c.id} to={`/collection/${c.id}`} className="pick-card" style={{ '--c': 'var(--gold)' }}>
               <span className="pick-icon">✦</span>

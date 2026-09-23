@@ -3,12 +3,17 @@ import { Link, useParams } from 'react-router-dom'
 import NotFound from './NotFound.jsx'
 import { setPageMeta } from '../meta.js'
 import { useFootprint, markRead, toggleFav, isFav } from '../store.js'
-import { byId, ALL } from '../data/index.js'
+import { useData } from '../data/useData.js'
 import { CATEGORIES, REGIONS, ERAS, eraOf, eraLabel, formatYear } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
 
 export default function Detail() {
   const { id } = useParams()
+  // 全量数据按需加载：首屏只带 194KB 精简索引，正文 chunk 到了再渲染
+  // 注意：loading 判断必须放在所有 Hook 之后，保持 Hook 顺序稳定
+  const mod = useData()
+  const byId = mod ? mod.byId : {}
+  const ALL = mod ? mod.ALL : []
   const entity = byId[id]
 
   // 实体的时间锚点：有区间取中点，否则取年份
@@ -58,6 +63,7 @@ export default function Detail() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [entity])
 
+  if (!mod) return <div className="route-loading">档案载入中…</div>
   if (!entity) return <NotFound />
 
   const cat = CATEGORIES.find((c) => c.key === entity.category)

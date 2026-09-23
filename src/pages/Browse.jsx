@@ -1,9 +1,12 @@
 import { useMemo, useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { setPageMeta } from '../meta.js'
-import { ALL, matchesKeyword, matchScore } from '../data/index.js'
+import { SLIM } from '../data/slim-index.js'
+import { useData } from '../data/useData.js'
+import { matchesKeyword, matchScore } from '../data/match.js'
 import { CATEGORIES, REGIONS, ERAS, eraOf } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
+import { useFootprint, isFav } from '../store.js'
 
 export default function Browse() {
   const [params, setParams] = useSearchParams()
@@ -11,7 +14,14 @@ export default function Browse() {
   const region = params.get('region') || 'all'
   const era = params.get('era') || 'all'
   const [q, setQ] = useState('')
+  const [favOnly, setFavOnly] = useState(false)
+  const snap = useFootprint()
+  const [page, setPage] = useState(1)
+  const PAGE_SIZE = 48
+  const dataMod = useData() // 全量正文按需加载，到了自动升级关键词匹配范围
   useEffect(() => { setPageMeta('档案库', '分类 / 年代 / 地域三维组合筛选。') }, [])
+  // 筛选变化回到第一页
+  useEffect(() => { setPage(1) }, [cat, region, era, q])
 
   const set = (key, value) => {
     const next = new URLSearchParams(params)
@@ -23,17 +33,21 @@ export default function Browse() {
   const clearAll = () => {
     setParams({}, { replace: true })
     setQ('')
+    setFavOnly(false)
   }
 
   const sorted = useMemo(() => {
+    // 全量到达前用精简索引（卡片字段齐全）；到达后升级为正文级匹配
+    const pool = dataMod ? dataMod.ALL : SLIM
     const kw = q.trim().toLowerCase()
-    const out = ALL.filter((e) => {
+    const out = pool.filter((e) => {
       if (cat !== 'all' && e.category !== cat) return false
       if (region !== 'all' && e.region !== region) return false
       // era 来自 URL，非法值直接忽略，避免 ERAS.find 返回 undefined 时崩溃
       if (era !== 'all' && ERAS.some((x) => x.key === era) && eraOf(e.year) !== era) return false
       // 关键词走统一匹配（含拼音），与顶栏搜索一致
       if (kw && !matchesKeyword(e, kw)) return false
+      if (favOnly && !isFav(e.id, snap)) return false
       return true
     })
     // 有关键词时按相关度排，无关键词时按时间排
@@ -45,7 +59,7 @@ export default function Browse() {
       return a.year - b.year
     })
     return out
-  }, [cat, region, era, q])
+  }, [cat, region, era, q, favOnly, snap, dataMod])
 
   return (
     <main className="browse-page">
@@ -66,6 +80,7 @@ export default function Browse() {
             aria-label="在档案库中搜索关键词"
           />
           {q && <button className="filter-chip" onClick={() => setQ('')}>✕</button>}
+          <button className={"filter-chip" + (favOnly ? ' active' : '') + ""} onClick={() => setFavOnly((v) => !v)}>★ 只看收藏</button>
         </div>
         <div className="filter-row">
           <span className="filter-row-label">分类</span>
@@ -103,9 +118,18 @@ export default function Browse() {
           换个筛选条件试试 — 历史总在别处等着你。
         </div>
       ) : (
-        <div className="browse-grid">
-          {sorted.map((e) => <EntityCard key={e.id} entity={e} />)}
-        </div>
+        <>
+          <div className="browse-grid">
+            {sorted.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE).map((e) => <EntityCard key={e.id} entity={e} />)}
+          </div>
+          {sorted.length > PAGE_SIZE && (
+            <nav className="browse-pager" aria-label="翻页">
+              <button className="filter-chip" disabled={page <= 1} onClick={() => { setPage((p) => Math.max(1, p - 1)); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>← 上一页</button>
+              <span className="pager-info">第 {page} / {Math.ceil(sorted.length / PAGE_SIZE)} 页</span>
+              <button className="filter-chip" disabled={page >= Math.ceil(sorted.length / PAGE_SIZE)} onClick={() => { setPage((p) => Math.min(Math.ceil(sorted.length / PAGE_SIZE), p + 1)); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>下一页 →</button>
+            </nav>
+          )}
+        </>
       )}
     </main>
   )

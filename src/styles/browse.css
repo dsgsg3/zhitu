@@ -45,6 +45,9 @@
 .filter-chip.cat.active { background: var(--white); border-color: var(--cat, var(--ink)); color: var(--cat, var(--ink)); font-weight: 600; }
 
 .browse-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.browse-pager { display: flex; justify-content: center; align-items: center; gap: 14px; margin-top: 28px; }
+.browse-pager .filter-chip:disabled { opacity: .35; cursor: default; }
+.pager-info { color: var(--ink-3); font-size: var(--fs-meta); letter-spacing: .06em; }
 .browse-empty { text-align: center; padding: 72px 0; color: var(--ink-2); font-size: var(--fs-body); }
 .browse-empty b { display: block; font-family: var(--serif); font-size: var(--fs-title); color: var(--ink); margin-bottom: 8px; font-weight: 600; }
 

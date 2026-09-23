@@ -1,6 +1,7 @@
 import { NavLink, Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { getTheme, applyTheme } from '../theme.js'
+import { SLIM } from '../data/slim-index.js'
 import { CATEGORIES, formatYear } from '../data/taxonomy.js'
 
 const NAV = [
@@ -26,6 +27,12 @@ export default function Header() {
     applyTheme(next)
   }
 
+  const randomGo = useCallback(() => {
+    if (!SLIM.length) return
+    const e = SLIM[Math.floor(Math.random() * SLIM.length)]
+    navigate('/entity/' + e.id)
+  }, [navigate])
+
   const openSearch = useCallback(() => {
     setSearchOpen(true)
     import('../data/index.js').then(({ ALL }) => setTotal(ALL.length))
@@ -47,10 +54,11 @@ export default function Header() {
         else openSearch()
       }
       if (e.key === 'Escape' && searchOpen) closeSearch()
+      if (e.key.toLowerCase() === 'r' && !searchOpen && !e.metaKey && !e.ctrlKey && e.target.tagName !== 'INPUT') randomGo()
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [searchOpen, openSearch, closeSearch])
+  }, [searchOpen, openSearch, closeSearch, randomGo])
 
   useEffect(() => {
     if (!query.trim()) return
@@ -122,6 +130,14 @@ export default function Header() {
             <span>⌕</span>
             <span>搜索五千年</span>
             <kbd>⌘K</kbd>
+          </button>
+          <button
+            className="theme-toggle"
+            onClick={randomGo}
+            aria-label="随机一条"
+            title="随机一条（R）"
+          >
+            🎲
           </button>
           <button
             className="theme-toggle"

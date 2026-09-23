@@ -1,4 +1,6 @@
-// 生成 src/data/slim-index.js：时间轴与首屏用的精简索引（不含正文与图片）
+// 生成 src/data/slim-index.js：列表/卡片/时间轴用的精简索引。
+// 含卡片所需全部字段（kicker/summary/image），不含正文 paragraphs/sections/facts/sources ——
+// 详情页才按需加载全量。卡片新增字段时记得同步 EntityCard.jsx 的读取。
 // 用法: node tools/gen-slim-index.mjs（prebuild 时自动执行）
 import fs from 'node:fs'
 import { ALL } from '../src/data/index.js'
@@ -8,6 +10,9 @@ const slim = ALL.map((e) => ({
   id: e.id,
   name: e.name,
   foreign: e.foreign || '',
+  kicker: e.kicker || '',
+  summary: e.summary || '',
+  image: e.image || null,
   year: e.year,
   range: e.range || null,
   category: e.category,
