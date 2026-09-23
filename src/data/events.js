@@ -9388,7 +9388,7 @@ image: {
     name: '苏联阿富汗战争',
     foreign: 'Soviet–Afghan War',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/Afghan-Soviet_war.png',
+      src: '/images/soviet-afghan-war.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Afghan-Soviet%20war.png',
       author: 'LLs',
       license: 'CC BY-SA 4.0',
