@@ -1,12 +1,13 @@
 {
- "ok": 0,
- "fail": 5,
+ "ok": 15,
+ "fail": 6,
  "skipped": 479,
  "failed": [
   "tang",
   "majapahit",
   "genoa-republic",
   "ayutthaya",
-  "sokoto-caliphate"
+  "sokoto-caliphate",
+  "soviet-afghan-war"
  ]
 }

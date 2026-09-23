@@ -8601,7 +8601,7 @@ image: {
     name: '征服阿兹特克',
     foreign: 'Fall of Tenochtitlan',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Conquista-de-M%C3%A9xico-por-Cort%C3%A9s-Tenochtitlan-Painting.png/960px-Conquista-de-M%C3%A9xico-por-Cort%C3%A9s-Tenochtitlan-Painting.png',
+      src: '/images/conquest-of-mexico.png',
       page: 'https://commons.wikimedia.org/wiki/File:Conquista-de-M%C3%A9xico-por-Cort%C3%A9s-Tenochtitlan-Painting.png',
       author: 'Unknown author',
       license: 'Public domain',
@@ -8667,7 +8667,7 @@ image: {
     name: '征服印加',
     foreign: 'Spanish conquest of the Inca Empire',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Inca-espa%C3%B1oles.jpg/960px-Inca-espa%C3%B1oles.jpg',
+      src: '/images/conquest-of-peru.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Inca-espa%C3%B1oles.jpg',
       author: 'Scarton (talk · contribs)',
       license: 'CC BY-SA 3.0',
@@ -8733,7 +8733,7 @@ image: {
     name: '广岛与长崎原子弹',
     foreign: 'Atomic bombings of Hiroshima and Nagasaki',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Atomic_cloud_over_Hiroshima.jpg/960px-Atomic_cloud_over_Hiroshima.jpg',
+      src: '/images/hiroshima-nagasaki.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Atomic%20cloud%20over%20Hiroshima.jpg',
       author: 'George R. Caron',
       license: 'Public domain',
@@ -8798,7 +8798,7 @@ image: {
     name: '长征',
     foreign: 'Long March',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/4/49/Long-march.jpg',
+      src: '/images/long-march.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Long-march.jpg',
       author: 'Unknown author',
       license: 'Public domain',
@@ -8864,7 +8864,7 @@ image: {
     name: '越南战争',
     foreign: 'Vietnam War',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Thuong_Duc%2C_Vietnam_-_A_Viet_Cong_prisoner_awaits_interrogation_at_the_A-109_Special_Forces_Detachment_in_Thuong_-_NARA_-_531447.jpg/960px-Thuong_Duc%2C_Vietnam_-_A_Viet_Cong_prisoner_awaits_interrogation_at_the_A-109_Special_Forces_Detachment_in_Thuong_-_NARA_-_531447.jpg',
+      src: '/images/vietnam-war.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Thuong%20Duc%2C%20Vietnam%20-%20A%20Viet%20Cong%20prisoner%20awaits%20interrogation%20at%20the%20A-109%20Special%20Forces%20Detachment%20in%20Thuong%20-%20NARA%20-%20531447.jpg',
       author: 'Unknown author or not provided',
       license: 'Public domain',
@@ -8930,7 +8930,7 @@ image: {
     name: '欧盟成立',
     foreign: 'European Union (Maastricht Treaty)',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/GER_%E2%80%94_BY_%E2%80%94_Regensburg_-_Donaumarkt_1_%28Museum_der_Bayerischen_Geschichte%3B_Vertrag_von_Maastricht%29_%28cropped%29.JPG/960px-GER_%E2%80%94_BY_%E2%80%94_Regensburg_-_Donaumarkt_1_%28Museum_der_Bayerischen_Geschichte%3B_Vertrag_von_Maastricht%29_%28cropped%29.JPG',
+      src: '/images/eu-founding.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:GER%20%E2%80%94%20BY%20%E2%80%94%20Regensburg%20-%20Donaumarkt%201%20(Museum%20der%20Bayerischen%20Geschichte%3B%20Vertrag%20von%20Maastricht)%20(cropped).JPG',
       author: 'User:Mateus2019',
       license: 'CC BY 2.0 de',
@@ -8995,7 +8995,7 @@ image: {
     name: '印巴分治',
     foreign: 'Partition of India',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Partition_Anti-Memorial_Project_close-up.webp/960px-Partition_Anti-Memorial_Project_close-up.webp',
+      src: '/images/partition-of-india.webp',
       page: 'https://commons.wikimedia.org/wiki/File:Partition%20Anti-Memorial%20Project%20close-up.webp',
       author: 'Pritika Chowdhry',
       license: 'CC BY-SA 4.0',
@@ -9060,7 +9060,7 @@ image: {
     name: '苏伊士危机',
     foreign: 'Suez Crisis',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/d/da/Suez_crisis.jpg',
+      src: '/images/suez-crisis.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Suez%20crisis.jpg',
       author: '2130991likithgunadala unknown',
       license: 'CC BY-SA 4.0',
@@ -9125,7 +9125,7 @@ image: {
     name: '美国铁路大贯通',
     foreign: 'First transcontinental railroad',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/East_and_West_Shaking_hands_at_the_laying_of_last_rail_Union_Pacific_Railroad_-_Restoration.jpg/960px-East_and_West_Shaking_hands_at_the_laying_of_last_rail_Union_Pacific_Railroad_-_Restoration.jpg',
+      src: '/images/transcontinental-railroad.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:East%20and%20West%20Shaking%20hands%20at%20the%20laying%20of%20last%20rail%20Union%20Pacific%20Railroad%20-%20Restoration.jpg',
       author: 'Andrew J. Russell / Adam Cuerden',
       license: 'Public domain',
@@ -9190,7 +9190,7 @@ image: {
     name: '文化大革命',
     foreign: 'Cultural Revolution',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/2/28/Unissued_Wen14%2C_Long_Live_the_All-round_Victory_of_the_Proletarian_Cultural_Revolution_%28Draft_2%29%2C_1968.jpg',
+      src: '/images/cultural-revolution.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Unissued%20Wen14%2C%20Long%20Live%20the%20All-round%20Victory%20of%20the%20Proletarian%20Cultural%20Revolution%20(Draft%202)%2C%201968.jpg',
       author: '',
       license: 'Public domain',
@@ -9257,7 +9257,7 @@ image: {
     name: '大跃进',
     foreign: 'Great Leap Forward',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/A_Great_Leap_Forward_Propaganda_Painting_on_the_Wall_of_a_Rural_House_in_Shanghai.jpg/960px-A_Great_Leap_Forward_Propaganda_Painting_on_the_Wall_of_a_Rural_House_in_Shanghai.jpg',
+      src: '/images/great-leap-forward.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:A%20Great%20Leap%20Forward%20Propaganda%20Painting%20on%20the%20Wall%20of%20a%20Rural%20House%20in%20Shanghai.jpg',
       author: 'Fayhoo',
       license: 'CC BY-SA 3.0',
@@ -9323,7 +9323,7 @@ image: {
     name: '香港回归',
     foreign: 'Handover of Hong Kong',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/HK_%E9%8A%85%E9%91%BC%E7%81%A3_CWB_%E7%B6%AD%E5%A4%9A%E5%88%A9%E4%BA%9E%E5%85%AC%E5%9C%92_Victoria_Park_for_01-July_event_June_2018_IX2_%E6%85%B6%E7%A5%9D%E9%A6%99%E6%B8%AF%E5%9B%9E%E6%AD%B8_Transfer_of_sovereignty_over_of_Hong_Kong_16.jpg/960px-HK_%E9%8A%85%E9%91%BC%E7%81%A3_CWB_%E7%B6%AD%E5%A4%9A%E5%88%A9%E4%BA%9E%E5%85%AC%E5%9C%92_Victoria_Park_for_01-July_event_June_2018_IX2_%E6%85%B6%E7%A5%9D%E9%A6%99%E6%B8%AF%E5%9B%9E%E6%AD%B8_Transfer_of_sovereignty_over_of_Hong_Kong_16.jpg',
+      src: '/images/hong-kong-handover.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:HK%20%E9%8A%85%E9%91%BC%E7%81%A3%20CWB%20%E7%B6%AD%E5%A4%9A%E5%88%A9%E4%BA%9E%E5%85%AC%E5%9C%92%20Victoria%20Park%20for%2001-July%20event%20June%202018%20IX2%20%E6%85%B6%E7%A5%9D%E9%A6%99%E6%B8%AF%E5%9B%9E%E6%AD%B8%20Transfer%20of%20sovereignty%20over%20of%20Hong%20Kong%2016.jpg',
       author: 'HOI hung Wan Daimen',
       license: 'CC BY-SA 4.0',
@@ -9454,7 +9454,7 @@ image: {
     name: '维基百科上线',
     foreign: 'Wikipedia',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Space_Shuttle_Columbia_launching.jpg/960px-Space_Shuttle_Columbia_launching.jpg',
+      src: '/images/wikipedia-launch.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Space%20Shuttle%20Columbia%20launching.jpg',
       author: 'NASA',
       license: 'Public domain',

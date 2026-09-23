@@ -7241,7 +7241,7 @@ image: {
     name: '阿兹特克太阳石',
     foreign: 'Aztec sun stone',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Aztec_Sun_Stone_Replica_cropped.jpg/960px-Aztec_Sun_Stone_Replica_cropped.jpg',
+      src: '/images/aztec-sun-stone.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Aztec%20Sun%20Stone%20Replica%20cropped.jpg',
       author: 'en:User:Ancheta Wis',
       license: 'CC BY-SA 2.5',
@@ -7307,7 +7307,7 @@ image: {
     name: '三星堆',
     foreign: 'Sanxingdui',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Sanxingdui_Oct_2007_585.jpg/960px-Sanxingdui_Oct_2007_585.jpg',
+      src: '/images/sanxingdui.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Sanxingdui%20Oct%202007%20585.jpg',
       author: 'G41rn8',
       license: 'CC BY-SA 4.0',
