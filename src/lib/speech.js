@@ -5,6 +5,8 @@ let mode = '' // '' | 'loading' | 'playing'
 let audioEl = null
 let chainUrls = []
 let chainIdx = 0
+let preloadEl = null
+let currentTitle = '历史档案朗读'
 let sysSpeaking = false
 let keepalive = null
 const listeners = new Set()
@@ -28,6 +30,19 @@ export function onSpeechChange(l) {
   return () => listeners.delete(l)
 }
 
+function setMediaMetadata(title) {
+  if (!('mediaSession' in navigator)) return
+  try {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: title || '历史档案朗读',
+      artist: '观史 · 把五千年握在手里',
+    })
+    navigator.mediaSession.setActionHandler('play', () => { if (audioEl) audioEl.play().catch(() => {}) })
+    navigator.mediaSession.setActionHandler('pause', () => { if (audioEl) audioEl.pause() })
+    try { navigator.mediaSession.setActionHandler('stop', () => stopSpeak()) } catch (e) {}
+  } catch (e) {}
+}
+
 function setState(next) {
   mode = next.mode
   sysSpeaking = next.sysSpeaking
@@ -39,6 +54,7 @@ export function stopSpeak() {
     audioEl.pause()
     audioEl = null
   }
+  if (preloadEl) { preloadEl = null }
   chainUrls = []
   chainIdx = 0
   if (ttsSupported() && window.speechSynthesis) window.speechSynthesis.cancel()
@@ -79,17 +95,23 @@ export function speakText(text) {
 function playChain(onDone) {
   if (chainIdx >= chainUrls.length) {
     audioEl = null
-    setState({ mode: '', sysSpeaking: false })
     if (onDone) onDone()
     return
   }
+  setMediaMetadata(currentTitle)
+  if (chainUrls[chainIdx + 1]) {
+    preloadEl = new Audio(chainUrls[chainIdx + 1])
+    preloadEl.preload = 'auto'
+    preloadEl.load()
+  }
+  audioEl = new Audio(chainUrls[chainIdx])
   audioEl = new Audio(chainUrls[chainIdx])
   audioEl.onended = () => { chainIdx++; playChain(onDone) }
   audioEl.onerror = () => { audioEl = null; setState({ mode: '', sysSpeaking: false }) }
   audioEl.play().catch(() => { setState({ mode: '', sysSpeaking: false }) })
 }
 
-export function playPrebuilt(id) {
+export function playPrebuilt(id, title) {
   return new Promise((resolve) => {
     if (!mode && audioEl) { resolve(false); return }
     const el = new Audio('/audio/' + id + '.mp3')
@@ -101,7 +123,8 @@ export function playPrebuilt(id) {
   })
 }
 
-export async function speakLong(text) {
+export async function speakLong(text, title) {
+  currentTitle = title || '历史柿案哈读'
   stopSpeak()
   setState({ mode: 'loading', sysSpeaking: false })
   // 分段合成（每段 ≤600 字，句子边界切分）

@@ -65,11 +65,11 @@ export default function Detail() {
     setTtsMsg('')
     // 预生成音频优先：秒开；没有则走在线合成
     try {
-      const played = await playPrebuilt(entity.id)
+      const played = await playPrebuilt(entity.id, entity.name)
       if (played) return
     } catch (e) { /* fall through */ }
     try {
-      await speakLong(text)
+      await speakLong(text, entity.name)
     } catch (e) {
       if (ttsSupported()) {
         const r = speakText(text)
