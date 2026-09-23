@@ -2550,7 +2550,7 @@ image: {
     name: '杰内大清真寺',
     foreign: 'Great Mosque of Djenné',
     image: {
-      src: '/images/djenne-mosque.jpg',
+      src: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Great_Mosque_of_Djenn%C3%A9_3.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Djenné_3.jpg',
       author: '佚名',
       license: 'Public domain',
@@ -2622,7 +2622,7 @@ image: {
     name: '纳斯卡线条',
     foreign: 'Nazca Lines',
     image: {
-      src: '/images/nazca-lines.JPG',
+      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_49.JPG/960px-L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_49.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:Líneas_de_Nazca,_Nazca,_Perú,_2015-07-29,_DD_49.JPG',
       author: 'Diego Delso',
       license: 'CC BY-SA 4.0',
@@ -2695,7 +2695,7 @@ image: {
     name: '婆罗浮屠',
     foreign: 'Borobudur',
     image: {
-      src: '/images/borobudur.jpg',
+      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/960px-Pradaksina.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Pradaksina.jpg',
       author: 'Heri nugroho',
       license: 'CC BY-SA 4.0',
@@ -2770,7 +2770,7 @@ image: {
     name: '桑奇大塔',
     foreign: 'Great Stupa at Sanchi',
     image: {
-      src: '/images/sanchi-stupa.jpg',
+      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Stupa_1%2C_Sanchi_02.jpg/960px-Stupa_1%2C_Sanchi_02.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Stupa_1,_Sanchi_02.jpg',
       author: 'Bernard Gagnon',
       license: 'CC BY-SA 3.0',
@@ -2844,7 +2844,7 @@ image: {
     name: '佩特拉',
     foreign: 'Petra',
 image: {
-      src: '/images/petra.JPG',
+      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Deir_Petra.JPG/960px-Al_Deir_Petra.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:Al_Deir_Petra.JPG',
       author: 'Azurfrog',
       license: 'CC BY-SA 3.0',
@@ -2919,7 +2919,7 @@ image: {
     name: '奇琴伊察',
     foreign: 'Chichen Itza',
 image: {
-      src: '/images/chichen-itza.jpg',
+      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/960px-Chichen_Itza_3.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Chichen_Itza_3.jpg',
       author: 'Daniel Schwen',
       license: 'CC BY-SA 4.0',
@@ -2993,7 +2993,7 @@ image: {
     name: '拉利贝拉岩石教堂',
     foreign: 'Rock-Hewn Churches of Lalibela',
 image: {
-      src: '/images/lalibela.jpg',
+      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Lalibela%2C_san_giorgio%2C_esterno_24.jpg/960px-Lalibela%2C_san_giorgio%2C_esterno_24.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Lalibela,_san_giorgio,_esterno_24.jpg',
       author: 'Sailko',
       license: 'CC BY 3.0',
@@ -3073,7 +3073,7 @@ image: {
     name: '摩艾石像',
     foreign: 'Moai',
 image: {
-      src: '/images/moai.JPG',
+      src: 'https://upload.wikimedia.org/wikipedia/commons/5/50/AhuTongariki.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:AhuTongariki.JPG',
       author: 'Ian Sewell',
       license: 'CC BY 2.5',

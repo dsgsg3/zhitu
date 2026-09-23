@@ -4163,7 +4163,7 @@ image: {
     name: '柏林墙倒塌',
     foreign: 'Fall of the Berlin Wall',
     image: {
-      src: '/images/fall-of-berlin-wall.jpg',
+      src: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
       author: '佚名（Lear 21 翻拍）',
       license: 'CC BY-SA 3.0',
@@ -4242,7 +4242,7 @@ image: {
     name: '苏联解体',
     foreign: 'Dissolution of the Soviet Union',
     image: {
-      src: '/images/fall-of-ussr.png',
+      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Map_of_USSR_with_SSR_names.svg/960px-Map_of_USSR_with_SSR_names.svg.png',
       page: 'https://commons.wikimedia.org/wiki/File:Map_of_USSR_with_SSR_names.svg',
       author: 'Saul ip',
       license: 'CC BY-SA 3.0',
@@ -4321,7 +4321,7 @@ image: {
     name: '莱特兄弟首飞',
     foreign: 'First powered flight',
     image: {
-      src: '/images/first-flight.jpg',
+      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/First_flight2.jpg/960px-First_flight2.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:First_flight2.jpg',
       author: 'John T. Daniels',
       license: 'Public domain',
@@ -4400,7 +4400,7 @@ image: {
     name: '九一一袭击',
     foreign: 'September 11 attacks',
     image: {
-      src: '/images/september-11.jpeg',
+      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/WTC_smoking_on_9-11.jpeg/960px-WTC_smoking_on_9-11.jpeg',
       page: 'https://commons.wikimedia.org/wiki/File:WTC_smoking_on_9-11.jpeg',
       author: 'Flickr user Michael Foran',
       license: 'CC BY 2.0',
@@ -4478,7 +4478,7 @@ image: {
     name: '全球金融危机',
     foreign: 'Financial crisis of 2007–2008',
     image: {
-      src: '/images/global-financial-crisis.jpg',
+      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Lehman_Brothers_Times_Square_by_David_Shankbone.jpg/960px-Lehman%20Brothers%20Times%20Square%20by%20David%20Shankbone.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Lehman%20Brothers%20Times%20Square%20by%20David%20Shankbone.jpg',
       author: 'David Shankbone',
       license: 'CC BY-SA 3.0',
@@ -4556,7 +4556,7 @@ image: {
     name: '新冠大流行',
     foreign: 'COVID-19 pandemic',
     image: {
-      src: '/images/covid-pandemic.jpg',
+      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg/960px-Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg',
       author: 'Gustavo Basso',
       license: 'CC BY-SA 4.0',
@@ -4635,7 +4635,7 @@ image: {
     name: '人工智能时代',
     foreign: 'The AI Era',
     image: {
-      src: '/images/ai-era.jpg',
+      src: 'https://upload.wikimedia.org/wikipedia/commons/5/55/FHvAG5.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:FHvAG5.jpg',
       author: 'Alzinous',
       license: 'CC BY-SA 4.0',
@@ -4713,7 +4713,7 @@ image: {
     name: '武王伐纣',
     foreign: 'Zhou Conquest of Shang',
     image: {
-      src: '/images/western-zhou-founding.jpg',
+      src: 'https://upload.wikimedia.org/wikipedia/commons/d/d0/He_Zun.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:He%20Zun.jpg',
       author: '幽灵巴尼',
       license: 'CC BY-SA 3.0',
@@ -4776,6 +4776,7 @@ image: {
       { label: '维基百科', url: 'https://zh.wikipedia.org/wiki/%E7%89%A7%E9%87%8E%E4%B9%8B%E6%88%98' },
     ],
   },
+
   {
     id: 'battle-of-lepanto',
     category: 'event',
