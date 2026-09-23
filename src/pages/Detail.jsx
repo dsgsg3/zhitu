@@ -6,7 +6,7 @@ import { useFootprint, markRead, toggleFav, isFav } from '../store.js'
 import { useData } from '../data/useData.js'
 import { CATEGORIES, REGIONS, ERAS, eraOf, eraLabel, formatYear } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
-import { speakLong, speakText, stopSpeak, isSpeaking, getMode, onSpeechChange, ttsSupported } from '../lib/speech.js'
+import { speakLong, speakText, stopSpeak, isSpeaking, getMode, onSpeechChange, ttsSupported, playPrebuilt } from '../lib/speech.js'
 
 export default function Detail() {
   const { id } = useParams()
@@ -63,6 +63,11 @@ export default function Detail() {
     const secs = (entity.sections || []).map((s) => s.heading + '。' + s.paragraphs.join(' ')).join(' ')
     const text = entity.name + '。' + (entity.summary || '') + '。' + paras + secs
     setTtsMsg('')
+    // 预生成音频优先：秒开；没有则走在线合成
+    try {
+      const played = await playPrebuilt(entity.id)
+      if (played) return
+    } catch (e) { /* fall through */ }
     try {
       await speakLong(text)
     } catch (e) {
