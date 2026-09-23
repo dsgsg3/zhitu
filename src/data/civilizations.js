@@ -5564,7 +5564,7 @@ image: {
     name: '神圣罗马帝国',
     foreign: 'Holy Roman Empire',
     image: {
-      src: '/images/holy-roman-empire.jpg',
+      src: '/images/holy-roman-empire.png',
       page: 'https://commons.wikimedia.org/wiki/File:Banner_of_the_Holy_Roman_Emperor_with_haloes_(1430-1806).svg',
       author: 'David Liuzzo, eagle by N3MO',
       license: 'CC BY-SA 3.0',
@@ -6302,7 +6302,7 @@ image: {
     name: '德里苏丹国',
     foreign: 'Delhi Sultanate',
     image: {
-      src: '/images/delhi-sultanate.jpg',
+      src: '/images/delhi-sultanate.png',
       page: 'https://commons.wikimedia.org/wiki/File:Map_of_the_Mamluk_Dynasty.png',
       author: 'Maps created from DEMIS Mapserver, which are public domain. Koba-chan Territorial area: पाटलिपुत्र (talk), per Schwartbe',
       license: 'CC BY-SA 3.0',
