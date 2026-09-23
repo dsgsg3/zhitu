@@ -20,13 +20,12 @@ export default function Browse() {
   const PAGE_SIZE = 48
   const dataMod = useData() // 全量正文按需加载，到了自动升级关键词匹配范围
   useEffect(() => { setPageMeta('档案库', '分类 / 年代 / 地域三维组合筛选。') }, [])
-  // 筛选变化回到第一页
-  useEffect(() => { setPage(1) }, [cat, region, era, q])
 
   const set = (key, value) => {
     const next = new URLSearchParams(params)
     if (value === 'all') next.delete(key); else next.set(key, value)
     setParams(next, { replace: true })
+    setPage(1) // 筛选变化回到第一页
   }
 
   const filtered = cat !== 'all' || region !== 'all' || era !== 'all' || q.trim() !== ''
@@ -75,11 +74,11 @@ export default function Browse() {
           <input
             className="browse-search"
             value={q}
-            onChange={(e) => setQ(e.target.value)}
+            onChange={(e) => { setQ(e.target.value); setPage(1) }}
             placeholder="在筛选结果中搜索，如：黄金、字母、陵墓…"
             aria-label="在档案库中搜索关键词"
           />
-          {q && <button className="filter-chip" onClick={() => setQ('')}>✕</button>}
+          {q && <button className="filter-chip" onClick={() => { setQ(''); setPage(1) }}>✕</button>}
           <button className={"filter-chip" + (favOnly ? ' active' : '') + ""} onClick={() => setFavOnly((v) => !v)}>★ 只看收藏</button>
         </div>
         <div className="filter-row">

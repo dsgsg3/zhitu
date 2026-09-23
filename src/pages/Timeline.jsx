@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { setPageMeta } from '../meta.js'
 import { SLIM } from '../data/slim-index.js'
 import { useData } from '../data/useData.js'
-import { CATEGORIES, ERAS, eraOf, formatYear } from '../data/taxonomy.js'
+import { CATEGORIES, ERAS, formatYear } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
 
 const MIN_YEAR = -3500
