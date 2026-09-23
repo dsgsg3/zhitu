@@ -73,10 +73,10 @@ export default function Detail() {
     try {
       const played = await playPrebuilt(entity.id, entity.name)
       if (played) return
-    } catch (e) { /* fall through */ }
+    } catch { /* fall through */ }
     try {
       await speakLong(text, entity.name)
-    } catch (e) {
+    } catch {
       if (ttsSupported()) {
         const r = speakText(text)
         setTtsMsg(r.ok ? '' : '朗读启动失败，请重试或调高媒体音量')
