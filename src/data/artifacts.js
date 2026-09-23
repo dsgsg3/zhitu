@@ -6,7 +6,7 @@ export const artifacts = [
     name: '兵马俑',
     foreign: 'Terracotta Army',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/51714-Terracota-Army.jpg/960px-51714-Terracota-Army.jpg',
+      src: '/images/terracotta-army.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:51714-Terracota-Army.jpg',
       author: 'xiquinhosilva',
       license: 'CC BY 2.0',
@@ -73,7 +73,7 @@ export const artifacts = [
     name: '后母戊鼎',
     foreign: 'Houmuwu Ding',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/HouMuWuDingFullView.jpg/960px-HouMuWuDingFullView.jpg',
+      src: '/images/houmuwu-ding.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:HouMuWuDingFullView.jpg',
       author: 'Mlogic',
       license: 'CC BY-SA 3.0',
@@ -152,7 +152,7 @@ image: {
     name: '罗塞塔石碑',
     foreign: 'Rosetta Stone',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Rosetta_Stone.JPG/960px-Rosetta_Stone.JPG',
+      src: '/images/rosetta-stone.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:Rosetta_Stone.JPG',
       author: 'Hans Hillewaert',
       license: 'CC BY-SA 4.0',
@@ -218,7 +218,7 @@ image: {
     name: '汉谟拉比法典石碑',
     foreign: 'Code of Hammurabi',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/P1050763_Louvre_code_Hammurabi_face_rwk.JPG/960px-P1050763_Louvre_code_Hammurabi_face_rwk.JPG',
+      src: '/images/code-of-hammurabi.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:P1050763_Louvre_code_Hammurabi_face_rwk.JPG',
       author: 'Mbzt',
       license: 'CC BY 3.0',
@@ -296,7 +296,7 @@ image: {
     name: '清明上河图',
     foreign: 'Along the River During Qingming',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Bianjing_city_gate.JPG/960px-Bianjing_city_gate.JPG',
+      src: '/images/qingming-scroll.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:Bianjing_city_gate.JPG',
       author: '张择端（《清明上河图》局部）',
       license: 'Public domain',
@@ -376,7 +376,7 @@ image: {
     name: '元青花',
     foreign: 'Yuan Blue-and-White Porcelain',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Yuan_Plum_Jar%28Baluster%29.JPG/960px-Yuan_Plum_Jar%28Baluster%29.JPG',
+      src: '/images/blue-white-porcelain.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:Yuan_Plum_Jar(Baluster).JPG',
       author: 'VK Cheong',
       license: 'CC BY-SA 3.0',
@@ -455,7 +455,7 @@ image: {
     name: '图坦卡蒙黄金面具',
     foreign: 'Tutankhamun\'s Mask',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/CairoEgMuseumTaaMaskMostlyPhotographed.jpg/960px-CairoEgMuseumTaaMaskMostlyPhotographed.jpg',
+      src: '/images/tutankhamun-mask.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:CairoEgMuseumTaaMaskMostlyPhotographed.jpg',
       author: 'Roland Unger',
       license: 'Public domain',
@@ -533,7 +533,7 @@ image: {
     name: '死海古卷',
     foreign: 'Dead Sea Scrolls',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Great_Isaiah_Scroll_Ch53.jpg/960px-Great_Isaiah_Scroll_Ch53.jpg',
+      src: '/images/dead-sea-scrolls.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Great_Isaiah_Scroll_Ch53.jpg',
       author: 'Ardon Bar Hama（摄）',
       license: 'Public domain',
@@ -614,7 +614,7 @@ image: {
     name: '「五星出东方利中国」锦护臂',
     foreign: 'The "Five Stars" Brocade',
 image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/e/ea/%22Five_stars_rising_in_the_East%22_armband.jpg',
+      src: '/images/silk-letter.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:%22Five_stars_rising_in_the_East%22_armband.jpg',
       author: '佚名（汉代织锦）',
       license: 'Public domain',
@@ -692,7 +692,7 @@ image: {
     name: '圣索菲亚大教堂',
     foreign: 'Hagia Sophia',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hagia_Sophia_%28228968325%29.jpeg/960px-Hagia_Sophia_%28228968325%29.jpeg',
+      src: '/images/hagia-sophia.jpeg',
       page: 'https://commons.wikimedia.org/wiki/File:Hagia_Sophia_(228968325).jpeg',
       author: 'Adli Wahid',
       license: 'CC BY-SA 3.0',
@@ -771,7 +771,7 @@ image: {
     name: '敦煌藏经洞',
     foreign: 'Library Cave (Dunhuang)',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Mogao_Caves_%2854376969262%29.jpg/960px-Mogao_Caves_%2854376969262%29.jpg',
+      src: '/images/dunhuang-library-cave.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Mogao_Caves_(54376969262).jpg',
       author: 'xiquinhosilva',
       license: 'CC BY 2.0',
@@ -837,7 +837,7 @@ image: {
     name: '安提基特拉机械',
     foreign: 'Antikythera Mechanism',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Antikythera_Fragment_A_%28Front%29.webp/960px-Antikythera_Fragment_A_%28Front%29.webp',
+      src: '/images/antikythera-mechanism.webp',
       page: 'https://commons.wikimedia.org/wiki/File:Antikythera_Fragment_A_(Front).webp',
       author: 'Logg Tandy',
       license: 'CC BY 4.0',
@@ -909,7 +909,7 @@ image: {
     name: '凯尔经',
     foreign: 'Book of Kells',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/LindisfarneFol27rIncipitMatt.jpg/960px-LindisfarneFol27rIncipitMatt.jpg',
+      src: '/images/lindisfarne-gospels.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:LindisfarneFol27rIncipitMatt.jpg',
       author: 'Eadfrith of Lindisfarne（传）',
       license: 'Public domain',
@@ -981,7 +981,7 @@ image: {
     name: '维京长船',
     foreign: 'Viking Longship',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Gokstadskipet1.jpg/960px-Gokstadskipet1.jpg',
+      src: '/images/viking-longship.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Gokstadskipet1.jpg',
       author: 'Karamell',
       license: 'CC BY-SA 2.5',
@@ -1054,7 +1054,7 @@ image: {
     name: '赫里福德世界地图',
     foreign: 'Hereford Mappa Mundi',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Hereford-Karte.jpg/960px-Hereford-Karte.jpg',
+      src: '/images/mappa-mundi.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Hereford-Karte.jpg',
       author: '佚名（13世纪）',
       license: 'Public domain',
@@ -1125,7 +1125,7 @@ image: {
     name: '《四十二行圣经》',
     foreign: 'Gutenberg Bible',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg/960px-Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg',
+      src: '/images/liberty-bell-press.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Gutenberg_Bible,_Lenox_Copy,_New_York_Public_Library,_2009._Pic_01.jpg',
       author: 'NYC Wanderer',
       license: 'CC BY-SA 2.0',
@@ -1197,7 +1197,7 @@ image: {
     name: '泥活字与《金刚经》印本',
     foreign: 'Movable Type & Diamond Sutra',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Metal_movable_type.jpg/960px-Metal_movable_type.jpg',
+      src: '/images/movable-type.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Metal_movable_type.jpg',
       author: 'Willi Heidelbach',
       license: 'CC BY 2.5',
@@ -1270,7 +1270,7 @@ image: {
     name: '宝船与航海图',
     foreign: 'Treasure Ships & Mao Kun Chart',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Treasure_boat_shipyard.jpg/960px-Treasure_boat_shipyard.jpg',
+      src: '/images/zhenghe-shipyard.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Treasure_boat_shipyard.jpg',
       author: 'Rolfmueller',
       license: 'CC BY-SA 3.0',
@@ -1343,7 +1343,7 @@ image: {
     name: '星盘与波特兰海图',
     foreign: 'Astrolabe & Portolan Chart',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Khalili_Collection_Islamic_Art_sci_0430_back.jpg/960px-Khalili_Collection_Islamic_Art_sci_0430_back.jpg',
+      src: '/images/astrolabe-portolan.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Khalili_Collection_Islamic_Art_sci_0430_back.jpg',
       author: 'Khalili Collections',
       license: 'CC BY-SA 3.0 igo',
@@ -1422,7 +1422,7 @@ image: {
     name: '马王堆帛画与辛追夫人',
     foreign: 'Mawangdui Silk Banner',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/T-shaped_Painting_on_Silk_-_Google_Art_Project.jpg/960px-T-shaped_Painting_on_Silk_-_Google_Art_Project.jpg',
+      src: '/images/moon-rabbit-tomb.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:T-shaped_Painting_on_Silk_-_Google_Art_Project.jpg',
       author: '佚名（西汉帛画）',
       license: 'Public domain',
@@ -1501,7 +1501,7 @@ image: {
     name: '萨顿胡头盔',
     foreign: 'Sutton Hoo Helmet',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/1966_Ordnance_Survey_-_Sutton_Hoo_helmet.jpg/960px-1966_Ordnance_Survey_-_Sutton_Hoo_helmet.jpg',
+      src: '/images/sutton-hoo-helmet.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:1966_Ordnance_Survey_-_Sutton_Hoo_helmet.jpg',
       author: 'Arthur Thomas Chester',
       license: 'Public domain',
@@ -1580,7 +1580,7 @@ image: {
     name: '贝宁青铜器',
     foreign: 'Benin Bronzes',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Benin_brass_plaque_03_%28cropped%29.jpg/960px-Benin_brass_plaque_03_%28cropped%29.jpg',
+      src: '/images/benin-bronzes.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Benin_brass_plaque_03_(cropped).jpg',
       author: '佚名（贝宁宫廷铜牌）',
       license: 'CC BY-SA 3.0',
@@ -1659,7 +1659,7 @@ image: {
     name: 'ENIAC 与「第一只臭虫」',
     foreign: 'ENIAC & the First Bug',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/ENIAC_Penn1.jpg/960px-ENIAC_Penn1.jpg',
+      src: '/images/first-computer-bug.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:ENIAC_Penn1.jpg',
       author: 'TexasDex',
       license: 'CC BY-SA 3.0',
@@ -1738,7 +1738,7 @@ image: {
     name: '万里长城',
     foreign: 'The Great Wall',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/960px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg',
+      src: '/images/great-wall.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:The_Great_Wall_of_China_at_Jinshanling-edit.jpg',
       author: 'Severin.stalder',
       license: 'CC BY-SA 3.0',
@@ -1818,7 +1818,7 @@ image: {
     name: '《吉尔伽美什史诗》',
     foreign: 'Epic of Gilgamesh',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/British_Museum_Flood_Tablet.jpg/960px-British_Museum_Flood_Tablet.jpg',
+      src: '/images/epic-of-gilgamesh.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:British_Museum_Flood_Tablet.jpg',
       author: '佚名（大英博物馆洪水石板）',
       license: 'CC0',
@@ -1898,7 +1898,7 @@ image: {
     name: '空中花园',
     foreign: 'Hanging Gardens of Babylon',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Ren%C3%A9-Antoine_Houasse_-_Nabuchodonosor_et_Semiramis_fait_%C3%A9lever_les_jardins_de_Babylone_%28Versailles%29.jpg/960px-Ren%C3%A9-Antoine_Houasse_-_Nabuchodonosor_et_Semiramis_fait_%C3%A9lever_les_jardins_de_Babylone_%28Versailles%29.jpg',
+      src: '/images/hanging-gardens.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:René-Antoine_Houasse_-_Nabuchodonosor_et_Semiramis_fait_élever_les_jardins_de_Babylone_(Versailles).jpg',
       author: 'René-Antoine Houasse',
       license: 'Public domain',
@@ -1977,7 +1977,7 @@ image: {
     name: '吴哥窟',
     foreign: 'Angkor Wat',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Angkor_Wat.jpg/960px-Angkor_Wat.jpg',
+      src: '/images/angkor-wat.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg',
       author: 'Bjørn Christian Tørrissen',
       license: 'CC BY-SA 4.0',
@@ -2050,7 +2050,7 @@ image: {
     name: '泰姬陵',
     foreign: 'Taj Mahal',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/960px-Taj_Mahal_%28Edited%29.jpeg',
+      src: '/images/taj-mahal.jpeg',
       page: 'https://commons.wikimedia.org/wiki/File:Taj_Mahal_%28Edited%29.jpeg',
       author: 'Yann, edited by Jim Carter',
       license: 'CC BY-SA 4.0',
@@ -2124,7 +2124,7 @@ image: {
     name: '阿旃陀石窟',
     foreign: 'Ajanta Caves',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Ajanta_%2863%29.jpg/960px-Ajanta_%2863%29.jpg',
+      src: '/images/ajanta-caves.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Ajanta_(63).jpg',
       author: 'Soman',
       license: 'CC BY 2.5',
@@ -2198,7 +2198,7 @@ image: {
     name: '大津巴布韦遗址',
     foreign: 'Great Zimbabwe',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Conical_Tower_-_Great_Enclosure_III_%2833736918448%29.jpg/960px-Conical_Tower_-_Great_Enclosure_III_%2833736918448%29.jpg',
+      src: '/images/great-zimbabwe.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Conical_Tower_-_Great_Enclosure_III_(33736918448).jpg',
       author: 'Andrew Moore',
       license: 'CC BY-SA 2.0',
@@ -2272,7 +2272,7 @@ image: {
     name: '马丘比丘',
     foreign: 'Machu Picchu',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/960px-Machu_Picchu%2C_2023_%28012%29.jpg',
+      src: '/images/machu-picchu.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Machu_Picchu,_2023_(012).jpg',
       author: 'Draceane',
       license: 'CC BY-SA 4.0',
@@ -2408,7 +2408,7 @@ image: {
     name: '紫禁城',
     foreign: 'Forbidden City',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg/960px-The_Forbidden_City_-_View_from_Coal_Hill.jpg',
+      src: '/images/forbidden-city.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:The_Forbidden_City_-_View_from_Coal_Hill.jpg',
       author: 'Pixelflake',
       license: 'CC BY-SA 3.0',
@@ -2476,7 +2476,7 @@ image: {
     name: '凡尔赛宫',
     foreign: 'Palace of Versailles',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_%28cropped%29.jpg/960px-Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_%28cropped%29.jpg',
+      src: '/images/versailles-palace.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Vue_aérienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_(cropped).jpg',
       author: 'ToucanWings',
       license: 'CC BY-SA 3.0',
@@ -2550,7 +2550,7 @@ image: {
     name: '杰内大清真寺',
     foreign: 'Great Mosque of Djenné',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Great_Mosque_of_Djenn%C3%A9_3.jpg',
+      src: '/images/djenne-mosque.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Djenné_3.jpg',
       author: '佚名',
       license: 'Public domain',
@@ -2622,7 +2622,7 @@ image: {
     name: '纳斯卡线条',
     foreign: 'Nazca Lines',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_49.JPG/960px-L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_49.JPG',
+      src: '/images/nazca-lines.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:Líneas_de_Nazca,_Nazca,_Perú,_2015-07-29,_DD_49.JPG',
       author: 'Diego Delso',
       license: 'CC BY-SA 4.0',
@@ -2695,7 +2695,7 @@ image: {
     name: '婆罗浮屠',
     foreign: 'Borobudur',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/960px-Pradaksina.jpg',
+      src: '/images/borobudur.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Pradaksina.jpg',
       author: 'Heri nugroho',
       license: 'CC BY-SA 4.0',
@@ -2770,7 +2770,7 @@ image: {
     name: '桑奇大塔',
     foreign: 'Great Stupa at Sanchi',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Stupa_1%2C_Sanchi_02.jpg/960px-Stupa_1%2C_Sanchi_02.jpg',
+      src: '/images/sanchi-stupa.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Stupa_1,_Sanchi_02.jpg',
       author: 'Bernard Gagnon',
       license: 'CC BY-SA 3.0',
@@ -2844,7 +2844,7 @@ image: {
     name: '佩特拉',
     foreign: 'Petra',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Deir_Petra.JPG/960px-Al_Deir_Petra.JPG',
+      src: '/images/petra.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:Al_Deir_Petra.JPG',
       author: 'Azurfrog',
       license: 'CC BY-SA 3.0',
@@ -2919,7 +2919,7 @@ image: {
     name: '奇琴伊察',
     foreign: 'Chichen Itza',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/960px-Chichen_Itza_3.jpg',
+      src: '/images/chichen-itza.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Chichen_Itza_3.jpg',
       author: 'Daniel Schwen',
       license: 'CC BY-SA 4.0',
@@ -2993,7 +2993,7 @@ image: {
     name: '拉利贝拉岩石教堂',
     foreign: 'Rock-Hewn Churches of Lalibela',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Lalibela%2C_san_giorgio%2C_esterno_24.jpg/960px-Lalibela%2C_san_giorgio%2C_esterno_24.jpg',
+      src: '/images/lalibela.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Lalibela,_san_giorgio,_esterno_24.jpg',
       author: 'Sailko',
       license: 'CC BY 3.0',
@@ -3073,7 +3073,7 @@ image: {
     name: '摩艾石像',
     foreign: 'Moai',
 image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/5/50/AhuTongariki.JPG',
+      src: '/images/moai.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:AhuTongariki.JPG',
       author: 'Ian Sewell',
       license: 'CC BY 2.5',
@@ -3153,7 +3153,7 @@ image: {
     name: '巨石阵',
     foreign: 'Stonehenge',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/960px-Stonehenge2007_07_30.jpg',
+      src: '/images/stonehenge.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Stonehenge2007_07_30.jpg',
       author: 'garethwiscombe',
       license: 'CC BY 2.0',
@@ -3227,7 +3227,7 @@ image: {
     name: '甲骨文',
     foreign: 'Oracle bone script',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Oracle_bones_pit.JPG/960px-Oracle_bones_pit.JPG',
+      src: '/images/oracle-bones.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:Oracle_bones_pit.JPG',
       author: 'Chez Cåsver',
       license: 'CC BY 2.0',
@@ -3301,7 +3301,7 @@ image: {
     name: '庞贝古城',
     foreign: 'Pompeii',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Aerial_image_of_Pompeii_and_Mount_Vesuvius_%28view_from_the_southeast%29.jpg/960px-Aerial_image_of_Pompeii_and_Mount_Vesuvius_%28view_from_the_southeast%29.jpg',
+      src: '/images/pompeii.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Aerial_image_of_Pompeii_and_Mount_Vesuvius_(view_from_the_southeast).jpg',
       author: 'Carsten Steger',
       license: 'CC BY-SA 4.0',
@@ -3375,7 +3375,7 @@ image: {
     name: '圆明园',
     foreign: 'Old Summer Palace',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/20090731_Remains_of_the_Old_Summer_Palace_02.jpg/960px-20090731_Remains_of_the_Old_Summer_Palace_02.jpg',
+      src: '/images/yuanmingyuan.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:20090731_Remains_of_the_Old_Summer_Palace_02.jpg',
       author: 'Windmemories',
       license: 'CC BY-SA 4.0',
@@ -3450,7 +3450,7 @@ image: {
     name: '指南针',
     foreign: 'Magnetic compass',
 image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/5/53/Model_Si_Nan_of_Han_Dynasty.jpg',
+      src: '/images/magnetic-compass.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Model_Si_Nan_of_Han_Dynasty.jpg',
       author: '佚名（司南模型）',
       license: 'CC BY-SA 3.0',
@@ -3523,7 +3523,7 @@ image: {
     name: '悉尼歌剧院',
     foreign: 'Sydney Opera House',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/960px-Sydney_Australia._%2821339175489%29.jpg',
+      src: '/images/sydney-opera-house.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Sydney_Australia._(21339175489).jpg',
       author: 'Bernard Spragg',
       license: 'CC0',
@@ -3597,7 +3597,7 @@ image: {
     name: '巴约挂毯',
     foreign: 'Bayeux Tapestry',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Odo_bayeux_tapestry.png/960px-Odo_bayeux_tapestry.png',
+      src: '/images/bayeux-tapestry.png',
       page: 'https://commons.wikimedia.org/wiki/File:Odo_bayeux_tapestry.png',
       author: '',
       license: 'Public domain',
@@ -3670,7 +3670,7 @@ image: {
     name: '凯尔经',
     foreign: 'Book of Kells',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/KellsFol292rIncipJohn.jpg',
+      src: '/images/book-of-kells.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:KellsFol292rIncipJohn.jpg',
       author: 'Unknown author',
       license: 'Public domain',
@@ -3743,7 +3743,7 @@ image: {
     name: '娜芙蒂蒂胸像',
     foreign: 'Nefertiti Bust',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Nofretete_Neues_Museum.jpg/960px-Nofretete_Neues_Museum.jpg',
+      src: '/images/bust-of-nefertiti.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Nofretete_Neues_Museum.jpg',
       author: 'Philip Pikart',
       license: 'CC BY-SA 3.0',
@@ -3816,7 +3816,7 @@ image: {
     name: '伊什塔尔城门',
     foreign: 'Ishtar Gate',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Berl%C3%ADn%2C_Museo_de_P%C3%A9rgamo_05.jpg/960px-Berl%C3%ADn%2C_Museo_de_P%C3%A9rgamo_05.jpg',
+      src: '/images/ishtar-gate.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Berl%C3%ADn%2C_Museo_de_P%C3%A9rgamo_05.jpg',
       author: 'LBM1948',
       license: 'CC BY-SA 4.0',
@@ -3889,7 +3889,7 @@ image: {
     name: '乌尔军旗',
     foreign: 'Standard of Ur',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Denis_Bourez_-_British_Museum%2C_London_%288747049029%29_%282%29.jpg/960px-Denis_Bourez_-_British_Museum%2C_London_%288747049029%29_%282%29.jpg',
+      src: '/images/standard-of-ur.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Denis_Bourez_-_British_Museum%2C_London_(8747049029)_(2).jpg',
       author: 'Denis Bourez from France',
       license: 'CC BY 2.0',
@@ -3962,7 +3962,7 @@ image: {
     name: '贝希斯敦铭文',
     foreign: 'Behistun Inscription',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/%DA%A9%D8%AA%DB%8C%D8%A8%D9%87_%D8%AF%D8%A7%D8%B1%DB%8C%D9%88%D8%B4_%28_%D8%A8%DB%8C%D8%B3%D8%AA%D9%88%D9%86%28.jpg/960px-%DA%A9%D8%AA%DB%8C%D8%A8%D9%87_%D8%AF%D8%A7%D8%B1%DB%8C%D9%88%D8%B4_%28_%D8%A8%DB%8C%D8%B3%D8%AA%D9%88%D9%86%28.jpg',
+      src: '/images/behistun-inscription.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:%DA%A9%D8%AA%DB%8C%D8%A8%D9%87_%D8%AF%D8%A7%D8%B1%DB%8C%D9%88%D8%B4_(_%D8%A8%DB%8C%D8%B3%D8%AA%D9%88%D9%86(.jpg',
       author: 'Korosh.091',
       license: 'CC BY-SA 4.0',
@@ -4033,7 +4033,7 @@ image: {
     name: '大卫像',
     foreign: 'David (Michelangelo)',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/%27David%27_by_Michelangelo_Fir_JBU004.jpg/960px-%27David%27_by_Michelangelo_Fir_JBU004.jpg',
+      src: '/images/david-sculpture.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:\'David\'_by_Michelangelo_Fir_JBU004.jpg',
       author: 'Jörg Bittner Unna',
       license: 'CC BY 3.0',
@@ -4175,7 +4175,7 @@ image: {
     name: '神奈川冲浪里',
     foreign: 'The Great Wave off Kanagawa',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/960px-Tsunami_by_hokusai_19th_century.jpg',
+      src: '/images/great-wave.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Tsunami%20by%20hokusai%2019th%20century.jpg',
       author: 'Katsushika Hokusai',
       license: 'Public domain',
@@ -4254,7 +4254,7 @@ image: {
     name: '古腾堡圣经',
     foreign: 'Gutenberg Bible',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Gutenberg_Bible%2C_New_York_Public_Library%2C_USA._Pic_01.jpg/960px-Gutenberg_Bible%2C_New_York_Public_Library%2C_USA._Pic_01.jpg',
+      src: '/images/gutenberg-bible.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Gutenberg%20Bible%2C%20New%20York%20Public%20Library%2C%20USA.%20Pic%2001.jpg',
       author: 'Joshua Keller',
       license: 'CC BY 2.0',
@@ -4325,7 +4325,7 @@ image: {
     name: '哈里森航海钟',
     foreign: 'Marine chronometer',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Frodsham_chronometer_mechanism.jpg/960px-Frodsham_chronometer_mechanism.jpg',
+      src: '/images/harrison-h4.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Frodsham_chronometer_mechanism.jpg',
       author: 'User:Ktr101',
       license: 'CC BY-SA 4.0',
@@ -4396,7 +4396,7 @@ image: {
     name: '蒙娜丽莎',
     foreign: 'Mona Lisa',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/960px-Mona_Lisa.jpg',
+      src: '/images/mona-lisa.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Mona_Lisa.jpg',
       author: 'Leonardo da Vinci',
       license: 'Public domain',
@@ -4546,7 +4546,7 @@ image: {
     name: '奇普绳结',
     foreign: 'Quipu',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/Inca_Quipu.jpg',
+      src: '/images/quipu.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Inca_Quipu.jpg',
       author: 'Claus Ableiter nur hochgeladen aus enWiki',
       license: 'CC BY-SA 3.0',
@@ -4617,7 +4617,7 @@ image: {
     name: '飞行者一号',
     foreign: 'Wright Flyer',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/First_flight2.jpg/960px-First_flight2.jpg',
+      src: '/images/wright-flyer.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:First_flight2.jpg',
       author: 'John T. Daniels',
       license: 'Public domain',
@@ -4688,7 +4688,7 @@ image: {
     name: '和平祭坛',
     foreign: 'Ara Pacis',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Ara_Pacis_%28SW%29.jpg/960px-Ara_Pacis_%28SW%29.jpg',
+      src: '/images/ara-pacis.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Ara_Pacis_(SW).jpg',
       author: 'Rabax63',
       license: 'CC BY-SA 4.0',
@@ -4758,7 +4758,7 @@ image: {
     name: '长信宫灯',
     foreign: 'Changxin Palace Lamp',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/20250118_Changxin_Palace_Lamp_01.jpg/960px-20250118_Changxin_Palace_Lamp_01.jpg',
+      src: '/images/changxin-lamp.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:20250118%20Changxin%20Palace%20Lamp%2001.jpg',
       author: 'Windmemories',
       license: 'CC BY-SA 4.0',
@@ -4828,7 +4828,7 @@ image: {
     name: '贝海姆地球仪',
     foreign: 'Erdapfel (Behaim Globe)',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Erdglobus%2C_sogenannter_Behaim-Globus.jpg/960px-Erdglobus%2C_sogenannter_Behaim-Globus.jpg',
+      src: '/images/globe-of-martin-behaim.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Erdglobus%2C_sogenannter_Behaim-Globus.jpg',
       author: 'Martin Behaim / Georg Glockendon',
       license: 'CC BY-SA 4.0',
@@ -4898,7 +4898,7 @@ image: {
     name: '拉斯科洞窟',
     foreign: 'Lascaux Cave',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Lascaux_painting.jpg',
+      src: '/images/lascaux-cave.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Lascaux%20painting.jpg',
       author: 'EU',
       license: 'Public domain',
@@ -4976,7 +4976,7 @@ image: {
     name: '马达巴地图',
     foreign: 'Madaba Map',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Palmer_%26_Guthe_image_of_the_Medaba_map.jpg/960px-Palmer_%26_Guthe_image_of_the_Medaba_map.jpg',
+      src: '/images/madaba-map.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Palmer_%26_Guthe_image_of_the_Medaba_map.jpg',
       author: 'Paul Palmer, architect in Jerusalem Guthe, Friedrich Wilhelm Leopold Hermann (* 10.5.1849 Westerlinde (Braunschweig), †',
       license: 'Public domain',
@@ -5045,7 +5045,7 @@ image: {
     name: '马王堆帛书',
     foreign: 'Mawangdui Silk Manuscripts',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Mawangdui_Silk_Texts_2.JPG/960px-Mawangdui_Silk_Texts_2.JPG',
+      src: '/images/mawangdui.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:Mawangdui%20Silk%20Texts%202.JPG',
       author: 'Huangdan2060',
       license: 'Public domain',
@@ -5115,7 +5115,7 @@ image: {
     name: '曾侯乙编钟',
     foreign: 'Bianzhong of Marquis Yi of Zeng',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/%E6%B9%96%E5%8C%97%E5%8D%9A%E7%89%A9%E9%A4%A8%E6%9B%BE%E4%BE%AF%E4%B9%99%E7%B7%A8%E9%90%98.jpg/960px-%E6%B9%96%E5%8C%97%E5%8D%9A%E7%89%A9%E9%A4%A8%E6%9B%BE%E4%BE%AF%E4%B9%99%E7%B7%A8%E9%90%98.jpg',
+      src: '/images/zenghouyi-bells.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:%E6%B9%96%E5%8C%97%E5%8D%9A%E7%89%A9%E9%A4%A8%E6%9B%BE%E4%BE%AF%E4%B9%99%E7%B7%A8%E9%90%98.jpg',
       author: 'YouTable',
       license: 'CC BY-SA 4.0',
@@ -5185,7 +5185,7 @@ image: {
     name: '西奈抄本',
     foreign: 'Codex Sinaiticus',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Sinaiticus_text.jpg',
+      src: '/images/codex-sinaiticus.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Sinaiticus_text.jpg',
       author: '',
       license: 'Public domain',
@@ -5256,7 +5256,7 @@ image: {
     name: '内布拉星象盘',
     foreign: 'Nebra sky disc',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Nebra_disc_1.jpg/960px-Nebra_disc_1.jpg',
+      src: '/images/nebra-sky-disc.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Nebra_disc_1.jpg',
       author: 'Frank Vincentz',
       license: 'Public domain',
@@ -5327,7 +5327,7 @@ image: {
     name: '51号照片',
     foreign: 'Photo 51',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/60251254_photo-51-print-qp867-a4_2.jpg/960px-60251254_photo-51-print-qp867-a4_2.jpg',
+      src: '/images/rosalind-photo-51.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:60251254%20photo-51-print-qp867-a4%202.jpg',
       author: 'Emily Willoughby',
       license: 'CC0',
@@ -5398,7 +5398,7 @@ image: {
     name: '威尔伦多夫的维纳斯',
     foreign: 'Venus of Willendorf',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Venus_von_Willendorf_01.jpg/960px-Venus_von_Willendorf_01.jpg',
+      src: '/images/venus-of-willendorf.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Venus%20von%20Willendorf%2001.jpg',
       author: 'User:MatthiasKabel',
       license: 'CC BY 2.5',
@@ -5469,7 +5469,7 @@ image: {
     name: '埃及亡灵书',
     foreign: 'Book of the Dead',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/El_pesado_del_coraz%C3%B3n_en_el_Papiro_de_Hunefer.jpg/960px-El_pesado_del_coraz%C3%B3n_en_el_Papiro_de_Hunefer.jpg',
+      src: '/images/book-of-the-dead.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:El_pesado_del_coraz%C3%B3n_en_el_Papiro_de_Hunefer.jpg',
       author: 'Hunefer',
       license: 'Public domain',
@@ -5538,7 +5538,7 @@ image: {
     name: '纳尔迈调色板',
     foreign: 'Narmer Palette',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Narmer_Palette.jpg/960px-Narmer_Palette.jpg',
+      src: '/images/narmer-palette.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Narmer_Palette.jpg',
       author: 'anonymous',
       license: 'Public domain',
@@ -5607,7 +5607,7 @@ image: {
     name: '罗马斗兽场',
     foreign: 'Colosseum',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/960px-Colosseo_2020.jpg',
+      src: '/images/colosseum.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg',
       author: 'FeaturedPics',
       license: 'CC BY-SA 4.0',
@@ -5676,7 +5676,7 @@ image: {
     name: '迈锡尼狮子门',
     foreign: 'Lion Gate',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Lion_Gate_-_Mycenae_by_Joy_of_Museums.jpg/960px-Lion_Gate_-_Mycenae_by_Joy_of_Museums.jpg',
+      src: '/images/lions-gate-mycenae.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Lion_Gate_-_Mycenae_by_Joy_of_Museums.jpg',
       author: 'Joyofmuseums',
       license: 'CC BY-SA 4.0',
@@ -5745,7 +5745,7 @@ image: {
     name: '阿伽门农黄金面具',
     foreign: 'Mask of Agamemnon',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Athens_%E2%80%94_Mask_of_Agamemnon.jpg/960px-Athens_%E2%80%94_Mask_of_Agamemnon.jpg',
+      src: '/images/mask-of-agamemnon.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Athens_%E2%80%94_Mask_of_Agamemnon.jpg',
       author: 'Gleb Simonov',
       license: 'Public domain',
@@ -5814,7 +5814,7 @@ image: {
     name: '万神殿',
     foreign: 'Pantheon, Rome',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Pantheon_%28Rome%29_-_Right_side_and_front.jpg/960px-Pantheon_%28Rome%29_-_Right_side_and_front.jpg',
+      src: '/images/pantheon-rome.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Pantheon_(Rome)_-_Right_side_and_front.jpg',
       author: 'NikonZ7II',
       license: 'CC BY-SA 4.0',
@@ -5883,7 +5883,7 @@ image: {
     name: '乌尔塔庙',
     foreign: 'Great Ziggurat of Ur',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Ziggarat_of_Ur_001.jpg/960px-Ziggarat_of_Ur_001.jpg',
+      src: '/images/ziggurat-of-ur.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Ziggarat_of_Ur_001.jpg',
       author: 'Tla2006 at English Wikipedia',
       license: 'Public domain',
@@ -5952,7 +5952,7 @@ image: {
     name: '莱克格斯杯',
     foreign: 'Lycurgus Cup',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Front_of_4th_century_CE_Roman_Lycurgus_Cup%2C_British_Museum_%281958%2C1202.1%29.jpg/960px-Front_of_4th_century_CE_Roman_Lycurgus_Cup%2C_British_Museum_%281958%2C1202.1%29.jpg',
+      src: '/images/lycurgus-cup.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Front_of_4th_century_CE_Roman_Lycurgus_Cup%2C_British_Museum_(1958%2C1202.1).jpg',
       author: 'Chappsnet',
       license: 'CC BY 4.0',
@@ -6016,7 +6016,7 @@ image: {
     name: '加尔桥',
     foreign: 'Pont du Gard',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Pont_du_Gard_BLS.jpg/960px-Pont_du_Gard_BLS.jpg',
+      src: '/images/pont-du-gard.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Pont_du_Gard_BLS.jpg',
       author: 'Benh LIEU SONG (Flickr)',
       license: 'CC BY-SA 3.0',
@@ -6081,7 +6081,7 @@ image: {
     name: '琥珀宫',
     foreign: 'Amber Room',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Catherine_Palace_interior_-_Amber_Room_%281%29.jpg/960px-Catherine_Palace_interior_-_Amber_Room_%281%29.jpg',
+      src: '/images/amber-room.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Catherine_Palace_interior_-_Amber_Room_(1).jpg',
       author: 'Branson DeCou',
       license: 'Public domain',
@@ -6146,7 +6146,7 @@ image: {
     name: '额尔金大理石',
     foreign: 'Elgin Marbles',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Elgin-marbles-jan-2024.jpg/960px-Elgin-marbles-jan-2024.jpg',
+      src: '/images/elgin-marbles.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Elgin-marbles-jan-2024.jpg',
       author: 'Jay.M',
       license: 'CC BY-SA 4.0',
@@ -6280,7 +6280,7 @@ image: {
     name: '严岛神社',
     foreign: 'Itsukushima Shrine',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Itsukushima_Shrine_Torii_Gate_%2813890465459%29.jpg/960px-Itsukushima_Shrine_Torii_Gate_%2813890465459%29.jpg',
+      src: '/images/itsukushima.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Itsukushima_Shrine_Torii_Gate_(13890465459).jpg',
       author: 'redlegsfan21',
       license: 'CC BY-SA 2.0',
@@ -6349,7 +6349,7 @@ image: {
     name: '锡吉里耶',
     foreign: 'Sigiriya',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Sigiriya_%28141688197%29.jpeg/960px-Sigiriya_%28141688197%29.jpeg',
+      src: '/images/sigiriya.jpeg',
       page: 'https://commons.wikimedia.org/wiki/File:Sigiriya_(141688197).jpeg',
       author: 'Wrobell',
       license: 'CC BY-SA 3.0',
@@ -6419,7 +6419,7 @@ image: {
     name: '源氏物语绘卷',
     foreign: 'Genji Monogatari Emaki',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Genji_emaki_azumaya.jpg/960px-Genji_emaki_azumaya.jpg',
+      src: '/images/tale-of-genji-scrolls.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Genji_emaki_azumaya.jpg',
       author: 'Imperial court in Kyoto',
       license: 'Public domain',
@@ -6488,7 +6488,7 @@ image: {
     name: '末日审判书',
     foreign: 'Domesday Book',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Domesday-book-1804x972.jpg/960px-Domesday-book-1804x972.jpg',
+      src: '/images/doomsday-book.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Domesday-book-1804x972.jpg',
       author: 'Andrews, William',
       license: 'Public domain',
@@ -6553,7 +6553,7 @@ image: {
     name: '法隆寺',
     foreign: 'Hōryū-ji',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Horyu-ji11s3200.jpg/960px-Horyu-ji11s3200.jpg',
+      src: '/images/horyu-ji.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Horyu-ji11s3200.jpg',
       author: '663highland',
       license: 'CC BY-SA 4.0',
@@ -6618,7 +6618,7 @@ image: {
     name: '金阁寺',
     foreign: 'Kinkaku-ji',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg/960px-Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg',
+      src: '/images/kinkaku-ji.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg',
       author: 'Nacaru',
       license: 'CC BY-SA 4.0',
@@ -6684,7 +6684,7 @@ image: {
     name: '正仓院',
     foreign: 'Shōsōin',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Shoso-in.jpg/960px-Shoso-in.jpg',
+      src: '/images/shoso-in.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Shoso-in.jpg',
       author: '',
       license: 'CC BY-SA 3.0',
@@ -6750,7 +6750,7 @@ image: {
     name: '东大寺',
     foreign: 'Tōdai-ji',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg/960px-T%C5%8Ddai-ji_Kon-d%C5%8D.jpg',
+      src: '/images/todai-ji.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:T%C5%8Ddai-ji_Kon-d%C5%8D.jpg',
       author: 'Wiiii',
       license: 'CC BY-SA 3.0',
@@ -6815,7 +6815,7 @@ image: {
     name: '巴米扬大佛',
     foreign: 'Buddhas of Bamiyan',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/4/46/Buddha_of_Bamiyan.jpg',
+      src: '/images/bamiyan-buddhas.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Buddha_of_Bamiyan.jpg',
       author: 'James Gordon',
       license: 'CC BY 4.0',
@@ -6881,7 +6881,7 @@ image: {
     name: '龙门石窟',
     foreign: 'Longmen Grottoes',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/27427-Luoyang_%2849067744628%29.jpg/960px-27427-Luoyang_%2849067744628%29.jpg',
+      src: '/images/longmen-grottoes.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:27427-Luoyang_(49067744628).jpg',
       author: 'xiquinhosilva',
       license: 'CC BY 2.0',
@@ -6947,7 +6947,7 @@ image: {
     name: '瞻星台',
     foreign: 'Cheomseongdae',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Cheomseongdae_Observatory_under_blue_sky_in_Gyeongju_South_Korea.jpg/960px-Cheomseongdae_Observatory_under_blue_sky_in_Gyeongju_South_Korea.jpg',
+      src: '/images/cheomseongdae.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Cheomseongdae_Observatory_under_blue_sky_in_Gyeongju_South_Korea.jpg',
       author: 'Basile Morin',
       license: 'CC BY-SA 4.0',
@@ -7016,7 +7016,7 @@ image: {
     name: '普兰巴南',
     foreign: 'Prambanan',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Prambanan_Temple_Yogyakarta_Indonesia.jpg/960px-Prambanan_Temple_Yogyakarta_Indonesia.jpg',
+      src: '/images/prambanan.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Prambanan_Temple_Yogyakarta_Indonesia.jpg',
       author: 'Christopher Michel',
       license: 'CC BY-SA 4.0',
@@ -7091,7 +7091,7 @@ image: {
     name: '高丽大藏经',
     foreign: 'Tripitaka Koreana',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Tripitaka_Koreana_02.jpg/960px-Tripitaka_Koreana_02.jpg',
+      src: '/images/tripitaka-koryeo.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Tripitaka_Koreana_02.jpg',
       author: 'Bernard Gagnon',
       license: 'CC0',
@@ -7166,7 +7166,7 @@ image: {
     name: '永乐大典',
     foreign: 'Yongle Encyclopedia',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/8/83/Yongle_Encyclopedia.jpg',
+      src: '/images/yongle-encyclopedia.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Yongle_Encyclopedia.jpg',
       author: 'LW Yang',
       license: 'CC BY 2.0',

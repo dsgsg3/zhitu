@@ -6,7 +6,7 @@ export const events = [
     name: '丝绸之路开通',
     foreign: 'The Silk Road',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/b/bb/Dunhuang_Mogao_Caves_Dancer.jpg',
+      src: '/images/silk-road.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Dunhuang_Mogao_Caves_Dancer.jpg',
       author: '佚名',
       license: 'Public domain',
@@ -73,7 +73,7 @@ export const events = [
     name: '安史之乱',
     foreign: 'An Lushan Rebellion',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/c/c5/%E5%B8%9D%E9%89%B4%E5%9B%BE%E8%AF%B4.Recueil_Historique_des_Principaux_Traits_de_la_Vie_des_Empereurs_Chinois.95%E5%B8%A7%E5%9B%BE.%E5%BD%A9%E7%BB%98%E5%86%8C%E9%A1%B5.%E7%BA%A618%E4%B8%96%E7%BA%AA_%28page_19_%E5%AE%A0%E5%B9%B8%E7%95%AA%E5%B0%86%29_%28%E5%AE%89%E7%A6%84%E5%B1%B1%29_%28cropped%29.jpg',
+      src: '/images/an-shi-rebellion.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:帝鉴图说.Recueil_Historique_des_Principaux_Traits_de_la_Vie_des_Empereurs_Chinois.95帧图.彩绘册页.约18世纪_(page_19_宠幸番将)_(安禄山)_(cropped).jpg',
       author: '书格（《帝鉴图说》）',
       license: 'CC0',
@@ -150,7 +150,7 @@ export const events = [
     name: '靖康之变',
     foreign: 'Jingkang Incident',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Huizong.jpg/960px-Huizong.jpg',
+      src: '/images/jingkang-incident.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Huizong.jpg',
       author: '佚名（宋徽宗像）',
       license: 'Public domain',
@@ -225,7 +225,7 @@ export const events = [
     name: '大运河贯通',
     foreign: 'The Grand Canal',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Wanning_Bridge_1.jpg/960px-Wanning_Bridge_1.jpg',
+      src: '/images/grand-canal.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Wanning_Bridge_1.jpg',
       author: 'EditQ',
       license: 'CC BY-SA 4.0',
@@ -298,7 +298,7 @@ export const events = [
     name: '郑和下西洋',
     foreign: 'Zheng He\'s Voyages',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Voyages_of_Zheng_He.png/960px-Voyages_of_Zheng_He.png',
+      src: '/images/voyages-of-zhenghe.png',
       page: 'https://commons.wikimedia.org/wiki/File:Voyages_of_Zheng_He.png',
       author: 'SY',
       license: 'CC BY-SA 4.0',
@@ -373,7 +373,7 @@ export const events = [
     name: '鸦片战争',
     foreign: 'The Opium Wars',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Destroying_Chinese_war_junks%2C_by_E._Duncan_%281843%29.jpg/960px-Destroying_Chinese_war_junks%2C_by_E._Duncan_%281843%29.jpg',
+      src: '/images/opium-war.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Destroying_Chinese_war_junks,_by_E._Duncan_(1843).jpg',
       author: 'Edward Duncan',
       license: 'Public domain',
@@ -447,7 +447,7 @@ export const events = [
     name: '虎门销烟',
     foreign: 'Destruction of Opium at Humen',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Portrait_of_Lin_Zexu.jpeg/960px-Portrait_of_Lin_Zexu.jpeg',
+      src: '/images/lin-zexu.jpeg',
       page: 'https://commons.wikimedia.org/wiki/File:Portrait_of_Lin_Zexu.jpeg',
       author: 'Lam Qua',
       license: 'Public domain',
@@ -592,7 +592,7 @@ image: {
     name: '长安的营建与陷落',
     foreign: 'Chang\'an',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Prince_Yide%27s_tomb%2C_towers.jpg/960px-Prince_Yide%27s_tomb%2C_towers.jpg',
+      src: '/images/changan-city.jpg',
       page: "https://commons.wikimedia.org/wiki/File:Prince_Yide's_tomb,_towers.jpg",
       author: '佚名（唐懿德太子墓壁画）',
       license: 'Public domain',
@@ -662,7 +662,7 @@ image: {
     name: '君士坦丁堡陷落',
     foreign: 'Fall of Constantinople',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Siege_of_Constantinople_fresco%2C_Moldovi%C8%9Ba_monastery%2C_Vatra_Moldovi%C8%9Bei%2C_2017.jpg/960px-Siege_of_Constantinople_fresco%2C_Moldovi%C8%9Ba_monastery%2C_Vatra_Moldovi%C8%9Bei%2C_2017.jpg',
+      src: '/images/constantinople-fall.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Siege_of_Constantinople_fresco,_Moldovița_monastery,_Vatra_Moldoviței,_2017.jpg',
       author: 'DimiTalen',
       license: 'CC0',
@@ -742,7 +742,7 @@ image: {
     name: '黑死病',
     foreign: 'The Black Death',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/1346-1353_spread_of_the_Black_Death_in_Europe_map.svg/960px-1346-1353_spread_of_the_Black_Death_in_Europe_map.svg.png',
+      src: '/images/black-death.png',
       page: 'https://commons.wikimedia.org/wiki/File:1346-1353_spread_of_the_Black_Death_in_Europe_map.svg',
       author: 'Flappiefh',
       license: 'CC BY-SA 4.0',
@@ -822,7 +822,7 @@ image: {
     name: '查理曼加冕',
     foreign: 'Coronation of Charlemagne',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Charlemagne_denier_Mayence_812_814.jpg/960px-Charlemagne_denier_Mayence_812_814.jpg',
+      src: '/images/charlemagne-empire.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Charlemagne_denier_Mayence_812_814.jpg',
       author: '佚名（查理曼时期银币）',
       license: 'Public domain',
@@ -894,7 +894,7 @@ image: {
     name: '哥伦布大交换',
     foreign: 'The Columbian Exchange',
 image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/3/34/VegCorn_%28cropped%29.jpg',
+      src: '/images/columbus-voyage.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:VegCorn_(cropped).jpg',
       author: '佚名（玉米，大交换的象征作物）',
       license: 'Public domain',
@@ -965,7 +965,7 @@ image: {
     name: '宗教改革',
     foreign: 'The Reformation',
 image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Lucas_Cranach_%28I%29_workshop_-_Martin_Luther_%28Uffizi%29.jpg',
+      src: '/images/reformation.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Lucas_Cranach_(I)_workshop_-_Martin_Luther_(Uffizi).jpg',
       author: 'Workshop of Lucas Cranach the Elder',
       license: 'Public domain',
@@ -1043,7 +1043,7 @@ image: {
     name: '科学革命',
     foreign: 'The Scientific Revolution',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Magdeburg.jpg/960px-Magdeburg.jpg',
+      src: '/images/scientific-revolution.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Magdeburg.jpg',
       author: 'Gaspar Schott（马德堡半球实验版画）',
       license: 'Public domain',
@@ -1123,7 +1123,7 @@ image: {
     name: '启蒙运动',
     foreign: 'The Enlightenment',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Les_salons_au_XVIIIe_si%C3%A8cle_-_Histoire_Image.jpg/960px-Les_salons_au_XVIIIe_si%C3%A8cle_-_Histoire_Image.jpg',
+      src: '/images/europe-enlightenment.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Les_salons_au_XVIIIe_siècle_-_Histoire_Image.jpg',
       author: 'Anicet Charles Gabriel Lemonnier',
       license: 'Public domain',
@@ -1204,7 +1204,7 @@ image: {
     name: '第二次世界大战',
     foreign: 'World War II',
 image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/1/10/Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg',
+      src: '/images/wwii-outbreak.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-646-5188-17,_Flugzeuge_Junkers_Ju_87.jpg',
       author: 'Richard Opitz（德联邦档案馆）',
       license: 'CC BY-SA 3.0 de',
@@ -1351,7 +1351,7 @@ image: {
     name: '印度独立与印巴分治',
     foreign: 'Indian Independence',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/India%2C_by_British_Information_Services%2C_1944_restored_version.jpg/960px-India%2C_by_British_Information_Services%2C_1944_restored_version.jpg',
+      src: '/images/india-independence.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:India,_by_British_Information_Services,_1944_restored_version.jpg',
       author: 'British Information Services',
       license: 'Public domain',
@@ -1417,7 +1417,7 @@ image: {
     name: '胡夫金字塔建成',
     foreign: 'Building the Great Pyramid',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg/960px-Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg',
+      src: '/images/great-pyramid-built.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg',
       author: 'Douwe C. van der Zee',
       license: 'CC BY-SA 4.0',
@@ -1483,7 +1483,7 @@ image: {
     name: '古代奥运会',
     foreign: 'Ancient Olympics',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/GR-olympia-palaestra.jpg/960px-GR-olympia-palaestra.jpg',
+      src: '/images/first-olympics.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:GR-olympia-palaestra.jpg',
       author: 'Bgabel',
       license: 'CC BY-SA 3.0',
@@ -1550,7 +1550,7 @@ image: {
     name: '孔雀王朝统一印度',
     foreign: 'Maurya Empire',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Maurya_Empire%2C_c.250_BCE_network_model_v01.png/960px-Maurya_Empire%2C_c.250_BCE_network_model_v01.png',
+      src: '/images/maurya-empire.png',
       page: 'https://commons.wikimedia.org/wiki/File:Maurya_Empire,_c.250_BCE_network_model_v01.png',
       author: 'Joshua Jonathan',
       license: 'CC0',
@@ -1617,7 +1617,7 @@ image: {
     name: '亚历山大城图书馆',
     foreign: 'Library of Alexandria',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Ancientlibraryalex.jpg/960px-Ancientlibraryalex.jpg',
+      src: '/images/egypt-ptolemy.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Ancientlibraryalex.jpg',
       author: 'O. Von Corven',
       license: 'Public domain',
@@ -1684,7 +1684,7 @@ image: {
     name: '佛教东传',
     foreign: 'Buddhism Reaches China',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Ancient_Buddhist_Grottoes_at_Longmen-_Fengxian_Temple%2C_Vairocana_Buddha.jpg/960px-Ancient_Buddhist_Grottoes_at_Longmen-_Fengxian_Temple%2C_Vairocana_Buddha.jpg',
+      src: '/images/silk-road-buddhism.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Ancient_Buddhist_Grottoes_at_Longmen-_Fengxian_Temple,_Vairocana_Buddha.jpg',
       author: 'Gary Todd',
       license: 'CC0',
@@ -1750,7 +1750,7 @@ image: {
     name: '智慧宫翻译运动',
     foreign: 'House of Wisdom',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Maqamat_hariri.jpg/960px-Maqamat_hariri.jpg',
+      src: '/images/baghdad-house-of-wisdom.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Maqamat_hariri.jpg',
       author: '佚名（《玛卡梅集》抄本插图）',
       license: 'Public domain',
@@ -1816,7 +1816,7 @@ image: {
     name: '造纸术西传',
     foreign: 'Paper Travels West',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Five_Steps_of_Papermaking_-_Step_1_-_Cutting_and_Moisturizing_of_the_Bamboo_Shoots_-_As_described_by_Cai_Lun_in_105_CE.jpg/960px-Five_Steps_of_Papermaking_-_Step_1_-_Cutting_and_Moisturizing_of_the_Bamboo_Shoots_-_As_described_by_Cai_Lun_in_105_CE.jpg',
+      src: '/images/paper-invention.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Five_Steps_of_Papermaking_-_Step_1_-_Cutting_and_Moisturizing_of_the_Bamboo_Shoots_-_As_described_by_Cai_Lun_in_105_CE.jpg',
       author: '佚名（明代造纸步骤图）',
       license: 'Public domain',
@@ -1888,7 +1888,7 @@ image: {
     name: '怛罗斯之战',
     foreign: 'Battle of Talas',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Battle_of_Talas.png/960px-Battle_of_Talas.png',
+      src: '/images/tang-arab-talas.png',
       page: 'https://commons.wikimedia.org/wiki/File:Battle_of_Talas.png',
       author: 'SY',
       license: 'CC BY-SA 4.0',
@@ -1960,7 +1960,7 @@ image: {
     name: '帕特农神庙落成',
     foreign: 'The Parthenon',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/At_the_British_Museum_2024_078.jpg/960px-At_the_British_Museum_2024_078.jpg',
+      src: '/images/parthenon-built.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:At_the_British_Museum_2024_078.jpg',
       author: 'Mike Peel（摄大英馆藏帕特农浮雕）',
       license: 'CC BY-SA 4.0',
@@ -2034,7 +2034,7 @@ image: {
     name: '百家争鸣',
     foreign: 'Hundred Schools of Thought',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Qinghuajian%2C_Suan_Biao.jpg/960px-Qinghuajian%2C_Suan_Biao.jpg',
+      src: '/images/hundred-schools.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Qinghuajian,_Suan_Biao.jpg',
       author: '佚名（战国清华简《算表》）',
       license: 'Public domain',
@@ -2108,7 +2108,7 @@ image: {
     name: 'X 射线的发现',
     foreign: 'Discovery of X-rays',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/8/84/X-ray_by_Wilhelm_R%C3%B6ntgen_of_Albert_von_K%C3%B6lliker%27s_hand_-_18960123-01.jpg',
+      src: '/images/x-ray-discovery.jpg',
       page: "https://commons.wikimedia.org/wiki/File:X-ray_by_Wilhelm_Röntgen_of_Albert_von_Kölliker's_hand_-_18960123-01.jpg",
       author: 'Wilhelm Röntgen',
       license: 'Public domain',
@@ -2175,7 +2175,7 @@ image: {
     name: '「零」的诞生',
     foreign: 'The Invention of Zero',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Bakhshali_numerals_1.jpg/960px-Bakhshali_numerals_1.jpg',
+      src: '/images/zero-concept.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Bakhshali_numerals_1.jpg',
       author: 'Augustus Hoernle',
       license: 'Public domain',
@@ -2242,7 +2242,7 @@ image: {
     name: '朱罗的远洋',
     foreign: 'Chola Naval Expeditions',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Thanjavur_temple.jpg',
+      src: '/images/chola-ocean-trade.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Thanjavur_temple.jpg',
       author: 'Venu62',
       license: 'Public domain',
@@ -2309,7 +2309,7 @@ image: {
     name: '美国独立战争',
     foreign: 'American Revolutionary War',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Surrender_of_Lord_Cornwallis.jpg/960px-Surrender_of_Lord_Cornwallis.jpg',
+      src: '/images/american-independence.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Surrender_of_Lord_Cornwallis.jpg',
       author: 'John Trumbull',
       license: 'Public domain',
@@ -2377,7 +2377,7 @@ image: {
     name: '腓尼基字母的传播',
     foreign: 'Spread of the Phoenician Alphabet',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Ahiram_Sarcophagus_1.JPG/960px-Ahiram_Sarcophagus_1.JPG',
+      src: '/images/phoenician-alphabet.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:Ahiram_Sarcophagus_1.JPG',
       author: 'O.Mustafin',
       license: 'Public domain',
@@ -2455,7 +2455,7 @@ image: {
     name: '法国大革命',
     foreign: 'French Revolution',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Anonymous_-_Prise_de_la_Bastille.jpg/960px-Anonymous_-_Prise_de_la_Bastille.jpg',
+      src: '/images/french-revolution.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Anonymous_-_Prise_de_la_Bastille.jpg',
       author: '佚名',
       license: 'Public domain',
@@ -2534,7 +2534,7 @@ image: {
     name: '明治维新',
     foreign: 'Meiji Restoration',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Emperor_Meiji_by_Takahashi_Yuichi.jpg/960px-Emperor_Meiji_by_Takahashi_Yuichi.jpg',
+      src: '/images/meiji-restoration.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Emperor_Meiji_by_Takahashi_Yuichi.jpg',
       author: 'Takahashi Yuichi',
       license: 'Public domain',
@@ -2613,7 +2613,7 @@ image: {
     name: '第一次世界大战',
     foreign: 'World War I',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Bataille_de_Verdun_1916.jpg/960px-Bataille_de_Verdun_1916.jpg',
+      src: '/images/first-world-war.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Bataille_de_Verdun_1916.jpg',
       author: 'DocAnciens',
       license: 'Public domain',
@@ -2692,7 +2692,7 @@ image: {
     name: '改革开放',
     foreign: 'Reform and Opening-up',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Shanghai_skyline_waterfront_pudong_5166168_69_70.jpg/960px-Shanghai_skyline_waterfront_pudong_5166168_69_70.jpg',
+      src: '/images/reform-opening.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Shanghai_skyline_waterfront_pudong_5166168_69_70.jpg',
       author: 'Ermell',
       license: 'CC0',
@@ -2772,7 +2772,7 @@ image: {
     name: '阿波罗登月',
     foreign: 'Apollo 11 Moon Landing',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg/960px-A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg',
+      src: '/images/moon-landing.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:A_Man_on_the_Moon,_AS11-40-5903_(cropped).jpg',
       author: 'NASA / Neil A. Armstrong',
       license: 'Public domain',
@@ -2852,7 +2852,7 @@ image: {
     name: '万维网诞生',
     foreign: 'Birth of the World Wide Web',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/First_Web_Server.jpg/960px-First_Web_Server.jpg',
+      src: '/images/world-wide-web.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:First_Web_Server.jpg',
       author: 'Coolcaesar',
       license: 'CC BY-SA 3.0',
@@ -2932,7 +2932,7 @@ image: {
     name: '智能手机时代',
     foreign: 'Smartphone Era',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Wikipedia_homepage_on_a_large_Android_phone%2C_2015-04-16.jpg/960px-Wikipedia_homepage_on_a_large_Android_phone%2C_2015-04-16.jpg',
+      src: '/images/smartphone-era.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Wikipedia_homepage_on_a_large_Android_phone,_2015-04-16.jpg',
       author: 'Sage Ross',
       license: 'CC BY-SA 4.0',
@@ -3011,7 +3011,7 @@ image: {
     name: '北京奥运会',
     foreign: 'Beijing 2008 Olympics',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Beijing_national_stadium.jpg/960px-Beijing_national_stadium.jpg',
+      src: '/images/beijing-olympics.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Beijing_national_stadium.jpg',
       author: 'Peter23',
       license: 'CC BY-SA 3.0',
@@ -3081,7 +3081,7 @@ image: {
     name: '马拉松之战',
     foreign: 'Battle of Marathon',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Scene_of_the_Battle_of_Marathon.jpg/960px-Scene_of_the_Battle_of_Marathon.jpg',
+      src: '/images/marathon-battle.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Scene_of_the_Battle_of_Marathon.jpg',
       author: 'John Steeple Davis',
       license: 'Public domain',
@@ -3151,7 +3151,7 @@ image: {
     name: '柏林会议与瓜分非洲',
     foreign: 'Berlin Conference & Scramble for Africa',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Kongokonferenz.jpg/960px-Kongokonferenz.jpg',
+      src: '/images/berlin-conference.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Kongokonferenz.jpg',
       author: 'Adalbert von Roessler',
       license: 'Public domain',
@@ -3221,7 +3221,7 @@ image: {
     name: '印度大起义',
     foreign: 'Indian Rebellion of 1857',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Indian_Rebellion_of_1857.jpg/960px-Indian_Rebellion_of_1857.jpg',
+      src: '/images/sepoy-mutiny.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Indian_Rebellion_of_1857.jpg',
       author: '佚名',
       license: 'Public domain',
@@ -3291,7 +3291,7 @@ image: {
     name: '壬辰倭乱',
     foreign: 'Imjin War',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Korea-Tongyeong_Port-Turtle_ship_replica-01.jpg/960px-Korea-Tongyeong_Port-Turtle_ship_replica-01.jpg',
+      src: '/images/imjin-war.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Korea-Tongyeong_Port-Turtle_ship_replica-01.jpg',
       author: 'Junho Jung',
       license: 'CC BY-SA 3.0',
@@ -3361,7 +3361,7 @@ image: {
     name: '阿拉伯之春',
     foreign: 'Arab Spring',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Tunisian_Revolution_Protest.jpg',
+      src: '/images/arab-spring.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Tunisian_Revolution_Protest.jpg',
       author: 'cjb',
       license: 'CC BY 2.0',
@@ -3431,7 +3431,7 @@ image: {
     name: '人类基因组计划',
     foreign: 'Human Genome Project',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Revolocity_DNA_sequencer.jpg/960px-Revolocity_DNA_sequencer.jpg',
+      src: '/images/human-genome.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Revolocity_DNA_sequencer.jpg',
       author: 'Scotted400',
       license: 'CC BY 4.0',
@@ -3501,7 +3501,7 @@ image: {
     name: '巴黎气候协定',
     foreign: 'Paris Agreement',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Secretary_Kerry_Chats_With_French_Minister_Royal_Before_the_Plenary_Session_of_COP21_in_Paris_%2823334290969%29.jpg/960px-Secretary_Kerry_Chats_With_French_Minister_Royal_Before_the_Plenary_Session_of_COP21_in_Paris_%2823334290969%29.jpg',
+      src: '/images/paris-agreement.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Secretary_Kerry_Chats_With_French_Minister_Royal_Before_the_Plenary_Session_of_COP21_in_Paris_(23334290969).jpg',
       author: 'U.S. Department of State',
       license: 'Public domain',
@@ -3571,7 +3571,7 @@ image: {
     name: '文艺复兴',
     foreign: 'The Renaissance',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Da_Vinci_Vitruve_Luc_Viatour.jpg/960px-Da_Vinci_Vitruve_Luc_Viatour.jpg',
+      src: '/images/renaissance.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Da_Vinci_Vitruve_Luc_Viatour.jpg',
       author: 'Leonardo da Vinci',
       license: 'Public domain',
@@ -3645,7 +3645,7 @@ image: {
     name: '工业革命',
     foreign: 'Industrial Revolution',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Powerloom_weaving_in_1835.jpg/960px-Powerloom_weaving_in_1835.jpg',
+      src: '/images/industrial-revolution.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg',
       author: 'T. Allom',
       license: 'Public domain',
@@ -3719,7 +3719,7 @@ image: {
     name: '十字军东征',
     foreign: 'The Crusades',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/f/f5/Combat_deuxi%C3%A8me_croisade.jpg',
+      src: '/images/crusades.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Combat_deuxième_croisade.jpg',
       author: '佚名（中世纪细密画）',
       license: 'Public domain',
@@ -3793,7 +3793,7 @@ image: {
     name: '《大宪章》',
     foreign: 'Magna Carta',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Magna_Carta_%28British_Library_Cotton_MS_Augustus_II.106%29.jpg/960px-Magna_Carta_%28British_Library_Cotton_MS_Augustus_II.106%29.jpg',
+      src: '/images/magna-carta.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Magna_Carta_(British_Library_Cotton_MS_Augustus_II.106).jpg',
       author: '佚名（1215年原件）',
       license: 'Public domain',
@@ -3867,7 +3867,7 @@ image: {
     name: '俄国革命',
     foreign: 'Russian Revolution',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/%D0%9C%D0%B8%D1%82%D0%B8%D0%BD%D0%B3_%D0%BD%D0%B0_%D0%9D%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%B5_%281917%29.jpg/960px-%D0%9C%D0%B8%D1%82%D0%B8%D0%BD%D0%B3_%D0%BD%D0%B0_%D0%9D%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%BC_%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%B5_%281917%29.jpg',
+      src: '/images/russian-revolution.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Митинг_на_Невском_проспекте_(1917).jpg',
       author: '佚名（1917年涅瓦大街集会）',
       license: 'Public domain',
@@ -3941,7 +3941,7 @@ image: {
     name: '五四运动',
     foreign: 'May Fourth Movement',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Chinese_protestors_march_against_the_Treaty_of_Versailles_%28May_4%2C_1919%29.jpg/960px-Chinese_protestors_march_against_the_Treaty_of_Versailles_%28May_4%2C_1919%29.jpg',
+      src: '/images/may-fourth.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Chinese_protestors_march_against_the_Treaty_of_Versailles_(May_4,_1919).jpg',
       author: '佚名（1919年游行）',
       license: 'Public domain',
@@ -4015,7 +4015,7 @@ image: {
     name: '甲午战争',
     foreign: 'First Sino-Japanese War',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/%E6%97%85%E9%A1%BA%E6%B5%B7%E5%86%9B%E5%85%AC%E6%89%80.jpg',
+      src: '/images/first-sino-japanese.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:旅顺海军公所.jpg',
       author: '佚名',
       license: 'Public domain',
@@ -4089,7 +4089,7 @@ image: {
     name: '海地革命',
     foreign: 'Haitian Revolution',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Incendie_de_la_Plaine_du_Cap._Massacre_des_Blancs_par_les_esclaves_noirs_r%C3%A9volt%C3%A9s._France_militaire._Martinet_et_Masson.jpg/960px-Incendie_de_la_Plaine_du_Cap._Massacre_des_Blancs_par_les_esclaves_noirs_r%C3%A9volt%C3%A9s._France_militaire._Martinet_et_Masson.jpg',
+      src: '/images/haitian-revolution.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Incendie_de_la_Plaine_du_Cap._Massacre_des_Blancs_par_les_esclaves_noirs_révoltés._France_militaire._Martinet_et_Masson.jpg',
       author: 'Martinet / Masson',
       license: 'Public domain',
@@ -4163,7 +4163,7 @@ image: {
     name: '柏林墙倒塌',
     foreign: 'Fall of the Berlin Wall',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
+      src: '/images/fall-of-berlin-wall.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
       author: '佚名（Lear 21 翻拍）',
       license: 'CC BY-SA 3.0',
@@ -4242,7 +4242,7 @@ image: {
     name: '苏联解体',
     foreign: 'Dissolution of the Soviet Union',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Map_of_USSR_with_SSR_names.svg/960px-Map_of_USSR_with_SSR_names.svg.png',
+      src: '/images/fall-of-ussr.png',
       page: 'https://commons.wikimedia.org/wiki/File:Map_of_USSR_with_SSR_names.svg',
       author: 'Saul ip',
       license: 'CC BY-SA 3.0',
@@ -4321,7 +4321,7 @@ image: {
     name: '莱特兄弟首飞',
     foreign: 'First powered flight',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/First_flight2.jpg/960px-First_flight2.jpg',
+      src: '/images/first-flight.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:First_flight2.jpg',
       author: 'John T. Daniels',
       license: 'Public domain',
@@ -4400,7 +4400,7 @@ image: {
     name: '九一一袭击',
     foreign: 'September 11 attacks',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/WTC_smoking_on_9-11.jpeg/960px-WTC_smoking_on_9-11.jpeg',
+      src: '/images/september-11.jpeg',
       page: 'https://commons.wikimedia.org/wiki/File:WTC_smoking_on_9-11.jpeg',
       author: 'Flickr user Michael Foran',
       license: 'CC BY 2.0',
@@ -4478,7 +4478,7 @@ image: {
     name: '全球金融危机',
     foreign: 'Financial crisis of 2007–2008',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Lehman_Brothers_Times_Square_by_David_Shankbone.jpg/960px-Lehman%20Brothers%20Times%20Square%20by%20David%20Shankbone.jpg',
+      src: '/images/global-financial-crisis.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Lehman%20Brothers%20Times%20Square%20by%20David%20Shankbone.jpg',
       author: 'David Shankbone',
       license: 'CC BY-SA 3.0',
@@ -4556,7 +4556,7 @@ image: {
     name: '新冠大流行',
     foreign: 'COVID-19 pandemic',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg/960px-Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg',
+      src: '/images/covid-pandemic.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg',
       author: 'Gustavo Basso',
       license: 'CC BY-SA 4.0',
@@ -4782,7 +4782,7 @@ image: {
     name: '勒班陀海战',
     foreign: 'Battle of Lepanto',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Laureys_a_Castro_-_The_Battle_of_Lepanto.jpeg/960px-Laureys_a_Castro_-_The_Battle_of_Lepanto.jpeg',
+      src: '/images/battle-of-lepanto.jpeg',
       page: 'https://commons.wikimedia.org/wiki/File:Laureys_a_Castro_-_The_Battle_of_Lepanto.jpeg',
       author: 'Laureys a Castro',
       license: 'Public domain',
@@ -4851,7 +4851,7 @@ image: {
     name: '义和团运动',
     foreign: 'Boxer Rebellion',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Beijing_Castle_Boxer_Rebellion_1900_FINAL.jpg/960px-Beijing_Castle_Boxer_Rebellion_1900_FINAL.jpg',
+      src: '/images/boxer-rebellion.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Beijing%20Castle%20Boxer%20Rebellion%201900%20FINAL.jpg',
       author: 'Kasai Torajirō',
       license: 'Public domain',
@@ -4921,7 +4921,7 @@ image: {
     name: '切尔诺贝利',
     foreign: 'Chernobyl disaster',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/IAEA_02790015_%285613115146%29.jpg/960px-IAEA_02790015_%285613115146%29.jpg',
+      src: '/images/chernobyl-disaster.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:IAEA_02790015_(5613115146).jpg',
       author: 'IAEA Imagebank',
       license: 'CC BY-SA 2.0',
@@ -4990,7 +4990,7 @@ image: {
     name: '光荣革命',
     foreign: 'Glorious Revolution',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/William_of_Orange_III_and_his_Dutch_army_land_in_Brixham%2C_1688.jpg/960px-William_of_Orange_III_and_his_Dutch_army_land_in_Brixham%2C_1688.jpg',
+      src: '/images/glorious-revolution.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:William_of_Orange_III_and_his_Dutch_army_land_in_Brixham%2C_1688.jpg',
       author: 'Johan Herman Isings',
       license: 'Public domain',
@@ -5060,7 +5060,7 @@ image: {
     name: '英法百年战争',
     foreign: 'Hundred Years War',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Schlacht_von_Azincourt.jpg/960px-Schlacht_von_Azincourt.jpg',
+      src: '/images/hundred-years-war.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Schlacht_von_Azincourt.jpg',
       author: '',
       license: 'Public domain',
@@ -5130,7 +5130,7 @@ image: {
     name: '西班牙无敌舰队',
     foreign: 'Spanish Armada',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Monumento_%C3%A1_Armada_Espa%C3%B1ola.003_-_San_Cibrao_%28Cervo%29.jpg/960px-Monumento_%C3%A1_Armada_Espa%C3%B1ola.003_-_San_Cibrao_%28Cervo%29.jpg',
+      src: '/images/spanish-armada.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Monumento%20%C3%A1%20Armada%20Espa%C3%B1ola.003%20-%20San%20Cibrao%20(Cervo).jpg',
       author: 'Fernando Losada Rodríguez',
       license: 'CC BY-SA 4.0',
@@ -5199,7 +5199,7 @@ image: {
     name: '西班牙流感',
     foreign: '1918 flu pandemic',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg/960px-Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg',
+      src: '/images/spanish-flu.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Emergency%20hospital%20during%20Influenza%20epidemic%2C%20Camp%20Funston%2C%20Kansas%20-%20NCP%201603.jpg',
       author: 'Otis Historical Archives, National Museum of Health and Medicine',
       license: 'Public domain',
@@ -5269,7 +5269,7 @@ image: {
     name: '太平天国',
     foreign: 'Taiping Rebellion',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Regaining_the_Provincial_City_Anqing2.jpg/960px-Regaining_the_Provincial_City_Anqing2.jpg',
+      src: '/images/taiping-rebellion.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Regaining_the_Provincial_City_Anqing2.jpg',
       author: 'Wu Youru',
       license: 'Public domain',
@@ -5339,7 +5339,7 @@ image: {
     name: '三十年战争',
     foreign: 'Thirty Years War',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Thirty_Years_War_Collage.jpg/960px-Thirty_Years_War_Collage.jpg',
+      src: '/images/thirty-years-war.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Thirty%20Years%20War%20Collage.jpg',
       author: 'DavidDijkgraaf',
       license: 'CC BY-SA 4.0',
@@ -5409,7 +5409,7 @@ image: {
     name: '泰坦尼克沉没',
     foreign: 'Sinking of the Titanic',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/St%C3%B6wer_Titanic.jpg/960px-St%C3%B6wer_Titanic.jpg',
+      src: '/images/titanic-sinking.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:St%C3%B6wer_Titanic.jpg',
       author: 'Willy Stöwer',
       license: 'Public domain',
@@ -5478,7 +5478,7 @@ image: {
     name: '卡迭石之战',
     foreign: 'Battle of Kadesh',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Egypt_Abou_Simbel6.jpg/960px-Egypt_Abou_Simbel6.jpg',
+      src: '/images/battle-of-kadesh.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Egypt_Abou_Simbel6.jpg',
       author: '',
       license: 'CC BY-SA 3.0',
@@ -5547,7 +5547,7 @@ image: {
     name: '西罗马灭亡',
     foreign: 'Fall of the Western Roman Empire',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/e/ea/Roman_Republic_Empire_map.gif',
+      src: '/images/fall-of-west-rome.gif',
       page: 'https://commons.wikimedia.org/wiki/File:Roman_Republic_Empire_map.gif',
       author: 'Roke (d)',
       license: 'CC BY-SA 3.0',
@@ -5624,7 +5624,7 @@ image: {
     name: '希吉拉',
     foreign: 'Hijrah',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/New_York_Public_Library%2C_Spencer_Collection_Turk._MS._3_Siyar-i_Nab%C3%AE_fol._286r_Jibril_delivers_to_Muhammad_a_message_from_God_telling_him_to_leave_Makka_for_Madina.jpg/960px-thumbnail.jpg',
+      src: '/images/hijra.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:New_York_Public_Library%2C_Spencer_Collection_Turk._MS._3_Siyar-i_Nab%C3%AE_fol._286r_Jibril_delivers_to_Muhammad_a_message_from_God_telling_him_to_leave_Makka_for_Madina.jpg',
       author: 'Unknown author',
       license: 'Public domain',
@@ -5693,7 +5693,7 @@ image: {
     name: '巴格达陷落',
     foreign: 'Siege of Baghdad (1258)',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Bagdad1258.jpg/960px-Bagdad1258.jpg',
+      src: '/images/mongol-sack-of-baghdad.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Bagdad1258.jpg',
       author: 'Sayf al-vâhidî et al.',
       license: 'Public domain',
@@ -5762,7 +5762,7 @@ image: {
     name: '诺曼征服',
     foreign: 'Norman Conquest',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Norman-conquest-1066.svg/960px-Norman-conquest-1066.svg.png',
+      src: '/images/norman-conquest.png',
       page: 'https://commons.wikimedia.org/wiki/File:Norman-conquest-1066.svg',
       author: 'Amitchell125',
       license: 'CC BY 3.0',
@@ -5832,7 +5832,7 @@ image: {
     name: '伯罗奔尼撒战争',
     foreign: 'Peloponnesian War',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Pelop_war_en.png/960px-Pelop_war_en.png',
+      src: '/images/peloponnesian-war.png',
       page: 'https://commons.wikimedia.org/wiki/File:Pelop_war_en.png',
       author: 'Translator was Kenmayer',
       license: 'CC BY-SA 3.0',
@@ -5981,7 +5981,7 @@ image: {
     name: '布匿战争',
     foreign: 'Punic Wars',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Domain_changes_during_the_Punic_Wars_BC.gif',
+      src: '/images/punic-wars.gif',
       page: 'https://commons.wikimedia.org/wiki/File:Domain_changes_during_the_Punic_Wars_BC.gif',
       author: 'derivative work: Carnby',
       license: 'CC BY-SA 4.0',
@@ -6059,7 +6059,7 @@ image: {
     name: '斯巴达克起义',
     foreign: 'Third Servile War',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/0/06/Italy_and_environs%2C_218_BC.gif',
+      src: '/images/spartacus-revolt.gif',
       page: 'https://commons.wikimedia.org/wiki/File:Italy_and_environs%2C_218_BC.gif',
       author: '',
       license: 'Public domain',
@@ -6137,7 +6137,7 @@ image: {
     name: '上下埃及统一',
     foreign: 'Unification of Upper and Lower Egypt',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Scarab_Inscribed_King_of_Upper_and_Lower_Egypt_MET_27.3.288_bot.jpg/960px-Scarab_Inscribed_King_of_Upper_and_Lower_Egypt_MET_27.3.288_bot.jpg',
+      src: '/images/unification-of-egypt.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Scarab%20Inscribed%20King%20of%20Upper%20and%20Lower%20Egypt%20MET%2027.3.288%20bot.jpg',
       author: '',
       license: 'CC0',
@@ -6207,7 +6207,7 @@ image: {
     name: '万隆会议',
     foreign: 'Bandung Conference',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Plenary_session_during_the_Bandung_Conference.png/960px-Plenary_session_during_the_Bandung_Conference.png',
+      src: '/images/bandung-conference.png',
       page: 'https://commons.wikimedia.org/wiki/File:Plenary_session_during_the_Bandung_Conference.png',
       author: 'Foreign Ministry of the Republic of Indonesia',
       license: 'Public domain',
@@ -6276,7 +6276,7 @@ image: {
     name: '柏林空运',
     foreign: 'Berlin Blockade',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/9/92/C-54_landing_at_Tempelhof.jpg',
+      src: '/images/berlin-airlift.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:C-54_landing_at_Tempelhof.jpg',
       author: 'Henry Ries / USAF',
       license: 'Public domain',
@@ -6346,7 +6346,7 @@ image: {
     name: '哥伦布大交换',
     foreign: 'Columbian exchange',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/BRI_Columbian_Exchange.jpg/960px-BRI_Columbian_Exchange.jpg',
+      src: '/images/columbian-exchange.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:BRI%20Columbian%20Exchange.jpg',
       author: 'Mark Christensen',
       license: 'CC BY-SA 4.0',
@@ -6415,7 +6415,7 @@ image: {
     name: '克里米亚战争',
     foreign: 'Crimean War',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/William_Simpson_-_Crimean_War_-_Huts_and_Warm_Clothing_for_the_Army.jpg/960px-William_Simpson_-_Crimean_War_-_Huts_and_Warm_Clothing_for_the_Army.jpg',
+      src: '/images/crimean-war.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:William%20Simpson%20-%20Crimean%20War%20-%20Huts%20and%20Warm%20Clothing%20for%20the%20Army.jpg',
       author: 'Simpson, William, 1823-1899, artist., Paul &amp; Dominic Colnaghi &amp; Co., publishers',
       license: 'Public domain',
@@ -6485,7 +6485,7 @@ image: {
     name: '布拉格掷窗事件',
     foreign: 'Defenestration of Prague',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Prager_Fenstersturz_Wahrhafftige_Zeitung_aus_Prag.JPG/960px-Prager_Fenstersturz_Wahrhafftige_Zeitung_aus_Prag.JPG',
+      src: '/images/defenestration-of-prague.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:Prager_Fenstersturz_Wahrhafftige_Zeitung_aus_Prag.JPG',
       author: 'Unknown author',
       license: 'Public domain',
@@ -6554,7 +6554,7 @@ image: {
     name: '罗马之劫',
     foreign: 'Sack of Rome (1527)',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Sack_of_Rome_of_1527_by_Johannes_Lingelbach_17th_century.jpg/960px-Sack_of_Rome_of_1527_by_Johannes_Lingelbach_17th_century.jpg',
+      src: '/images/sack-of-rome-1527.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Sack%20of%20Rome%20of%201527%20by%20Johannes%20Lingelbach%2017th%20century.jpg',
       author: 'Johannes Lingelbach',
       license: 'Public domain',
@@ -6623,7 +6623,7 @@ image: {
     name: '攻占巴士底狱',
     foreign: 'Storming of the Bastille',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Anonymous_-_Prise_de_la_Bastille.jpg/960px-Anonymous_-_Prise_de_la_Bastille.jpg',
+      src: '/images/storming-of-bastille.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Anonymous_-_Prise_de_la_Bastille.jpg',
       author: 'Unidentified painter',
       license: 'Public domain',
@@ -6692,7 +6692,7 @@ image: {
     name: '苏伊士运河开通',
     foreign: 'Suez Canal',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Iss016e019375.jpg/960px-Iss016e019375.jpg',
+      src: '/images/suez-canal.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Iss016e019375.jpg',
       author: 'NASA',
       license: 'Public domain',
@@ -6761,7 +6761,7 @@ image: {
     name: '滑铁卢战役',
     foreign: 'Battle of Waterloo',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Battle_of_Waterloo_1815.PNG/960px-Battle_of_Waterloo_1815.PNG',
+      src: '/images/waterloo.PNG',
       page: 'https://commons.wikimedia.org/wiki/File:Battle_of_Waterloo_1815.PNG',
       author: 'William Sadler',
       license: 'Public domain',
@@ -6900,7 +6900,7 @@ image: {
     name: '德国统一',
     foreign: 'Unification of Germany',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Deutsches_Reich_%281871-1918%29-en.png/960px-Deutsches_Reich_%281871-1918%29-en.png',
+      src: '/images/unification-of-germany.png',
       page: 'https://commons.wikimedia.org/wiki/File:Deutsches_Reich_(1871-1918)-en.png',
       author: 'Deutsches_Reich1.png: kgberger derivative work: Wiggy! (talk)',
       license: 'CC BY-SA 3.0',
@@ -6969,7 +6969,7 @@ image: {
     name: '英国脱欧',
     foreign: 'Brexit',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Location_map_of_the_United_Kingdom_and_the_European_Union.svg/960px-Location_map_of_the_United_Kingdom_and_the_European_Union.svg.png',
+      src: '/images/brexit.png',
       page: 'https://commons.wikimedia.org/wiki/File:Location_map_of_the_United_Kingdom_and_the_European_Union.svg',
       author: 'Furfur',
       license: 'Public domain',
@@ -7036,7 +7036,7 @@ image: {
     name: '古巴导弹危机',
     foreign: 'Cuban Missile Crisis',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/8/8a/PGM-19A_Jupiter_missile-02.jpg',
+      src: '/images/cuban-missile-crisis.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:PGM-19A_Jupiter_missile-02.jpg',
       author: 'USAF',
       license: 'Public domain',
@@ -7102,7 +7102,7 @@ image: {
     name: '天鹅绒革命',
     foreign: 'Velvet Revolution',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Praha_1989-11-25%2C_Letn%C3%A1%2C_dav_%2801%29.jpg/960px-Praha_1989-11-25%2C_Letn%C3%A1%2C_dav_%2801%29.jpg',
+      src: '/images/velvet-revolution.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Praha_1989-11-25%2C_Letn%C3%A1%2C_dav_(01).jpg',
       author: 'ŠJů (cs:ŠJů)',
       license: 'CC BY-SA 3.0',
@@ -7169,7 +7169,7 @@ image: {
     name: '中途岛海战',
     foreign: 'Battle of Midway',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/USS_Yorktown_%28CV-5%29_is_hit_by_a_torpedo_on_4_June_1942.jpg/960px-USS_Yorktown_%28CV-5%29_is_hit_by_a_torpedo_on_4_June_1942.jpg',
+      src: '/images/battle-of-midway.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:USS_Yorktown_(CV-5)_is_hit_by_a_torpedo_on_4_June_1942.jpg',
       author: 'USN, photographed from USS Pensacola (CA-24)',
       license: 'Public domain',
@@ -7238,7 +7238,7 @@ image: {
     name: '图尔战役',
     foreign: 'Battle of Tours',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Steuben_-_Bataille_de_Poitiers.png/960px-Steuben_-_Bataille_de_Poitiers.png',
+      src: '/images/battle-of-tours.png',
       page: 'https://commons.wikimedia.org/wiki/File:Steuben_-_Bataille_de_Poitiers.png',
       author: 'Charles de Steuben',
       license: 'Public domain',
@@ -7307,7 +7307,7 @@ image: {
     name: '绿色革命',
     foreign: 'Green Revolution',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Index-of-cereal-production-yield-and-land-use_World.svg/960px-Index-of-cereal-production-yield-and-land-use_World.svg.png',
+      src: '/images/green-revolution.png',
       page: 'https://commons.wikimedia.org/wiki/File:Index-of-cereal-production-yield-and-land-use_World.svg',
       author: 'Hannah Ritchie',
       license: 'CC BY 4.0',
@@ -7446,7 +7446,7 @@ image: {
     name: '朝鲜战争',
     foreign: 'Korean War',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Chosin.jpg/960px-Chosin.jpg',
+      src: '/images/korean-war.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Chosin.jpg',
       author: 'Photo by Corporal Peter McDonald, USMC',
       license: 'Public domain',
@@ -7516,7 +7516,7 @@ image: {
     name: '路易斯安那购地',
     foreign: 'Louisiana Purchase',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Louisiana_Purchase.png/960px-Louisiana_Purchase.png',
+      src: '/images/louisiana-purchase.png',
       page: 'https://commons.wikimedia.org/wiki/File:Louisiana_Purchase.png',
       author: 'William Morris',
       license: 'CC BY-SA 4.0',
@@ -7585,7 +7585,7 @@ image: {
     name: '珍珠港事件',
     foreign: 'Attack on Pearl Harbor',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Attack_on_Pearl_Harbor_Japanese_planes_view.jpg/960px-Attack_on_Pearl_Harbor_Japanese_planes_view.jpg',
+      src: '/images/pearl-harbor.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Attack_on_Pearl_Harbor_Japanese_planes_view.jpg',
       author: 'Imperial Japanese Navy',
       license: 'Public domain',
@@ -7654,7 +7654,7 @@ image: {
     name: '托尔德西里亚斯条约',
     foreign: 'Treaty of Tordesillas',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/b/bc/Treaty_of_Tordesillas.jpg',
+      src: '/images/treaty-of-tordesillas.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Treaty_of_Tordesillas.jpg',
       author: 'Original: Biblioteca Nacional de Lisboa Photo: User:Joserebelo',
       license: 'Public domain',
@@ -7723,7 +7723,7 @@ image: {
     name: '南斯拉夫战争',
     foreign: 'Yugoslav Wars',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/7/74/Collage_Yugoslav_wars.jpg',
+      src: '/images/yugoslavia-wars.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Collage_Yugoslav_wars.jpg',
       author: 'Peter DentonPeter BožičPaul KatzenbergerPaalso',
       license: 'CC BY-SA 3.0',
@@ -7793,7 +7793,7 @@ image: {
     name: '特伦托会议',
     foreign: 'Council of Trent',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Concilio_Trento_Museo_Buonconsiglio.jpg/960px-Concilio_Trento_Museo_Buonconsiglio.jpg',
+      src: '/images/council-of-trent.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Concilio_Trento_Museo_Buonconsiglio.jpg',
       author: 'Laurom',
       license: 'CC BY-SA 3.0',
@@ -7858,7 +7858,7 @@ image: {
     name: '诺曼底登陆',
     foreign: 'Normandy landings',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Into_the_Jaws_of_Death_23-0455M_edit.jpg/960px-Into_the_Jaws_of_Death_23-0455M_edit.jpg',
+      src: '/images/d-day.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Into_the_Jaws_of_Death_23-0455M_edit.jpg',
       author: 'Chief Photographer\'s Mate (CPHoM) Robert F. Sargent',
       license: 'Public domain',
@@ -7923,7 +7923,7 @@ image: {
     name: '东西教会大分裂',
     foreign: 'East–West Schism',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Great_Schism_with_former_borders_%281054%29.png/960px-Great_Schism_with_former_borders_%281054%29.png',
+      src: '/images/great-schism.png',
       page: 'https://commons.wikimedia.org/wiki/File:Great_Schism_with_former_borders_(1054).png',
       author: 'Barrikader (talk · contribs)',
       license: 'CC BY-SA 3.0',
@@ -7988,7 +7988,7 @@ image: {
     name: '巴黎公社',
     foreign: 'Paris Commune',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Barricade18March1871_%28cropped%29.jpg/960px-Barricade18March1871_%28cropped%29.jpg',
+      src: '/images/paris-commune.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Barricade18March1871_(cropped).jpg',
       author: '',
       license: 'Public domain',
@@ -8054,7 +8054,7 @@ image: {
     name: '斯大林格勒战役',
     foreign: 'Battle of Stalingrad',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/%D0%A0%D0%B0%D1%81%D1%87%D0%B5%D1%82_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9_76%2C2-%D0%BC%D0%BC_%D0%BF%D1%83%D1%88%D0%BA%D0%B8_%D0%97%D0%B8%D0%A1-3_%D0%B2%D0%B5%D0%B4%D0%B5%D1%82_%D0%BE%D0%B3%D0%BE%D0%BD%D1%8C_%D0%B2_%D0%A1%D1%82%D0%B0%D0%BB%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D0%B5._%D0%9D%D0%BE%D1%8F%D0%B1%D1%80%D1%8C_1942_%D0%B3.jpg/960px-%D0%A0%D0%B0%D1%81%D1%87%D0%B5%D1%82_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9_76%2C2-%D0%BC%D0%BC_%D0%BF%D1%83%D1%88%D0%BA%D0%B8_%D0%97%D0%B8%D0%A1-3_%D0%B2%D0%B5%D0%B4%D0%B5%D1%82_%D0%BE%D0%B3%D0%BE%D0%BD%D1%8C_%D0%B2_%D0%A1%D1%82%D0%B0%D0%BB%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D0%B5._%D0%9D%D0%BE%D1%8F%D0%B1%D1%80%D1%8C_1942_%D0%B3.jpg',
+      src: '/images/battle-of-stalingrad.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D1%81%D1%87%D0%B5%D1%82_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9_76%2C2-%D0%BC%D0%BC_%D0%BF%D1%83%D1%88%D0%BA%D0%B8_%D0%97%D0%B8%D0%A1-3_%D0%B2%D0%B5%D0%B4%D0%B5%D1%82_%D0%BE%D0%B3%D0%BE%D0%BD%D1%8C_%D0%B2_%D0%A1%D1%82%D0%B0%D0%BB%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D0%B5._%D0%9D%D0%BE%D1%8F%D0%B1%D1%80%D1%8C_1942_%D0%B3.jpg',
       author: 'Unknown author',
       license: 'Public domain',
@@ -8120,7 +8120,7 @@ image: {
     name: '波士顿倾茶事件',
     foreign: 'Boston Tea Party',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Boston_Tea_Party_Currier_colored.jpg/960px-Boston_Tea_Party_Currier_colored.jpg',
+      src: '/images/boston-tea-party.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Boston%20Tea%20Party%20Currier%20colored.jpg',
       author: 'Nathaniel Currier',
       license: 'Public domain',
@@ -8185,7 +8185,7 @@ image: {
     name: '基因剪刀时代',
     foreign: 'CRISPR era',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/4QYZ.png/960px-4QYZ.png',
+      src: '/images/crispr-era.png',
       page: 'https://commons.wikimedia.org/wiki/File:4QYZ.png',
       author: 'Boghog',
       license: 'CC BY-SA 4.0',
@@ -8250,7 +8250,7 @@ image: {
     name: '卢旺达大屠杀',
     foreign: 'Rwandan genocide',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Nyamata_Memorial_Site_13.jpg/960px-Nyamata_Memorial_Site_13.jpg',
+      src: '/images/rwanda-genocide.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Nyamata_Memorial_Site_13.jpg',
       author: 'Fanny Schertzer',
       license: 'CC BY-SA 3.0',
@@ -8316,7 +8316,7 @@ image: {
     name: '波尔塔瓦战役',
     foreign: 'Battle of Poltava',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Marten%27s_Poltava.jpg/960px-Marten%27s_Poltava.jpg',
+      src: '/images/battle-of-poltava.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Marten\'s_Poltava.jpg',
       author: 'Pierre-Denis Martin',
       license: 'Public domain',
@@ -8387,7 +8387,7 @@ image: {
     name: '南京大屠杀',
     foreign: 'Nanjing Massacre',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/7/72/Nanking_bodies_1937.jpg',
+      src: '/images/nanjing-massacre.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Nanking_bodies_1937.jpg',
       author: 'Originally Moriyasu Murase, 村瀬守保',
       license: 'Public domain',
@@ -8458,7 +8458,7 @@ image: {
     name: '威斯特伐利亚和约',
     foreign: 'Peace of Westphalia',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/M%C3%BCnster%2C_Historisches_Rathaus_--_2014_--_6855.jpg/960px-M%C3%BCnster%2C_Historisches_Rathaus_--_2014_--_6855.jpg',
+      src: '/images/peace-of-westphalia.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:M%C3%BCnster%2C_Historisches_Rathaus_--_2014_--_6855.jpg',
       author: 'Dietmar Rabich',
       license: 'CC BY-SA 4.0',

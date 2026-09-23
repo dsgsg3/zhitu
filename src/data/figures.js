@@ -6,7 +6,7 @@ export const figures = [
     name: '孔子',
     foreign: 'Confucius',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Confucius%2C_fresco_from_a_Western_Han_tomb_of_Dongping_County%2C_Shandong_province%2C_China.jpg',
+      src: '/images/confucius.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Confucius%2C_fresco_from_a_Western_Han_tomb_of_Dongping_County%2C_Shandong_province%2C_China.jpg',
       author: 'Anonymous Western Han painter',
       license: 'Public domain',
@@ -86,7 +86,7 @@ export const figures = [
     name: '秦始皇',
     foreign: 'Qin Shi Huang',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/QinShiHuang19century.jpg/960px-QinShiHuang19century.jpg',
+      src: '/images/qin-shihuang.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:QinShiHuang19century.jpg',
       author: '佚名（19世纪）',
       license: 'Public domain',
@@ -246,7 +246,7 @@ export const figures = [
     name: '张骞',
     foreign: 'Zhang Qian',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/3/38/ZhangQianTravels.jpg',
+      src: '/images/zhang-qian.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:ZhangQianTravels.jpg',
       author: 'PHG',
       license: 'Public domain',
@@ -326,7 +326,7 @@ export const figures = [
     name: '司马迁',
     foreign: 'Sima Qian',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Si_maqian.jpg',
+      src: '/images/simaqian.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Si_maqian.jpg',
       author: '佚名',
       license: 'Public domain',
@@ -407,7 +407,7 @@ export const figures = [
     name: '李白',
     foreign: 'Li Bai',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/LiBai.jpg',
+      src: '/images/li-bai.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:LiBai.jpg',
       author: '梁楷（传）',
       license: 'Public domain',
@@ -487,7 +487,7 @@ export const figures = [
     name: '杜甫',
     foreign: 'Du Fu',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Dufu.jpg/960px-Dufu.jpg',
+      src: '/images/du-fu.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Dufu.jpg',
       author: '佚名',
       license: 'Public domain',
@@ -567,7 +567,7 @@ export const figures = [
     name: '玄奘',
     foreign: 'Xuanzang',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Xuanzang_w.jpg/960px-Xuanzang_w.jpg',
+      src: '/images/xuanzang.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Xuanzang_w.jpg',
       author: '佚名',
       license: 'Public domain',
@@ -647,7 +647,7 @@ export const figures = [
     name: '苏莱曼大帝',
     foreign: 'Suleiman the Magnificent',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/EmperorSuleiman.jpg/960px-EmperorSuleiman.jpg',
+      src: '/images/suleiman.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:EmperorSuleiman.jpg',
       author: 'Circle of Titian',
       license: 'Public domain',
@@ -727,7 +727,7 @@ export const figures = [
     name: '郑和',
     foreign: 'Zheng He',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Treasure_Boat_Shipyard_-_Zheng_He_statue_-_P1080020.JPG/960px-Treasure_Boat_Shipyard_-_Zheng_He_statue_-_P1080020.JPG',
+      src: '/images/zheng-he.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:Treasure_Boat_Shipyard_-_Zheng_He_statue_-_P1080020.JPG',
       author: 'Vmenkov',
       license: 'CC BY-SA 3.0',
@@ -806,7 +806,7 @@ export const figures = [
     name: '李时珍',
     foreign: 'Li Shizhen',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/9/97/Li_Shizhen_portrait.jpg',
+      src: '/images/li-shizhen.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Li_Shizhen_portrait.jpg',
       author: '佚名',
       license: 'Public domain',
@@ -884,7 +884,7 @@ export const figures = [
     name: '李斯',
     foreign: 'Li Si',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/e/e2/XiaozhuanQinquan.jpg',
+      src: '/images/li-si.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:XiaozhuanQinquan.jpg',
       author: '佚名（秦小篆）',
       license: 'Public domain',
@@ -963,7 +963,7 @@ export const figures = [
     name: '司马相如',
     foreign: 'Sima Xiangru',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Zhuo_Wenjun.png',
+      src: '/images/sima-xiangru.png',
       page: 'https://commons.wikimedia.org/wiki/File:Zhuo_Wenjun.png',
       author: '佚名（卓文君像）',
       license: 'Public domain',
@@ -1034,7 +1034,7 @@ export const figures = [
     name: '蔡伦',
     foreign: 'Cai Lun',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/b/be/Cai-lun.jpg',
+      src: '/images/cai-lun.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Cai-lun.jpg',
       author: '佚名',
       license: 'Public domain',
@@ -1105,7 +1105,7 @@ export const figures = [
     name: '苏格拉底',
     foreign: 'Socrates',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Socrates_Louvre.jpg/960px-Socrates_Louvre.jpg',
+      src: '/images/socrates.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Socrates_Louvre.jpg',
       author: '佚名（卢浮宫藏罗马复制品）',
       license: 'Public domain',
@@ -1184,7 +1184,7 @@ export const figures = [
     name: '柏拉图',
     foreign: 'Plato',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Plato_Silanion_Musei_Capitolini_MC1377.png/960px-Plato_Silanion_Musei_Capitolini_MC1377.png',
+      src: '/images/plato.png',
       page: 'https://commons.wikimedia.org/wiki/File:Plato_Silanion_Musei_Capitolini_MC1377.png',
       author: 'Marie-Lan Nguyen（摄）',
       license: 'Public domain',
@@ -1262,7 +1262,7 @@ export const figures = [
     name: '亚里士多德',
     foreign: 'Aristotle',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/960px-Aristotle_Altemps_Inv8575.jpg',
+      src: '/images/aristotle.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Aristotle_Altemps_Inv8575.jpg',
       author: 'After Lysippos',
       license: 'Public domain',
@@ -1339,7 +1339,7 @@ export const figures = [
     name: '亚历山大大帝',
     foreign: 'Alexander the Great',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Alexander_Mosaic_detail_of_Alexander_the_Great_%283x4_cropped%29.jpg/960px-Alexander_Mosaic_detail_of_Alexander_the_Great_%283x4_cropped%29.jpg',
+      src: '/images/alexander.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Alexander_Mosaic_detail_of_Alexander_the_Great_(3x4_cropped).jpg',
       author: '佚名（庞贝亚历山大马赛克）',
       license: 'Public domain',
@@ -1413,7 +1413,7 @@ export const figures = [
     name: '希罗多德',
     foreign: 'Herodotus',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Marble_bust_of_Herodotos_MET_DT11742_%28cropped%29.jpg/960px-Marble_bust_of_Herodotos_MET_DT11742_%28cropped%29.jpg',
+      src: '/images/herodotus.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Marble_bust_of_Herodotos_MET_DT11742_(cropped).jpg',
       author: '佚名（大都会藏罗马复制品）',
       license: 'CC0',
@@ -1487,7 +1487,7 @@ export const figures = [
     name: '克利奥帕特拉七世',
     foreign: 'Cleopatra VII',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Kleopatra-VII.-Altes-Museum-Berlin1.jpg/960px-Kleopatra-VII.-Altes-Museum-Berlin1.jpg',
+      src: '/images/cleopatra.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Kleopatra-VII.-Altes-Museum-Berlin1.jpg',
       author: 'Louis le Grand',
       license: 'Public domain',
@@ -1561,7 +1561,7 @@ export const figures = [
     name: '哈特谢普苏特',
     foreign: 'Hatshepsut',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Seated_Statue_of_Hatshepsut_MET_Hatshepsut2012.jpg/960px-Seated_Statue_of_Hatshepsut_MET_Hatshepsut2012.jpg',
+      src: '/images/hatshepsut.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Seated_Statue_of_Hatshepsut_MET_Hatshepsut2012.jpg',
       author: '佚名（大都会藏坐像）',
       license: 'CC0',
@@ -1629,7 +1629,7 @@ export const figures = [
     name: '释迦牟尼',
     foreign: 'Gautama Buddha',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg/960px-Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg',
+      src: '/images/gautama-buddha.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Buddha_in_Sarnath_Museum_(Dhammajak_Mutra).jpg',
       author: 'Sarnath Museum 藏品照片',
       license: 'CC BY-SA 3.0',
@@ -1702,7 +1702,7 @@ export const figures = [
     name: '阿育王',
     foreign: 'Ashoka',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/2/28/Ashoka%27s_visit_to_the_Ramagrama_stupa_Sanchi_Stupa_1_Southern_gateway.jpg',
+      src: '/images/ashoka.jpg',
       page: "https://commons.wikimedia.org/wiki/File:Ashoka's_visit_to_the_Ramagrama_stupa_Sanchi_Stupa_1_Southern_gateway.jpg",
       author: 'Photo Dharma',
       license: 'CC BY 2.0',
@@ -1776,7 +1776,7 @@ export const figures = [
     name: '欧几里得',
     foreign: 'Euclid',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Italian_-_Euclid_-_Google_Art_Project.jpg/960px-Italian_-_Euclid_-_Google_Art_Project.jpg',
+      src: '/images/euclid.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Italian_-_Euclid_-_Google_Art_Project.jpg',
       author: 'Jusepe de Ribera',
       license: 'Public domain',
@@ -1843,7 +1843,7 @@ export const figures = [
     name: '阿基米德',
     foreign: 'Archimedes',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Domenico-Fetti_Archimedes_1620.jpg/960px-Domenico-Fetti_Archimedes_1620.jpg',
+      src: '/images/archimedes.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Domenico-Fetti_Archimedes_1620.jpg',
       author: 'Domenico Fetti',
       license: 'Public domain',
@@ -1917,7 +1917,7 @@ export const figures = [
     name: '伊本·西那',
     foreign: 'Ibn Sina (Avicenna)',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Avicenna_Bust%2C_left_profile_%28cropped%29.jpg/960px-Avicenna_Bust%2C_left_profile_%28cropped%29.jpg',
+      src: '/images/ibn-sina.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Avicenna_Bust,_left_profile_(cropped).jpg',
       author: '美国国家医学图书馆',
       license: 'Public domain',
@@ -1996,7 +1996,7 @@ export const figures = [
     name: '花剌子米',
     foreign: 'Al-Khwarizmi',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/7/7d/Madrid_-_Ciudad_Universitaria%2C_Monumento_a_Muhammad_al-Juarismi_%28cropped%29.jpg',
+      src: '/images/al-khwarizmi.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Madrid_-_Ciudad_Universitaria,_Monumento_a_Muhammad_al-Juarismi_(cropped).jpg',
       author: 'Zarateman',
       license: 'CC0',
@@ -2075,7 +2075,7 @@ export const figures = [
     name: '马可·波罗',
     foreign: 'Marco Polo',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/f/ff/Frontispice_%C3%A9dition_de_Nuremberg_1477_%28cropped%29.png',
+      src: '/images/marco-polo.png',
       page: 'https://commons.wikimedia.org/wiki/File:Frontispice_édition_de_Nuremberg_1477_(cropped).png',
       author: '佚名（1477年纽伦堡版画）',
       license: 'Public domain',
@@ -2312,7 +2312,7 @@ export const figures = [
     name: '古腾堡',
     foreign: 'Johannes Gutenberg',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Mainz_Gutenbergdenkmal_2016_%28cropped%29.jpg/960px-Mainz_Gutenbergdenkmal_2016_%28cropped%29.jpg',
+      src: '/images/gutenberg.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Mainz_Gutenbergdenkmal_2016_(cropped).jpg',
       author: 'Kenneth C. Zirkel',
       license: 'CC BY-SA 4.0',
@@ -2391,7 +2391,7 @@ export const figures = [
     name: '哥伦布',
     foreign: 'Christopher Columbus',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Portrait_of_a_Man%2C_Said_to_be_Christopher_Columbus.jpg/960px-Portrait_of_a_Man%2C_Said_to_be_Christopher_Columbus.jpg',
+      src: '/images/columbus.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Portrait_of_a_Man,_Said_to_be_Christopher_Columbus.jpg',
       author: 'Sebastiano del Piombo',
       license: 'Public domain',
@@ -2470,7 +2470,7 @@ export const figures = [
     name: '塞万提斯与莎士比亚',
     foreign: 'Cervantes & Shakespeare',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Cervantes_J%C3%A1uregui.jpg/960px-Cervantes_J%C3%A1uregui.jpg',
+      src: '/images/cervantes-shakespeare.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Cervantes_Jáuregui.jpg',
       author: 'Juan de Jáuregui（传，塞万提斯像）',
       license: 'Public domain',
@@ -2550,7 +2550,7 @@ export const figures = [
     name: '牛顿',
     foreign: 'Isaac Newton',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg/960px-Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg',
+      src: '/images/newton.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Portrait_of_Sir_Isaac_Newton,_1689_(brightened).jpg',
       author: 'Godfrey Kneller',
       license: 'Public domain',
@@ -2624,7 +2624,7 @@ export const figures = [
     name: '居里夫人',
     foreign: 'Marie Curie',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Marie_Curie_c._1920s.jpg/960px-Marie_Curie_c._1920s.jpg',
+      src: '/images/marie-curie.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Marie_Curie_c._1920s.jpg',
       author: 'Henri Manuel',
       license: 'Public domain',
@@ -2698,7 +2698,7 @@ export const figures = [
     name: '特斯拉与爱迪生',
     foreign: 'Tesla & Edison',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/7/79/Tesla_circa_1890.jpeg',
+      src: '/images/tesla-edison.jpeg',
       page: 'https://commons.wikimedia.org/wiki/File:Tesla_circa_1890.jpeg',
       author: 'Napoleon Sarony（特斯拉像）',
       license: 'Public domain',
@@ -2773,7 +2773,7 @@ export const figures = [
     name: '甘地',
     foreign: 'Mahatma Gandhi',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg/960px-Mahatma-Gandhi%2C_studio%2C_1931.jpg',
+      src: '/images/gandhi.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Mahatma-Gandhi,_studio,_1931.jpg',
       author: 'Elliott & Fry',
       license: 'Public domain',
@@ -2847,7 +2847,7 @@ export const figures = [
     name: '丘吉尔',
     foreign: 'Winston Churchill',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg/960px-Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg',
+      src: '/images/winston-churchill.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Sir_Winston_Churchill_-_19086236948_(restored).jpg',
       author: 'Yousuf Karsh',
       license: 'Public domain',
@@ -2921,7 +2921,7 @@ export const figures = [
     name: '爱因斯坦',
     foreign: 'Albert Einstein',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Albert_Einstein_Head_cleaned.jpg/960px-Albert_Einstein_Head_cleaned.jpg',
+      src: '/images/einstein.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Albert_Einstein_Head_cleaned.jpg',
       author: 'Oren Jack Turner',
       license: 'Public domain',
@@ -2995,7 +2995,7 @@ export const figures = [
     name: '屠呦呦',
     foreign: 'Tu Youyou',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/D810_4987_Tu_Youyou%2C_medicine_%2822945001843%29_%28cropped%29.jpg/960px-D810_4987_Tu_Youyou%2C_medicine_%2822945001843%29_%28cropped%29.jpg',
+      src: '/images/tu-youyou.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:D810_4987_Tu_Youyou,_medicine_(22945001843)_(cropped).jpg',
       author: 'Bengt Nyman',
       license: 'CC BY 2.0',
@@ -3143,7 +3143,7 @@ export const figures = [
     name: '王阳明',
     foreign: 'Wang Yangming',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/%E7%8E%8B%E5%AE%88%E4%BB%81.jpg',
+      src: '/images/wang-yangming.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:王守仁.jpg',
       author: '沈俊绘',
       license: 'Public domain',
@@ -3222,7 +3222,7 @@ export const figures = [
     name: '成吉思汗',
     foreign: 'Genghis Khan',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/YuanEmperorAlbumGenghisPortrait.jpg/960px-YuanEmperorAlbumGenghisPortrait.jpg',
+      src: '/images/genghis-khan.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg',
       author: '佚名（元代帝后像）',
       license: 'Public domain',
@@ -3301,7 +3301,7 @@ export const figures = [
     name: '紫式部',
     foreign: 'Murasaki Shikibu',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Murasaki-Shikibu-composing-Genji-Monogatari.png/960px-Murasaki-Shikibu-composing-Genji-Monogatari.png',
+      src: '/images/murasaki-shikibu.png',
       page: 'https://commons.wikimedia.org/wiki/File:Murasaki-Shikibu-composing-Genji-Monogatari.png',
       author: '土佐光起',
       license: 'Public domain',
@@ -3372,7 +3372,7 @@ export const figures = [
     name: '汉尼拔',
     foreign: 'Hannibal Barca',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Hannibal_Barca_bust_from_Capua_photo.jpg/960px-Hannibal_Barca_bust_from_Capua_photo.jpg',
+      src: '/images/hannibal.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Hannibal_Barca_bust_from_Capua_photo.jpg',
       author: 'Fratelli Alinari',
       license: 'Public domain',
@@ -3450,7 +3450,7 @@ export const figures = [
     name: '曼萨·穆萨',
     foreign: 'Mansa Musa',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_%28cropped%29.jpg/960px-Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_%28cropped%29.jpg',
+      src: '/images/mansa-musa.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_(cropped).jpg',
       author: 'Abraham Cresques（传）',
       license: 'Public domain',
@@ -3520,7 +3520,7 @@ export const figures = [
     name: '西蒙·玻利瓦尔',
     foreign: 'Simón Bolívar',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Sim%C3%B3n_Bol%C3%ADvar._Toro_Moreno%2C_Luis._1922%2C_Legislative_Palace%2C_La_Paz.png/960px-Sim%C3%B3n_Bol%C3%ADvar._Toro_Moreno%2C_Luis._1922%2C_Legislative_Palace%2C_La_Paz.png',
+      src: '/images/simon-bolivar.png',
       page: 'https://commons.wikimedia.org/wiki/File:Simón_Bolívar._Toro_Moreno,_Luis._1922,_Legislative_Palace,_La_Paz.png',
       author: 'Luis Enrique Toro Moreno',
       license: 'Public domain',
@@ -3590,7 +3590,7 @@ export const figures = [
     name: '泰戈尔',
     foreign: 'Rabindranath Tagore',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/1926_Rabindrath_Tagore.jpg/960px-1926_Rabindrath_Tagore.jpg',
+      src: '/images/tagore.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:1926_Rabindrath_Tagore.jpg',
       author: 'Georges Chevalier',
       license: 'CC BY 4.0',
@@ -3660,7 +3660,7 @@ export const figures = [
     name: '葛饰北斋',
     foreign: 'Katsushika Hokusai',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Great_Wave_off_Kanagawa.jpg/960px-The_Great_Wave_off_Kanagawa.jpg',
+      src: '/images/hokusai.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:The_Great_Wave_off_Kanagawa.jpg',
       author: '葛饰北斋',
       license: 'Public domain',
@@ -3730,7 +3730,7 @@ export const figures = [
     name: '武则天',
     foreign: 'Wu Zetian',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/%E5%94%90%E5%90%8E%E8%A1%8C%E5%BE%9E%E5%9C%96_%28%E5%B1%80%E9%83%A8%29_-_%E6%AD%A6%E5%89%87%E5%A4%A9.png/960px-%E5%94%90%E5%90%8E%E8%A1%8C%E5%BE%9E%E5%9C%96_%28%E5%B1%80%E9%83%A8%29_-_%E6%AD%A6%E5%89%87%E5%A4%A9.png',
+      src: '/images/wu-zetian.png',
       page: 'https://commons.wikimedia.org/wiki/File:唐后行從圖_(局部)_-_武則天.png',
       author: '张萱（传）',
       license: 'Public domain',
@@ -3809,7 +3809,7 @@ export const figures = [
     name: '诸葛亮',
     foreign: 'Zhuge Liang',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/%E6%98%8E%E4%BA%BA%E7%BB%98_%E3%80%8A%E8%AF%B8%E8%91%9B%E4%BA%AE%E5%83%8F%E3%80%8B%EF%BC%88%E5%8D%97%E8%96%B0%E6%AE%BF%E6%9C%AC%EF%BC%89.jpg/960px-%E6%98%8E%E4%BA%BA%E7%BB%98_%E3%80%8A%E8%AF%B8%E8%91%9B%E4%BA%AE%E5%83%8F%E3%80%8B%EF%BC%88%E5%8D%97%E8%96%B0%E6%AE%BF%E6%9C%AC%EF%BC%89.jpg',
+      src: '/images/zhuge-liang.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:明人绘_《诸葛亮像》（南薰殿本）.jpg',
       author: '佚名（明）',
       license: 'Public domain',
@@ -3886,7 +3886,7 @@ export const figures = [
     name: '圣女贞德',
     foreign: 'Joan of Arc',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Joan_of_Arc_miniature_graded.jpg/960px-Joan_of_Arc_miniature_graded.jpg',
+      src: '/images/joan-of-arc.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Joan_of_Arc_miniature_graded.jpg',
       author: '佚名（15世纪手抄本细密画）',
       license: 'Public domain',
@@ -3961,7 +3961,7 @@ export const figures = [
     name: '南丁格尔',
     foreign: 'Florence Nightingale',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Florence_Nightingale_%28H_Hering_NPG_x82368%29.jpg/960px-Florence_Nightingale_%28H_Hering_NPG_x82368%29.jpg',
+      src: '/images/nightingale.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Florence_Nightingale_(H_Hering_NPG_x82368).jpg',
       author: 'Henry Hering',
       license: 'Public domain',
@@ -4036,7 +4036,7 @@ export const figures = [
     name: '孙中山',
     foreign: 'Sun Yat-sen',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/%E5%AD%99%E4%B8%AD%E5%B1%B1%E8%82%96%E5%83%8F.jpg/960px-%E5%AD%99%E4%B8%AD%E5%B1%B1%E8%82%96%E5%83%8F.jpg',
+      src: '/images/sun-yat-sen.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:孙中山肖像.jpg',
       author: '上海波尔照相馆',
       license: 'Public domain',
@@ -4111,7 +4111,7 @@ export const figures = [
     name: '阿兰·图灵',
     foreign: 'Alan Turing',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/c/ce/Alan_turing_header.jpg',
+      src: '/images/alan-turing.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Alan_turing_header.jpg',
       author: 'Elliott & Fry',
       license: 'Public domain',
@@ -4186,7 +4186,7 @@ export const figures = [
     name: '汉谟拉比',
     foreign: 'Hammurabi',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/F0182_Louvre_Code_Hammourabi_Bas-relief_Sb8_rwk.jpg/960px-F0182_Louvre_Code_Hammourabi_Bas-relief_Sb8_rwk.jpg',
+      src: '/images/hammurabi.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:F0182_Louvre_Code_Hammourabi_Bas-relief_Sb8_rwk.jpg',
       author: 'Mbzt',
       license: 'CC BY 3.0',
@@ -4261,7 +4261,7 @@ export const figures = [
     name: '萨福',
     foreign: 'Sappho',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/e/e3/Malarz_Safony_-_Kalpis_wykonana_technik%C4%85_Six.jpg',
+      src: '/images/sappho.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Malarz_Safony_-_Kalpis_wykonana_techniką_Six.jpg',
       author: 'Sappho Painter',
       license: 'Public domain',
@@ -4331,7 +4331,7 @@ export const figures = [
     name: '伽利略',
     foreign: 'Galileo Galilei',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff/lossy-page1-960px-Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff.jpg',
+      src: '/images/galileo.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Galileo_Galilei_(1564-1642)_RMG_BHC2700.tiff',
       author: 'Justus Sustermans',
       license: 'Public domain',
@@ -4406,7 +4406,7 @@ image: {
     name: '达尔文',
     foreign: 'Charles Darwin',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Charles_Darwin_seated_crop.jpg/960px-Charles_Darwin_seated_crop.jpg',
+      src: '/images/darwin.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Charles_Darwin_seated_crop.jpg',
       author: 'Maull & Fox',
       license: 'Public domain',
@@ -4482,7 +4482,7 @@ image: {
     name: '阿达·洛芙莱斯',
     foreign: 'Ada Lovelace',
 image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png',
+      src: '/images/ada-lovelace.png',
       page: 'https://commons.wikimedia.org/wiki/File:Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png',
       author: 'Antoine Claudet',
       license: 'Public domain',
@@ -4557,7 +4557,7 @@ image: {
     name: '弗里达·卡罗',
     foreign: 'Frida Kahlo',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg/960px-Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg',
+      src: '/images/frida-kahlo.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Frida_Kahlo,_by_Guillermo_Kahlo.jpg',
       author: 'Guillermo Kahlo',
       license: 'Public domain',
@@ -4632,7 +4632,7 @@ image: {
     name: '卡美哈美哈',
     foreign: 'Kamehameha I',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Louis_Choris_%281795-1828%29_-_Kamehameha%2C_King_of_the_Sandwich_Islands_by_Louis_Choris%2C_%28Russian%29%2C_pen_and_watercolor.jpg/960px-Louis_Choris_%281795-1828%29_-_Kamehameha%2C_King_of_the_Sandwich_Islands_by_Louis_Choris%2C_%28Russian%29%2C_pen_and_watercolor.jpg',
+      src: '/images/kamehameha.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Louis_Choris_(1795-1828)_-_Kamehameha,_King_of_the_Sandwich_Islands_by_Louis_Choris,_(Russian),_pen_and_watercolor.jpg',
       author: 'Louis Choris',
       license: 'Public domain',
@@ -4707,7 +4707,7 @@ image: {
     name: '拿破仑',
     foreign: 'Napoleon Bonaparte',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg/960px-Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg',
+      src: '/images/napoleon.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg',
       author: 'Jacques-Louis David',
       license: 'Public domain',
@@ -4782,7 +4782,7 @@ image: {
     name: '马克思',
     foreign: 'Karl Marx',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored.png/960px-Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored.png',
+      src: '/images/marx.png',
       page: 'https://commons.wikimedia.org/wiki/File:Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored.png',
       author: 'John Jabez Edwin Mayall',
       license: 'Public domain',
@@ -4857,7 +4857,7 @@ image: {
     name: '林肯',
     foreign: 'Abraham Lincoln',
 image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/960px-Abraham_Lincoln_O-77_matte_collodion_print.jpg',
+      src: '/images/lincoln.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Abraham_Lincoln_O-77_matte_collodion_print.jpg',
       author: 'Alexander Gardner',
       license: 'Public domain',
@@ -4932,7 +4932,7 @@ image: {
     name: '岳飞',
     foreign: 'Yue Fei',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/%E6%98%8E%E4%BA%BA%E3%80%8A%E5%B2%B3%E9%A3%9E%E5%83%8F%E3%80%8B%E8%BD%B4.jpg/960px-%E6%98%8E%E4%BA%BA%E3%80%8A%E5%B2%B3%E9%A3%9E%E5%83%8F%E3%80%8B%E8%BD%B4.jpg',
+      src: '/images/yue-fei.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:明人《岳飞像》轴.jpg',
       author: '佚名（明）',
       license: 'Public domain',
@@ -5006,7 +5006,7 @@ image: {
     name: '李清照',
     foreign: 'Li Qingzhao',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/%E6%9D%8E%E6%B8%85%E7%85%A7%E5%A1%91%E5%83%8F.jpg/960px-%E6%9D%8E%E6%B8%85%E7%85%A7%E5%A1%91%E5%83%8F.jpg',
+      src: '/images/li-qingzhao.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:李清照塑像.jpg',
       author: 'Vitsuha（摄现代塑像）',
       license: 'CC0',
@@ -5080,7 +5080,7 @@ image: {
     name: '鲁迅',
     foreign: 'Lu Xun',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/LuXun1930.jpg/960px-LuXun1930.jpg',
+      src: '/images/lu-xun.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:LuXun1930.jpg',
       author: '佚名',
       license: 'Public domain',
@@ -5154,7 +5154,7 @@ image: {
     name: '贝多芬',
     foreign: 'Ludwig van Beethoven',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Joseph_Karl_Stieler%27s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg/960px-Joseph_Karl_Stieler%27s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg',
+      src: '/images/beethoven.jpg',
       page: "https://commons.wikimedia.org/wiki/File:Joseph_Karl_Stieler's_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg",
       author: 'Joseph Karl Stieler',
       license: 'Public domain',
@@ -5228,7 +5228,7 @@ image: {
     name: '莫扎特',
     foreign: 'Wolfgang Amadeus Mozart',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg/960px-The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg',
+      src: '/images/mozart.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg',
       author: 'Johann Nepomuk della Croce',
       license: 'Public domain',
@@ -5295,7 +5295,7 @@ image: {
     name: '伏尔泰',
     foreign: 'Voltaire',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Nicolas_de_Largilli%C3%A8re_-_Portrait_de_Voltaire_%281694-1778%29_en_1718_-_P208_-_mus%C3%A9e_Carnavalet_-_5_%28cropped%29.jpg/960px-Nicolas_de_Largilli%C3%A8re_-_Portrait_de_Voltaire_%281694-1778%29_en_1718_-_P208_-_mus%C3%A9e_Carnavalet_-_5_%28cropped%29.jpg',
+      src: '/images/voltaire.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Nicolas_de_Largillière_-_Portrait_de_Voltaire_(1694-1778)_en_1718_-_P208_-_musée_Carnavalet_-_5_(cropped).jpg',
       author: 'Nicolas de Largillière',
       license: 'CC0',
@@ -5369,7 +5369,7 @@ image: {
     name: '曼德拉',
     foreign: 'Nelson Mandela',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/960px-Nelson_Mandela_1994.jpg',
+      src: '/images/nelson-mandela.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Nelson_Mandela_1994.jpg',
       author: 'Kingkongphoto',
       license: 'CC BY-SA 2.0',
@@ -5443,7 +5443,7 @@ image: {
     name: '俾斯麦',
     foreign: 'Otto von Bismarck',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/5/59/Otto_von_Bismarck_1885_%28cropped%29.jpg',
+      src: '/images/bismarck.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Otto_von_Bismarck_1885_(cropped).jpg',
       author: 'Unknown author',
       license: 'Public domain',
@@ -5516,7 +5516,7 @@ image: {
     name: '法拉第',
     foreign: 'Michael Faraday',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Michael_Faraday_sitting_crop.jpg/960px-Michael_Faraday_sitting_crop.jpg',
+      src: '/images/faraday.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Michael_Faraday_sitting_crop.jpg',
       author: 'Unknown author',
       license: 'Public domain',
@@ -5589,7 +5589,7 @@ image: {
     name: '达·芬奇',
     foreign: 'Leonardo da Vinci',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Francesco_Melzi_-_Portrait_of_Leonardo_%28colour_correction%29.png/960px-Francesco_Melzi_-_Portrait_of_Leonardo_%28colour_correction%29.png',
+      src: '/images/leonardo-da-vinci.png',
       page: 'https://commons.wikimedia.org/wiki/File:Francesco_Melzi_-_Portrait_of_Leonardo_(colour_correction).png',
       author: 'Attributed to Francesco Melzi',
       license: 'Public domain',
@@ -5662,7 +5662,7 @@ image: {
     name: '孟德尔',
     foreign: 'Gregor Mendel',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/d/d3/Gregor_Mendel.png',
+      src: '/images/mendel.png',
       page: 'https://commons.wikimedia.org/wiki/File:Gregor%20Mendel.png',
       author: 'Unknown author',
       license: 'Public domain',
@@ -5735,7 +5735,7 @@ image: {
     name: '米开朗基罗',
     foreign: 'Michelangelo',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg/960px-Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg',
+      src: '/images/michelangelo.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Michelangelo%20Daniele%20da%20Volterra%20(dettaglio).jpg',
       author: 'Attributed to Daniele da Volterra',
       license: 'Public domain',
@@ -5808,7 +5808,7 @@ image: {
     name: '阿克巴',
     foreign: 'Akbar',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Govardhan._Akbar_With_Lion_and_Calf_ca._1630%2C_Metmuseum_%28cropped%29.jpg/960px-Govardhan._Akbar_With_Lion_and_Calf_ca._1630%2C_Metmuseum_%28cropped%29.jpg',
+      src: '/images/akbar.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Govardhan._Akbar_With_Lion_and_Calf_ca._1630%2C_Metmuseum_(cropped).jpg',
       author: 'Govardhan / Mir Ali Heravi',
       license: 'Public domain',
@@ -5875,7 +5875,7 @@ image: {
     name: '叶卡捷琳娜大帝',
     foreign: 'Catherine the Great',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Catherine_II_after_Roslin%2C_Rokotov_%281780s%2C_Kunsthistorisches_Museum%29.jpg/960px-Catherine_II_after_Roslin%2C_Rokotov_%281780s%2C_Kunsthistorisches_Museum%29.jpg',
+      src: '/images/catherine-great.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Catherine_II_after_Roslin%2C_Rokotov_(1780s%2C_Kunsthistorisches_Museum).jpg',
       author: 'After Alexander Roslin',
       license: 'Public domain',
@@ -5941,7 +5941,7 @@ image: {
     name: '查理曼',
     foreign: 'Charlemagne',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Charlemagne_denier_Mayence_812_814.jpg/960px-Charlemagne_denier_Mayence_812_814.jpg',
+      src: '/images/charlemagne.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Charlemagne_denier_Mayence_812_814.jpg',
       author: 'Charlemagne. Autorité émettrice de monnaie indéterminé. Atelier monétaire. Émetteur',
       license: 'Public domain',
@@ -6008,7 +6008,7 @@ image: {
     name: '伊本·赫勒敦',
     foreign: 'Ibn Khaldun',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Bust_of_Ibn_Khaldun_%28Casbah_of_Bejaia%2C_Algeria%29.jpg/960px-Bust_of_Ibn_Khaldun_%28Casbah_of_Bejaia%2C_Algeria%29.jpg',
+      src: '/images/ibn-khaldun.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Bust_of_Ibn_Khaldun_(Casbah_of_Bejaia%2C_Algeria).jpg',
       author: 'Reda Kerbush',
       license: 'CC BY-SA 4.0',
@@ -6075,7 +6075,7 @@ image: {
     name: '彼得大帝',
     foreign: 'Peter the Great',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/6/64/Peter_the_Great%2C_2_07%C2%BC_%281901%29.png',
+      src: '/images/peter-great.png',
       page: 'https://commons.wikimedia.org/wiki/File:Peter%20the%20Great%2C%202%2007%C2%BC%20(1901).png',
       author: '"The Boston Globe"',
       license: 'Public domain',
@@ -6143,7 +6143,7 @@ image: {
     name: '鲁米',
     foreign: 'Rumi',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/8/81/Mevlana-celaleddin-i-rumi-1.jpg',
+      src: '/images/rumi.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Mevlana-celaleddin-i-rumi-1.jpg',
       author: 'Unknown author',
       license: 'Public domain',
@@ -6215,7 +6215,7 @@ image: {
     name: '萨拉丁',
     foreign: 'Saladin',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Al-Nasir_I_Salah_al-Din_Yusuf_%28Saladin%29._AH_564-589_%281169-1193_CE%29_%C3%86_Dirham_%2830.1mm%2C_13.28_g%2C_6h%29._Without_mint-name._Dated_AH_586_%28AD_1190-91%29._Sultan_sitting_facing%2C_cross-legged%2C_on_high-backed_throne_%28obverse%29.jpg/960px-thumbnail.jpg',
+      src: '/images/saladin.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Al-Nasir_I_Salah_al-Din_Yusuf_(Saladin)._AH_564-589_(1169-1193_CE)_%C3%86_Dirham_(30.1mm%2C_13.28_g%2C_6h)._Without_mint-name._Dated_AH_586_(AD_1190-91)._Sultan_sitting_facing%2C_cross-legged%2C_on_high-backed_throne_(obverse).jpg',
       author: 'Classical Numismatic Group (CNG)',
       license: 'CC BY-SA 2.5',
@@ -6282,7 +6282,7 @@ image: {
     name: '世宗大王',
     foreign: 'Sejong the Great',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/ROKS_Sejong_the_Great_%28DDG_991%29.jpg/960px-ROKS_Sejong_the_Great_%28DDG_991%29.jpg',
+      src: '/images/sejong.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:ROKS%20Sejong%20the%20Great%20(DDG%20991).jpg',
       author: 'U.S. Navy',
       license: 'Public domain',
@@ -6421,7 +6421,7 @@ image: {
     name: '德川家康',
     foreign: 'Tokugawa Ieyasu',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Tokugawa_Ieyasu2.JPG/960px-Tokugawa_Ieyasu2.JPG',
+      src: '/images/tokugawa-ieyasu.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:Tokugawa_Ieyasu2.JPG',
       author: 'Kanō Tan\'yū',
       license: 'Public domain',
@@ -6555,7 +6555,7 @@ image: {
     name: '希帕提娅',
     foreign: 'Hypatia',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Mural_feminista_de_Gandia_-_Hip%C3%A0tia.jpg/960px-Mural_feminista_de_Gandia_-_Hip%C3%A0tia.jpg',
+      src: '/images/hypatia.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Mural%20feminista%20de%20Gandia%20-%20Hip%C3%A0tia.jpg',
       author: 'Francesc Fort',
       license: 'CC BY-SA 4.0',
@@ -6622,7 +6622,7 @@ image: {
     name: '毕达哥拉斯',
     foreign: 'Pythagoras',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Pythagoras-2a.gif',
+      src: '/images/pythagoras.gif',
       page: 'https://commons.wikimedia.org/wiki/File:Pythagoras-2a.gif',
       author: 'Alvesgaspar',
       license: 'CC BY-SA 3.0',
@@ -6689,7 +6689,7 @@ image: {
     name: '夏卡',
     foreign: 'Shaka',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/7/73/KingShaka.jpg',
+      src: '/images/shaka-zulu.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:KingShaka.jpg',
       author: 'James King',
       license: 'Public domain',
@@ -6755,7 +6755,7 @@ image: {
     name: '松迪亚塔',
     foreign: 'Sundiata Keita',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Founderofthemali.jpg/960px-Founderofthemali.jpg',
+      src: '/images/sundiata-keita.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Founderofthemali.jpg',
       author: 'Unknown author',
       license: 'Public domain',
@@ -6888,7 +6888,7 @@ image: {
     name: '泰勒斯',
     foreign: 'Thales',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Arte_romana%2C_testa_di_talete_di_mileto%2C_II_sec..JPG/960px-Arte_romana%2C_testa_di_talete_di_mileto%2C_II_sec..JPG',
+      src: '/images/thales.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:Arte_romana%2C_testa_di_talete_di_mileto%2C_II_sec..JPG',
       author: 'Sailko',
       license: 'CC BY-SA 3.0',
@@ -6954,7 +6954,7 @@ image: {
     name: '图特摩斯三世',
     foreign: 'Thutmose III',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Thutmosis_III-2_%28cropped%29.jpg/960px-Thutmosis_III-2_%28cropped%29.jpg',
+      src: '/images/thutmose-iii.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Thutmosis_III-2_(cropped).jpg',
       author: 'TuthmosisIII.JPG: en:User:Chipdawes derivative work: Oltau (talk)',
       license: 'Public domain',
@@ -7021,7 +7021,7 @@ image: {
     name: '芝诺比娅',
     foreign: 'Zenobia',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/f/f8/Sir_Edward_Poynter%2C_Zenobia_Captive_1878.jpg',
+      src: '/images/zenobia.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Sir%20Edward%20Poynter%2C%20Zenobia%20Captive%201878.jpg',
       author: 'Sir Edward Poynter (1878)',
       license: 'Public domain',
@@ -7088,7 +7088,7 @@ image: {
     name: '哥白尼',
     foreign: 'Nicolaus Copernicus',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Nikolaus_Kopernikus_MOT.jpg/960px-Nikolaus_Kopernikus_MOT.jpg',
+      src: '/images/copernicus.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Nikolaus_Kopernikus_MOT.jpg',
       author: 'Unknown author',
       license: 'Public domain',
@@ -7161,7 +7161,7 @@ image: {
     name: '狄德罗',
     foreign: 'Denis Diderot',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Denis_Diderot_by_Louis-Michel_van_Loo.jpg/960px-Denis_Diderot_by_Louis-Michel_van_Loo.jpg',
+      src: '/images/diderot.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Denis%20Diderot%20by%20Louis-Michel%20van%20Loo.jpg',
       author: 'Unknown author',
       license: 'Public domain',
@@ -7234,7 +7234,7 @@ image: {
     name: '伊拉斯谟',
     foreign: 'Erasmus',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Holbein-erasmus.jpg/960px-Holbein-erasmus.jpg',
+      src: '/images/erasmus.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Holbein-erasmus.jpg',
       author: 'Hans Holbein the Younger',
       license: 'Public domain',
@@ -7306,7 +7306,7 @@ image: {
     name: '迈蒙尼德',
     foreign: 'Maimonides',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/0/07/Maimonides-2.jpg',
+      src: '/images/maimonides.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Maimonides-2.jpg',
       author: 'Blaisio Ugolino',
       license: 'Public domain',
@@ -7379,7 +7379,7 @@ image: {
     name: '马丁·路德',
     foreign: 'Martin Luther',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg/960px-Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg',
+      src: '/images/martin-luther.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Lucas%20Cranach%20d.%C3%84.%20-%20Martin%20Luther%2C%201528%20(Veste%20Coburg).jpg',
       author: 'Lucas Cranach the Elder',
       license: 'Public domain',
@@ -7452,7 +7452,7 @@ image: {
     name: '莫里哀',
     foreign: 'Molière',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Moli%C3%A8re_Mignard_Chantilly.jpg/960px-Moli%C3%A8re_Mignard_Chantilly.jpg',
+      src: '/images/moliere.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Moli%C3%A8re%20Mignard%20Chantilly.jpg',
       author: 'Pierre Mignard I',
       license: 'Public domain',
@@ -7525,7 +7525,7 @@ image: {
     name: '海亚姆',
     foreign: 'Omar Khayyam',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Omar_Khayyam2.JPG/960px-Omar_Khayyam2.JPG',
+      src: '/images/omer-khayyam.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:Omar%20Khayyam2.JPG',
       author: 'The original uploader was Atilin at French Wikipedia.',
       license: 'CC BY-SA 3.0',
@@ -7598,7 +7598,7 @@ image: {
     name: '莎士比亚',
     foreign: 'William Shakespeare',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/William_Shakespeare_by_John_Taylor%2C_edited.jpg/960px-William_Shakespeare_by_John_Taylor%2C_edited.jpg',
+      src: '/images/shakespeare.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:William_Shakespeare_by_John_Taylor%2C_edited.jpg',
       author: 'Attributed to John Taylor',
       license: 'Public domain',
@@ -7671,7 +7671,7 @@ image: {
     name: '维萨里',
     foreign: 'Andreas Vesalius',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Man_dressed_in_Black_by_Calcar_%28Hermitage%29.jpg',
+      src: '/images/vesalius.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Man_dressed_in_Black_by_Calcar_(Hermitage).jpg',
       author: 'Jan van Calcar',
       license: 'Public domain',
@@ -7744,7 +7744,7 @@ image: {
     name: '亚当·斯密',
     foreign: 'Adam Smith',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Adam_Smith_The_Muir_portrait.jpg/960px-Adam_Smith_The_Muir_portrait.jpg',
+      src: '/images/adam-smith.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Adam_Smith_The_Muir_portrait.jpg',
       author: 'Unknown author',
       license: 'Public domain',
@@ -7823,7 +7823,7 @@ image: {
     name: '陀思妥耶夫斯基',
     foreign: 'Fyodor Dostoevsky',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg/960px-Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg',
+      src: '/images/dostoevsky.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Vasily%20Perov%20-%20%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20-%20Google%20Art%20Project.jpg',
       author: 'Vasily Perov',
       license: 'Public domain',
@@ -7902,7 +7902,7 @@ image: {
     name: '歌德',
     foreign: 'Johann Wolfgang von Goethe',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Goethe_%28Stieler_1828%29.jpg/960px-Goethe_%28Stieler_1828%29.jpg',
+      src: '/images/goethe.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Goethe_(Stieler_1828).jpg',
       author: 'Joseph Karl Stieler',
       license: 'Public domain',
@@ -7981,7 +7981,7 @@ image: {
     name: '康德',
     foreign: 'Immanuel Kant',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Immanuel_Kant_-_Gemaelde_1.jpg/960px-Immanuel_Kant_-_Gemaelde_1.jpg',
+      src: '/images/kant.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Immanuel_Kant_-_Gemaelde_1.jpg',
       author: 'Johann Gottlieb Becker (1720-1782)',
       license: 'Public domain',
@@ -8060,7 +8060,7 @@ image: {
     name: '维克多·雨果',
     foreign: 'Victor Hugo',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Victor_Hugo_by_%C3%89tienne_Carjat_1876_-_full.jpg/960px-Victor_Hugo_by_%C3%89tienne_Carjat_1876_-_full.jpg',
+      src: '/images/victor-hugo.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Victor%20Hugo%20by%20%C3%89tienne%20Carjat%201876%20-%20full.jpg',
       author: 'Étienne Carjat',
       license: 'Public domain',
@@ -8131,7 +8131,7 @@ image: {
     name: '伊姆霍特普',
     foreign: 'Imhotep',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Imhotep%2C_donated_by_Padisu_MET_DP164134.jpg/960px-Imhotep%2C_donated_by_Padisu_MET_DP164134.jpg',
+      src: '/images/imhotep.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Imhotep%2C_donated_by_Padisu_MET_DP164134.jpg',
       author: '',
       license: 'CC0',
@@ -8205,7 +8205,7 @@ image: {
     name: '大卫王',
     foreign: 'David',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/David_Self_Portrait.jpg/960px-David_Self_Portrait.jpg',
+      src: '/images/david-king.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:David%20Self%20Portrait.jpg',
       author: 'Jacques-Louis David',
       license: 'Public domain',
@@ -8270,7 +8270,7 @@ image: {
     name: '胡夫',
     foreign: 'Khufu',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Statue_of_Khufu_in_the_Cairo_Egyptian_Museum.jpg/960px-Statue_of_Khufu_in_the_Cairo_Egyptian_Museum.jpg',
+      src: '/images/khufu.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Statue_of_Khufu_in_the_Cairo_Egyptian_Museum.jpg',
       author: 'UserPpPp',
       license: 'CC BY-SA 4.0',
@@ -8335,7 +8335,7 @@ image: {
     name: '罗斯福',
     foreign: 'Franklin D. Roosevelt',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/FDR-1944-Campaign-Portrait_%283x4_retouched%2C_cropped%29.jpg/960px-FDR-1944-Campaign-Portrait_%283x4_retouched%2C_cropped%29.jpg',
+      src: '/images/fdr.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:FDR-1944-Campaign-Portrait_(3x4_retouched%2C_cropped).jpg',
       author: 'Leon Perskie',
       license: 'CC BY 2.0',
@@ -8414,7 +8414,7 @@ image: {
     name: '毛泽东',
     foreign: 'Mao Zedong',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/Mao_Zedong_1950_Portrait_%283x4_cropped%29%282%29.jpg',
+      src: '/images/mao-zedong.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Mao_Zedong_1950_Portrait_(3x4_cropped)(2).jpg',
       author: 'Chen Zhengqing (1917–1966)',
       license: 'Public domain',
@@ -8493,7 +8493,7 @@ image: {
     name: '玻尔',
     foreign: 'Niels Bohr',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Niels_Bohr.jpg/960px-Niels_Bohr.jpg',
+      src: '/images/bohr.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Niels_Bohr.jpg',
       author: 'The American Institute of Physics credits the photo [1] to AB Lagrelius &amp; Westphal, which is the Swedish company use',
       license: 'Public domain',
@@ -8571,7 +8571,7 @@ image: {
     name: '霍金',
     foreign: 'Stephen Hawking',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Stephen_Hawking.StarChild.jpg',
+      src: '/images/hawking.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Stephen_Hawking.StarChild.jpg',
       author: 'NASA',
       license: 'Public domain',
@@ -8641,7 +8641,7 @@ image: {
     name: '海森堡',
     foreign: 'Werner Heisenberg',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Werner_Heisenberg_Portrait_%283x4_cropped%29.jpg/960px-Werner_Heisenberg_Portrait_%283x4_cropped%29.jpg',
+      src: '/images/heisenberg.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Werner_Heisenberg_Portrait_(3x4_cropped).jpg',
       author: 'Unknown author',
       license: 'CC BY-SA 3.0 de',
@@ -8719,7 +8719,7 @@ image: {
     name: '普朗克',
     foreign: 'Max Planck',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Max_Planck_by_Hugo_Erfurth_1938cr_-_restoration1.jpg/960px-Max_Planck_by_Hugo_Erfurth_1938cr_-_restoration1.jpg',
+      src: '/images/planck.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Max_Planck_by_Hugo_Erfurth_1938cr_-_restoration1.jpg',
       author: 'Hugo Erfurth',
       license: 'Public domain',
@@ -8797,7 +8797,7 @@ image: {
     name: '拉斐尔',
     foreign: 'Raphael',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Raffaello_Sanzio.jpg/960px-Raffaello_Sanzio.jpg',
+      src: '/images/raphael.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Raffaello_Sanzio.jpg',
       author: 'Raphael',
       license: 'Public domain',
@@ -8875,7 +8875,7 @@ image: {
     name: '薛定谔',
     foreign: 'Erwin Schrödinger',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Erwin_Schr%C3%B6dinger_-_Narodowe_Archiwum_Cyfrowe_%281-E-939%29.jpg/960px-Erwin_Schr%C3%B6dinger_-_Narodowe_Archiwum_Cyfrowe_%281-E-939%29.jpg',
+      src: '/images/schrodinger.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Erwin_Schr%C3%B6dinger_-_Narodowe_Archiwum_Cyfrowe_(1-E-939).jpg',
       author: 'Unknown author',
       license: 'Public domain',
@@ -8952,7 +8952,7 @@ image: {
     name: '狄更斯',
     foreign: 'Charles Dickens',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/a/aa/Dickens_Gurney_head.jpg',
+      src: '/images/dickens.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Dickens_Gurney_head.jpg',
       author: 'Jeremiah Gurney',
       license: 'Public domain',
@@ -9022,7 +9022,7 @@ image: {
     name: '莫奈',
     foreign: 'Claude Monet',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Claude_Monet_1899_Nadar_crop.jpg/960px-Claude_Monet_1899_Nadar_crop.jpg',
+      src: '/images/monet.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Claude_Monet_1899_Nadar_crop.jpg',
       author: 'Nadar',
       license: 'Public domain',
@@ -9162,7 +9162,7 @@ image: {
     name: '托尔斯泰',
     foreign: 'Leo Tolstoy',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Leo_Tolstoy_1908_Portrait_%283x4_cropped%29.jpg/960px-Leo_Tolstoy_1908_Portrait_%283x4_cropped%29.jpg',
+      src: '/images/tolstoy.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Leo_Tolstoy_1908_Portrait_(3x4_cropped).jpg',
       author: 'Sergei Prokudin-Gorskii',
       license: 'Public domain',
@@ -9232,7 +9232,7 @@ image: {
     name: '阿基坦的埃莉诺',
     foreign: 'Eleanor of Aquitaine',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Church_of_Fontevraud_Abbey_Eleanor_of_Aquitaine_effigy.jpg/960px-Church_of_Fontevraud_Abbey_Eleanor_of_Aquitaine_effigy.jpg',
+      src: '/images/eleanor-aquitaine.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Church_of_Fontevraud_Abbey_Eleanor_of_Aquitaine_effigy.jpg',
       author: 'Adam Bishop',
       license: 'CC BY-SA 3.0',
@@ -9297,7 +9297,7 @@ image: {
     name: '康熙帝',
     foreign: 'Kangxi Emperor',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Portrait_of_the_Kangxi_Emperor_in_Court_Dress.jpg/960px-Portrait_of_the_Kangxi_Emperor_in_Court_Dress.jpg',
+      src: '/images/kangxi-emperor.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Portrait%20of%20the%20Kangxi%20Emperor%20in%20Court%20Dress.jpg',
       author: 'AnonymousUnknown author Qing Dynasty Court Painter',
       license: 'Public domain',
@@ -9363,7 +9363,7 @@ image: {
     name: '迦腻色伽',
     foreign: 'Kanishka',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/KanishkaCoin3.JPG/960px-KanishkaCoin3.JPG',
+      src: '/images/kanishka.JPG',
       page: 'https://commons.wikimedia.org/wiki/File:KanishkaCoin3.JPG',
       author: 'No machine-readable author provided. World Imaging assumed (based on copyright claims).',
       license: 'Public domain',
@@ -9428,7 +9428,7 @@ image: {
     name: '穆罕默德',
     foreign: 'Muhammad',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Giant_%27Uj_and_the_Prophets_Moses%2C_Jesus_and_Muhammad_-_Khalili_Collection_Islamic_Art_HIGHRES.jpg/960px-The_Giant_%27Uj_and_the_Prophets_Moses%2C_Jesus_and_Muhammad_-_Khalili_Collection_Islamic_Art_HIGHRES.jpg',
+      src: '/images/muhammad.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:The%20Giant%20\'Uj%20and%20the%20Prophets%20Moses%2C%20Jesus%20and%20Muhammad%20-%20Khalili%20Collection%20Islamic%20Art%20HIGHRES.jpg',
       author: 'Khalili Collections',
       license: 'CC BY-SA 3.0 igo',
@@ -9493,7 +9493,7 @@ image: {
     name: '征服者威廉',
     foreign: 'William the Conqueror',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/3/34/William_the_Conqueror_%28TFA%29.jpg',
+      src: '/images/william-conqueror.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:William_the_Conqueror_(TFA).jpg',
       author: 'Myrabella',
       license: 'Public domain',
@@ -9559,7 +9559,7 @@ image: {
     name: '永乐帝',
     foreign: 'Yongle Emperor',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Portrait_assis_de_l%27empereur_Ming_Chengzu.jpg/960px-Portrait_assis_de_l%27empereur_Ming_Chengzu.jpg',
+      src: '/images/yongle-emperor.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Portrait_assis_de_l\'empereur_Ming_Chengzu.jpg',
       author: 'Unknown author',
       license: 'Public domain',
@@ -9695,7 +9695,7 @@ image: {
     name: '蒋介石',
     foreign: 'Chiang Kai-shek',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Chiang_Kai-shek_memorial_amk.jpg/960px-Chiang_Kai-shek_memorial_amk.jpg',
+      src: '/images/chiang-kai-shek.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Chiang%20Kai-shek%20memorial%20amk.jpg',
       author: 'AngMoKio',
       license: 'CC BY-SA 3.0',
@@ -9845,7 +9845,7 @@ image: {
     name: '霍梅尼',
     foreign: 'Ruhollah Khomeini',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Portrait_of_Ruhollah_Khomeini_By_Ali_Kaveh.jpg/960px-Portrait_of_Ruhollah_Khomeini_By_Ali_Kaveh.jpg',
+      src: '/images/khomeini.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Portrait_of_Ruhollah_Khomeini_By_Ali_Kaveh.jpg',
       author: 'Ali Kaveh[1][2][3]',
       license: 'Public domain',
@@ -9916,7 +9916,7 @@ image: {
     name: '纳赛尔',
     foreign: 'Gamal Abdel Nasser',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Stevan_Kragujevic%2C_Gamal_Abdel_Naser_u_Beogradu%2C_1962.jpg/960px-Stevan_Kragujevic%2C_Gamal_Abdel_Naser_u_Beogradu%2C_1962.jpg',
+      src: '/images/nasser.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Stevan_Kragujevic%2C_Gamal_Abdel_Naser_u_Beogradu%2C_1962.jpg',
       author: 'Stevan Kragujević',
       license: 'CC BY-SA 3.0',
@@ -9987,7 +9987,7 @@ image: {
     name: '托勒密',
     foreign: 'Ptolemy',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Ptolemy_1476_with_armillary_sphere_model.jpg/960px-Ptolemy_1476_with_armillary_sphere_model.jpg',
+      src: '/images/ptolemy.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Ptolemy_1476_with_armillary_sphere_model.jpg',
       author: 'Justus van Gent / Pedro Berruguete',
       license: 'Public domain',
@@ -10066,7 +10066,7 @@ image: {
     name: '毕加索',
     foreign: 'Pablo Picasso',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Pablo_picasso_1.jpg/960px-Pablo_picasso_1.jpg',
+      src: '/images/picasso.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Pablo_picasso_1.jpg',
       author: 'Argentina. Revista Vea y Lea',
       license: 'Public domain',
@@ -10136,7 +10136,7 @@ image: {
     name: '伦勃朗',
     foreign: 'Rembrandt',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg/960px-Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg',
+      src: '/images/rembrandt.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg',
       author: 'Rembrandt',
       license: 'Public domain',
@@ -10214,7 +10214,7 @@ image: {
     name: '提香',
     foreign: 'Titian',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Titian_-_Self-portrait_%28Museo_del_Prado%29.jpg/960px-Titian_-_Self-portrait_%28Museo_del_Prado%29.jpg',
+      src: '/images/titian.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Titian_-_Self-portrait_(Museo_del_Prado).jpg',
       author: 'Titian',
       license: 'Public domain',
@@ -10292,7 +10292,7 @@ image: {
     name: '梵高',
     foreign: 'Vincent van Gogh',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/960px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg',
+      src: '/images/van-gogh.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_(454045).jpg',
       author: 'Vincent van Gogh',
       license: 'Public domain',
@@ -10370,7 +10370,7 @@ image: {
     name: '维米尔',
     foreign: 'Johannes Vermeer',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg/960px-Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg',
+      src: '/images/vermeer.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg',
       author: 'Johannes Vermeer',
       license: 'Public domain',
@@ -10440,7 +10440,7 @@ image: {
     name: '开普勒',
     foreign: 'Johannes Kepler',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/7/74/JKepler.jpg',
+      src: '/images/kepler.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:JKepler.jpg',
       author: 'August Köhler [1]',
       license: 'Public domain',
@@ -10511,7 +10511,7 @@ image: {
     name: '拉瓦锡',
     foreign: 'Antoine Lavoisier',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/David_-_Portrait_of_Monsieur_Lavoisier_%28cropped%292.jpg',
+      src: '/images/lavoisier.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:David_-_Portrait_of_Monsieur_Lavoisier_(cropped)2.jpg',
       author: 'Jacques-Louis David',
       license: 'Public domain',
@@ -10582,7 +10582,7 @@ image: {
     name: '麦克斯韦',
     foreign: 'James Clerk Maxwell',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/James-Clerk-Maxwell-1831-1879.jpg',
+      src: '/images/maxwell.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:James-Clerk-Maxwell-1831-1879.jpg',
       author: 'Unknown author',
       license: 'Public domain',
@@ -10653,7 +10653,7 @@ image: {
     name: '伊丽莎白一世',
     foreign: 'Elizabeth I',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Darnley_stage_3.jpg/960px-Darnley_stage_3.jpg',
+      src: '/images/elizabeth-i.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Darnley_stage_3.jpg',
       author: 'Unidentified painter',
       license: 'Public domain',
@@ -10723,7 +10723,7 @@ image: {
     name: '加里波第',
     foreign: 'Giuseppe Garibaldi',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Garibaldi_%281866%29.jpg/960px-Garibaldi_%281866%29.jpg',
+      src: '/images/garibaldi.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Garibaldi_(1866).jpg',
       author: 'Fratelli Alinari',
       license: 'Public domain',
@@ -10793,7 +10793,7 @@ image: {
     name: '西瓦吉',
     foreign: 'Shivaji',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Shivaji_British_Museum.jpg/960px-Shivaji_British_Museum.jpg',
+      src: '/images/shivaji.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Shivaji_British_Museum.jpg',
       author: 'Unknown author',
       license: 'Public domain',
@@ -10863,7 +10863,7 @@ image: {
     name: '亨利八世',
     foreign: 'Henry VIII',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/After_Hans_Holbein_the_Younger_-_Portrait_of_Henry_VIII_-_Google_Art_Project.jpg/960px-After_Hans_Holbein_the_Younger_-_Portrait_of_Henry_VIII_-_Google_Art_Project.jpg',
+      src: '/images/henry-viii.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:After_Hans_Holbein_the_Younger_-_Portrait_of_Henry_VIII_-_Google_Art_Project.jpg',
       author: 'Workshop of Hans Holbein the Younger',
       license: 'Public domain',
@@ -10929,7 +10929,7 @@ image: {
     name: '列宁',
     foreign: 'Vladimir Lenin',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Lenin_in_1920_%28cropped%29.jpg/960px-Lenin_in_1920_%28cropped%29.jpg',
+      src: '/images/lenin.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Lenin_in_1920_(cropped).jpg',
       author: 'Unknown, presumably official',
       license: 'Public domain',
@@ -10996,7 +10996,7 @@ image: {
     name: '织田信长',
     foreign: 'Oda Nobunaga',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Odanobunaga.jpg/960px-Odanobunaga.jpg',
+      src: '/images/oda-nobunaga.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Odanobunaga.jpg',
       author: '狩野宗秀 (Kanō Sōshū, 1551 - 1601)',
       license: 'Public domain',
@@ -11133,7 +11133,7 @@ image: {
     name: '伊凡雷帝',
     foreign: 'Ivan the Terrible',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Ivan_the_Terrible_and_Harsey.jpg/960px-Ivan_the_Terrible_and_Harsey.jpg',
+      src: '/images/ivan-terrible.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Ivan%20the%20Terrible%20and%20Harsey.jpg',
       author: 'Alexander Litovchenko',
       license: 'Public domain',
@@ -11203,7 +11203,7 @@ image: {
     name: '路易十四',
     foreign: 'Louis XIV',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Louis_XIV_of_France.jpg/960px-Louis_XIV_of_France.jpg',
+      src: '/images/louis-xiv.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Louis_XIV_of_France.jpg',
       author: 'Hyacinthe Rigaud',
       license: 'Public domain',
@@ -11273,7 +11273,7 @@ image: {
     name: '斯大林',
     foreign: 'Joseph Stalin',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/StalinCropped1943.jpg/960px-StalinCropped1943.jpg',
+      src: '/images/stalin.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:StalinCropped1943.jpg',
       author: 'Franklin D. Roosevelt Library Public Domain Photographs',
       license: 'Public domain',
@@ -11343,7 +11343,7 @@ image: {
     name: '华盛顿',
     foreign: 'George Washington',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/960px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg',
+      src: '/images/washington.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg',
       author: 'Gilbert Stuart',
       license: 'Public domain',
