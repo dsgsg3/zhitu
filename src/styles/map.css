@@ -29,3 +29,15 @@
 .route-entry b { font-size: 15px; }
 .route-entry span { font-size: 12px; color: var(--ink-soft, #777); }
 .route-entry .no { font-family: var(--serif, serif); font-size: 15px; color: var(--cat, #888); }
+
+/* ===== 手机适配 ===== */
+@media (max-width: 700px) {
+  .map-page { padding: 20px 14px 50px; }
+  .map-frame { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .map-frame svg { min-width: 980px; }
+  .map-tab { padding: 8px 12px; font-size: 13px; }
+  .map-legend { gap: 10px; font-size: 12px; }
+  .route-entry { padding: 10px 12px; }
+  .route-entry b { font-size: 14px; }
+  .map-hint { font-size: 12px; }
+}

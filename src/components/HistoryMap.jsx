@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { geoNaturalEarth1, geoPath } from 'd3-geo'
 import { feature } from 'topojson-client'
 import world from 'world-atlas/countries-110m.json'
-import { CATEGORIES } from '../data/taxonomy.js'
+import { CATEGORIES, REGIONS } from '../data/taxonomy.js'
 
 const W = 960
 const H = 520
@@ -35,6 +35,7 @@ export default function HistoryMap({ entries = [], route = null }) {
   const landPath = useMemo(() => pathGen(land), [land, pathGen])
 
   const catAccent = {}
+  const regionLabel = Object.fromEntries(REGIONS.map((r) => [r.key, r.label]))
   for (const c of CATEGORIES) catAccent[c.key] = c.accent
 
   // 航线动画
@@ -119,7 +120,7 @@ export default function HistoryMap({ entries = [], route = null }) {
               >
                 <title>按地域浏览：{k}</title>
               </circle>
-              <text className='map-region-label' x={pt[0]} y={pt[1] + 4}>{k}</text>
+              <text className='map-region-label' x={pt[0]} y={pt[1] + 4}>{regionLabel[k] || k}</text>
             </g>
           )
         })}

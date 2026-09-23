@@ -43,7 +43,7 @@ export default function MapPage() {
               <span key={c.key}><i style={{ background: c.accent }} /> {c.icon} {c.label}</span>
             ))}
           </div>
-          <p className='map-hint'>圆点 = 一条档案（颜色为类别）；悬停查看名称，点击进入。点区域名称可按地域筛选档案。</p>
+          <p className='map-hint'>圆点 = 一条档案（颜色为类别）；点击进入档案。手机上地图可左右滑动查看。</p>
         </div>
       )}
 
