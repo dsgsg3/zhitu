@@ -1,22 +1,20 @@
-/* ===== 时间轴 · 时代长廊 ===== */
+/* ===== 时间轴 · 时代长廊（横向版） ===== */
 .timeline-page { padding: 52px 0 96px; }
 .timeline-hero { text-align: center; padding: 20px 5vw 0; }
 .timeline-hero .eyebrow { justify-content: center; }
 .timeline-hero h1 { font-family: var(--serif); font-size: clamp(28px, 3.8vw, 44px); letter-spacing: -.01em; margin: 10px 0 10px; font-weight: 600; }
 .timeline-hero p { color: var(--ink-2); font-size: var(--fs-body); margin: 0 auto; max-width: 560px; line-height: 1.9; }
 
-/* 时代导航带 */
 .tl-era-nav { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin: 30px 5vw 0; }
 .tl-era-seg { border: 1px solid var(--line); background: var(--paper); padding: 12px 8px 10px; border-radius: 6px; cursor: pointer; display: flex; flex-direction: column; gap: 4px; align-items: center; transition: all .16s; }
 .tl-era-seg:hover { border-color: var(--ink-3); transform: translateY(-2px); }
 .tl-era-seg.active { background: var(--ink); border-color: var(--ink); }
-.tl-era-seg.active .seg-short, .tl-era-seg.active .seg-range, .tl-era-seg.active .seg-count { color: var(--paper); }
+.tl-era-seg.active .seg-short, .tl-era-seg.active .seg-range { color: var(--paper); }
+.tl-era-seg.active .seg-count { color: var(--paper-2); }
 .tl-era-seg .seg-short { font-family: var(--serif); font-size: 17px; font-weight: 600; color: var(--ink); }
 .tl-era-seg .seg-range { font-size: 11px; color: var(--ink-3); white-space: nowrap; }
 .tl-era-seg .seg-count { font-size: 11px; color: var(--ink-3); }
-.tl-era-seg.active .seg-count { color: var(--paper-2); }
 
-/* 时代标题 + 类别筛选 */
 .tl-era-head { text-align: center; margin-top: 44px; }
 .tl-era-head h2 { font-family: var(--serif); font-size: 26px; font-weight: 600; margin: 6px 0 14px; }
 .tl-cat-row { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
@@ -24,37 +22,37 @@
 .tl-cat-chip:hover { border-color: var(--ink-3); color: var(--ink); }
 .tl-cat-chip.active { background: var(--ink); border-color: var(--ink); color: var(--paper); }
 
-/* 垂直时间线 */
-.spine-wrap { position: relative; max-width: 720px; margin: 34px auto 0; padding: 0 5vw; }
-.spine-line { position: absolute; top: 6px; bottom: 6px; width: 1px; background: var(--line-2, #ccc); }
-@media (min-width: 700px) { .spine-line { left: calc(5vw + 96px + 7px); } }
-@media (max-width: 699px) { .spine-line { left: calc(5vw + 64px + 6px); } }
-.spine-row { position: relative; display: grid; align-items: center; text-decoration: none; padding: 13px 0; }
-@media (min-width: 700px) { .spine-row { grid-template-columns: 96px 15px 1fr auto; } }
-@media (max-width: 699px) { .spine-row { grid-template-columns: 64px 13px 1fr auto; } }
-.spine-year { font-family: var(--serif); font-size: 14px; color: var(--ink-3); text-align: right; padding-right: 12px; white-space: nowrap; font-weight: 600; }
-@media (max-width: 699px) { .spine-year { font-size: 12px; padding-right: 8px; } }
-.spine-dot { width: 9px; height: 9px; border-radius: 50%; justify-self: center; box-shadow: 0 0 0 4px var(--paper); position: relative; z-index: 1; transition: transform .15s; }
-.spine-row:hover .spine-dot { transform: scale(1.5); }
-.spine-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-.spine-name { font-weight: 600; font-size: 16.5px; color: var(--ink); }
-.spine-row:hover .spine-name { text-decoration: underline; text-underline-offset: 4px; }
-.spine-foreign { font-size: 12.5px; color: var(--ink-3); font-style: italic; }
-.spine-go { color: var(--ink-faint, #bbb); font-size: 18px; opacity: 0; transition: opacity .15s; padding-left: 10px; }
-.spine-row:hover .spine-go { opacity: 1; }
-.spine-empty { text-align: center; color: var(--ink-3); padding: 40px 0; }
+/* 横向年代带 */
+.hband-scroll { overflow-x: auto; overflow-y: hidden; margin-top: 26px; padding: 0 5vw 8px; cursor: grab; scrollbar-width: thin; }
+.hband-scroll.dragging { cursor: grabbing; user-select: none; }
+.hband { position: relative; height: 490px; }
+.hband-axis { position: absolute; left: 0; right: 0; height: 1px; background: var(--line-2, #bbb); }
+.hband-stem { position: absolute; width: 1px; height: 26px; background: var(--line-2, #bbb); }
+.hband-stem.above { transform: translateY(-26px); }
+.hband-dot { position: absolute; width: 9px; height: 9px; border-radius: 50%; transform: translate(-50%, -50%); box-shadow: 0 0 0 4px var(--paper); z-index: 2; }
+.hband-card { position: absolute; width: 172px; z-index: 3; }
+.hband-card.read { opacity: .55; }
+.hband-card.read:hover { opacity: 1; }
+.hband-link { display: flex; flex-direction: column; gap: 3px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--white, #fff); text-decoration: none; color: var(--ink); transition: border-color .15s, box-shadow .15s; }
+.hband-card:hover .hband-link, .hband-link:hover { border-color: var(--ink-2); box-shadow: 0 4px 14px rgba(0,0,0,.06); }
+.hband-year { font-family: var(--serif); font-size: 12.5px; font-weight: 600; color: var(--ink-3); }
+.hband-name { font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 6px; line-height: 1.35; }
+.hband-catdot { width: 7px; height: 7px; border-radius: 50%; flex: none; }
+.hband-kicker { font-size: 12px; color: var(--ink-3); line-height: 1.4; }
+.hband-empty { padding: 60px 0; text-align: center; color: var(--ink-3); }
+.hband-hint { text-align: center; color: var(--ink-faint, #999); font-size: var(--fs-label); letter-spacing: .1em; margin-top: 10px; }
 
-/* 时代翻页 */
-.tl-era-pager { display: flex; justify-content: space-between; max-width: 720px; margin: 40px auto 0; padding: 0 5vw; }
+.tl-era-pager { display: flex; justify-content: space-between; max-width: 900px; margin: 34px auto 0; padding: 0 5vw; }
 .tl-pager-btn { border: 1px solid var(--line); background: transparent; color: var(--ink-2); padding: 12px 18px; border-radius: 6px; cursor: pointer; font-size: 14px; transition: all .16s; }
 .tl-pager-btn:hover { border-color: var(--ink); color: var(--ink); }
 
 @media (max-width: 900px) {
   .tl-era-nav { grid-template-columns: repeat(3, 1fr); }
+  .hband { height: 430px; }
 }
 
-/* 深色 */
-[data-theme='dark'] .spine-dot { box-shadow: 0 0 0 4px var(--paper); }
+[data-theme='dark'] .hband-dot { box-shadow: 0 0 0 4px var(--paper); }
+[data-theme='dark'] .hband-link { background: var(--paper-2); }
 [data-theme='dark'] .tl-era-seg { background: var(--paper-2); }
 [data-theme='dark'] .tl-era-seg.active { background: var(--paper); }
 [data-theme='dark'] .tl-era-seg.active .seg-short, [data-theme='dark'] .tl-era-seg.active .seg-range { color: var(--ink); }
