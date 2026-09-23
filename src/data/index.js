@@ -24,6 +24,7 @@ export function matchScore(entity, rawQuery) {
     entity.kicker || '',
     entity.summary || '',
     (entity.paragraphs || []).join(' '),
+    (entity.sections || []).map((s) => s.heading + ' ' + s.paragraphs.join(' ')).join(' '),
   ]
   for (let i = 0; i < pools.length; i++) {
     const text = pools[i]
