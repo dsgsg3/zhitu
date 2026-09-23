@@ -4163,7 +4163,7 @@ image: {
     name: '柏林墙倒塌',
     foreign: 'Fall of the Berlin Wall',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
+      src: '/images/fall-of-berlin-wall.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
       author: '佚名（Lear 21 翻拍）',
       license: 'CC BY-SA 3.0',
@@ -4242,7 +4242,7 @@ image: {
     name: '苏联解体',
     foreign: 'Dissolution of the Soviet Union',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Map_of_USSR_with_SSR_names.svg/960px-Map_of_USSR_with_SSR_names.svg.png',
+      src: '/images/fall-of-ussr.png',
       page: 'https://commons.wikimedia.org/wiki/File:Map_of_USSR_with_SSR_names.svg',
       author: 'Saul ip',
       license: 'CC BY-SA 3.0',
@@ -4321,7 +4321,7 @@ image: {
     name: '莱特兄弟首飞',
     foreign: 'First powered flight',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/First_flight2.jpg/960px-First_flight2.jpg',
+      src: '/images/first-flight.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:First_flight2.jpg',
       author: 'John T. Daniels',
       license: 'Public domain',
@@ -4400,7 +4400,7 @@ image: {
     name: '九一一袭击',
     foreign: 'September 11 attacks',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/WTC_smoking_on_9-11.jpeg/960px-WTC_smoking_on_9-11.jpeg',
+      src: '/images/september-11.jpeg',
       page: 'https://commons.wikimedia.org/wiki/File:WTC_smoking_on_9-11.jpeg',
       author: 'Flickr user Michael Foran',
       license: 'CC BY 2.0',
@@ -4478,7 +4478,7 @@ image: {
     name: '全球金融危机',
     foreign: 'Financial crisis of 2007–2008',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Lehman_Brothers_Times_Square_by_David_Shankbone.jpg/960px-Lehman%20Brothers%20Times%20Square%20by%20David%20Shankbone.jpg',
+      src: '/images/global-financial-crisis.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Lehman%20Brothers%20Times%20Square%20by%20David%20Shankbone.jpg',
       author: 'David Shankbone',
       license: 'CC BY-SA 3.0',
@@ -4556,7 +4556,7 @@ image: {
     name: '新冠大流行',
     foreign: 'COVID-19 pandemic',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg/960px-Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg',
+      src: '/images/covid-pandemic.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg',
       author: 'Gustavo Basso',
       license: 'CC BY-SA 4.0',
@@ -4635,7 +4635,7 @@ image: {
     name: '人工智能时代',
     foreign: 'The AI Era',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/5/55/FHvAG5.jpg',
+      src: '/images/ai-era.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:FHvAG5.jpg',
       author: 'Alzinous',
       license: 'CC BY-SA 4.0',
@@ -4713,7 +4713,7 @@ image: {
     name: '武王伐纣',
     foreign: 'Zhou Conquest of Shang',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/d/d0/He_Zun.jpg',
+      src: '/images/western-zhou-founding.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:He%20Zun.jpg',
       author: '幽灵巴尼',
       license: 'CC BY-SA 3.0',
@@ -9395,6 +9395,20 @@ image: {
         paragraphs: [
           '维基百科今天是人类访问量前十的网站，也是几乎所有搜索引擎与语音助手的答案来源——它不再只是「查资料的工具」，而是全球知识的公共基建层。它有一套独立的生态：维基文库（自由文本）、维基数据（结构化知识库）、维基共享资源（自由媒体）——本站的图片与署名信息，就来自它的姊妹项目维基共享资源。整个维基媒体体系由捐赠维持，没有广告。',
           '它的历史意义可以一句话概括：在维基百科之前，百科全书是由权威机构雇佣专家写成的；在维基百科之后，人类第一次证明了「外行协作 + 透明规则」也可以生产可信的知识。这个证明改变了教育、出版、开源软件与整个互联网的产品哲学。第 500 条档案正好是它——一部由所有人书写的百科，与一部用脚步丈量五千年的档案库，在同一个时间点相遇。',
+        ],
+      },
+      {
+        heading: '维基人与偏见之战：社群的自我革命',
+        paragraphs: [
+          '维基百科的编辑者社群长年面临一个内部危机：八成以上的编辑者是男性，条目对女性、非西方与边缘话题的覆盖系统性偏薄。社群为此发起了一系列自我革命：女性传记月、跨wiki的性别差距研究（人文学者甚至为维基的性别偏见出过专著），各语言版本开始主动补写被历史忽略的人物——这部百科全书在用自己的方式「修正自己的档案」。',
+          '另一场持续至今的战争是对抗破坏与操控：从恶作剧式的涂鸦，到政治势力雇佣「水军」改写敏感条目，再到各国政府的系统性施压。社群的回应是不断进化的制度武器：半保护、编辑过滤器、仲裁委员会、AI 反破坏机器人（英文版的机器人每分钟回滚数百次破坏）。规则与破坏者的军备竞赛，本身就是一部活的治理实验史。',
+        ],
+      },
+      {
+        heading: '第 500 条的致意：本站的知识来源',
+        paragraphs: [
+          '本站（观史）的建立，正是站在维基百科与其姊妹项目维基共享资源的肩膀上：每一张图片的自由版权与署名规范、每一条档案背后可查证的资料线索，都得益于这场「让知识自由」的实验。作为致敬，本站收录的第 500 条档案，选择了它——一部由志愿者书写的百科全书，如何改变人类获取知识的方式。',
+          '维基百科的创始人威尔士把它比作「一条通往所有人类知识的巴士」；批评者说它永远不够完美。两者都对。维基百科的伟大不在于它已经完成，而在于它永远处于被所有人共同修正的未完成状态——这与历史学本身的工作方式，惊人地一致。',
         ],
       },
     ],

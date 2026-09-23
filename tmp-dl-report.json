@@ -1,17 +1,12 @@
 {
- "ok": 8,
- "fail": 10,
- "skipped": 466,
+ "ok": 0,
+ "fail": 5,
+ "skipped": 479,
  "failed": [
   "tang",
+  "majapahit",
+  "genoa-republic",
   "ayutthaya",
-  "sokoto-caliphate",
-  "abbas-i",
-  "nag-hammadi",
-  "compendium-materia-medica",
-  "ai-era",
-  "persian-wars",
-  "justinian-plague",
-  "iranian-revolution"
+  "sokoto-caliphate"
  ]
 }
