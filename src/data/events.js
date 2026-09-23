@@ -4713,7 +4713,7 @@ image: {
     name: '武王伐纣',
     foreign: 'Zhou Conquest of Shang',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/d/d0/He_Zun.jpg',
+      src: '/images/western-zhou-founding.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:He%20Zun.jpg',
       author: '幽灵巴尼',
       license: 'CC BY-SA 3.0',
@@ -4782,7 +4782,7 @@ image: {
     name: '勒班陀海战',
     foreign: 'Battle of Lepanto',
     image: {
-      src: '/images/battle-of-lepanto.jpeg',
+      src: '/images/battle-of-lepanto.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Laureys_a_Castro_-_The_Battle_of_Lepanto.jpeg',
       author: 'Laureys a Castro',
       license: 'Public domain',

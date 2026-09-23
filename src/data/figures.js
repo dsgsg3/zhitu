@@ -2233,7 +2233,7 @@ export const figures = [
     name: '但丁',
     foreign: 'Dante Alighieri',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/e/ea/Bargello_-_Kapelle_Fresko_2a.jpg',
+      src: '/images/dante.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Bargello_-_Kapelle_Fresko_2a.jpg',
       author: 'Wolfgang Sauber（摄乔托壁画）',
       license: 'CC BY-SA 3.0',
@@ -6421,7 +6421,7 @@ image: {
     name: '德川家康',
     foreign: 'Tokugawa Ieyasu',
     image: {
-      src: '/images/tokugawa-ieyasu.JPG',
+      src: '/images/tokugawa-ieyasu.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Tokugawa_Ieyasu2.JPG',
       author: 'Kanō Tan\'yū',
       license: 'Public domain',
