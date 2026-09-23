@@ -1,9 +1,11 @@
-// 朗读 v2：移动端兼容强化版。
-// - 不用 lookbehind 正则（老 Safari < 16.4 会整模块解析失败）
-// - 分句 ≤120 字（规避安卓 Chrome 长文本 15 秒暂停）
-// - 朗读中每 8 秒 pause/resume 保活（安卓 Chrome 已知 bug 的通用补丁）
-// - 不支持的环境给出明确原因
-let speaking = false
+// 朗读 v3：MiMo 在线语音优先（任何浏览器可播）+ 系统 TTS 兜底。
+const TTS_API = 'https://guanshi-tts.fanzhibao68.workers.dev/tts'
+
+let mode = '' // '' | 'loading' | 'playing'
+let audioEl = null
+let chainUrls = []
+let chainIdx = 0
+let sysSpeaking = false
 let keepalive = null
 const listeners = new Set()
 
@@ -13,8 +15,12 @@ export function ttsSupported() {
     typeof SpeechSynthesisUtterance !== 'undefined'
 }
 
+export function getMode() {
+  return mode
+}
+
 export function isSpeaking() {
-  return speaking
+  return sysSpeaking || mode === 'playing'
 }
 
 export function onSpeechChange(l) {
@@ -22,62 +28,88 @@ export function onSpeechChange(l) {
   return () => listeners.delete(l)
 }
 
-function emit() {
+function setState(next) {
+  mode = next.mode
+  sysSpeaking = next.sysSpeaking
   for (const l of listeners) l()
 }
 
 export function stopSpeak() {
-  if (ttsSupported()) window.speechSynthesis.cancel()
+  if (audioEl) {
+    audioEl.pause()
+    audioEl = null
+  }
+  chainUrls = []
+  chainIdx = 0
+  if (ttsSupported() && window.speechSynthesis) window.speechSynthesis.cancel()
   if (keepalive) { clearInterval(keepalive); keepalive = null }
-  speaking = false
-  emit()
+  sysSpeaking = false
+  setState({ mode: '', sysSpeaking: false })
 }
 
-function pickVoice(synth) {
-  const voices = synth.getVoices()
-  if (!voices.length) return null
-  return voices.find((v) => (v.lang || '').toLowerCase().startsWith('zh')) ||
-    voices.find((v) => /Chinese|中文/i.test(v.name)) ||
-    null
-}
-
-function splitSentences(text) {
-  // 兼容写法：标点后插入分隔符再切，不用 lookbehind
-  const marked = text.replace(/([。！？!?；;])/g, '$1\u0001')
-  return marked.split('\u0001').map((s) => s.trim()).filter(Boolean)
-}
-
-export function speakText(rawText) {
+export function speakText(text) {
+  // 系统 TTS 兜底（原 v2 实现）
   if (!ttsSupported()) return { ok: false, reason: 'unsupported' }
   const synth = window.speechSynthesis
   synth.cancel()
-  const clean = String(rawText || '').replace(/\s+/g, ' ').trim()
+  const clean = String(text || '').replace(/\s+/g, ' ').trim()
   if (!clean) return { ok: false, reason: 'empty' }
+  const marked = clean.replace(/([。！？!?；;])/g, '$1\u0001')
+  const parts = marked.split('\u0001').map((s) => s.trim()).filter(Boolean)
   const chunks = []
   let buf = ''
-  for (const part of splitSentences(clean)) {
+  for (const part of parts) {
     if ((buf + part).length > 120) { if (buf) chunks.push(buf); buf = part } else { buf += part }
   }
   if (buf) chunks.push(buf)
-  const zh = pickVoice(synth)
+  const voices = synth.getVoices()
+  const zh = voices.find((v) => (v.lang || '').toLowerCase().startsWith('zh'))
   chunks.forEach((c, i) => {
     const u = new SpeechSynthesisUtterance(c)
     if (zh) u.voice = zh
     u.lang = (zh && zh.lang) || 'zh-CN'
-    u.rate = 1
-    if (i === chunks.length - 1) u.onend = () => { if (keepalive) { clearInterval(keepalive); keepalive = null } speaking = false; emit() }
-    u.onerror = (ev) => { if (ev.error === 'interrupted' || ev.error === 'canceled') return; if (keepalive) { clearInterval(keepalive); keepalive = null } speaking = false; emit() }
+    if (i === chunks.length - 1) u.onend = () => { sysSpeaking = false; setState({ mode: '', sysSpeaking: false }) }
     synth.speak(u)
   })
-  // 安卓 Chrome：长朗读中途会被静默暂停，定期 resume 保活
-  if (keepalive) clearInterval(keepalive)
-  keepalive = setInterval(() => {
-    if (window.speechSynthesis.speaking) {
-      window.speechSynthesis.pause()
-      window.speechSynthesis.resume()
-    }
-  }, 8000)
-  speaking = chunks.length > 0
-  emit()
+  sysSpeaking = true
+  setState({ mode: '', sysSpeaking: true })
   return { ok: true }
+}
+
+function playChain(onDone) {
+  if (chainIdx >= chainUrls.length) {
+    audioEl = null
+    setState({ mode: '', sysSpeaking: false })
+    if (onDone) onDone()
+    return
+  }
+  audioEl = new Audio(chainUrls[chainIdx])
+  audioEl.onended = () => { chainIdx++; playChain(onDone) }
+  audioEl.onerror = () => { audioEl = null; setState({ mode: '', sysSpeaking: false }) }
+  audioEl.play().catch(() => { setState({ mode: '', sysSpeaking: false }) })
+}
+
+export async function speakLong(text) {
+  stopSpeak()
+  setState({ mode: 'loading', sysSpeaking: false })
+  // 分段合成（每段 ≤600 字，句子边界切分）
+  const clean = String(text || '').replace(/\s+/g, ' ').trim()
+  const marked = clean.replace(/([。！？!?；;])/g, '$1\u0001')
+  const sents = marked.split('\u0001').map((s) => s.trim()).filter(Boolean)
+  const parts = []
+  let buf = ''
+  for (const s of sents) {
+    if ((buf + s).length > 600) { if (buf) parts.push(buf); buf = s } else { buf += s }
+  }
+  if (buf) parts.push(buf)
+  chainUrls = []
+  for (const part of parts) {
+    const r = await fetch(TTS_API, { method: 'POST', headers: { 'Content-Type': 'text/plain' }, body: part })
+    if (!r.ok) throw new Error('TTS ' + r.status)
+    const blob = await r.blob()
+    chainUrls.push(URL.createObjectURL(blob))
+  }
+  chainIdx = 0
+  setState({ mode: 'playing', sysSpeaking: false })
+  playChain(() => {})
 }

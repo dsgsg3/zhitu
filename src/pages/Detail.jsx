@@ -6,7 +6,7 @@ import { useFootprint, markRead, toggleFav, isFav } from '../store.js'
 import { useData } from '../data/useData.js'
 import { CATEGORIES, REGIONS, ERAS, eraOf, eraLabel, formatYear } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
-import { speakText, stopSpeak, isSpeaking, onSpeechChange, ttsSupported } from '../lib/speech.js'
+import { speakLong, speakText, stopSpeak, isSpeaking, getMode, onSpeechChange, ttsSupported } from '../lib/speech.js'
 
 export default function Detail() {
   const { id } = useParams()
@@ -52,20 +52,27 @@ export default function Detail() {
   const fav = entity ? isFav(entity.id, snap) : false
   const [speaking, setSpeaking] = useState(false)
   const [ttsMsg, setTtsMsg] = useState('')
+  const [mode, setMode] = useState('')
   useEffect(() => {
-    const un = onSpeechChange(() => setSpeaking(isSpeaking()))
+    const un = onSpeechChange(() => { setSpeaking(isSpeaking()); setMode(getMode()) })
     return () => { stopSpeak(); un() }
   }, [])
-  const speakEntry = () => {
-    if (!entity) return
-    if (!ttsSupported()) {
-      setTtsMsg('当前浏览器不支持朗读——请用系统 Safari 或 Chrome 打开（微信内置浏览器不支持）')
-      return
-    }
+  const speakEntry = async () => {
+    if (!entity || mode) return
     const paras = (entity.paragraphs || []).join(' ')
     const secs = (entity.sections || []).map((s) => s.heading + '。' + s.paragraphs.join(' ')).join(' ')
-    const r = speakText(entity.name + '。' + (entity.summary || '') + paras + secs)
-    setTtsMsg(r.ok ? '' : '朗读启动失败，请重试或调高媒体音量')
+    const text = entity.name + '。' + (entity.summary || '') + '。' + paras + secs
+    setTtsMsg('')
+    try {
+      await speakLong(text)
+    } catch (e) {
+      if (ttsSupported()) {
+        const r = speakText(text)
+        setTtsMsg(r.ok ? '' : '朗读启动失败，请重试或调高媒体音量')
+      } else {
+        setTtsMsg('在线语音生成失败，请稍后重试')
+      }
+    }
   }
 
   // 阅读进度：顶部细线
@@ -122,8 +129,8 @@ export default function Detail() {
             <button className={`button${fav ? ' button-solid' : ''}`} onClick={() => toggleFav(entity.id)}>
               {fav ? '★ 已收藏' : '☆ 收藏这一段'}
             </button>
-            <button className={'button' + (speaking ? ' button-solid' : '')} onClick={() => (speaking ? stopSpeak() : speakEntry())}>
-              {speaking ? '■ 停止朗读' : '▶ 朗读这一段'}
+            <button className={'button' + (speaking || mode ? ' button-solid' : '')} onClick={() => (mode || speaking ? stopSpeak() : speakEntry())} disabled={mode === 'loading'}>
+              {mode === 'loading' ? '⏳ 合成语音…' : speaking ? '■ 停止朗读' : '▶ 朗读（在线语音）'}
             </button>
             {ttsMsg && <span className='tts-msg'>{ttsMsg}</span>}
           </div>
