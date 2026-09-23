@@ -13,6 +13,7 @@ const Detail = lazy(() => import('./pages/Detail.jsx'))
 const NotFound = lazy(() => import('./pages/NotFound.jsx'))
 const Collections = lazy(() => import('./pages/Collections.jsx'))
 const MapPage = lazy(() => import('./pages/MapPage.jsx'))
+const GlobePage = lazy(() => import('./pages/GlobePage.jsx'))
 const Collection = lazy(() => import('./pages/Collection.jsx'))
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
             <Route path="/entity/:id" element={<Detail />} />
             <Route path="/collections" element={<Collections />} />
             <Route path="/map" element={<MapPage />} />
+            <Route path="/globe" element={<GlobePage />} />
             <Route path="/collection/:id" element={<Collection />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

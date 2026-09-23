@@ -1,4 +1,4 @@
-import { useMemo, useEffect, useState } from 'react'
+import { useMemo, useEffect, useState, useRef } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import NotFound from './NotFound.jsx'
 import { setPageMeta } from '../meta.js'
@@ -99,6 +99,26 @@ export default function Detail() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [entity])
 
+  // 头图滚动视差：图随滚动微移（±28px），直接写 DOM 不重渲染
+  const figRef = useRef(null)
+  useEffect(() => {
+    let raf = 0
+    const onScroll = () => {
+      cancelAnimationFrame(raf)
+      raf = requestAnimationFrame(() => {
+        const el = figRef.current
+        if (!el || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+        const r = el.getBoundingClientRect()
+        const center = r.top + r.height / 2 - window.innerHeight / 2
+        const dy = Math.max(-28, Math.min(28, -center * 0.08))
+        el.style.setProperty('--py', `${dy.toFixed(1)}px`)
+      })
+    }
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => { window.removeEventListener('scroll', onScroll); cancelAnimationFrame(raf) }
+  }, [entity])
+
   if (!mod) return <div className="route-loading">档案载入中…</div>
   if (!entity) return <NotFound />
 
@@ -152,7 +172,7 @@ export default function Detail() {
             {!audioReady && !speaking && !ttsMsg && <span className='tts-msg tts-info'>提示：音频生成中，稍后可下载离线收听；当前可点「朗读」在线播放。</span>}
           </div>
           {entity.image && (
-            <figure className="detail-figure">
+            <figure className="detail-figure" ref={figRef}>
               <img
                 src={entity.image.src}
                 alt={entity.name}

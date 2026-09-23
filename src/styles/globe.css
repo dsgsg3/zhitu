@@ -1,0 +1,13 @@
+/* ===== 3D 地球仪页 ===== */
+.globe-page { max-width: 1080px; margin: 0 auto; padding: 28px 20px 60px; }
+.globe-head { margin-bottom: 16px; }
+.globe-head h1 { font-family: var(--serif); font-size: clamp(26px, 3.4vw, 40px); font-weight: 600; margin: 8px 0; }
+.globe-head p { color: var(--ink-soft, #666); }
+.globe-wrap { position: relative; border: 1px solid var(--line, #ddd); border-radius: 12px; overflow: hidden; background: var(--paper-2, #f7f4ee); }
+.globe-wrap canvas { display: block; }
+.globe-tip { position: absolute; z-index: 5; pointer-events: none; background: var(--white, #fff); border: 1px solid var(--line, #ddd); border-radius: 8px; padding: 8px 12px; display: flex; flex-direction: column; gap: 2px; box-shadow: 0 6px 18px rgba(0,0,0,.12); }
+.globe-tip b { font-size: 14.5px; }
+.globe-tip span { font-size: 12px; color: var(--ink-3, #888); }
+.globe-tip-hint { color: var(--ink-faint, #999); font-size: 12.5px; }
+[data-theme='dark'] .globe-tip { background: #26262e; border-color: #444; }
+[data-theme='dark'] .globe-wrap { background: #17151d; }

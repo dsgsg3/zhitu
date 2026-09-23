@@ -184,8 +184,20 @@ main { flex: 1; }
   overflow: hidden;
 }
 .entity-card::before { content: ''; position: absolute; inset: 0 0 auto 0; height: 2px; background: var(--cat); }
-.entity-card:hover { background: var(--white); border-color: var(--cat); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(27, 26, 23, .10); }
-.entity-card { transition: border-color .2s, background .2s, transform .2s, box-shadow .2s; }
+.entity-card {
+  transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(0);
+  will-change: transform;
+}
+.entity-card:hover { background: var(--white); border-color: var(--cat); transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(-2px); box-shadow: 0 14px 32px rgba(27, 26, 23, .12); }
+/* 配图上的光泽扫过：跟随鼠标位置 */
+.entity-thumb { position: relative; }
+.entity-thumb::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0;
+  background: radial-gradient(240px circle at var(--mx, 50%) var(--my, 50%), rgba(255, 253, 248, .28), transparent 65%);
+  transition: opacity .25s ease;
+}
+.entity-card:hover .entity-thumb::after { opacity: 1; }
+.entity-card { transition: border-color .2s, background .2s, transform .12s ease-out, box-shadow .2s; }
 .entity-card:focus-visible, .pick-card:focus-visible, .button:focus-visible,
 .filter-chip:focus-visible, .era-chip:focus-visible, .search-trigger:focus-visible,
 .top-nav a:focus-visible, .related-item:focus-visible, .hint-chip:focus-visible,
@@ -197,6 +209,8 @@ main { flex: 1; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+  .entity-card, .detail-figure img { transform: none !important; }
+  .entity-thumb::after { display: none; }
 }
 .entity-card-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
 .entity-year { color: var(--ink-3); font-size: var(--fs-label); letter-spacing: .06em; white-space: nowrap; font-family: var(--mono); }

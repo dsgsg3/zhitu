@@ -9,6 +9,7 @@ const NAV = [
   { to: '/timeline', label: '时间轴' },
   { to: '/browse', label: '浏览' },
   { to: '/map', label: '地图' },
+  { to: '/globe', label: '地球仪' },
   { to: '/collections', label: '专题' },
 ]
 
