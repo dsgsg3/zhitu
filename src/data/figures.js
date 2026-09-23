@@ -11063,7 +11063,7 @@ image: {
     name: '阿巴斯一世',
     foreign: 'Abbas the Great',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/12_Abu%27l_Hasan_Jahangir_Welcoming_Shah_%27Abbas%2C_ca._1618%2C_Freer_Gallery_of_Art%2C_Washington_DC_%28portrait%29.jpg',
+      src: '/images/abbas-i.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:12_Abu\'l_Hasan_Jahangir_Welcoming_Shah_\'Abbas%2C_ca._1618%2C_Freer_Gallery_of_Art%2C_Washington_DC_(portrait).jpg',
       author: 'Bishandas (attribution)',
       license: 'Public domain',

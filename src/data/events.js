@@ -4635,7 +4635,7 @@ image: {
     name: '人工智能时代',
     foreign: 'The AI Era',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/5/55/FHvAG5.jpg',
+      src: '/images/ai-era.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:FHvAG5.jpg',
       author: 'Alzinous',
       license: 'CC BY-SA 4.0',
@@ -5910,7 +5910,7 @@ image: {
     name: '希波战争',
     foreign: 'Greco-Persian Wars',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/2/22/Greek-Persian_duel.jpg',
+      src: '/images/persian-wars.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Greek-Persian%20duel.jpg',
       author: 'Άγνωστος',
       license: 'Public domain',
@@ -6830,7 +6830,7 @@ image: {
     name: '查士丁尼大瘟疫',
     foreign: 'Plague of Justinian',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Hand_necrosis_caused_by_plague.jpg',
+      src: '/images/justinian-plague.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Hand%20necrosis%20caused%20by%20plague.jpg',
       author: 'CDC/Dr. Jack Poland',
       license: 'Public domain',
@@ -7376,7 +7376,7 @@ image: {
     name: '伊朗革命',
     foreign: 'Iranian Revolution',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/0/00/12th_Congress_of_Mojahedin_of_the_Islamic_Revolution_of_Iran_Organization_%2808%29.jpg',
+      src: '/images/iranian-revolution.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:12th%20Congress%20of%20Mojahedin%20of%20the%20Islamic%20Revolution%20of%20Iran%20Organization%20(08).jpg',
       author: 'Raouf Mohseni',
       license: 'CC BY 4.0',

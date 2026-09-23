@@ -4467,7 +4467,7 @@ image: {
     name: '拿戈玛第经集',
     foreign: 'Nag Hammadi library',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/0/01/%C2%B7_Los_trece_C%C3%B3dices_de_Nag_Hammadi_%C2%B7.jpg',
+      src: '/images/nag-hammadi.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:%C2%B7%20Los%20trece%20C%C3%B3dices%20de%20Nag%20Hammadi%20%C2%B7.jpg',
       author: 'Hēsykhía',
       license: 'CC BY-SA 4.0',
@@ -6211,7 +6211,7 @@ image: {
     name: '本草纲目',
     foreign: 'Bencao gangmu',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Bencao_Gangmu0_33-36.jpg',
+      src: '/images/compendium-materia-medica.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Bencao_Gangmu0_33-36.jpg',
       author: 'Unknown author',
       license: 'Public domain',
