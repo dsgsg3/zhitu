@@ -4327,7 +4327,7 @@ image: {
     name: '满者伯夷',
     foreign: 'Majapahit',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Naval_flag_of_Majapahit_Kingdom.svg/960px-Naval_flag_of_Majapahit_Kingdom.svg.png',
+      src: '/images/majapahit.png',
       page: 'https://commons.wikimedia.org/wiki/File:Naval_flag_of_Majapahit_Kingdom.svg',
       author: 'source: BP47Dhorifah, svg: Puck04',
       license: 'Public domain',
@@ -5497,7 +5497,7 @@ image: {
     name: '热那亚共和国',
     foreign: 'Republic of Genoa',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Genoa.svg/960px-Flag_of_Genoa.svg.png',
+      src: '/images/genoa-republic.png',
       page: 'https://commons.wikimedia.org/wiki/File:Flag_of_Genoa.svg',
       author: 'See File history below for details.',
       license: 'Public domain',
@@ -6228,7 +6228,7 @@ image: {
     name: '大城王国',
     foreign: 'Ayutthaya Kingdom',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Thailand_%28Ayutthaya_period%29.svg/960px-Flag_of_Thailand_%28Ayutthaya_period%29.svg.png',
+      src: '/images/ayutthaya.png',
       page: 'https://commons.wikimedia.org/wiki/File:Flag_of_Thailand_(Ayutthaya_period).svg',
       author: 'Xiengyod',
       license: 'Public domain',
@@ -6878,7 +6878,7 @@ image: {
     name: '索科托哈里发国',
     foreign: 'Sokoto Caliphate',
     image: {
-      src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Flag_of_the_Sokoto_Caliphate.svg/960px-Flag_of_the_Sokoto_Caliphate.svg.png',
+      src: '/images/sokoto-caliphate.png',
       page: 'https://commons.wikimedia.org/wiki/File:Flag_of_the_Sokoto_Caliphate.svg',
       author: 'Orange Tuesday (talk)',
       license: 'Public domain',
