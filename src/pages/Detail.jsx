@@ -52,11 +52,17 @@ export default function Detail() {
   const fav = entity ? isFav(entity.id, snap) : false
   const [speaking, setSpeaking] = useState(false)
   const [ttsMsg, setTtsMsg] = useState('')
+  const [audioReady, setAudioReady] = useState(false)
   const [mode, setMode] = useState('')
   useEffect(() => {
+    if (entity) {
+      fetch('/audio/' + entity.id + '.mp3', { method: 'HEAD' })
+        .then((r) => setAudioReady(r.ok))
+        .catch(() => setAudioReady(false))
+    }
     const un = onSpeechChange(() => { setSpeaking(isSpeaking()); setMode(getMode()) })
     return () => { stopSpeak(); un() }
-  }, [])
+  }, [entity])
   const speakEntry = async () => {
     if (!entity || mode) return
     const paras = (entity.paragraphs || []).join(' ')
@@ -137,7 +143,13 @@ export default function Detail() {
             <button className={'button' + (speaking || mode ? ' button-solid' : '')} onClick={() => (mode || speaking ? stopSpeak() : speakEntry())} disabled={mode === 'loading'}>
               {mode === 'loading' ? '⏳ 合成语音…' : speaking ? '■ 停止朗读' : '▶ 朗读（在线语音）'}
             </button>
+            {audioReady && (
+              <a className='button' href={'/audio/' + entity.id + '.mp3'} download={entity.name + '.mp3'}>
+                ⤓ 下载音频
+              </a>
+            )}
             {ttsMsg && <span className='tts-msg'>{ttsMsg}</span>}
+            {!audioReady && !speaking && !ttsMsg && <span className='tts-msg tts-info'>提示：音频生成中，稍后可下载离线收听；当前可点「朗读」在线播放。</span>}
           </div>
           {entity.image && (
             <figure className="detail-figure">
