@@ -73,7 +73,7 @@ export const civilizations = [
     name: '罗马帝国',
     foreign: 'Roman Empire',
     image: {
-      src: '/images/roman-empire.png',
+      src: '/images/roman-empire.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Roman_Empire_Trajan_117AD.png',
       author: 'Tataryn',
       license: 'CC BY-SA 3.0',
@@ -140,7 +140,7 @@ export const civilizations = [
     name: '秦汉',
     foreign: 'Qin & Han',
     image: {
-      src: '/images/qin-han.png',
+      src: '/images/qin-han.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Qin_dynasty_territory.svg',
       author: 'Ian Remsen',
       license: 'CC0',
@@ -209,7 +209,7 @@ export const civilizations = [
     name: '隋',
     foreign: 'Sui Dynasty',
     image: {
-      src: '/images/sui.png',
+      src: '/images/sui.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Cheui_Dynasty_581_CE.png',
       author: 'Ian Kiu',
       license: 'CC BY 3.0',
@@ -277,7 +277,7 @@ export const civilizations = [
     name: '宋',
     foreign: 'Song Dynasty',
     image: {
-      src: '/images/song.png',
+      src: '/images/song.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:China_-_Song_Dynasty-en.svg',
       author: 'Kanguole',
       license: 'CC BY-SA 3.0',
@@ -412,7 +412,7 @@ export const civilizations = [
     name: '元',
     foreign: 'Yuan Dynasty',
     image: {
-      src: '/images/yuan.png',
+      src: '/images/yuan.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Yuan_Dynasty_revised.png',
       author: 'Cattette',
       license: 'CC BY 4.0',
@@ -690,7 +690,7 @@ export const civilizations = [
     name: '美索不达米亚',
     foreign: 'Mesopotamia',
     image: {
-      src: '/images/mesopotamia.png',
+      src: '/images/mesopotamia.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:N-Mesopotamia_and_Syria_english.svg',
       author: 'Goran tek-en',
       license: 'CC BY-SA 4.0',
@@ -1061,7 +1061,7 @@ export const civilizations = [
     name: '拜占庭帝国',
     foreign: 'Byzantine Empire',
     image: {
-      src: '/images/byzantine.png',
+      src: '/images/byzantine.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Eastern_Roman_Empire_565_CE.svg',
       author: 'Mnohohrishnyi',
       license: 'CC0',
@@ -1431,7 +1431,7 @@ export const civilizations = [
     name: '室利佛逝',
     foreign: 'Srivijaya',
     image: {
-      src: '/images/srivijaya.png',
+      src: '/images/srivijaya.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Srivijaya_Empire.svg',
       author: 'Gunawan Kartapranata',
       license: 'CC BY-SA 3.0',
@@ -1801,7 +1801,7 @@ export const civilizations = [
     name: '迦太基',
     foreign: 'Carthage',
     image: {
-      src: '/images/carthage.png',
+      src: '/images/carthage.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Montage_ville_de_Carthage.png',
       author: 'ELEL09',
       license: 'CC BY-SA 3.0',
@@ -2145,7 +2145,7 @@ export const civilizations = [
     name: '亚述帝国',
     foreign: 'Assyrian Empire',
     image: {
-      src: '/images/assyria.png',
+      src: '/images/assyria.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Ashur_symbol_Nimrud.png',
       author: 'Austen Henry Layard',
       license: 'Public domain',
@@ -3353,7 +3353,7 @@ image: {
     name: '阿卡德',
     foreign: 'Akkadian Empire',
     image: {
-      src: '/images/akkad.png',
+      src: '/images/akkad.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Empire_akkad.svg',
       author: 'Middle_East_topographic_map-blank.svg: Sémhur (talk) derivative work: Zunkir (talk)',
       license: 'CC BY-SA 3.0',
@@ -3622,7 +3622,7 @@ image: {
     name: '纳巴泰',
     foreign: 'Nabataea',
     image: {
-      src: '/images/nabataea.png',
+      src: '/images/nabataea.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Nabatean_Kingdom_(flat_map).svg',
       author: 'SVG map by Ali Zifan',
       license: 'CC BY-SA 4.0',
@@ -3689,7 +3689,7 @@ image: {
     name: '新亚述',
     foreign: 'Neo-Assyrian Empire',
     image: {
-      src: '/images/neo-assyria.png',
+      src: '/images/neo-assyria.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Map_of_Assyria.png',
       author: 'Ningyou',
       license: 'Public domain',
@@ -3762,7 +3762,7 @@ image: {
     name: '腓尼基',
     foreign: 'Phoenicia',
     image: {
-      src: '/images/phoenicia.png',
+      src: '/images/phoenicia.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Phoenicia_map-en.svg',
       author: 'Kordas, based on Alvaro\'s work',
       license: 'CC BY 3.0',
@@ -4031,7 +4031,7 @@ image: {
     name: '埃塞俄比亚帝国',
     foreign: 'Ethiopian Empire',
     image: {
-      src: '/images/ethiopia-empire.png',
+      src: '/images/ethiopia-empire.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Flag_of_Ethiopia_(1897%E2%80%931974).svg',
       author: 'Oren neu dag',
       license: 'Public domain',
@@ -4105,7 +4105,7 @@ image: {
     name: '伊特鲁里亚',
     foreign: 'Etruscan civilization',
     image: {
-      src: '/images/etruscan.png',
+      src: '/images/etruscan.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Etruscan%20civilization%20map.png',
       author: 'NormanEinstein',
       license: 'CC BY-SA 3.0',
@@ -4179,7 +4179,7 @@ image: {
     name: '法蒂玛',
     foreign: 'Fatimid Caliphate',
     image: {
-      src: '/images/fatimid.png',
+      src: '/images/fatimid.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:The_Fatimid_Caliphate.png',
       author: 'Nourerrahmane (using file uploaded by Omar-toons as template)',
       license: 'CC BY-SA 4.0',
@@ -4253,7 +4253,7 @@ image: {
     name: '高棉帝国',
     foreign: 'Khmer Empire',
     image: {
-      src: '/images/khmer-empire.png',
+      src: '/images/khmer-empire.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Map-of-southeast-asia_900_CE.svg',
       author: 'Jembezmamy',
       license: 'CC0',
@@ -4549,7 +4549,7 @@ image: {
     name: '萨非',
     foreign: 'Safavid Iran',
     image: {
-      src: '/images/safavid.png',
+      src: '/images/safavid.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Safavid_Flag.svg',
       author: 'Safavid_Flag.png: Orange Tuesday (talk) The original uploader was Orange Tuesday at English Wikipedia. derivative work:',
       license: 'Public domain',
@@ -4623,7 +4623,7 @@ image: {
     name: '塞尔柱',
     foreign: 'Seljuk Empire',
     image: {
-      src: '/images/seljuk.png',
+      src: '/images/seljuk.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Map%20of%20the%20Seljuk%20Empire%20(1092).png',
       author: 'Ktrinko MapMaster',
       license: 'CC BY-SA 4.0',
@@ -4845,7 +4845,7 @@ image: {
     name: '占婆',
     foreign: 'Champa',
     image: {
-      src: '/images/champa.png',
+      src: '/images/champa.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Linyi_and_Chamic_states_of_the_fifth_century_AD.png',
       author: 'Laska666',
       license: 'CC0',
@@ -4919,7 +4919,7 @@ image: {
     name: '高句丽',
     foreign: 'Goguryeo',
     image: {
-      src: '/images/goguryeo.png',
+      src: '/images/goguryeo.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:5th_century_Goguryeo.png',
       author: 'Asieon',
       license: 'CC0',
@@ -4993,7 +4993,7 @@ image: {
     name: '平安时代',
     foreign: 'Heian period',
     image: {
-      src: '/images/japan-heian.png',
+      src: '/images/japan-heian.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Map-of-Japan-1183-Heian-Genpei-War.png',
       author: 'Artanisen',
       license: 'CC BY-SA 4.0',
@@ -5141,7 +5141,7 @@ image: {
     name: '辽朝',
     foreign: 'Liao dynasty',
     image: {
-      src: '/images/liao-dynasty.png',
+      src: '/images/liao-dynasty.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Flag%20of%20the%20Liao%20Dynasty%20(Khitan).png',
       author: 'Flag Creator',
       license: 'CC BY-SA 4.0',
@@ -5215,7 +5215,7 @@ image: {
     name: '吐蕃',
     foreign: 'Tibetan Empire',
     image: {
-      src: '/images/tibet-empire.png',
+      src: '/images/tibet-empire.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Tibetan_empire_greatest_extent_780s-790s_CE.png',
       author: 'Javierfv1212',
       license: 'CC BY 3.0',
@@ -5289,7 +5289,7 @@ image: {
     name: '回鹘汗国',
     foreign: 'Uyghur Khaganate',
     image: {
-      src: '/images/uyghur-khaganate.png',
+      src: '/images/uyghur-khaganate.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Uyghur%20Khaganate%20Flag%20of%20Map%20(Year-800).png',
       author: 'Türk-Genci8',
       license: 'CC0',
@@ -5363,7 +5363,7 @@ image: {
     name: '保加利亚帝国',
     foreign: 'First Bulgarian Empire',
     image: {
-      src: '/images/bulgaria-empire.png',
+      src: '/images/bulgaria-empire.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:First_Bulgarian_Empire_Flag_Krum_Manasses_Chronicle_Render.png',
       author: 'Iamnhaz',
       license: 'CC BY-SA 4.0',
@@ -5564,7 +5564,7 @@ image: {
     name: '神圣罗马帝国',
     foreign: 'Holy Roman Empire',
     image: {
-      src: '/images/holy-roman-empire.png',
+      src: '/images/holy-roman-empire.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Banner_of_the_Holy_Roman_Emperor_with_haloes_(1430-1806).svg',
       author: 'David Liuzzo, eagle by N3MO',
       license: 'CC BY-SA 3.0',
@@ -5631,7 +5631,7 @@ image: {
     name: '匈牙利王国',
     foreign: 'Kingdom of Hungary',
     image: {
-      src: '/images/hungary-kingdom.png',
+      src: '/images/hungary-kingdom.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:1910%20census%20in%20Hungary.png',
       author: 'Pharaph',
       license: 'CC BY-SA 4.0',
@@ -5698,7 +5698,7 @@ image: {
     name: '基辅罗斯',
     foreign: "Kievan Rus'",
     image: {
-      src: '/images/kyivan-rus.png',
+      src: '/images/kyivan-rus.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Location_of_Kyivan_Rus.png',
       author: 'Vitaliyf261',
       license: 'CC BY-SA 4.0',
@@ -5831,7 +5831,7 @@ image: {
     name: '塞尔维亚帝国',
     foreign: 'Serbian Empire',
     image: {
-      src: '/images/serbian-empire.png',
+      src: '/images/serbian-empire.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Flag_of_the_Serbian_Empire%2C_reconstruction.svg',
       author: 'B1mbo',
       license: 'Public domain',
@@ -5898,7 +5898,7 @@ image: {
     name: '威尼斯共和国',
     foreign: 'Republic of Venice',
     image: {
-      src: '/images/venice-republic.png',
+      src: '/images/venice-republic.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Variant_war_flag_of_the_Serene_Republic_of_Venice.svg',
       author: 'Samhanin',
       license: 'CC BY-SA 3.0',
@@ -5965,7 +5965,7 @@ image: {
     name: '卡斯蒂利亚',
     foreign: 'Crown of Castile',
     image: {
-      src: '/images/castile-kingdom.png',
+      src: '/images/castile-kingdom.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Crown%20of%20Castile%20Mainland%20before%201492.png',
       author: 'Rastrojo, Heralder on wikipedia.',
       license: 'CC BY-SA 3.0',
@@ -6302,7 +6302,7 @@ image: {
     name: '德里苏丹国',
     foreign: 'Delhi Sultanate',
     image: {
-      src: '/images/delhi-sultanate.png',
+      src: '/images/delhi-sultanate.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Map_of_the_Mamluk_Dynasty.png',
       author: 'Maps created from DEMIS Mapserver, which are public domain. Koba-chan Territorial area: पाटलिपुत्र (talk), per Schwartbe',
       license: 'CC BY-SA 3.0',
@@ -6376,7 +6376,7 @@ image: {
     name: '马六甲苏丹国',
     foreign: 'Malacca Sultanate',
     image: {
-      src: '/images/malacca-sultanate.png',
+      src: '/images/malacca-sultanate.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Malacca_Sultanate_en.svg',
       author: 'Gunawan Kartapranata',
       license: 'CC BY-SA 3.0',
@@ -6672,7 +6672,7 @@ image: {
     name: '匈奴',
     foreign: 'Xiongnu',
     image: {
-      src: '/images/xiongnu.png',
+      src: '/images/xiongnu.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Xiongnu%20Empire%20Flag%20of%20Map%20(Year-176BC.png',
       author: 'Türk-Genci8',
       license: 'CC BY-SA 4.0',
@@ -6812,7 +6812,7 @@ image: {
     name: '刚果王国',
     foreign: 'Kingdom of Kongo',
     image: {
-      src: '/images/kongo-kingdom.png',
+      src: '/images/kongo-kingdom.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Kongo%20Cosmogram%20-%20blank.png',
       author: 'MiddleOfAfrica',
       license: 'CC BY-SA 4.0',
@@ -7076,7 +7076,7 @@ image: {
     name: '埃兰',
     foreign: 'Elam',
     image: {
-      src: '/images/elam.png',
+      src: '/images/elam.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Elam_Map-en.svg',
       author: 'File:Near East topographic map-blank.svg: Sémhur File:Elam-map-PL.svg: Wkotwica derivative work: Morningstar1814',
       license: 'CC BY-SA 3.0',
@@ -7142,7 +7142,7 @@ image: {
     name: '美第奇佛罗伦萨',
     foreign: 'House of Medici',
     image: {
-      src: '/images/medici-florence.png',
+      src: '/images/medici-florence.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Augmented_Arms_of_Medici.svg',
       author: 'Heralder',
       license: 'CC BY-SA 3.0',
@@ -7275,7 +7275,7 @@ image: {
     name: '葡萄牙帝国',
     foreign: 'Portuguese Empire',
     image: {
-      src: '/images/portugal-empire.png',
+      src: '/images/portugal-empire.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Flag_of_the_Kingdom_of_Portugal_and_Algarves_(1834_to_1910).png',
       author: 'Portugal1908',
       license: 'CC BY-SA 4.0',
@@ -7407,7 +7407,7 @@ image: {
     name: '大理国',
     foreign: 'Dali Kingdom',
     image: {
-      src: '/images/dali-kingdom.png',
+      src: '/images/dali-kingdom.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Dali_Kingdom.png',
       author: 'SY',
       license: 'CC BY-SA 4.0',
@@ -7481,7 +7481,7 @@ image: {
     name: '突厥',
     foreign: 'First Turkic Khaganate',
     image: {
-      src: '/images/gokturk.png',
+      src: '/images/gokturk.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Map%20of%20the%20First%20Turkic%20Khaganate%20in%20Eurasia%20circa%20576%20CE.png',
       author: 'naturalearthdata.com, offered to the Public Domain per Terms of Use',
       license: 'CC0',
@@ -7555,7 +7555,7 @@ image: {
     name: '金朝',
     foreign: 'Jin dynasty (1115–1234)',
     image: {
-      src: '/images/jin-dynasty.png',
+      src: '/images/jin-dynasty.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Jin_Dynasty_1141_(no_borders).png',
       author: 'Ian Kiu',
       license: 'CC BY 3.0',
@@ -7629,7 +7629,7 @@ image: {
     name: '西夏',
     foreign: 'Western Xia',
     image: {
-      src: '/images/western-xia.png',
+      src: '/images/western-xia.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Song-Liao-Xixia-1111.png',
       author: 'Douglasfrankfort',
       license: 'CC BY 3.0',

@@ -6,6 +6,7 @@ import { useFootprint, markRead, toggleFav, isFav } from '../store.js'
 import { useData } from '../data/useData.js'
 import { CATEGORIES, REGIONS, ERAS, eraOf, eraLabel, formatYear } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
+import { speakText, stopSpeak, isSpeaking, onSpeechChange } from '../lib/speech.js'
 
 export default function Detail() {
   const { id } = useParams()
@@ -49,6 +50,17 @@ export default function Detail() {
     if (entity) markRead(entity.id)
   }, [entity])
   const fav = entity ? isFav(entity.id, snap) : false
+  const [speaking, setSpeaking] = useState(false)
+  useEffect(() => {
+    const un = onSpeechChange(() => setSpeaking(isSpeaking()))
+    return () => { stopSpeak(); un() }
+  }, [])
+  const speakEntry = () => {
+    if (!entity) return
+    const paras = (entity.paragraphs || []).join(' ')
+    const secs = (entity.sections || []).map((s) => s.heading + '。' + s.paragraphs.join(' ')).join(' ')
+    speakText(entity.name + '。' + (entity.summary || '') + paras + secs)
+  }
 
   // 阅读进度：顶部细线
   const [progress, setProgress] = useState(0)
@@ -103,6 +115,9 @@ export default function Detail() {
           <div className="detail-actions">
             <button className={`button${fav ? ' button-solid' : ''}`} onClick={() => toggleFav(entity.id)}>
               {fav ? '★ 已收藏' : '☆ 收藏这一段'}
+            </button>
+            <button className={'button' + (speaking ? ' button-solid' : '')} onClick={() => (speaking ? stopSpeak() : speakEntry())}>
+              {speaking ? '■ 停止朗读' : '▶ 朗读这一段'}
             </button>
           </div>
           {entity.image && (

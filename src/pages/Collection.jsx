@@ -11,14 +11,16 @@ export default function Collection() {
   const { id } = useParams()
   const collection = collectionById[id]
   const snap = useFootprint()
+  const mod = useData()
 
   useEffect(() => {
     if (collection) setPageMeta(`专题 · ${collection.name}`, collection.summary)
   }, [collection])
 
   if (!collection) return <NotFound />
+  if (!mod) return <div className="route-loading">档案载入中…</div>
 
-  const items = collection.entries.map((en) => ({ ...en, entity: byId[en.id] })).filter((x) => x.entity)
+  const items = collection.entries.map((en) => ({ ...en, entity: mod.byId[en.id] })).filter((x) => x.entity)
   const done = items.filter((it) => isRead(it.id, snap)).length
 
   return (

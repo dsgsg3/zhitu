@@ -1,0 +1,31 @@
+.map-page { max-width: 1080px; margin: 0 auto; padding: 28px 20px 60px; }
+.map-head { margin-bottom: 18px; }
+.map-head p { color: var(--ink-soft, #666); }
+.map-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+.map-tab { padding: 7px 14px; border: 1px solid var(--line, #ddd); border-radius: 999px; background: transparent; color: var(--ink, #222); cursor: pointer; font-size: 14px; }
+.map-tab.active { background: var(--ink, #222); color: var(--paper, #fff); border-color: var(--ink, #222); }
+.map-frame { border: 1px solid var(--line, #ddd); border-radius: 8px; background: var(--paper-2, #f7f4ee); overflow: hidden; }
+.map-frame svg { display: block; width: 100%; height: auto; }
+.map-land { fill: var(--map-land, #e7e1d3); stroke: var(--line, #ccc); stroke-width: .4; }
+[data-theme='dark'] .map-land { fill: #2b2b33; stroke: #444; }
+.map-dot { cursor: pointer; }
+.map-dot:hover { r: 5.5; }
+.map-region-label { font-size: 11px; fill: var(--ink-soft, #777); text-anchor: middle; pointer-events: none; }
+.map-region-hit { fill: transparent; cursor: pointer; }
+.map-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 12px 2px; font-size: 13px; color: var(--ink-soft, #666); }
+.map-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.map-legend i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.route-path { fill: none; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; opacity: .92; }
+.route-wp { fill: var(--paper, #fff); stroke-width: 2; }
+.route-wp-label { font-size: 11px; fill: var(--ink, #222); text-anchor: middle; paint-order: stroke; stroke: var(--paper, #fff); stroke-width: 3px; }
+[data-theme='dark'] .route-wp-label { stroke: #1d1d22; }
+[data-theme='dark'] .route-wp-label { fill: #ddd; }
+.map-hint { color: var(--ink-faint, #999); font-size: 13px; margin: 10px 2px 0; }
+.route-entries { margin-top: 22px; }
+.route-entries h3 { font-size: 16px; margin-bottom: 10px; }
+.route-entry-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.route-entry { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 1px solid var(--line, #ddd); border-radius: 8px; text-decoration: none; color: var(--ink, #222); background: var(--white, #fff); }
+.route-entry:hover { border-color: var(--ink, #222); }
+.route-entry b { font-size: 15px; }
+.route-entry span { font-size: 12px; color: var(--ink-soft, #777); }
+.route-entry .no { font-family: var(--serif, serif); font-size: 15px; color: var(--cat, #888); }

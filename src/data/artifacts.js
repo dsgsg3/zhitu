@@ -3597,7 +3597,7 @@ image: {
     name: '巴约挂毯',
     foreign: 'Bayeux Tapestry',
     image: {
-      src: '/images/bayeux-tapestry.png',
+      src: '/images/bayeux-tapestry.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Odo_bayeux_tapestry.png',
       author: '',
       license: 'Public domain',

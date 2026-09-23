@@ -298,7 +298,7 @@ export const events = [
     name: '郑和下西洋',
     foreign: 'Zheng He\'s Voyages',
     image: {
-      src: '/images/voyages-of-zhenghe.png',
+      src: '/images/voyages-of-zhenghe.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Voyages_of_Zheng_He.png',
       author: 'SY',
       license: 'CC BY-SA 4.0',
@@ -742,7 +742,7 @@ image: {
     name: '黑死病',
     foreign: 'The Black Death',
 image: {
-      src: '/images/black-death.png',
+      src: '/images/black-death.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:1346-1353_spread_of_the_Black_Death_in_Europe_map.svg',
       author: 'Flappiefh',
       license: 'CC BY-SA 4.0',
@@ -1550,7 +1550,7 @@ image: {
     name: '孔雀王朝统一印度',
     foreign: 'Maurya Empire',
 image: {
-      src: '/images/maurya-empire.png',
+      src: '/images/maurya-empire.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Maurya_Empire,_c.250_BCE_network_model_v01.png',
       author: 'Joshua Jonathan',
       license: 'CC0',
@@ -1888,7 +1888,7 @@ image: {
     name: '怛罗斯之战',
     foreign: 'Battle of Talas',
     image: {
-      src: '/images/tang-arab-talas.png',
+      src: '/images/tang-arab-talas.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Battle_of_Talas.png',
       author: 'SY',
       license: 'CC BY-SA 4.0',
@@ -4242,7 +4242,7 @@ image: {
     name: '苏联解体',
     foreign: 'Dissolution of the Soviet Union',
     image: {
-      src: '/images/fall-of-ussr.png',
+      src: '/images/fall-of-ussr.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Map_of_USSR_with_SSR_names.svg',
       author: 'Saul ip',
       license: 'CC BY-SA 3.0',
@@ -5763,7 +5763,7 @@ image: {
     name: '诺曼征服',
     foreign: 'Norman Conquest',
     image: {
-      src: '/images/norman-conquest.png',
+      src: '/images/norman-conquest.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Norman-conquest-1066.svg',
       author: 'Amitchell125',
       license: 'CC BY 3.0',
@@ -5833,7 +5833,7 @@ image: {
     name: '伯罗奔尼撒战争',
     foreign: 'Peloponnesian War',
     image: {
-      src: '/images/peloponnesian-war.png',
+      src: '/images/peloponnesian-war.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Pelop_war_en.png',
       author: 'Translator was Kenmayer',
       license: 'CC BY-SA 3.0',
@@ -6208,7 +6208,7 @@ image: {
     name: '万隆会议',
     foreign: 'Bandung Conference',
     image: {
-      src: '/images/bandung-conference.png',
+      src: '/images/bandung-conference.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Plenary_session_during_the_Bandung_Conference.png',
       author: 'Foreign Ministry of the Republic of Indonesia',
       license: 'Public domain',
@@ -6762,7 +6762,7 @@ image: {
     name: '滑铁卢战役',
     foreign: 'Battle of Waterloo',
     image: {
-      src: '/images/waterloo.PNG',
+      src: '/images/waterloo.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Battle_of_Waterloo_1815.PNG',
       author: 'William Sadler',
       license: 'Public domain',
@@ -6901,7 +6901,7 @@ image: {
     name: '德国统一',
     foreign: 'Unification of Germany',
     image: {
-      src: '/images/unification-of-germany.png',
+      src: '/images/unification-of-germany.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Deutsches_Reich_(1871-1918)-en.png',
       author: 'Deutsches_Reich1.png: kgberger derivative work: Wiggy! (talk)',
       license: 'CC BY-SA 3.0',
@@ -6970,7 +6970,7 @@ image: {
     name: '英国脱欧',
     foreign: 'Brexit',
     image: {
-      src: '/images/brexit.png',
+      src: '/images/brexit.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Location_map_of_the_United_Kingdom_and_the_European_Union.svg',
       author: 'Furfur',
       license: 'Public domain',
@@ -7239,7 +7239,7 @@ image: {
     name: '图尔战役',
     foreign: 'Battle of Tours',
     image: {
-      src: '/images/battle-of-tours.png',
+      src: '/images/battle-of-tours.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Steuben_-_Bataille_de_Poitiers.png',
       author: 'Charles de Steuben',
       license: 'Public domain',
@@ -7308,7 +7308,7 @@ image: {
     name: '绿色革命',
     foreign: 'Green Revolution',
     image: {
-      src: '/images/green-revolution.png',
+      src: '/images/green-revolution.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Index-of-cereal-production-yield-and-land-use_World.svg',
       author: 'Hannah Ritchie',
       license: 'CC BY 4.0',
@@ -7517,7 +7517,7 @@ image: {
     name: '路易斯安那购地',
     foreign: 'Louisiana Purchase',
     image: {
-      src: '/images/louisiana-purchase.png',
+      src: '/images/louisiana-purchase.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Louisiana_Purchase.png',
       author: 'William Morris',
       license: 'CC BY-SA 4.0',
@@ -7924,7 +7924,7 @@ image: {
     name: '东西教会大分裂',
     foreign: 'East–West Schism',
     image: {
-      src: '/images/great-schism.png',
+      src: '/images/great-schism.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Great_Schism_with_former_borders_(1054).png',
       author: 'Barrikader (talk · contribs)',
       license: 'CC BY-SA 3.0',
@@ -8186,7 +8186,7 @@ image: {
     name: '基因剪刀时代',
     foreign: 'CRISPR era',
     image: {
-      src: '/images/crispr-era.png',
+      src: '/images/crispr-era.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:4QYZ.png',
       author: 'Boghog',
       license: 'CC BY-SA 4.0',
@@ -8601,7 +8601,7 @@ image: {
     name: '征服阿兹特克',
     foreign: 'Fall of Tenochtitlan',
     image: {
-      src: '/images/conquest-of-mexico.png',
+      src: '/images/conquest-of-mexico.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Conquista-de-M%C3%A9xico-por-Cort%C3%A9s-Tenochtitlan-Painting.png',
       author: 'Unknown author',
       license: 'Public domain',

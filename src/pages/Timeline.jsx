@@ -169,7 +169,16 @@ export default function Timeline() {
     })
   }, [width, offset, selectedEra])
 
-  const lanes = useMemo(() => (visible.length ? layout(visible, totalPx) : []), [visible, totalPx])
+  // 节点上限：缩到最小整条长河 500 点全渲染会卡。等距抽稀 + 提示，放大即恢复
+  const MAX_NODES = 160
+  const sampled = useMemo(() => {
+    if (visible.length <= MAX_NODES) return { list: visible, folded: 0 }
+    const stride = visible.length / MAX_NODES
+    const sorted = [...visible].sort((a, b) => a.year - b.year)
+    const list = sorted.filter((_, i) => Math.floor(i % stride) === 0)
+    return { list, folded: visible.length - list.length }
+  }, [visible])
+  const lanesCapped = useMemo(() => (sampled.list.length ? layout(sampled.list, totalPx) : []), [sampled, totalPx])
   const resultEntities = selectedEra
     ? SLIM.filter((e) => e.era === selectedEra)
     : visible.slice(0, 24)
@@ -224,8 +233,8 @@ export default function Timeline() {
               </g>
             )
           })}
-          {/* 实体节点 */}
-          {lanes.map((lane, li) =>
+          {/* 实体节点（密度过高时抽稀，放大即恢复全部） */}
+          {lanesCapped.map((lane, li) =>
             lane.map(({ entity, x }) => {
               // layout() 算的是绝对坐标，这里减去滚动量才是屏幕坐标
               const cx = x - offset * totalPx
@@ -264,7 +273,7 @@ export default function Timeline() {
             }),
           )}
         </svg>
-        <p className="tl-hint">← 拖 动 漫 游 →</p>
+        <p className="tl-hint">← 拖 动 漫 游 →{sampled.folded > 0 && ` · 当前密度折叠 ${sampled.folded} 个光点，放大查看`}</p>
 
         <div className="tl-tools">
           <button className="era-chip" onClick={() => setScale((s) => Math.max(1, +(s - 0.4).toFixed(2)))} aria-label="缩小">− 缩小</button>

@@ -1184,7 +1184,7 @@ export const figures = [
     name: '柏拉图',
     foreign: 'Plato',
     image: {
-      src: '/images/plato.png',
+      src: '/images/plato.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Plato_Silanion_Musei_Capitolini_MC1377.png',
       author: 'Marie-Lan Nguyen（摄）',
       license: 'Public domain',
@@ -2075,7 +2075,7 @@ export const figures = [
     name: '马可·波罗',
     foreign: 'Marco Polo',
     image: {
-      src: '/images/marco-polo.png',
+      src: '/images/marco-polo.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Frontispice_édition_de_Nuremberg_1477_(cropped).png',
       author: '佚名（1477年纽伦堡版画）',
       license: 'Public domain',
@@ -3301,7 +3301,7 @@ export const figures = [
     name: '紫式部',
     foreign: 'Murasaki Shikibu',
     image: {
-      src: '/images/murasaki-shikibu.png',
+      src: '/images/murasaki-shikibu.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Murasaki-Shikibu-composing-Genji-Monogatari.png',
       author: '土佐光起',
       license: 'Public domain',
@@ -3520,7 +3520,7 @@ export const figures = [
     name: '西蒙·玻利瓦尔',
     foreign: 'Simón Bolívar',
     image: {
-      src: '/images/simon-bolivar.png',
+      src: '/images/simon-bolivar.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Simón_Bolívar._Toro_Moreno,_Luis._1922,_Legislative_Palace,_La_Paz.png',
       author: 'Luis Enrique Toro Moreno',
       license: 'Public domain',
@@ -3730,7 +3730,7 @@ export const figures = [
     name: '武则天',
     foreign: 'Wu Zetian',
     image: {
-      src: '/images/wu-zetian.png',
+      src: '/images/wu-zetian.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:唐后行從圖_(局部)_-_武則天.png',
       author: '张萱（传）',
       license: 'Public domain',
@@ -4482,7 +4482,7 @@ image: {
     name: '阿达·洛芙莱斯',
     foreign: 'Ada Lovelace',
 image: {
-      src: '/images/ada-lovelace.png',
+      src: '/images/ada-lovelace.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png',
       author: 'Antoine Claudet',
       license: 'Public domain',
@@ -4782,7 +4782,7 @@ image: {
     name: '马克思',
     foreign: 'Karl Marx',
 image: {
-      src: '/images/marx.png',
+      src: '/images/marx.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored.png',
       author: 'John Jabez Edwin Mayall',
       license: 'Public domain',
@@ -5589,7 +5589,7 @@ image: {
     name: '达·芬奇',
     foreign: 'Leonardo da Vinci',
     image: {
-      src: '/images/leonardo-da-vinci.png',
+      src: '/images/leonardo-da-vinci.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Francesco_Melzi_-_Portrait_of_Leonardo_(colour_correction).png',
       author: 'Attributed to Francesco Melzi',
       license: 'Public domain',
@@ -5662,7 +5662,7 @@ image: {
     name: '孟德尔',
     foreign: 'Gregor Mendel',
     image: {
-      src: '/images/mendel.png',
+      src: '/images/mendel.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Gregor%20Mendel.png',
       author: 'Unknown author',
       license: 'Public domain',
@@ -6075,7 +6075,7 @@ image: {
     name: '彼得大帝',
     foreign: 'Peter the Great',
     image: {
-      src: '/images/peter-great.png',
+      src: '/images/peter-great.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Peter%20the%20Great%2C%202%2007%C2%BC%20(1901).png',
       author: '"The Boston Globe"',
       license: 'Public domain',
@@ -6348,7 +6348,7 @@ image: {
     name: '狄奥多拉',
     foreign: 'Theodora',
     image: {
-      src: '/images/theodora.png',
+      src: '/images/theodora.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Empress%20Theodora%20mosaic%20detail.png',
       author: 'Petar Milošević',
       license: 'CC BY-SA 4.0',

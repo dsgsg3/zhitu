@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { setPageMeta } from '../meta.js'
-import { ALL } from '../data/index.js'
+import { SLIM } from '../data/slim-index.js'
 
 export default function NotFound() {
   useEffect(() => { setPageMeta('页面不存在', '你要找的页面不在时间里。') }, [])
   // 随机推荐：useState 初始化器允许非纯计算，只跑一次
-  const [roam] = useState(() => ALL[Math.floor(Math.random() * ALL.length)])
+  const [roam] = useState(() => SLIM[Math.floor(Math.random() * SLIM.length)])
   return (
     <main className="browse-page">
       <div className="browse-head">

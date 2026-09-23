@@ -17,10 +17,13 @@
     "lint:depth": "node tools/deepen-lint.mjs"
   },
   "dependencies": {
+    "d3-geo": "^3.1.1",
     "pinyin-match": "^1.2.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^7.1.5"
+    "react-router-dom": "^7.1.5",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
