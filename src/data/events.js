@@ -522,7 +522,7 @@ image: {
     name: '辛亥革命',
     foreign: 'The 1911 Revolution',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/7/73/Xinhai_Revolution_in_Shanghai.jpg',
+      src: '/images/xinhai-revolution.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Xinhai_Revolution_in_Shanghai.jpg',
       author: '佚名（1911年上海）',
       license: 'Public domain',
@@ -1284,7 +1284,7 @@ image: {
     name: '联合国成立与战后秩序',
     foreign: 'The Postwar Order',
 image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/f/f2/Canadian_Delegation_at_United_Nations_Conference_on_International_Organization_1945.jpg',
+      src: '/images/wwii-end.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Canadian_Delegation_at_United_Nations_Conference_on_International_Organization_1945.jpg',
       author: 'Nicholas Morant（加拿大代表团，旧金山制宪会议）',
       license: 'Public domain',

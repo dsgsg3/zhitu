@@ -4104,7 +4104,7 @@ image: {
     name: '法贝热彩蛋',
     foreign: 'Fabergé egg',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Resurrection_%28Faberg%C3%A9_egg%29.jpg',
+      src: '/images/faberge-eggs.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Resurrection%20(Faberg%C3%A9%20egg).jpg',
       author: 'Guy Fawkes',
       license: 'CC BY-SA 2.0',

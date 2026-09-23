@@ -6821,7 +6821,7 @@ image: {
     name: '松尼·阿里',
     foreign: 'Sunni Ali',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Sunni_Markaz_conference_2013.jpg',
+      src: '/images/sunni-ali.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Sunni%20Markaz%20conference%202013.jpg',
       author: 'Tasveeronline',
       license: 'CC BY-SA 4.0',
@@ -9092,7 +9092,7 @@ image: {
     name: '苏轼',
     foreign: 'Su Shi',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/9/98/Su_shi.jpg',
+      src: '/images/su-shi.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Su_shi.jpg',
       author: 'Zhao Mengfu',
       license: 'Public domain',
@@ -9774,7 +9774,7 @@ image: {
     name: '肯雅塔',
     foreign: 'Jomo Kenyatta',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/b/bb/Jomo_Kenyatta_%28cropped%29_in_June_15th%2C_1966.jpg',
+      src: '/images/kenyatta.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Jomo_Kenyatta_(cropped)_in_June_15th%2C_1966.jpg',
       author: 'Pridan Moshe',
       license: 'Public domain',
