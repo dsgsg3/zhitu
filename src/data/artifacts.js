@@ -2340,7 +2340,7 @@ image: {
     name: '《训民正音》与谚文',
     foreign: 'Hunminjeongeum & Hangul',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/c/c9/Hunminjeongum.jpg',
+      src: '/images/hangul-letter.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Hunminjeongum.jpg',
       author: '朝鲜世宗时期',
       license: 'Public domain',

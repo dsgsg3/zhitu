@@ -166,7 +166,7 @@ export const figures = [
     name: '汉武帝',
     foreign: 'Emperor Wu of Han',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/e/e9/%E6%BC%A2%E6%AD%A6%E5%B8%9D.jpg',
+      src: '/images/han-wudi.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:漢武帝.jpg',
       author: '佚名',
       license: 'Public domain',
@@ -2154,7 +2154,7 @@ export const figures = [
     name: '伊本·白图泰',
     foreign: 'Ibn Battuta',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Handmade_oil_painting_reproduction_of_Ibn_Battuta_in_Egypt%2C_a_painting_by_Hippolyte_Leon_Benett..jpg',
+      src: '/images/ibn-battuta.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Handmade_oil_painting_reproduction_of_Ibn_Battuta_in_Egypt,_a_painting_by_Hippolyte_Leon_Benett..jpg',
       author: 'Léon Benett',
       license: 'Public domain',
@@ -3069,7 +3069,7 @@ export const figures = [
     name: '邓小平',
     foreign: 'Deng Xiaoping',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/d/dd/Deng_Xiaoping_at_the_arrival_ceremony_for_the_Vice_Premier_of_China_%28cropped%29.jpg',
+      src: '/images/deng-xiaoping.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Deng_Xiaoping_at_the_arrival_ceremony_for_the_Vice_Premier_of_China_(cropped).jpg',
       author: '美国政府作品',
       license: 'Public domain',
@@ -6348,7 +6348,7 @@ image: {
     name: '狄奥多拉',
     foreign: 'Theodora',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Empress_Theodora_mosaic_detail.png',
+      src: '/images/theodora.png',
       page: 'https://commons.wikimedia.org/wiki/File:Empress%20Theodora%20mosaic%20detail.png',
       author: 'Petar Milošević',
       license: 'CC BY-SA 4.0',
@@ -6488,7 +6488,7 @@ image: {
     name: '比鲁尼',
     foreign: 'Al-Biruni',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/f/ff/Biruni-russian.jpg',
+      src: '/images/al-biruni.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Biruni-russian.jpg',
       author: 'The original uploader was Romanm at Slovenian Wikipedia.',
       license: 'Public domain',
@@ -9624,7 +9624,7 @@ image: {
     name: '海什木',
     foreign: 'Ibn al-Haytham',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/a/a2/Ibn_al-Haytham_crop.jpg',
+      src: '/images/al-haytham.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Ibn_al-Haytham_crop.jpg',
       author: 'Adolph Boÿ, engraved by Jeremias Falck. Used as the frontispiece to Johannes Hevelius, Selenographia, 1647',
       license: 'Public domain',

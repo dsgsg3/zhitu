@@ -8529,7 +8529,7 @@ image: {
     name: '西班牙内战',
     foreign: 'Spanish Civil War',
     image: {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/a/a0/%D0%98%D1%81%D0%BF%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_11_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B1%D1%80%D0%B8%D0%B3%D0%B0%D0%B4%D0%B0_%D0%B2_%D0%B1%D0%BE%D1%8E_%D0%BF%D0%BE%D0%B4_%D0%91%D0%B5%D0%BB%D1%8C%D1%87%D0%B8%D1%82%D0%B5._1937-edit.jpg',
+      src: '/images/spanish-civil-war.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:%D0%98%D1%81%D0%BF%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_11_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B1%D1%80%D0%B8%D0%B3%D0%B0%D0%B4%D0%B0_%D0%B2_%D0%B1%D0%BE%D1%8E_%D0%BF%D0%BE%D0%B4_%D0%91%D0%B5%D0%BB%D1%8C%D1%87%D0%B8%D1%82%D0%B5._1937-edit.jpg',
       author: 'Unknown author',
       license: 'Public domain',

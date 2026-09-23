@@ -1,32 +1,23 @@
 {
- "ok": 6,
- "fail": 25,
- "skipped": 453,
+ "ok": 10,
+ "fail": 16,
+ "skipped": 458,
  "failed": [
+  "tang",
   "ayutthaya",
   "sokoto-caliphate",
-  "han-wudi",
-  "ibn-battuta",
-  "dante",
-  "deng-xiaoping",
-  "theodora",
-  "al-biruni",
   "sunni-ali",
   "su-shi",
-  "al-haytham",
   "kenyatta",
   "abbas-i",
-  "hangul-letter",
   "faberge-eggs",
   "nag-hammadi",
   "compendium-materia-medica",
   "xinhai-revolution",
   "wwii-end",
   "ai-era",
-  "western-zhou-founding",
   "persian-wars",
   "justinian-plague",
-  "iranian-revolution",
-  "spanish-civil-war"
+  "iranian-revolution"
  ]
 }
