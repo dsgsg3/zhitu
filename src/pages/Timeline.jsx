@@ -12,7 +12,7 @@ const anchorYear = (e) => (e.range ? (e.range[0] + (e.range[1] ?? e.range[0])) /
 const CARD_W = 172
 const MIN_GAP = 24
 
-function layoutBand(items, width) {
+function layoutBand(items, width, r0, r1) {
   const pad = 110
   const usable = Math.max(400, width - pad * 2)
   const y0 = items.length ? items[0].y : 0
@@ -20,7 +20,7 @@ function layoutBand(items, width) {
   const span = Math.max(1, y1 - y0)
   const placed = items.map((it, idx) => ({
     ...it,
-    x: pad + ((it.y - y0) / span) * usable,
+    x: pad + ((Math.max(r0, Math.min(r1, it.y)) - y0) / span) * usable,
     side: idx % 2 === 0 ? 'above' : 'below',
   }))
   // 同侧碰撞推挤（保chrono顺序，只向右）
@@ -70,7 +70,7 @@ export default function Timeline() {
       .sort((a, b) => a.y - b.y)
   }, [mod2, eraKey, cat, favOnly, snap])
 
-  const placed = useMemo(() => layoutBand(rows, bandW), [rows, bandW])
+  const placed = useMemo(() => layoutBand(rows, bandW, era.range[0], era.range[1]), [rows, bandW, era])
 
   const catCounts = useMemo(() => {
     const c = {}
