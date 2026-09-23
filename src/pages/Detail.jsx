@@ -6,7 +6,7 @@ import { useFootprint, markRead, toggleFav, isFav } from '../store.js'
 import { useData } from '../data/useData.js'
 import { CATEGORIES, REGIONS, ERAS, eraOf, eraLabel, formatYear } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
-import { speakText, stopSpeak, isSpeaking, onSpeechChange } from '../lib/speech.js'
+import { speakText, stopSpeak, isSpeaking, onSpeechChange, ttsSupported } from '../lib/speech.js'
 
 export default function Detail() {
   const { id } = useParams()
@@ -51,15 +51,21 @@ export default function Detail() {
   }, [entity])
   const fav = entity ? isFav(entity.id, snap) : false
   const [speaking, setSpeaking] = useState(false)
+  const [ttsMsg, setTtsMsg] = useState('')
   useEffect(() => {
     const un = onSpeechChange(() => setSpeaking(isSpeaking()))
     return () => { stopSpeak(); un() }
   }, [])
   const speakEntry = () => {
     if (!entity) return
+    if (!ttsSupported()) {
+      setTtsMsg('当前浏览器不支持朗读——请用系统 Safari 或 Chrome 打开（微信内置浏览器不支持）')
+      return
+    }
     const paras = (entity.paragraphs || []).join(' ')
     const secs = (entity.sections || []).map((s) => s.heading + '。' + s.paragraphs.join(' ')).join(' ')
-    speakText(entity.name + '。' + (entity.summary || '') + paras + secs)
+    const r = speakText(entity.name + '。' + (entity.summary || '') + paras + secs)
+    setTtsMsg(r.ok ? '' : '朗读启动失败，请重试或调高媒体音量')
   }
 
   // 阅读进度：顶部细线
@@ -119,6 +125,7 @@ export default function Detail() {
             <button className={'button' + (speaking ? ' button-solid' : '')} onClick={() => (speaking ? stopSpeak() : speakEntry())}>
               {speaking ? '■ 停止朗读' : '▶ 朗读这一段'}
             </button>
+            {ttsMsg && <span className='tts-msg'>{ttsMsg}</span>}
           </div>
           {entity.image && (
             <figure className="detail-figure">
