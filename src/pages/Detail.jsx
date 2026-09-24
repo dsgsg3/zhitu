@@ -14,7 +14,7 @@ export default function Detail() {
   // 注意：loading 判断必须放在所有 Hook 之后，保持 Hook 顺序稳定
   const mod = useData()
   const byId = mod ? mod.byId : {}
-  const ALL = mod ? mod.ALL : []
+  const ALL = useMemo(() => (mod ? mod.ALL : []), [mod])
   const entity = byId[id]
 
   // 实体的时间锚点：有区间取中点，否则取年份
@@ -29,7 +29,7 @@ export default function Detail() {
       .filter((e) => e.id !== entity.id && Math.abs(mid(e) - anchorYear) <= 120)
       .sort((a, b) => Math.abs(mid(a) - anchorYear) - Math.abs(mid(b) - anchorYear))
       .slice(0, 6)
-  }, [entity, anchorYear])
+  }, [entity, anchorYear, ALL])
 
   // 时间上的上一篇 / 下一篇（按锚点年份排序）
   // 同样必须写在 early return 之前，保证 Hook 顺序稳定
@@ -38,7 +38,7 @@ export default function Detail() {
     const sorted = [...ALL].sort((a, b) => a.year - b.year)
     const i = sorted.findIndex((e) => e.id === entity.id)
     return { prev: sorted[i - 1] || null, next: sorted[i + 1] || null }
-  }, [entity])
+  }, [entity, ALL])
 
   useEffect(() => {
     if (entity) setPageMeta(entity.name, entity.summary)

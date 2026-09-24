@@ -39,8 +39,8 @@ function setMediaMetadata(title) {
     })
     navigator.mediaSession.setActionHandler('play', () => { if (audioEl) audioEl.play().catch(() => {}) })
     navigator.mediaSession.setActionHandler('pause', () => { if (audioEl) audioEl.pause() })
-    try { navigator.mediaSession.setActionHandler('stop', () => stopSpeak()) } catch (e) {}
-  } catch (e) {}
+    try { navigator.mediaSession.setActionHandler('stop', () => stopSpeak()) } catch { /* unsupported */ }
+  } catch { /* mediaSession unsupported */ }
 }
 
 function setState(next) {
@@ -111,7 +111,7 @@ function playChain(onDone) {
   audioEl.play().catch(() => { setState({ mode: '', sysSpeaking: false }) })
 }
 
-export function playPrebuilt(id, title) {
+export function playPrebuilt(id) {
   return new Promise((resolve) => {
     if (!mode && audioEl) { resolve(false); return }
     const el = new Audio('/audio/' + id + '.mp3')

@@ -43,8 +43,7 @@ export default function HistoryMap({ entries = [], route = null }) {
   const [len, setLen] = useState(0)
   const [go, setGo] = useState(false)
   useEffect(() => {
-    setGo(false)
-    if (!route) return
+    if (!route) return undefined
     const t = setTimeout(() => {
       if (pathRef.current) setLen(pathRef.current.getTotalLength())
       requestAnimationFrame(() => setGo(true))

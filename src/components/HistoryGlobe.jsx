@@ -1,10 +1,10 @@
-import { useMemo, useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { geoEquirectangular, geoPath, geoGraticule } from 'd3-geo'
 import { feature } from 'topojson-client'
 import world from 'world-atlas/countries-110m.json'
-import { CATEGORIES } from '../data/taxonomy.js'
+import { CATEGORIES, REGIONS } from '../data/taxonomy.js'
 
 const R = 100
 const W = 2048
@@ -141,7 +141,6 @@ export default function HistoryGlobe({ entries = [], route = null, theme = 'ligh
     const markerCol = []
     const markerMeta = []
     for (const e of entries) {
-      const ll = REGIONS.find((r) => r.key === e.region)
       const center = REGION_LL[e.region] || [0, 0]
       const j = jitter(e.id, 16, 10)
       const lng = center[0] + j[0]
@@ -180,7 +179,7 @@ export default function HistoryGlobe({ entries = [], route = null, theme = 'ligh
       )
       routeGroup.add(rline)
       routeAnim = { line: rline, total: totalPts.length }
-      wpVecs.forEach((v, i) => {
+      wpVecs.forEach((v) => {
         const wp = new THREE.Mesh(
           new THREE.SphereGeometry(1.1, 12, 12),
           new THREE.MeshBasicMaterial({ color: new THREE.Color(route.color) }),
@@ -253,11 +252,11 @@ export default function HistoryGlobe({ entries = [], route = null, theme = 'ligh
       renderer.dispose()
       if (mount.contains(renderer.domElement)) mount.removeChild(renderer.domElement)
     }
+  // sceneKey 已聚合 theme/route/entries，场景只在真正变化时重建
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sceneKey])
 
-  const navSync = useRef(0)
-  navSync.current = onNavigate
-  void navSync
+  useEffect(() => { navRef.current = onNavigate })
 
   return (
     <div className='globe-wrap' ref={mountRef}>

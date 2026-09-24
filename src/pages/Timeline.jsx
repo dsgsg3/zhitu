@@ -152,7 +152,7 @@ export default function Timeline() {
       </div>
 
       <div
-        className={'hband-scroll' + (dragRef.current ? ' dragging' : '')}
+        className='hband-scroll'
         ref={scrollRef}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
