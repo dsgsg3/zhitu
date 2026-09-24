@@ -105,22 +105,9 @@ function playChain(onDone) {
     preloadEl.load()
   }
   audioEl = new Audio(chainUrls[chainIdx])
-  audioEl = new Audio(chainUrls[chainIdx])
   audioEl.onended = () => { chainIdx++; playChain(onDone) }
   audioEl.onerror = () => { audioEl = null; setState({ mode: '', sysSpeaking: false }) }
   audioEl.play().catch(() => { setState({ mode: '', sysSpeaking: false }) })
-}
-
-export function playPrebuilt(id) {
-  return new Promise((resolve) => {
-    if (!mode && audioEl) { resolve(false); return }
-    const el = new Audio('/audio/' + id + '.mp3')
-    audioEl = el
-    setState({ mode: 'playing', sysSpeaking: false })
-    el.onended = () => { audioEl = null; setState({ mode: '', sysSpeaking: false }); resolve(true) }
-    el.onerror = () => { audioEl = null; setState({ mode: '', sysSpeaking: false }); resolve(false) }
-    el.play().catch(() => { audioEl = null; setState({ mode: '', sysSpeaking: false }); resolve(false) })
-  })
 }
 
 export async function speakLong(text, title) {

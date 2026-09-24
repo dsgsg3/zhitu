@@ -22,11 +22,6 @@ if [ "$(date +%u)" = "7" ] || [ "$1" = "--with-images" ]; then
   tar cf "$WEEKLY/images-$STAMP.tar" -C "$ROOT/public" images
   ls -t "$WEEKLY"/images-*.tar 2>/dev/null | tail -n +3 | xargs -r rm -f
 fi
-# 3b) 朗读音频（不入 git）：每日增量镜像，只增不删，误删本地文件也不会波及备份
-if [ -d "$ROOT/public/audio" ]; then
-  mkdir -p "$DEST_ROOT/audio"
-  rsync -rt --size-only --exclude='*.p[0-9]*.mp3' --exclude='*.tmp' "$ROOT/public/audio/" "$DEST_ROOT/audio/"
-fi
 # 4) 只保留最近 14 份每日备份
 ls -t "$DAILY"/guanshi-*.bundle 2>/dev/null | tail -n +15 | xargs -r rm -f
 ls -t "$DAILY"/guanshi-data-*.json 2>/dev/null | tail -n +15 | xargs -r rm -f

@@ -6,11 +6,11 @@ import { useFootprint, markRead, toggleFav, isFav } from '../store.js'
 import { slimIndex, loadData } from '../data/useData.js'
 import { CATEGORIES, REGIONS, ERAS, eraOf, eraLabel, formatYear } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
-import { speakLong, speakText, stopSpeak, isSpeaking, getMode, onSpeechChange, ttsSupported, playPrebuilt } from '../lib/speech.js'
+import { speakLong, speakText, stopSpeak, isSpeaking, getMode, onSpeechChange, ttsSupported } from '../lib/speech.js'
 
 export default function Detail() {
   const { id } = useParams()
-  // 基础信息与关联卡走同步精简索引；正文 chunk 只在需要时（预生成音频缺失）拉起
+  // 基础信息与关联卡走同步精简索引；正文 chunk 只在朗读时拉起
   // 注意：Hook 必须全部在 early return 之前，保持顺序稳定
   const slim = slimIndex.byId[id]
   const [full, setFull] = useState(null)
@@ -55,25 +55,14 @@ export default function Detail() {
   const fav = slim ? isFav(slim.id, snap) : false
   const [speaking, setSpeaking] = useState(false)
   const [ttsMsg, setTtsMsg] = useState('')
-  const [audioReady, setAudioReady] = useState(false)
   const [mode, setMode] = useState('')
   useEffect(() => {
-    if (slim) {
-      fetch('/audio/' + slim.id + '.mp3', { method: 'HEAD' })
-        .then((r) => setAudioReady(r.ok))
-        .catch(() => setAudioReady(false))
-    }
     const un = onSpeechChange(() => { setSpeaking(isSpeaking()); setMode(getMode()) })
     return () => { stopSpeak(); un() }
   }, [slim])
   const speakEntry = async () => {
     if (!slim || mode) return
     setTtsMsg('')
-    // 预生成音频优先：秒开；没有预生成时才拉全量正文做在线合成
-    try {
-      const played = await playPrebuilt(slim.id)
-      if (played) return
-    } catch { /* fall through */ }
     setNeedFull(true)
     const mod = full || await loadData()
     const entity = mod.byId[slim.id] || null
@@ -171,13 +160,7 @@ export default function Detail() {
             <button className={'button' + (speaking || mode ? ' button-solid' : '')} onClick={() => (mode || speaking ? stopSpeak() : speakEntry())} disabled={mode === 'loading'}>
               {mode === 'loading' ? '⏳ 合成语音…' : speaking ? '■ 停止朗读' : '▶ 朗读（在线语音）'}
             </button>
-            {audioReady && (
-              <a className='button' href={'/audio/' + entity.id + '.mp3'} download={entity.name + '.mp3'}>
-                ⤓ 下载音频
-              </a>
-            )}
             {ttsMsg && <span className='tts-msg'>{ttsMsg}</span>}
-            {!audioReady && !speaking && !ttsMsg && <span className='tts-msg tts-info'>提示：音频生成中，稍后可下载离线收听；当前可点「朗读」在线播放。</span>}
           </div>
           {entity.image && (
             <figure className="detail-figure" ref={figRef}>

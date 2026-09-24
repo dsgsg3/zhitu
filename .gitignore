@@ -7,5 +7,3 @@ Thumbs.db
 image-review.html
 .deepen/
 public/images/
-# 朗读音频 ~1.9GB：由 tools/gen-audio.py 生成，随 dist 部署，由 tools/backup.sh 镜像备份
-public/audio/
