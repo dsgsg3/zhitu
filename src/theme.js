@@ -1,3 +1,5 @@
+import { useSyncExternalStore } from 'react'
+
 // 夜间模式：CSS 变量翻转，偏好存 localStorage。
 // 首屏防闪烁靠 index.html 内联小脚本（绘制前就定主题），这里只管切换。
 const KEY = 'guanshi:theme'
@@ -25,4 +27,15 @@ export function applyTheme(t) {
   }
   const m = document.querySelector('meta[name="theme-color"]')
   if (m) m.setAttribute('content', dark ? DARK_BG : LIGHT_BG)
+  for (const l of listeners) l()
+}
+
+// SSR-safe: server & hydration render 'light', client switches right after hydration
+const listeners = new Set()
+function subscribe(l) {
+  listeners.add(l)
+  return () => { listeners.delete(l) }
+}
+export function useTheme() {
+  return useSyncExternalStore(subscribe, getTheme, () => 'light')
 }

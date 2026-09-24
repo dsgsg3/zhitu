@@ -8,6 +8,7 @@
 
 行为:
   - 命中真实文件（assets、图标等）时按原样返回
+  - 存在同名 .html（预渲染页）时返回它
   - 其余路径一律回退到 index.html，交给 BrowserRouter 在浏览器侧处理
 """
 import os
@@ -25,7 +26,11 @@ class SPAHandler(SimpleHTTPRequestHandler):
     def send_head(self):  # noqa: N802
         path = self.translate_path(self.path.split("?", 1)[0].split("#", 1)[0])
         if not os.path.exists(path):
-            self.path = "/index.html"
+            # 与 Cloudflare Pages 一致：/entity/tang -> entity/tang.html（预渲染页）
+            if os.path.isfile(path + ".html"):
+                self.path = self.path.split("?", 1)[0].split("#", 1)[0] + ".html"
+            else:
+                self.path = "/index.html"
         return super().send_head()
 
     def end_headers(self):

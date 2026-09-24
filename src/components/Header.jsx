@@ -1,6 +1,6 @@
 import { NavLink, Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect, useRef, useCallback } from 'react'
-import { getTheme, applyTheme } from '../theme.js'
+import { useTheme, applyTheme } from '../theme.js'
 import { SLIM } from '../data/slim-index.js'
 import { CATEGORIES, formatYear } from '../data/taxonomy.js'
 
@@ -20,12 +20,11 @@ export default function Header() {
   const [hits, setHits] = useState([])
   const [total, setTotal] = useState(null)
   const [active, setActive] = useState(0)
-  const [theme, setTheme] = useState(getTheme)
+  const theme = useTheme()
   const inputRef = useRef(null)
 
   const toggleTheme = () => {
     const next = theme === 'dark' ? 'light' : 'dark'
-    setTheme(next)
     applyTheme(next)
   }
 

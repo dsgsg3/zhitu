@@ -10,14 +10,19 @@ const DATA_CHUNKS = {
   'data-events': ['src/data/events.js'],
 }
 
-export default defineConfig({
+// 客户端构建产出 manifest 供 tools/prerender.mjs 查找页面 chunk；
+// SSR 构建（vite build --ssr src/entry-server.jsx）只在构建期跑，不拆 chunk、不复制 public/
+export default defineConfig(({ isSsrBuild }) => ({
   plugins: [react()],
   base: '/',
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks: DATA_CHUNKS,
+  build: isSsrBuild
+    ? { copyPublicDir: false }
+    : {
+        manifest: true,
+        rollupOptions: {
+          output: {
+            manualChunks: DATA_CHUNKS,
+          },
+        },
       },
-    },
-  },
-})
+}))

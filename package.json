@@ -7,11 +7,10 @@
     "dev": "vite",
     "prebuild": "npm run gen:slim",
     "gen:slim": "node tools/gen-slim-index.mjs",
-    "build": "vite build",
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node tools/prerender.mjs",
     "preview": "vite preview",
     "lint": "eslint .",
     "validate:data": "node tools/gen-slim-index.mjs && node tools/validate-data.mjs",
-    "sitemap": "node tools/sitemap.mjs",
     "review:img": "node tools/gen-image-review.mjs",
     "audit:depth": "node tools/depth-audit.mjs",
     "lint:depth": "node tools/deepen-lint.mjs"

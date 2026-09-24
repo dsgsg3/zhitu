@@ -39,8 +39,14 @@ function getSnapshot() {
   return state
 }
 
+// SSR / hydration: server has no localStorage, render as empty then update on client
+const EMPTY = { read: {}, fav: {} }
+function getServerSnapshot() {
+  return EMPTY
+}
+
 export function useFootprint() {
-  return useSyncExternalStore(subscribe, getSnapshot)
+  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
 }
 
 export function markRead(id) {

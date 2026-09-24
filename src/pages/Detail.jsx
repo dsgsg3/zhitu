@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import NotFound from './NotFound.jsx'
 import { setPageMeta } from '../meta.js'
 import { useFootprint, markRead, toggleFav, isFav } from '../store.js'
-import { slimIndex, loadData } from '../data/useData.js'
+import { slimIndex, loadEntity, getCachedEntity } from '../data/useData.js'
 import { CATEGORIES, REGIONS, ERAS, eraOf, eraLabel, formatYear } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
 
@@ -12,13 +12,14 @@ export default function Detail() {
   // 基础信息走同步精简索引（首屏立即渲染）；正文等全量字段随后异步拉取
   // 注意：Hook 必须全部在 early return 之前，保持顺序稳定
   const slim = slimIndex.byId[id]
-  const [full, setFull] = useState(null)
+  const [loaded, setLoaded] = useState(null)
   useEffect(() => {
-    if (!slim || full) return undefined
+    if (!slim || getCachedEntity(slim.id)) return undefined
     let on = true
-    loadData().then((m) => { if (on) setFull(m) })
+    loadEntity(slim.id).then((e) => { if (on) setLoaded(e) })
     return () => { on = false }
-  }, [slim, full])
+  }, [slim])
+  const fullEntity = slim ? (getCachedEntity(slim.id) || (loaded && loaded.id === slim.id ? loaded : null)) : null
 
   // 实体的时间锚点：有区间取中点，否则取年份
   const mid = (e) => (e.range ? (e.range[0] + (e.range[1] ?? e.range[0])) / 2 : e.year)
@@ -88,7 +89,7 @@ export default function Detail() {
   if (!slim) return <NotFound />
 
   // 正文等全量字段：full 到达前以 slim 基础字段渲染，正文区域为空不影响骨架
-  const entity = full ? full.byId[slim.id] || slim : slim
+  const entity = fullEntity || slim
 
   const cat = CATEGORIES.find((c) => c.key === slim.category)
   const region = REGIONS.find((r) => r.key === slim.region)

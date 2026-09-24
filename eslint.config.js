@@ -4,7 +4,7 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default [
-  { ignores: ['dist/', 'node_modules*/', 'tools/', '.playwright-cli/', '.workbuddy/'] },
+  { ignores: ['dist/', 'dist-ssr/', 'node_modules*/', 'tools/', '.playwright-cli/', '.workbuddy/'] },
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
