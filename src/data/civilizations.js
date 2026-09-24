@@ -345,7 +345,7 @@ export const civilizations = [
     name: '蒙古帝国',
     foreign: 'Mongol Empire',
     image: {
-      src: '/images/mongol-empire.gif',
+      src: '/images/mongol-empire.webp',
       page: 'https://commons.wikimedia.org/wiki/File:Expansion_of_the_Mongol_Empire_1206%E2%80%931294.gif',
       author: 'DannamEmpire',
       license: 'CC BY 4.0',

@@ -37,3 +37,12 @@
 - 新条目 related 必须引用已存在 id；插入后 `npm run validate:data` 必须通过
 - 配图走既有管线：仿照 `tools/fetch-batch5.mjs` 生成批次 JSON → `node tools/apply-images.mjs <file>`
 - 人物条目注意 gender 中性表述；当代条目注意措辞中性、多来源
+
+## 第六批已加（2026-09-24）
+
+用 `node tools/add-entries.mjs <batch.json>` 入库（含配图下载）：
+
+- 上古：ramesses-ii 拉美西斯二世 · bronze-age-collapse 青铜时代崩溃 · mohenjo-daro 摩亨佐-达罗 · erlitou 二里头遗址
+- 当代：chang-e-4 嫦娥四号月背着陆 · higgs-boson 希格斯玻色子的发现 · euro-launch 欧元现钞流通 · three-gorges-dam 三峡大坝
+
+年代分布：上古 49 · 古典 86 · 中古 133 · 近代 116 · 现代 108 · 当代 16（共 508）。当代仍最缺。
