@@ -18,6 +18,8 @@ const slim = ALL.map((e) => ({
   category: e.category,
   region: e.region,
   era: eraOf(e.year),
+  // 详情页 related 卡与朗读兜底文本组装在未加载全量时也要能用
+  related: e.related || [],
 }))
 
 const out =

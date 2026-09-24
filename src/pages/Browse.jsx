@@ -2,7 +2,6 @@ import { useMemo, useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { setPageMeta } from '../meta.js'
 import { SLIM } from '../data/slim-index.js'
-import { useData } from '../data/useData.js'
 import { matchesKeyword, matchScore } from '../data/match.js'
 import { CATEGORIES, REGIONS, ERAS, eraOf } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
@@ -18,7 +17,16 @@ export default function Browse() {
   const snap = useFootprint()
   const [page, setPage] = useState(1)
   const PAGE_SIZE = 48
-  const dataMod = useData() // 全量正文按需加载，到了自动升级关键词匹配范围
+  // 全量正文只服务正文级搜索：无关键词时不拉 3MB 数据；有关键词才升级
+  const [dataMod, setDataMod] = useState(null)
+  useEffect(() => {
+    if (!q.trim() || dataMod) return undefined
+    let on = true
+    import('../data/useData.js').then(({ loadData }) => {
+      loadData().then((m) => { if (on) setDataMod(m) })
+    })
+    return () => { on = false }
+  }, [q, dataMod])
   useEffect(() => { setPageMeta('档案库', '分类 / 年代 / 地域三维组合筛选。') }, [])
 
   const set = (key, value) => {
@@ -36,8 +44,8 @@ export default function Browse() {
   }
 
   const sorted = useMemo(() => {
-    // 全量到达前用精简索引（卡片字段齐全）；到达后升级为正文级匹配
-    const pool = dataMod ? dataMod.ALL : SLIM
+    // 基础池永远是精简索引（卡片字段齐全）；输入关键词且全量到达后升级为正文级匹配
+    const pool = dataMod && q.trim() ? dataMod.ALL : SLIM
     const kw = q.trim().toLowerCase()
     const out = pool.filter((e) => {
       if (cat !== 'all' && e.category !== cat) return false

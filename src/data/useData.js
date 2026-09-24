@@ -1,12 +1,19 @@
 import { useEffect, useState } from 'react'
+import { SLIM } from './slim-index.js'
 
-// 全量数据按需加载：首屏（年轮/时间轴画布/统计）走 slim-index，
-// 正文卡片等需要完整档案时才拉起数据 chunk，全局只加载一次。
+// 两级数据加载：
+// - slimIndex：同步可用的精简索引（卡片字段 + related），列表/地图/时间轴/关联卡足够
+// - loadData()：全量正文 chunk（4 个分类文件并行），只有详情正文与正文级搜索才拉起
 let promise
 export function loadData() {
   if (!promise) promise = import('./index.js')
   return promise
 }
+
+const slimById = Object.fromEntries(SLIM.map((e) => [e.id, e]))
+
+// 精简索引的同步查询：详情页 related、sameEra 等只用卡片字段，无需等全量
+export const slimIndex = { SLIM, byId: slimById }
 
 export function useData() {
   const [mod, setMod] = useState(null)

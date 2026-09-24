@@ -7,7 +7,7 @@ import { SkylineSilhouette } from '../components/SkylineSilhouette.jsx'
 import { setPageMeta } from '../meta.js'
 import { useMemo, useEffect } from 'react'
 import { SLIM, TOTAL } from '../data/slim-index.js'
-import { useData, loadData } from '../data/useData.js'
+import { slimIndex } from '../data/useData.js'
 
 // 精选：首张 2×2 大卡 + 8 张常规卡，4 列 / 2 列网格均无空洞
 const FEATURED = ['tang', 'confucius', 'terracotta-army', 'silk-road', 'rosetta-stone', 'cleopatra', 'mongol-empire', 'marie-curie', 'roman-empire']
@@ -114,11 +114,9 @@ function Footprint() {
   )
 }
 
-// 收藏卡：需要完整档案，数据到达后渲染
+// 收藏卡：卡片字段在精简索引里齐全，同步渲染，无需等全量
 function FavCards({ ids }) {
-  const mod = useData()
-  if (!mod) return null
-  const favs = ids.map((id) => mod.byId[id]).filter(Boolean)
+  const favs = ids.map((id) => slimIndex.byId[id]).filter(Boolean)
   if (!favs.length) return null
   return (
     <div className="entity-grid" style={{ marginTop: 16 }}>
@@ -133,10 +131,8 @@ export default function Home() {
   const daily = useMemo(() => quoteOfToday(), [])
   useEffect(() => { setPageMeta() }, [])
   const roam = () => {
-    loadData().then(({ ALL }) => {
-      const e = ALL[Math.floor(Math.random() * ALL.length)]
-      if (e) navigate(`/entity/${e.id}`)
-    })
+    const e = SLIM[Math.floor(Math.random() * SLIM.length)]
+    if (e) navigate(`/entity/${e.id}`)
   }
 
   return (
@@ -222,11 +218,10 @@ export default function Home() {
   )
 }
 
-// 精选卡：需要完整档案，数据到达后渲染
+// 精选卡：卡片字段在精简索引里齐全，同步渲染
 function FeaturedGrid() {
-  const mod = useData()
-  if (!mod) return <div className="route-loading">精选载入中…</div>
-  const featured = FEATURED.map((id) => mod.ALL.find((e) => e.id === id)).filter(Boolean)
+  const byId = slimIndex.byId
+  const featured = FEATURED.map((id) => byId[id]).filter(Boolean)
   return (
     <div className="entity-grid">
       {featured.map((e, i) => <EntityCard key={e.id} entity={e} featured={i === 0} />)}

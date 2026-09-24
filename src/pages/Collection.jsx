@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import { setPageMeta } from '../meta.js'
 import { useFootprint, isRead } from '../store.js'
 import { collectionById } from '../data/collections.js'
-import { useData } from '../data/useData.js'
+import { slimIndex } from '../data/useData.js'
 import { EntityCard } from '../components/EntityCard.jsx'
 import NotFound from './NotFound.jsx'
 
@@ -11,16 +11,15 @@ export default function Collection() {
   const { id } = useParams()
   const collection = collectionById[id]
   const snap = useFootprint()
-  const mod = useData()
 
   useEffect(() => {
     if (collection) setPageMeta(`专题 · ${collection.name}`, collection.summary)
   }, [collection])
 
   if (!collection) return <NotFound />
-  if (!mod) return <div className="route-loading">档案载入中…</div>
 
-  const items = collection.entries.map((en) => ({ ...en, entity: mod.byId[en.id] })).filter((x) => x.entity)
+  // 专题列表是 EntityCard（卡片字段），精简索引同步可用
+  const items = collection.entries.map((en) => ({ ...en, entity: slimIndex.byId[en.id] })).filter((x) => x.entity)
   const done = items.filter((it) => isRead(it.id, snap)).length
 
   return (

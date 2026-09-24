@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { setPageMeta } from '../meta.js'
 import { useEffect } from 'react'
-import { useData } from '../data/useData.js'
+import { SLIM } from '../data/slim-index.js'
 import { ROUTES } from '../data/routes.js'
 import { CATEGORIES } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
@@ -13,9 +13,9 @@ const TABS = [{ key: '', label: '全部档案' }].concat(ROUTES.map((r) => ({ ke
 
 export default function MapPage() {
   const [tab, setTab] = useState('')
-  const mod = useData()
-  const entries = mod ? mod.ALL : []
-  const byId = mod ? mod.byId : {}
+  // 地图光点与航线列表只用卡片字段，精简索引同步可用，不拉全量正文
+  const entries = SLIM
+  const byId = Object.fromEntries(SLIM.map((e) => [e.id, e]))
   useEffect(() => { setPageMeta('历史地图', '五百年，五百个坐标：按地域漫游，或沿航线出发。') }, [])
   const route = ROUTES.find((r) => r.key === tab) || null
   const routeEntries = route ? route.entryIds.map((id) => byId[id]).filter(Boolean) : []

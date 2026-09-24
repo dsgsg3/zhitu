@@ -2,7 +2,6 @@ import { useMemo, useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { setPageMeta } from '../meta.js'
 import { SLIM } from '../data/slim-index.js'
-import { useData } from '../data/useData.js'
 import { CATEGORIES, ERAS, eraOf, formatYear } from '../data/taxonomy.js'
 import { useFootprint, isRead, isFav } from '../store.js'
 
@@ -40,7 +39,6 @@ export default function Timeline() {
   const [eraKey, setEraKey] = useState(ERAS[0].key)
   const [cat, setCat] = useState('all')
   const [favOnly, setFavOnly] = useState(false)
-  const mod = useData()
   const snap = useFootprint()
   const scrollRef = useRef(null)
   const dragRef = useRef(null)
@@ -59,10 +57,10 @@ export default function Timeline() {
     return c
   }, [])
 
-  const mod2 = mod
+  const mod2 = SLIM
   const rows = useMemo(() => {
-    if (!mod2) return []
-    return mod2.ALL
+    if (!mod2.length) return []
+    return mod2
       .filter((e) => eraOf(e.year) === eraKey)
       .filter((e) => cat === 'all' || e.category === cat)
       .filter((e) => !favOnly || isFav(e.id, snap))
@@ -74,8 +72,8 @@ export default function Timeline() {
 
   const catCounts = useMemo(() => {
     const c = {}
-    if (!mod2) return c
-    for (const e of mod2.ALL) {
+    if (!mod2.length) return c
+    for (const e of mod2) {
       if (eraOf(e.year) !== eraKey) continue
       c[e.category] = (c[e.category] || 0) + 1
     }
@@ -160,9 +158,8 @@ export default function Timeline() {
         onPointerLeave={endDrag}
       >
         <div className='hband' style={{ width: bandW + 220 }}>
-          {!mod && <div className='route-loading'>档案载入中…</div>}
-          {mod && rows.length === 0 && <p className='hband-empty'>该筛选下暂无条目。</p>}
-          {mod && rows.length > 0 && (
+          {rows.length === 0 && <p className='hband-empty'>该筛选下暂无条目。</p>}
+          {rows.length > 0 && (
             <div className='hband-axis' style={{ top: 236 }} />
           )}
           {placed.map((p) => {
@@ -201,7 +198,7 @@ export default function Timeline() {
           })}
         </div>
       </div>
-      {mod && rows.length > 0 && <p className='hband-hint'>← 拖动或滚动查看 → · 悬停卡片可读 · 点击进入档案</p>}
+      {rows.length > 0 && <p className='hband-hint'>← 拖动或滚动查看 → · 悬停卡片可读 · 点击进入档案</p>}
 
       <div className='tl-era-pager'>
         {prev

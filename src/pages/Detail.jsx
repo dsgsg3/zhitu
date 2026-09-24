@@ -3,79 +3,85 @@ import { Link, useParams } from 'react-router-dom'
 import NotFound from './NotFound.jsx'
 import { setPageMeta } from '../meta.js'
 import { useFootprint, markRead, toggleFav, isFav } from '../store.js'
-import { useData } from '../data/useData.js'
+import { slimIndex, loadData } from '../data/useData.js'
 import { CATEGORIES, REGIONS, ERAS, eraOf, eraLabel, formatYear } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
 import { speakLong, speakText, stopSpeak, isSpeaking, getMode, onSpeechChange, ttsSupported, playPrebuilt } from '../lib/speech.js'
 
 export default function Detail() {
   const { id } = useParams()
-  // 全量数据按需加载：首屏只带 194KB 精简索引，正文 chunk 到了再渲染
-  // 注意：loading 判断必须放在所有 Hook 之后，保持 Hook 顺序稳定
-  const mod = useData()
-  const byId = mod ? mod.byId : {}
-  const ALL = useMemo(() => (mod ? mod.ALL : []), [mod])
-  const entity = byId[id]
+  // 基础信息与关联卡走同步精简索引；正文 chunk 只在需要时（预生成音频缺失）拉起
+  // 注意：Hook 必须全部在 early return 之前，保持顺序稳定
+  const slim = slimIndex.byId[id]
+  const [full, setFull] = useState(null)
+  const [needFull, setNeedFull] = useState(false)
+  useEffect(() => {
+    if (!needFull || full) return undefined
+    let on = true
+    loadData().then((m) => { if (on) setFull(m) })
+    return () => { on = false }
+  }, [needFull, full])
 
   // 实体的时间锚点：有区间取中点，否则取年份
   const mid = (e) => (e.range ? (e.range[0] + (e.range[1] ?? e.range[0])) / 2 : e.year)
-  const anchorYear = entity ? Math.round(mid(entity)) : 0
+  const anchorYear = slim ? Math.round(mid(slim)) : 0
 
-  // 同期世界：锚点年份前后 120 年内的其他实体（排除自身）
-  // 必须写在下面的 early return 之前，否则 Hook 数量随路由变化，React 会报错
+  // 同期世界：锚点年份前后 120 年内的其他实体（排除自身）；纯 slim 字段即可
   const sameEra = useMemo(() => {
-    if (!entity) return []
-    return ALL
-      .filter((e) => e.id !== entity.id && Math.abs(mid(e) - anchorYear) <= 120)
+    if (!slim) return []
+    return slimIndex.SLIM
+      .filter((e) => e.id !== slim.id && Math.abs(mid(e) - anchorYear) <= 120)
       .sort((a, b) => Math.abs(mid(a) - anchorYear) - Math.abs(mid(b) - anchorYear))
       .slice(0, 6)
-  }, [entity, anchorYear, ALL])
+  }, [slim, anchorYear])
 
   // 时间上的上一篇 / 下一篇（按锚点年份排序）
-  // 同样必须写在 early return 之前，保证 Hook 顺序稳定
   const neighbors = useMemo(() => {
-    if (!entity) return { prev: null, next: null }
-    const sorted = [...ALL].sort((a, b) => a.year - b.year)
-    const i = sorted.findIndex((e) => e.id === entity.id)
+    if (!slim) return { prev: null, next: null }
+    const sorted = [...slimIndex.SLIM].sort((a, b) => a.year - b.year)
+    const i = sorted.findIndex((e) => e.id === slim.id)
     return { prev: sorted[i - 1] || null, next: sorted[i + 1] || null }
-  }, [entity, ALL])
+  }, [slim])
 
   useEffect(() => {
-    if (entity) setPageMeta(entity.name, entity.summary)
-  }, [entity])
+    if (slim) setPageMeta(slim.name, slim.summary)
+  }, [slim])
 
   // 打开即记为已读（写 localStorage，手下留情：只记一次）
   const snap = useFootprint()
   useEffect(() => {
-    if (entity) markRead(entity.id)
-  }, [entity])
-  const fav = entity ? isFav(entity.id, snap) : false
+    if (slim) markRead(slim.id)
+  }, [slim])
+  const fav = slim ? isFav(slim.id, snap) : false
   const [speaking, setSpeaking] = useState(false)
   const [ttsMsg, setTtsMsg] = useState('')
   const [audioReady, setAudioReady] = useState(false)
   const [mode, setMode] = useState('')
   useEffect(() => {
-    if (entity) {
-      fetch('/audio/' + entity.id + '.mp3', { method: 'HEAD' })
+    if (slim) {
+      fetch('/audio/' + slim.id + '.mp3', { method: 'HEAD' })
         .then((r) => setAudioReady(r.ok))
         .catch(() => setAudioReady(false))
     }
     const un = onSpeechChange(() => { setSpeaking(isSpeaking()); setMode(getMode()) })
     return () => { stopSpeak(); un() }
-  }, [entity])
+  }, [slim])
   const speakEntry = async () => {
-    if (!entity || mode) return
-    const paras = (entity.paragraphs || []).join(' ')
-    const secs = (entity.sections || []).map((s) => s.heading + '。' + s.paragraphs.join(' ')).join(' ')
-    const text = entity.name + '。' + (entity.summary || '') + '。' + paras + secs
+    if (!slim || mode) return
     setTtsMsg('')
-    // 预生成音频优先：秒开；没有则走在线合成
+    // 预生成音频优先：秒开；没有预生成时才拉全量正文做在线合成
     try {
-      const played = await playPrebuilt(entity.id, entity.name)
+      const played = await playPrebuilt(slim.id)
       if (played) return
     } catch { /* fall through */ }
+    setNeedFull(true)
+    const mod = full || await loadData()
+    const entity = mod.byId[slim.id] || null
+    const paras = entity ? (entity.paragraphs || []).join(' ') : ''
+    const secs = entity ? (entity.sections || []).map((s) => s.heading + '。' + s.paragraphs.join(' ')).join(' ') : ''
+    const text = slim.name + '。' + (slim.summary || '') + '。' + paras + secs
     try {
-      await speakLong(text, entity.name)
+      await speakLong(text, slim.name)
     } catch {
       if (ttsSupported()) {
         const r = speakText(text)
@@ -97,7 +103,7 @@ export default function Detail() {
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
-  }, [entity])
+  }, [slim])
 
   // 头图滚动视差：图随滚动微移（±28px），直接写 DOM 不重渲染
   const figRef = useRef(null)
@@ -117,16 +123,18 @@ export default function Detail() {
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => { window.removeEventListener('scroll', onScroll); cancelAnimationFrame(raf) }
-  }, [entity])
+  }, [slim])
 
-  if (!mod) return <div className="route-loading">档案载入中…</div>
-  if (!entity) return <NotFound />
+  if (!slim) return <NotFound />
 
-  const cat = CATEGORIES.find((c) => c.key === entity.category)
-  const region = REGIONS.find((r) => r.key === entity.region)
-  const eraKey = eraOf(entity.year)
+  // 正文等全量字段：full 到达前以 slim 基础字段渲染，正文区域为空不影响骨架
+  const entity = full ? full.byId[slim.id] || slim : slim
 
-  const related = (entity.related || []).map((rid) => byId[rid]).filter(Boolean)
+  const cat = CATEGORIES.find((c) => c.key === slim.category)
+  const region = REGIONS.find((r) => r.key === slim.region)
+  const eraKey = eraOf(slim.year)
+
+  const related = (slim.related || []).map((rid) => slimIndex.byId[rid]).filter(Boolean)
 
   // 出处：有则展示，无则给一条维基检索兜底（检索页恒成立，不会 404）
   const sources = entity.sources && entity.sources.length > 0

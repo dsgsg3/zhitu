@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { setPageMeta } from '../meta.js'
-import { useData } from '../data/useData.js'
+import { SLIM } from '../data/slim-index.js'
 import { ROUTES } from '../data/routes.js'
 import { CATEGORIES } from '../data/taxonomy.js'
 import HistoryGlobe from '../components/HistoryGlobe.jsx'
@@ -12,9 +12,9 @@ const TABS = [{ key: '', label: '全部档案' }].concat(ROUTES.map((r) => ({ ke
 export default function GlobePage() {
   const [tab, setTab] = useState('')
   const navigate = useNavigate()
-  const mod = useData()
-  const entries = mod ? mod.ALL : []
-  const byId = mod ? mod.byId : {}
+  // 光点与航线列表只用卡片字段，精简索引同步可用，不拉全量正文
+  const entries = SLIM
+  const byId = Object.fromEntries(SLIM.map((e) => [e.id, e]))
   useEffect(() => { setPageMeta('3D 地球仪', '五百个坐标悬于蓝星：拖动旋转，点击进入历史。') }, [])
   const theme = typeof document !== 'undefined' && document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light'
   const route = ROUTES.find((r) => r.key === tab) || null
