@@ -6,21 +6,19 @@ import { useFootprint, markRead, toggleFav, isFav } from '../store.js'
 import { slimIndex, loadData } from '../data/useData.js'
 import { CATEGORIES, REGIONS, ERAS, eraOf, eraLabel, formatYear } from '../data/taxonomy.js'
 import { EntityCard } from '../components/EntityCard.jsx'
-import { speakLong, speakText, stopSpeak, isSpeaking, getMode, onSpeechChange, ttsSupported } from '../lib/speech.js'
 
 export default function Detail() {
   const { id } = useParams()
-  // 基础信息与关联卡走同步精简索引；正文 chunk 只在朗读时拉起
+  // 基础信息走同步精简索引（首屏立即渲染）；正文等全量字段随后异步拉取
   // 注意：Hook 必须全部在 early return 之前，保持顺序稳定
   const slim = slimIndex.byId[id]
   const [full, setFull] = useState(null)
-  const [needFull, setNeedFull] = useState(false)
   useEffect(() => {
-    if (!needFull || full) return undefined
+    if (!slim || full) return undefined
     let on = true
     loadData().then((m) => { if (on) setFull(m) })
     return () => { on = false }
-  }, [needFull, full])
+  }, [slim, full])
 
   // 实体的时间锚点：有区间取中点，否则取年份
   const mid = (e) => (e.range ? (e.range[0] + (e.range[1] ?? e.range[0])) / 2 : e.year)
@@ -53,33 +51,6 @@ export default function Detail() {
     if (slim) markRead(slim.id)
   }, [slim])
   const fav = slim ? isFav(slim.id, snap) : false
-  const [speaking, setSpeaking] = useState(false)
-  const [ttsMsg, setTtsMsg] = useState('')
-  const [mode, setMode] = useState('')
-  useEffect(() => {
-    const un = onSpeechChange(() => { setSpeaking(isSpeaking()); setMode(getMode()) })
-    return () => { stopSpeak(); un() }
-  }, [slim])
-  const speakEntry = async () => {
-    if (!slim || mode) return
-    setTtsMsg('')
-    setNeedFull(true)
-    const mod = full || await loadData()
-    const entity = mod.byId[slim.id] || null
-    const paras = entity ? (entity.paragraphs || []).join(' ') : ''
-    const secs = entity ? (entity.sections || []).map((s) => s.heading + '。' + s.paragraphs.join(' ')).join(' ') : ''
-    const text = slim.name + '。' + (slim.summary || '') + '。' + paras + secs
-    try {
-      await speakLong(text, slim.name)
-    } catch {
-      if (ttsSupported()) {
-        const r = speakText(text)
-        setTtsMsg(r.ok ? '' : '朗读启动失败，请重试或调高媒体音量')
-      } else {
-        setTtsMsg('在线语音生成失败，请稍后重试')
-      }
-    }
-  }
 
   // 阅读进度：顶部细线
   const [progress, setProgress] = useState(0)
@@ -157,10 +128,6 @@ export default function Detail() {
             <button className={`button${fav ? ' button-solid' : ''}`} onClick={() => toggleFav(entity.id)}>
               {fav ? '★ 已收藏' : '☆ 收藏这一段'}
             </button>
-            <button className={'button' + (speaking || mode ? ' button-solid' : '')} onClick={() => (mode || speaking ? stopSpeak() : speakEntry())} disabled={mode === 'loading'}>
-              {mode === 'loading' ? '⏳ 合成语音…' : speaking ? '■ 停止朗读' : '▶ 朗读（在线语音）'}
-            </button>
-            {ttsMsg && <span className='tts-msg'>{ttsMsg}</span>}
           </div>
           {entity.image && (
             <figure className="detail-figure" ref={figRef}>

@@ -95,5 +95,3 @@
 }
 .detail-sec-h + .para { margin-top: 0; }
 
-/* 朗读不可用提示 */
-.tts-msg { display: block; width: 100%; margin-top: 10px; font-size: 13px; color: #b4443c; line-height: 1.6; }
