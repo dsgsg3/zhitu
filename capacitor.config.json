@@ -1,0 +1,8 @@
+{
+  "appId": "com.guanshi.app",
+  "appName": "观史",
+  "webDir": "capacitor-web",
+  "server": {
+    "url": "https://guanshi.pages.dev"
+  }
+}

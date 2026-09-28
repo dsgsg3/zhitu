@@ -22,7 +22,9 @@ if (root.hasChildNodes()) ReactDOM.hydrateRoot(root, app)
 else ReactDOM.createRoot(root).render(app)
 
 // PWA：生产环境注册 Service Worker（由 tools/gen-sw.mjs 在构建期生成 dist/sw.js）
-if ('serviceWorker' in navigator && import.meta.env.PROD) {
+// Capacitor 本地资源模式跳过 SW；远程加载时保留（离线可用，导航网络优先天然跟随线上更新）
+const isLocalCapacitor = window.Capacitor && (location.protocol === 'capacitor:' || location.hostname === 'localhost')
+if ('serviceWorker' in navigator && import.meta.env.PROD && !isLocalCapacitor) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js').catch(() => {})
   })
