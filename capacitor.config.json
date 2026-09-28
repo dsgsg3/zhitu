@@ -1,5 +1,8 @@
 {
   "appId": "com.guanshi.app",
   "appName": "观史",
-  "webDir": "dist"
+  "webDir": "capacitor-web",
+  "server": {
+    "url": "https://guanshi.aijianli.xin"
+  }
 }
