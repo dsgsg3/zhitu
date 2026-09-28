@@ -15,6 +15,11 @@ import os
 import sys
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
+import mimetypes
+mimetypes.add_type("application/manifest+json", ".webmanifest")
+mimetypes.add_type("font/woff2", ".woff2")
+mimetypes.add_type("font/woff", ".woff")
+
 PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 5173
 ROOT = os.path.abspath(sys.argv[2] if len(sys.argv) > 2 else "dist")
 

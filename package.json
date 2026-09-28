@@ -7,13 +7,14 @@
     "dev": "vite",
     "prebuild": "npm run gen:slim",
     "gen:slim": "node tools/gen-slim-index.mjs",
-    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node tools/prerender.mjs",
+    "build": "vite build && node tools/gen-sw.mjs && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node tools/prerender.mjs",
     "preview": "vite preview",
     "lint": "eslint .",
     "validate:data": "node tools/gen-slim-index.mjs && node tools/validate-data.mjs",
     "review:img": "node tools/gen-image-review.mjs",
     "audit:depth": "node tools/depth-audit.mjs",
-    "lint:depth": "node tools/deepen-lint.mjs"
+    "lint:depth": "node tools/deepen-lint.mjs",
+    "fonts": "node tools/subset-fonts.mjs"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",
@@ -32,6 +33,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.7",
     "globals": "^17.12.0",
+    "subset-font": "^2.9.0",
     "vite": "^6.2.0"
   },
   "allowScripts": {

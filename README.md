@@ -58,6 +58,36 @@ bash tools/deploy.sh   # 构建并部署到 Cloudflare Pages（--no-build 跳过
   nginx 用 `try_files $uri $uri.html $uri/ /index.html;`）
 - `public/images/` 不入 git（约 100MB），由 `tools/backup.sh` 每周全量备份到 D 盘
 
+## PWA（可安装 + 离线）
+
+2026-09 起 dist 内含完整 PWA：manifest + Service Worker + 本地字体，浏览器访问可「安装到主屏幕」，安装后离线可用。
+
+### 组成
+
+| 文件 | 作用 |
+|---|---|
+| `public/manifest.webmanifest` | 应用名/图标/主题色/快捷方式（时间轴、历史地图） |
+| `tools/sw-template.js` | SW 源码模板（占位符 `__BUILD_ID__` / `__PRECACHE__`） |
+| `tools/gen-sw.mjs` | 构建期从 vite manifest 收集 hash 资产，生成 `dist/sw.js`（build 链中自动执行） |
+| `public/fonts/*.woff2` | 子集化可变字体（见下） |
+| `public/icons/` | 192/512/maskable/apple-touch 图标 |
+
+### 缓存策略（tools/sw-template.js）
+
+- **构建产物**（`/assets/*`、字体、图标，共 30+ 项）：安装时全量预缓存
+- **页面导航**：网络优先；离线回退 已访问页缓存 → `/index.html` → `/`（SPA 壳，路由客户端渲染）
+- **详情正文** `/data/entity/*.json`：SWR（先缓存后更新），看过的条目离线可读
+- **图片** `/images/*`：缓存优先，上限 400 张，超出淘汰最早
+- **更新机制**：每次构建 `BUILD_ID` 变化 → 新 SW 安装后 `skipWaiting` + 旧缓存清理，用户下次打开即新版
+
+### 字体本地化
+
+构建期用 harfbuzz（`subset-font`）把 Noto Serif SC / Space Grotesk 两支**可变字体**按项目实际用字（约 4400 字）子集化，合计约 1.6MB 覆盖全部字重（200–900），不再依赖 Google Fonts CDN（国内网络 + 离线均正常）。新增档案若用到生僻字，重跑子集化即可（源字体 TTF 见 google/fonts 仓库）。
+
+### 离线验证
+
+`npm run build` 后启动 `tools/spa_server.py`，浏览器首访安装 SW，再停掉服务器访问任意未看过详情页——应完整渲染（数据回退到预缓存的分类 chunk）。
+
 ## 目录
 
 ```

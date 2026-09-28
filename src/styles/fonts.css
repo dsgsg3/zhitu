@@ -1,0 +1,14 @@
+/* 本地字体：构建期子集化的可变字体，离线可用，不依赖 Google Fonts CDN */
+@font-face {
+  font-family: 'Noto Serif SC';
+  src: url('/fonts/noto-serif-sc-var.woff2') format('woff2');
+  font-weight: 200 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/space-grotesk-var.woff2') format('woff2');
+  font-weight: 300 700;
+  font-display: swap;
+}
