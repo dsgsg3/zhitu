@@ -14,7 +14,8 @@
     "review:img": "node tools/gen-image-review.mjs",
     "audit:depth": "node tools/depth-audit.mjs",
     "lint:depth": "node tools/deepen-lint.mjs",
-    "fonts": "node tools/subset-fonts.mjs"
+    "fonts": "node tools/subset-fonts.mjs",
+    "audit:full": "node tools/audit-full.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.5.2",
@@ -36,6 +37,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.7",
     "globals": "^17.12.0",
+    "sharp": "^0.35.5",
     "subset-font": "^2.9.0",
     "vite": "^6.2.0"
   },

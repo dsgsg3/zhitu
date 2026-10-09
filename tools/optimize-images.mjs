@@ -4,11 +4,8 @@
 import { readdirSync, readFileSync, writeFileSync, rmSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { join, dirname } from 'node:path'
-import { createRequire } from 'node:module'
+import sharp from 'sharp'
 import { ALL } from '../src/data/index.js'
-
-const require = createRequire('/tmp/sharp-tool/package.json')
-const sharp = require('sharp')
 
 const write = process.argv.includes('--write')
 const dir = join(dirname(fileURLToPath(import.meta.url)), '../public/images')
@@ -51,23 +48,24 @@ for (const f of files) {
   if (!needResize && !isPng && !bigJpg) continue
   const target = isPng ? f.replace(/\.png$/i, '.jpg') : f
   console.log(`${isPng ? '转JPG' : '压缩'}${needResize ? '+缩小' : ''}: ${f} -> ${target} (${meta.width}x${meta.height})`)
-  if (!write) continue
   let pipe = sharp(pathOf(f)).rotate()
   if (needResize) pipe = pipe.resize({ width: 960, withoutEnlargement: true })
+  // 预演也要真编码一次，否则 savings 永远是 0，看不出这轮值不值得跑
   const buf = await pipe.jpeg({ quality: 82 }).toBuffer()
   const before = readFileSync(pathOf(f)).length
-  if (buf.length < before) {
-    writeFileSync(pathOf(target), buf)
-    if (target !== f) {
-      rmSync(pathOf(f))
-      renames.push([f, target])
-    }
-    convBytes += before - buf.length
-  } else {
+  if (buf.length >= before) {
     console.log(`  (重压后更大，跳过: ${f})`)
+    continue
+  }
+  convBytes += before - buf.length
+  if (!write) continue
+  writeFileSync(pathOf(target), buf)
+  if (target !== f) {
+    rmSync(pathOf(f))
+    renames.push([f, target])
   }
 }
-console.log(`\n删除释放 ${(delBytes / 1024 / 1024).toFixed(1)}MB，重压节省 ${(convBytes / 1024 / 1024).toFixed(1)}MB`)
+console.log(`\n${write ? '' : '[预演] '}删除释放 ${(delBytes / 1024 / 1024).toFixed(1)}MB，重压节省 ${(convBytes / 1024 / 1024).toFixed(1)}MB`)
 if (write && renames.length) {
   // 同步更新数据文件中的引用
   for (const df of ['civilizations.js', 'figures.js', 'artifacts.js', 'events.js']) {
