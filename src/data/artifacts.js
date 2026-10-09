@@ -3599,7 +3599,7 @@ image: {
     image: {
       src: '/images/bayeux-tapestry.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Odo_bayeux_tapestry.png',
-      author: '',
+      author: 'LadyofHats（2006 年摄）',
       license: 'Public domain',
     },
     region: 'europe',
@@ -5187,7 +5187,7 @@ image: {
     image: {
       src: '/images/codex-sinaiticus.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Sinaiticus_text.jpg',
-      author: '',
+      author: '佚名（西奈抄本页面）',
       license: 'Public domain',
     },
     region: 'middle-east',
@@ -6686,7 +6686,7 @@ image: {
     image: {
       src: '/images/shoso-in.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Shoso-in.jpg',
-      author: '',
+      author: 'Moja（2005 年摄于正仓院）',
       license: 'CC BY-SA 3.0',
     },
     region: 'east-asia',

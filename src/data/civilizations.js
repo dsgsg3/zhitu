@@ -3423,7 +3423,7 @@ image: {
     image: {
       src: '/images/asante.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Asante_map.jpg',
-      author: '',
+      author: '佚名（阿散蒂帝国地图）',
       license: 'Public domain',
     },
     region: 'africa',
@@ -6164,7 +6164,7 @@ image: {
     image: {
       src: '/images/teutonic-order.png',
       page: 'https://commons.wikimedia.org/wiki/File:Insignia_Germany_Order_Teutonic.svg',
-      author: '',
+      author: 'Anonymous, c. 1400 (badge of the Teutonic Order)',
       license: 'Public domain',
     },
     region: 'europe',

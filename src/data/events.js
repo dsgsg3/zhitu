@@ -822,7 +822,7 @@ image: {
     name: '查理曼加冕',
     foreign: 'Coronation of Charlemagne',
 image: {
-      src: '/images/charlemagne-empire.jpg',
+      src: '/images/charlemagne.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Charlemagne_denier_Mayence_812_814.jpg',
       author: '佚名（查理曼时期银币）',
       license: 'Public domain',
@@ -4321,7 +4321,7 @@ image: {
     name: '莱特兄弟首飞',
     foreign: 'First powered flight',
     image: {
-      src: '/images/first-flight.jpg',
+      src: '/images/wright-flyer.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:First_flight2.jpg',
       author: 'John T. Daniels',
       license: 'Public domain',
@@ -5063,7 +5063,7 @@ image: {
     image: {
       src: '/images/hundred-years-war.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Schlacht_von_Azincourt.jpg',
-      author: '',
+      author: 'Antoine Leduc, Sylvie Leluc et Olivier Renaudeau (dir.), Abbeville, 2015',
       license: 'Public domain',
     },
     region: 'europe',
@@ -5481,7 +5481,7 @@ image: {
     image: {
       src: '/images/battle-of-kadesh.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Egypt_Abou_Simbel6.jpg',
-      author: '',
+      author: 'Ismoon（2020 年摄于阿布辛贝）',
       license: 'CC BY-SA 3.0',
     },
     region: 'middle-east',
@@ -6062,7 +6062,7 @@ image: {
     image: {
       src: '/images/spartacus-revolt.gif',
       page: 'https://commons.wikimedia.org/wiki/File:Italy_and_environs%2C_218_BC.gif',
-      author: '',
+      author: 'Kirill Lokshin（2006 年绘）',
       license: 'Public domain',
     },
     region: 'europe',
@@ -6140,7 +6140,7 @@ image: {
     image: {
       src: '/images/unification-of-egypt.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Scarab%20Inscribed%20King%20of%20Upper%20and%20Lower%20Egypt%20MET%2027.3.288%20bot.jpg',
-      author: '',
+      author: '佚名（大都会藏圣甲虫印章）',
       license: 'CC0',
     },
     region: 'africa',
@@ -6624,7 +6624,7 @@ image: {
     name: '攻占巴士底狱',
     foreign: 'Storming of the Bastille',
     image: {
-      src: '/images/storming-of-bastille.jpg',
+      src: '/images/french-revolution.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Anonymous_-_Prise_de_la_Bastille.jpg',
       author: 'Unidentified painter',
       license: 'Public domain',
@@ -7991,7 +7991,7 @@ image: {
     image: {
       src: '/images/paris-commune.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Barricade18March1871_(cropped).jpg',
-      author: '',
+      author: '巴黎市立博物馆（Musée Carnavalet）',
       license: 'Public domain',
     },
     region: 'europe',
@@ -9192,7 +9192,7 @@ image: {
     image: {
       src: '/images/cultural-revolution.jpg',
       page: 'https://commons.wikimedia.org/wiki/File:Unissued%20Wen14%2C%20Long%20Live%20the%20All-round%20Victory%20of%20the%20Proletarian%20Cultural%20Revolution%20(Draft%202)%2C%201968.jpg',
-      author: '',
+      author: '佚名（1968 年未刊宣传画草案）',
       license: 'Public domain',
     },
     region: 'china',

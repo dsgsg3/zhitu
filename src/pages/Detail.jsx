@@ -139,7 +139,8 @@ export default function Detail() {
                 onError={(e) => { e.currentTarget.closest('.detail-figure')?.remove() }}
               />
               <figcaption>
-                图：{entity.image.author} · {entity.image.license}
+                {entity.image.author ? `图：${entity.image.author} · ` : '图：'}
+                {entity.image.license}
                 {' · '}
                 <a href={entity.image.page} target="_blank" rel="noreferrer">Wikimedia Commons ↗</a>
               </figcaption>
